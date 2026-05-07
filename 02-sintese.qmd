@@ -1,1 +1,19 @@
-# Síntese do avanço no período
+# Síntese do Avanço no Período
+
+## Visão geral do progresso técnico
+
+## Consolidação das principais frentes de trabalho
+
+### Estruturação da arquitetura de dados e integração de bases heterogêneas
+
+### Organização e validação das bases territoriais
+
+### Definição e tratamento de variáveis geoespaciais e cadastrais
+
+### Desenvolvimento inicial dos modelos de avaliação em massa
+
+### Implementação da infraestrutura tecnológica no laboratório
+
+### Estruturação dos fluxos de governança e validação técnica
+
+### Realização de intercâmbios técnicos para fortalecimento metodológico
