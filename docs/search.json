@@ -4,9 +4,149 @@
     "href": "index.html",
     "title": "Relatório 1T2026",
     "section": "",
-    "text": "Apresentação",
+    "text": "Apresentação\nA Universidade Federal de Santa Catarina (UFSC), no âmbito do Termo de Execução Descentralizada (TED) firmado com a Receita Federal do Brasil (RFB), com gestão administrativa e financeira da Fundação de Ensino e Engenharia de Santa Catarina (FEESC), apresenta o relatório técnico referente ao primeiro ciclo de execução do projeto de desenvolvimento da metodologia de determinação do Valor de Referência para o Cadastro Imobiliário Brasileiro.\nO período coberto neste relatório concentra a fase inicial de mobilização e estruturação técnica, com foco na organização das bases de dados, na execução da Prova de Conceito (POC) em Florianópolis/SC e no avanço das frentes de Observatório do Mercado Imobiliário, Bases Cartográficas Territoriais e Modelagem.\nPrincipais dados institucionais:\n\nInstrumento: Termo de Execução Descentralizada (TED) RFB/UFSC\nData da assinatura: 23/12/2026\nInício das atividades: 26/12/2025\nDuração: 60 meses\nValor: R$ 7.800.000,00\nNº Contrato/Convênio FEESC: 174/2025\nNº do processo: 23080.064460/2019-37\nCoordenação geral: Prof. Everton da Silva\n\nA equipe está organizada em Comitê Técnico e Comitê Administrativo, com atuação integrada para garantir condução metodológica, execução operacional e governança do projeto.\n\n\n\nQuadro 1 - Equipe Técnica Executora UFSC/FEESC",
     "crumbs": [
       "Apresentação"
+    ]
+  },
+  {
+    "objectID": "01-intro.html",
+    "href": "01-intro.html",
+    "title": "1  Introdução",
+    "section": "",
+    "text": "1.1 Objetivo do Relatório\nO presente relatório técnico apresenta o avanço das atividades desenvolvidas no Projeto TED firmado entre RFB e UFSC, voltado à construção, validação e institucionalização de metodologia nacional para determinação de Valores de Referência de imóveis urbanos, em consonância com a Lei Complementar nº 214/2025.\nO projeto teve início em 26 de dezembro de 2025. Os primeiros meses concentraram mobilização, estruturação da equipe técnica, organização dos ambientes de trabalho e alinhamento estratégico entre as instituições envolvidas. Nesse período, o Plano de Gerenciamento do Projeto foi apresentado em 03/02/2026 e formalmente entregue em 05/02/2026.\nO ciclo coberto neste relatório compreende fevereiro a abril de 2026, com ênfase na POC de Florianópolis, utilizada como ambiente de validação metodológica, tecnológica e operacional para futura expansão nacional.\nConsolidar, de forma sistematizada, as evidências técnicas e operacionais das atividades executadas no período, organizando os principais resultados alcançados, os fluxos estruturados, os produtos gerados e os desafios identificados.\nTambém busca evidenciar o grau de maturidade das soluções desenvolvidas, com foco em estruturação de dados, modelagem de avaliação em massa e preparação para internalização dos processos.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introdução</span>"
+    ]
+  },
+  {
+    "objectID": "02-sintese.html",
+    "href": "02-sintese.html",
+    "title": "2  Síntese do Avanço no Período",
+    "section": "",
+    "text": "2.1 Visão geral do progresso técnico\nA síntese do período evidencia avanço integrado nas frentes de dados, modelagem, infraestrutura e governança, com amadurecimento progressivo da POC de Florianópolis e consolidação dos elementos-base para escalabilidade.\nNo período analisado, observou-se evolução consistente na organização das bases de dados, no tratamento das informações e no desenvolvimento inicial dos modelos de avaliação em massa. A arquitetura de dados foi fortalecida para permitir processamento e análise com maior rastreabilidade.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Síntese do Avanço no Período</span>"
+    ]
+  },
+  {
+    "objectID": "02-sintese.html#consolidação-das-principais-frentes-de-trabalho",
+    "href": "02-sintese.html#consolidação-das-principais-frentes-de-trabalho",
+    "title": "2  Síntese do Avanço no Período",
+    "section": "2.2 Consolidação das principais frentes de trabalho",
+    "text": "2.2 Consolidação das principais frentes de trabalho\nAs frentes consolidadas no trimestre articulam dados, território, modelagem, infraestrutura e governança, com integração operacional entre atividades técnicas e suporte institucional.\n\n2.2.1 Estruturação da arquitetura de dados e integração de bases heterogêneas\nForam realizadas padronização, limpeza, compatibilização e consolidação de bases de diferentes fontes, com foco em consistência e reprodutibilidade analítica.\n\n\n2.2.2 Organização e validação das bases territoriais\nAs bases cartográficas da POC foram organizadas com validações geométricas e topológicas para reduzir inconsistências e sustentar análises espaciais confiáveis.\n\n\n2.2.3 Definição e tratamento de variáveis geoespaciais e cadastrais\nAs variáveis dos modelos foram selecionadas, tratadas e estruturadas com foco em capacidade explicativa e qualidade preditiva, incluindo variáveis derivadas.\n\n\n2.2.4 Desenvolvimento inicial dos modelos de avaliação em massa\nForam conduzidos testes preliminares de modelagem para validação incremental da metodologia e identificação de ajustes para os próximos ciclos.\n\n\n2.2.5 Implementação da infraestrutura tecnológica no laboratório\nHouve implantação de ambiente computacional dedicado, com recursos de armazenamento, processamento e controle de acesso para dar suporte às rotinas do projeto.\n\n\n2.2.6 Estruturação dos fluxos de governança e validação técnica\nFoi estabelecido fluxo de decisão e validação técnica para formalização das entregas e manutenção de controle de qualidade ao longo da execução.\n\n\n2.2.7 Realização de intercâmbios técnicos para fortalecimento metodológico\nIntercâmbios com instituições e especialistas contribuíram para incorporar boas práticas e fortalecer a consistência metodológica das soluções adotadas.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Síntese do Avanço no Período</span>"
+    ]
+  },
+  {
+    "objectID": "03-status.html",
+    "href": "03-status.html",
+    "title": "3  Status Geral do Projeto por Etapa",
+    "section": "",
+    "text": "A avaliação do período foi realizada com base no avanço físico das atividades previstas no plano de trabalho, considerando a POC de Florianópolis e a estratégia de expansão territorial por lotes.\nFoi estruturado cronograma físico de execução com painéis de monitoramento para consolidar volume processado, registros estruturados, variáveis geradas e modelos testados.\n\n\n\nFigura 1 - Estados correspondentes às capitais selecionadas por lote\n\n\n\n\n\nFigura 2 - Representatividade percentual dos endereços CNEFE por centralidade urbana\n\n\n\n\n\nFigura 3 - Distribuição espacial do percentual de representação dos endereços por município\n\n\nA estratégia de escalonamento nacional foi construída com base no CNEFE, priorizando capitais e centros regionais para ampliar cobertura territorial com controle metodológico.\n\n\n\nFigura 4 - Visão consolidada do status geral por etapas e lotes\n\n\n\n\n\nLegenda de apoio da Figura 4",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Status Geral do Projeto por Etapa</span>"
+    ]
+  },
+  {
+    "objectID": "04-resultados.html",
+    "href": "04-resultados.html",
+    "title": "4  Principais Resultados Estratégicos",
+    "section": "",
+    "text": "4.1 Validação da POC\nOs resultados estratégicos do período foram organizados em três dimensões complementares: validação da POC (Etapas 1 a 3), evolução da infraestrutura tecnológica e blocos transversais de suporte metodológico.\nO detalhamento do fluxo metodológico completo encontra-se no Apêndice 1. Nesta seção são destacados os resultados consolidados no período para cada etapa da POC.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Principais Resultados Estratégicos</span>"
+    ]
+  },
+  {
+    "objectID": "04-resultados.html#validação-da-poc",
+    "href": "04-resultados.html#validação-da-poc",
+    "title": "4  Principais Resultados Estratégicos",
+    "section": "",
+    "text": "4.1.1 Etapa 1: Observatório do Mercado Imobiliário\n\n4.1.1.1 Construção de uma base confiável de ofertas imobiliárias\nConsolidação de base inicial de ofertas com ganhos de cobertura e consistência para uso analítico.\n\n\n4.1.1.2 Estruturação de um pipeline completo de dados\nEstruturação do pipeline com ingestão, limpeza, padronização, enriquecimento e armazenamento versionado.\n\n\n4.1.1.3 Uso do CNEFE como referência oficial de validação posicional\nAplicação do CNEFE como referência de validação para ampliar rastreabilidade da qualidade posicional.\n\n\n4.1.1.4 Desenvolvimento e aplicação do Geocoder V3\nEvolução de rotinas internas de geocodificação para reduzir ambiguidades e elevar taxa de endereços posicionados.\n\n\n4.1.1.5 Processamento expressivo da base da POC Florianópolis\nProcessamento em escala da base da POC, com ganho operacional e consistência entre ciclos.\n\n\n4.1.1.6 Criação de filtros independentes de qualidade\nImplementação de filtros de qualidade para reduzir ruído e melhorar estabilidade dos insumos de modelagem.\n\n\n4.1.1.7 Geração da base duplamente validada\nConsolidação de base com dupla validação (dados e território), aumentando confiabilidade para análises.\n\n\n4.1.1.8 Melhoria da cobertura analítica com vias curtas\nAmpliação da cobertura analítica em cenários de baixa completude de endereçamento.\n\n\n4.1.1.9 Identificação de limitações para lotes e terrenos\nMapeamento de limitações estruturais para lotes vagos e terrenos em função da menor densidade de dados.\n\n\n4.1.1.10 Validação comparativa com Google Maps\nComparações de apoio para inspeção de aderência posicional em casos críticos.\n\n\n\n4.1.2 Etapa 2: Bases Cartográficas Territoriais\n\n4.1.2.1 Transformação da Etapa 2 em frente produtiva real\nConversão da frente cartográfica em operação contínua de produção e validação.\n\n\n4.1.2.2 Implantação do fluxo Bronze-Prata-Ouro\nEstruturação em camadas de maturidade para controlar qualidade e evolução dos dados territoriais.\n\n\n4.1.2.3 Produção territorial em 11 municípios\nAmpliação da produção cartográfica com aplicação do fluxo em novos contextos urbanos.\n\n\n4.1.2.4 Consolidação da POC Florianópolis como entrega integrada\nIntegração entre base territorial, dados de mercado e processos de modelagem.\n\n\n4.1.2.5 Estruturação do dicionário e modelagem de dados espaciais\nPadronização semântica e estrutural para garantir interoperabilidade e rastreabilidade.\n\n\n4.1.2.6 Geração de variáveis geográficas para avaliação em massa\nProdução de variáveis geográficas em múltiplas escalas para suporte aos modelos.\n\n\n4.1.2.7 Padronização de arquivos, nomenclatura e versionamento\nDefinição de convenções operacionais para reduzir retrabalho e manter governança de dados.\n\n\n4.1.2.8 Implantação de infraestrutura geoespacial com PostGIS\nConsolidação de base geoespacial com foco em desempenho e consistência topológica.\n\n\n4.1.2.9 Qualidade espacial e consistência topológica como critério de aceite\nAplicação de critérios de validação espacial para aprovação de camadas e produtos.\n\n\n4.1.2.10 Preparação da etapa para a escalabilidade\nPlanejamento de expansão com redução gradual de dependências manuais.\n\n\n\n4.1.3 Etapa 3: Modelagem e Planta de Valores Genéricos (PVG)\n\n4.1.3.1 Desempenho dos modelos econométricos\nExecução de testes iniciais com resultados preliminares para imóveis edificados e lotes.\n\n\n4.1.3.2 Modelo preliminar de lotes - base intermediária\nConstrução de modelo preliminar para lotes com foco em consistência estatística e territorial.\n\n\n4.1.3.3 Classificação objetiva de padrão construtivo\nEstruturação de critérios objetivos para diferenciação de padrões construtivos.\n\n\n4.1.3.4 Regionalização geoespacial - submercados\nDefinição inicial de submercados com base em características territoriais e comportamento de preços.\n\n\n4.1.3.5 Integração entre modelos\nFluxo integrado entre modelos econométricos e componentes territoriais para geração de superfícies de valor.\n\n\n4.1.3.6 Outputs territoriais gerados\nForam gerados outputs preliminares de apoio à leitura espacial dos resultados.\n\n\n4.1.3.7 Estratégia de modelagem escalável e controlada\nEstratégia orientada à replicação gradual, controle metodológico e auditabilidade.\n\n\n\nFigura 5 - Variáveis utilizadas (imóveis edificados)\n\n\n\n\n\nFigura 6 - Variáveis utilizadas (lotes e terrenos)\n\n\n\n\n\nFigura 7 - Fluxo integrado dos modelos",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Principais Resultados Estratégicos</span>"
+    ]
+  },
+  {
+    "objectID": "04-resultados.html#evolução-da-infraestrutura-tecnológica-labfsg",
+    "href": "04-resultados.html#evolução-da-infraestrutura-tecnológica-labfsg",
+    "title": "4  Principais Resultados Estratégicos",
+    "section": "4.2 Evolução da infraestrutura Tecnológica (LABFSG)",
+    "text": "4.2 Evolução da infraestrutura Tecnológica (LABFSG)\n\n4.2.1 Estruturação de uma arquitetura distribuída e especializada\n\n\n4.2.2 Consolidação de um ambiente de dados centralizado e confiável\n\n\n4.2.3 Implantação de capacidade analítica operacional integrada\n\n\n4.2.4 Criação de uma camada institucional de acesso e publicação\n\n\n4.2.5 Implementação de estratégia robusta de backup multicamada\n\n\n4.2.6 Estabelecimento de governança operacional sobre ambiente crítico\n\n\n4.2.7 Estruturação formal da organização de dados e diretórios\n\n\n4.2.8 Implementação de ambiente colaborativo controlado\n\n\n4.2.9 Integração entre infraestrutura local e armazenamento externo institucional\n\n\n4.2.10 Consolidação de ambiente preparado para escalabilidade e internalização\nA evolução da infraestrutura ocorreu de forma incremental, com foco em segregação funcional, governança operacional, rastreabilidade, segurança e escalabilidade.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Principais Resultados Estratégicos</span>"
+    ]
+  },
+  {
+    "objectID": "04-resultados.html#blocos-transversais",
+    "href": "04-resultados.html#blocos-transversais",
+    "title": "4  Principais Resultados Estratégicos",
+    "section": "4.3 Blocos Transversais",
+    "text": "4.3 Blocos Transversais\n\n4.3.1 Estudos Desenvolvidos\n\n4.3.1.1 Plataforma de Visualização dos Dados\n\n\n4.3.1.2 Parâmetro de Coordenadas CNEFE x Argis\n\n\n4.3.1.3 Agrupamento dp CNEFE e Uso de Variáveis OFI\n\n\n4.3.1.4 Classificação Fuzzy dos Municípios\n\n\n4.3.1.5 Integração CNEFE + Fuzzy para Definição dos Lotes\n\n\n4.3.1.6 Variáveis Derivadas de Imagens de Satélite\n\n\n4.3.1.7 Mapeamento de Imobiliárias em Municípios &lt; 50 mil Habitantes\n\n\n4.3.1.8 Síntese Integrada dos Estudos\nOs blocos transversais ampliaram a robustez metodológica e reduziram risco de generalização inadequada em contextos territoriais heterogêneos.\n\n\n\n4.3.2 Plataforma para visualização dos dados\nFoi iniciada a configuração da plataforma de visualização com base na solução GeoQualify, incluindo painéis e mecanismos de consulta para suporte analítico e institucional.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Principais Resultados Estratégicos</span>"
+    ]
+  },
+  {
+    "objectID": "05-desafios.html",
+    "href": "05-desafios.html",
+    "title": "5  Desafios e Riscos Estruturais",
+    "section": "",
+    "text": "O desenvolvimento da POC evidenciou desafios técnicos, operacionais e institucionais relacionados à integração de bases heterogêneas, padronização territorial, escalabilidade dos fluxos e estabilidade metodológica.\nNa Etapa 1, os principais riscos concentram-se na qualidade dos dados de mercado, especialmente inconsistências de endereçamento, heterogeneidade de cadastros e limitações de cobertura para lotes vagos e terrenos.\nNa Etapa 2, os desafios envolveram harmonização de bases cartográficas com diferentes níveis de atualização e precisão, além da dependência de validações especializadas para garantir consistência topológica e semântica.\nNa Etapa 3, destacam-se limitações decorrentes da ausência de cadastro urbano nacional padronizado, com necessidade de uso de variáveis proxy e elevada sensibilidade dos modelos a variáveis-chave.\nDe forma geral, a expansão nacional da metodologia dependerá do fortalecimento contínuo da infraestrutura, da governança de dados, da automação de processos e da capacidade de manter rastreabilidade e reprodutibilidade.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Desafios e Riscos Estruturais</span>"
+    ]
+  },
+  {
+    "objectID": "06-ppassos.html",
+    "href": "06-ppassos.html",
+    "title": "6  Próximos Passos",
+    "section": "",
+    "text": "6.1 Ações Prioritárias\nOs próximos passos estão organizados em dois eixos: ações prioritárias de curto e médio prazo e marcos estruturantes para escalabilidade nacional e internalização institucional.\nAs ações prioritárias concentram-se na qualificação dos dados, ampliação territorial, evolução da modelagem, automação dos fluxos e fortalecimento da infraestrutura tecnológica.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Próximos Passos</span>"
+    ]
+  },
+  {
+    "objectID": "06-ppassos.html#ações-prioritárias",
+    "href": "06-ppassos.html#ações-prioritárias",
+    "title": "6  Próximos Passos",
+    "section": "",
+    "text": "6.1.1 Principais Ações Prioritárias\n\nRefinamento dos modelos de avaliação em massa e da PVG\nAmpliação da qualidade e cobertura dos dados integrados ao Data Lake\nEvolução dos processos de geocodificação e validação posicional\nConsolidação das bases cartográficas e variáveis geográficas\nFortalecimento da infraestrutura e dos ambientes de processamento\nConsolidação dos fluxos automatizados de processamento e auditoria\nEvolução das plataformas de visualização e análise\nEstruturação preliminar dos mecanismos de integração e internalização na RFB",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Próximos Passos</span>"
+    ]
+  },
+  {
+    "objectID": "06-ppassos.html#marcos-estruturantes-previstos",
+    "href": "06-ppassos.html#marcos-estruturantes-previstos",
+    "title": "6  Próximos Passos",
+    "section": "6.2 Marcos Estruturantes Previstos",
+    "text": "6.2 Marcos Estruturantes Previstos\nOs marcos previstos representam a transição gradual de solução validada em POC para ambiente operacional escalável e institucionalmente integrado.\n\n6.2.1 Síntese dos Próximos Marcos\n\nValidação técnica dos modelos preliminares junto à RFB\nConsolidação da base territorial validada\nEvolução e ampliação do Data Lake e da arquitetura de dados\nExpansão territorial dos lotes 1 e 2\nConsolidação de mecanismos automatizados de processamento e auditoria\nInício progressivo da Etapa 4 (Internalização e Operação)",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Próximos Passos</span>"
+    ]
+  },
+  {
+    "objectID": "07-entregas.html",
+    "href": "07-entregas.html",
+    "title": "7  Principais Entregas do Trimestre",
+    "section": "",
+    "text": "As entregas do período refletem a consolidação progressiva dos componentes necessários à implementação da POC.\n\nEstrutura inicial da arquitetura de dados com bases integradas\nOrganização e padronização das bases cartográficas da POC\nConjunto inicial de variáveis geoespaciais estruturadas\nModelos preliminares de avaliação em massa\nScripts de processamento e tratamento de dados\nEstrutura de armazenamento e versionamento implantada\nRelatórios técnicos intermediários de acompanhamento\nEstrutura inicial de visualização de resultados (dashboards)",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Principais Entregas do Trimestre</span>"
+    ]
+  },
+  {
+    "objectID": "08-conclusao.html",
+    "href": "08-conclusao.html",
+    "title": "8  Considerações Finais",
+    "section": "",
+    "text": "O primeiro ciclo trimestral do Projeto TED RFB/UFSC demonstrou avanço consistente na estruturação técnica, metodológica e operacional da solução para determinação de Valores de Referência de imóveis urbanos.\nA POC de Florianópolis consolidou-se como ambiente central de validação e amadurecimento do fluxo completo, da ingestão e qualificação dos dados até a geração de modelos e produtos territoriais associados à PVG.\nOs resultados evidenciam potencial de replicação nacional da metodologia, ao mesmo tempo em que apontam desafios importantes: qualidade e padronização de dados, tratamento de lotes vagos, dependência de variáveis proxy, automação de fluxos e preparação para internalização institucional.\nO material técnico detalhado de cada etapa integra o relatório na forma de apêndices, assegurando transparência, rastreabilidade e aprofundamento documental das evidências produzidas.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Considerações Finais</span>"
     ]
   }
 ]

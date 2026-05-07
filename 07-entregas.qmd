@@ -1,1 +1,12 @@
 # Principais Entregas do Trimestre
+
+As entregas do período refletem a consolidação progressiva dos componentes necessários à implementação da POC.
+
+- Estrutura inicial da arquitetura de dados com bases integradas
+- Organização e padronização das bases cartográficas da POC
+- Conjunto inicial de variáveis geoespaciais estruturadas
+- Modelos preliminares de avaliação em massa
+- Scripts de processamento e tratamento de dados
+- Estrutura de armazenamento e versionamento implantada
+- Relatórios técnicos intermediários de acompanhamento
+- Estrutura inicial de visualização de resultados (dashboards)

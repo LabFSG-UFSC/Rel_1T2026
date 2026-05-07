@@ -1,3 +1,20 @@
 # Apresentação {.unnumbered}
 
+A Universidade Federal de Santa Catarina (UFSC), no âmbito do Termo de Execução Descentralizada (TED) firmado com a Receita Federal do Brasil (RFB), com gestão administrativa e financeira da Fundação de Ensino e Engenharia de Santa Catarina (FEESC), apresenta o relatório técnico referente ao primeiro ciclo de execução do projeto de desenvolvimento da metodologia de determinação do Valor de Referência para o Cadastro Imobiliário Brasileiro.
 
+O período coberto neste relatório concentra a fase inicial de mobilização e estruturação técnica, com foco na organização das bases de dados, na execução da Prova de Conceito (POC) em Florianópolis/SC e no avanço das frentes de Observatório do Mercado Imobiliário, Bases Cartográficas Territoriais e Modelagem.
+
+Principais dados institucionais:
+
+- Instrumento: Termo de Execução Descentralizada (TED) RFB/UFSC
+- Data da assinatura: 23/12/2026
+- Início das atividades: 26/12/2025
+- Duração: 60 meses
+- Valor: R$ 7.800.000,00
+- Nº Contrato/Convênio FEESC: 174/2025
+- Nº do processo: 23080.064460/2019-37
+- Coordenação geral: Prof. Everton da Silva
+
+A equipe está organizada em Comitê Técnico e Comitê Administrativo, com atuação integrada para garantir condução metodológica, execução operacional e governança do projeto.
+
+![Quadro 1 - Equipe Técnica Executora UFSC/FEESC](img/geral/fig-quadro-01-equipe-tecnica.png)

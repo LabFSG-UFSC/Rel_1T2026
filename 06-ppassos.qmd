@@ -1,9 +1,31 @@
 # Próximos Passos
 
+Os próximos passos estão organizados em dois eixos: ações prioritárias de curto e médio prazo e marcos estruturantes para escalabilidade nacional e internalização institucional.
+
 ## Ações Prioritárias
+
+As ações prioritárias concentram-se na qualificação dos dados, ampliação territorial, evolução da modelagem, automação dos fluxos e fortalecimento da infraestrutura tecnológica.
 
 ### Principais Ações Prioritárias
 
+- Refinamento dos modelos de avaliação em massa e da PVG
+- Ampliação da qualidade e cobertura dos dados integrados ao Data Lake
+- Evolução dos processos de geocodificação e validação posicional
+- Consolidação das bases cartográficas e variáveis geográficas
+- Fortalecimento da infraestrutura e dos ambientes de processamento
+- Consolidação dos fluxos automatizados de processamento e auditoria
+- Evolução das plataformas de visualização e análise
+- Estruturação preliminar dos mecanismos de integração e internalização na RFB
+
 ## Marcos Estruturantes Previstos
 
+Os marcos previstos representam a transição gradual de solução validada em POC para ambiente operacional escalável e institucionalmente integrado.
+
 ### Síntese dos Próximos Marcos
+
+- Validação técnica dos modelos preliminares junto à RFB
+- Consolidação da base territorial validada
+- Evolução e ampliação do Data Lake e da arquitetura de dados
+- Expansão territorial dos lotes 1 e 2
+- Consolidação de mecanismos automatizados de processamento e auditoria
+- Início progressivo da Etapa 4 (Internalização e Operação)

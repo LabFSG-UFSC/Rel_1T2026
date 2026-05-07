@@ -1,1 +1,17 @@
 # Status Geral do Projeto por Etapa
+
+A avaliação do período foi realizada com base no avanço físico das atividades previstas no plano de trabalho, considerando a POC de Florianópolis e a estratégia de expansão territorial por lotes.
+
+Foi estruturado cronograma físico de execução com painéis de monitoramento para consolidar volume processado, registros estruturados, variáveis geradas e modelos testados.
+
+![Figura 1 - Estados correspondentes às capitais selecionadas por lote](img/geral/fig-01-lotes-capitais.png)
+
+![Figura 2 - Representatividade percentual dos endereços CNEFE por centralidade urbana](img/geral/fig-02-cnefe-centralidade.png)
+
+![Figura 3 - Distribuição espacial do percentual de representação dos endereços por município](img/geral/fig-03-distribuicao-enderecos.jpeg)
+
+A estratégia de escalonamento nacional foi construída com base no CNEFE, priorizando capitais e centros regionais para ampliar cobertura territorial com controle metodológico.
+
+![Figura 4 - Visão consolidada do status geral por etapas e lotes](img/geral/fig-04-status-etapas.png)
+
+![Legenda de apoio da Figura 4](img/geral/fig-04-status-legenda.png)

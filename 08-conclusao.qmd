@@ -1,1 +1,9 @@
 # Considerações Finais
+
+O primeiro ciclo trimestral do Projeto TED RFB/UFSC demonstrou avanço consistente na estruturação técnica, metodológica e operacional da solução para determinação de Valores de Referência de imóveis urbanos.
+
+A POC de Florianópolis consolidou-se como ambiente central de validação e amadurecimento do fluxo completo, da ingestão e qualificação dos dados até a geração de modelos e produtos territoriais associados à PVG.
+
+Os resultados evidenciam potencial de replicação nacional da metodologia, ao mesmo tempo em que apontam desafios importantes: qualidade e padronização de dados, tratamento de lotes vagos, dependência de variáveis proxy, automação de fluxos e preparação para internalização institucional.
+
+O material técnico detalhado de cada etapa integra o relatório na forma de apêndices, assegurando transparência, rastreabilidade e aprofundamento documental das evidências produzidas.

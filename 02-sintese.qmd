@@ -1,19 +1,39 @@
 # Síntese do Avanço no Período
 
+A síntese do período evidencia avanço integrado nas frentes de dados, modelagem, infraestrutura e governança, com amadurecimento progressivo da POC de Florianópolis e consolidação dos elementos-base para escalabilidade.
+
 ## Visão geral do progresso técnico
+
+No período analisado, observou-se evolução consistente na organização das bases de dados, no tratamento das informações e no desenvolvimento inicial dos modelos de avaliação em massa. A arquitetura de dados foi fortalecida para permitir processamento e análise com maior rastreabilidade.
 
 ## Consolidação das principais frentes de trabalho
 
+As frentes consolidadas no trimestre articulam dados, território, modelagem, infraestrutura e governança, com integração operacional entre atividades técnicas e suporte institucional.
+
 ### Estruturação da arquitetura de dados e integração de bases heterogêneas
+
+Foram realizadas padronização, limpeza, compatibilização e consolidação de bases de diferentes fontes, com foco em consistência e reprodutibilidade analítica.
 
 ### Organização e validação das bases territoriais
 
+As bases cartográficas da POC foram organizadas com validações geométricas e topológicas para reduzir inconsistências e sustentar análises espaciais confiáveis.
+
 ### Definição e tratamento de variáveis geoespaciais e cadastrais
+
+As variáveis dos modelos foram selecionadas, tratadas e estruturadas com foco em capacidade explicativa e qualidade preditiva, incluindo variáveis derivadas.
 
 ### Desenvolvimento inicial dos modelos de avaliação em massa
 
+Foram conduzidos testes preliminares de modelagem para validação incremental da metodologia e identificação de ajustes para os próximos ciclos.
+
 ### Implementação da infraestrutura tecnológica no laboratório
+
+Houve implantação de ambiente computacional dedicado, com recursos de armazenamento, processamento e controle de acesso para dar suporte às rotinas do projeto.
 
 ### Estruturação dos fluxos de governança e validação técnica
 
+Foi estabelecido fluxo de decisão e validação técnica para formalização das entregas e manutenção de controle de qualidade ao longo da execução.
+
 ### Realização de intercâmbios técnicos para fortalecimento metodológico
+
+Intercâmbios com instituições e especialistas contribuíram para incorporar boas práticas e fortalecer a consistência metodológica das soluções adotadas.

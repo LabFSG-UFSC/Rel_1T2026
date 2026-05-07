@@ -1,66 +1,130 @@
 # Principais Resultados Estratégicos
 
+Os resultados estratégicos do período foram organizados em três dimensões complementares: validação da POC (Etapas 1 a 3), evolução da infraestrutura tecnológica e blocos transversais de suporte metodológico.
+
 ## Validação da POC
+
+O detalhamento do fluxo metodológico completo encontra-se no Apêndice 1. Nesta seção são destacados os resultados consolidados no período para cada etapa da POC.
 
 ### Etapa 1: Observatório do Mercado Imobiliário
 
 #### Construção de uma base confiável de ofertas imobiliárias
 
+Consolidação de base inicial de ofertas com ganhos de cobertura e consistência para uso analítico.
+
 #### Estruturação de um pipeline completo de dados
+
+Estruturação do pipeline com ingestão, limpeza, padronização, enriquecimento e armazenamento versionado.
 
 #### Uso do CNEFE como referência oficial de validação posicional
 
+Aplicação do CNEFE como referência de validação para ampliar rastreabilidade da qualidade posicional.
+
 #### Desenvolvimento e aplicação do Geocoder V3
+
+Evolução de rotinas internas de geocodificação para reduzir ambiguidades e elevar taxa de endereços posicionados.
 
 #### Processamento expressivo da base da POC Florianópolis
 
+Processamento em escala da base da POC, com ganho operacional e consistência entre ciclos.
+
 #### Criação de filtros independentes de qualidade
+
+Implementação de filtros de qualidade para reduzir ruído e melhorar estabilidade dos insumos de modelagem.
 
 #### Geração da base duplamente validada
 
+Consolidação de base com dupla validação (dados e território), aumentando confiabilidade para análises.
+
 #### Melhoria da cobertura analítica com vias curtas
+
+Ampliação da cobertura analítica em cenários de baixa completude de endereçamento.
 
 #### Identificação de limitações para lotes e terrenos
 
+Mapeamento de limitações estruturais para lotes vagos e terrenos em função da menor densidade de dados.
+
 #### Validação comparativa com Google Maps
+
+Comparações de apoio para inspeção de aderência posicional em casos críticos.
 
 ### Etapa 2: Bases Cartográficas Territoriais
 
 #### Transformação da Etapa 2 em frente produtiva real
 
+Conversão da frente cartográfica em operação contínua de produção e validação.
+
 #### Implantação do fluxo Bronze-Prata-Ouro
+
+Estruturação em camadas de maturidade para controlar qualidade e evolução dos dados territoriais.
 
 #### Produção territorial em 11 municípios
 
+Ampliação da produção cartográfica com aplicação do fluxo em novos contextos urbanos.
+
 #### Consolidação da POC Florianópolis como entrega integrada
+
+Integração entre base territorial, dados de mercado e processos de modelagem.
 
 #### Estruturação do dicionário e modelagem de dados espaciais
 
+Padronização semântica e estrutural para garantir interoperabilidade e rastreabilidade.
+
 #### Geração de variáveis geográficas para avaliação em massa
+
+Produção de variáveis geográficas em múltiplas escalas para suporte aos modelos.
 
 #### Padronização de arquivos, nomenclatura e versionamento
 
+Definição de convenções operacionais para reduzir retrabalho e manter governança de dados.
+
 #### Implantação de infraestrutura geoespacial com PostGIS
+
+Consolidação de base geoespacial com foco em desempenho e consistência topológica.
 
 #### Qualidade espacial e consistência topológica como critério de aceite
 
+Aplicação de critérios de validação espacial para aprovação de camadas e produtos.
+
 #### Preparação da etapa para a escalabilidade
 
-### Etapa 3: Bases Cartográficas Territoriais
+Planejamento de expansão com redução gradual de dependências manuais.
+
+### Etapa 3: Modelagem e Planta de Valores Genéricos (PVG)
 
 #### Desempenho dos modelos econométricos
 
+Execução de testes iniciais com resultados preliminares para imóveis edificados e lotes.
+
 #### Modelo preliminar de lotes - base intermediária
+
+Construção de modelo preliminar para lotes com foco em consistência estatística e territorial.
 
 #### Classificação objetiva de padrão construtivo
 
+Estruturação de critérios objetivos para diferenciação de padrões construtivos.
+
 #### Regionalização geoespacial - submercados
+
+Definição inicial de submercados com base em características territoriais e comportamento de preços.
 
 #### Integração entre modelos
 
+Fluxo integrado entre modelos econométricos e componentes territoriais para geração de superfícies de valor.
+
 #### Outputs territoriais gerados
 
+Foram gerados outputs preliminares de apoio à leitura espacial dos resultados.
+
 #### Estratégia de modelagem escalável e controlada
+
+Estratégia orientada à replicação gradual, controle metodológico e auditabilidade.
+
+![Figura 5 - Variáveis utilizadas (imóveis edificados)](img/pvg/fig-05-variaveis-edificados.png)
+
+![Figura 6 - Variáveis utilizadas (lotes e terrenos)](img/pvg/fig-06-variaveis-lotes.png)
+
+![Figura 7 - Fluxo integrado dos modelos](img/pvg/fig-07-fluxo-modelos.png)
 
 ## Evolução da infraestrutura Tecnológica (LABFSG)
 
@@ -84,6 +148,8 @@
 
 ### Consolidação de ambiente preparado para escalabilidade e internalização
 
+A evolução da infraestrutura ocorreu de forma incremental, com foco em segregação funcional, governança operacional, rastreabilidade, segurança e escalabilidade.
+
 ## Blocos Transversais
 
 ### Estudos Desenvolvidos
@@ -104,4 +170,16 @@
 
 #### Síntese Integrada dos Estudos
 
+Os blocos transversais ampliaram a robustez metodológica e reduziram risco de generalização inadequada em contextos territoriais heterogêneos.
+
 ### Plataforma para visualização dos dados
+
+Foi iniciada a configuração da plataforma de visualização com base na solução GeoQualify, incluindo painéis e mecanismos de consulta para suporte analítico e institucional.
+
+![Figura 8 - Exemplos da interface da plataforma (1)](img/transversal/fig-08-plataforma-01.png)
+![Figura 8 - Exemplos da interface da plataforma (2)](img/transversal/fig-08-plataforma-02.png)
+![Figura 8 - Exemplos da interface da plataforma (3)](img/transversal/fig-08-plataforma-03.png)
+![Figura 8 - Exemplos da interface da plataforma (4)](img/transversal/fig-08-plataforma-04.png)
+![Figura 8 - Exemplos da interface da plataforma (5)](img/transversal/fig-08-plataforma-05.png)
+![Figura 8 - Exemplos da interface da plataforma (6)](img/transversal/fig-08-plataforma-06.png)
+![Figura 8 - Exemplos da interface da plataforma (7)](img/transversal/fig-08-plataforma-07.png)
