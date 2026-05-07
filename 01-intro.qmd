@@ -1,3 +1,13 @@
 # Introdução
 
+O presente relatório técnico apresenta o avanço das atividades desenvolvidas no Projeto TED firmado entre RFB e UFSC, voltado à construção, validação e institucionalização de metodologia nacional para determinação de Valores de Referência de imóveis urbanos, em consonância com a Lei Complementar nº 214/2025.
+
+O projeto teve início em 26 de dezembro de 2025. Os primeiros meses concentraram mobilização, estruturação da equipe técnica, organização dos ambientes de trabalho e alinhamento estratégico entre as instituições envolvidas. Nesse período, o Plano de Gerenciamento do Projeto foi apresentado em 03/02/2026 e formalmente entregue em 05/02/2026.
+
+O ciclo coberto neste relatório compreende fevereiro a abril de 2026, com ênfase na POC de Florianópolis, utilizada como ambiente de validação metodológica, tecnológica e operacional para futura expansão nacional.
+
 ## Objetivo do Relatório
+
+Consolidar, de forma sistematizada, as evidências técnicas e operacionais das atividades executadas no período, organizando os principais resultados alcançados, os fluxos estruturados, os produtos gerados e os desafios identificados.
+
+Também busca evidenciar o grau de maturidade das soluções desenvolvidas, com foco em estruturação de dados, modelagem de avaliação em massa e preparação para internalização dos processos.

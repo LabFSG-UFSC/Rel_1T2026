@@ -1,1 +1,11 @@
 # Desafios e Riscos Estruturais
+
+O desenvolvimento da POC evidenciou desafios técnicos, operacionais e institucionais relacionados à integração de bases heterogêneas, padronização territorial, escalabilidade dos fluxos e estabilidade metodológica.
+
+Na Etapa 1, os principais riscos concentram-se na qualidade dos dados de mercado, especialmente inconsistências de endereçamento, heterogeneidade de cadastros e limitações de cobertura para lotes vagos e terrenos.
+
+Na Etapa 2, os desafios envolveram harmonização de bases cartográficas com diferentes níveis de atualização e precisão, além da dependência de validações especializadas para garantir consistência topológica e semântica.
+
+Na Etapa 3, destacam-se limitações decorrentes da ausência de cadastro urbano nacional padronizado, com necessidade de uso de variáveis proxy e elevada sensibilidade dos modelos a variáveis-chave.
+
+De forma geral, a expansão nacional da metodologia dependerá do fortalecimento contínuo da infraestrutura, da governança de dados, da automação de processos e da capacidade de manter rastreabilidade e reprodutibilidade.
