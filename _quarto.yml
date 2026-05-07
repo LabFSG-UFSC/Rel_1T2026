@@ -1,0 +1,45 @@
+project:
+  type: book
+  output-dir: docs
+
+execute:
+  echo: false
+  message: false
+  warning: false
+  
+book:
+  title: "Relatório 1T2026"
+  author: "UFSC"
+  date: today
+ # date-format: long
+  date-format: "MMMM, YYYY"
+  
+  chapters:
+    - index.qmd
+    - 01-intro.qmd
+    - 02-sintese.qmd
+    - 03-status.qmd
+    - 04-resultados.qmd
+    - 05-desafios.qmd
+    - 06-ppassos.qmd
+    - 07-entregas.qmd
+    - 08-conclusao.qmd
+    - references.qmd
+  appendices:
+    - 91-fluxo.qmd
+    - 92-metodo-etapa01.qmd
+    - 93-metodo-etapa02.qmd
+    - 94-metodo-etapa03.qmd
+    
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
