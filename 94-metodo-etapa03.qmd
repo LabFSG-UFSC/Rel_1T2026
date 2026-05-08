@@ -577,25 +577,23 @@ superfície de valores unitários de lotes mostrada na
 
 ### Outros modelos
 
-Nesta seção são apresentados os resultados de outros modelos
-estatísticos elaborados para a POC Florianópolis. São estudos de modelos
-de aprendizado de máquina. Tais modelos não foram utilizados para os
-resultados finais da POC, por dois motivos: primeiro, os modelos foram
-ajustados em paralelo ao andamento previsto para a POC; segundo, existe
-a dificuldade de interpretabilidade dos modelos de aprendizado de
-máquina. Como ilustrado na @fig-fluxo-modelagem, os modelos de
-aprendizado de máquina devem ser utilizados ao longo do projeto, porém
-os seus resultados deverão ser utilizados como um caminho para a
-estimação linear dos valores finais, mantendo assim a
-interpretabilidade.
+Nesta seção são apresentados os resultados de outros modelos estatísticos
+elaborados para a PoC Florianópolis. São estudos de modelos de aprendizado de
+máquina. Tais modelos não foram utilizados para os resultados finais da PoC, 
+por dois motivos: primeiro, os modelos foram ajustados em paralelo ao andamento
+previsto para a PoC; segundo, existe a dificuldade de interpretabilidade dos
+modelos de aprendizado de máquina. Como ilustrado na @fig-fluxo-modelagem, os
+modelos de aprendizado de máquina devem ser utilizados ao longo do projeto, 
+porém os seus resultados deverão ser utilizados como um caminho para a estimação
+linear dos valores finais, mantendo assim a interpretabilidade.
 
 #### Estimação de valores unitários (VU) de lotes em Florianópolis (SC)
 
 #### Objetivo
 
-Estimar valores absolutos e unitários de lotes em Florianópolis a partir
-de anúncios raspados no Viva Real em 01/11/2025, e gerar superfície de
-valores unitários estimados.
+Estimar valores absolutos e unitários de lotes em Florianópolis a partir de 
+anúncios raspados no Viva Real em 01/11/2025, e gerar superfície de valores 
+unitários estimados.
 
 #### Bases de dados utilizadas
 
@@ -605,287 +603,275 @@ valores unitários estimados.
 
 ##### Seleção de observações
 
-A partir do campo `arcgis_precisao`foram filtradas as observações com
-valores iguais a 3 ou 4. Em `tipo_negocio` foram filtradas "venda" ou
-"venda/aluguel". Em `tipo_imov` filtraram-se `Apartamento`, `Casa`,
-`Casa de Condomínio`, `Cobertura` e `Flat`. Em `situacao`, foram
-filtradas as classificadas em "Urbana".
+A partir do campo `arcgis_precisao`foram filtradas as observações
+com valores iguais a 3 ou 4. Em `tipo_negocio` foram filtradas "venda" ou 
+"venda/aluguel". Em `tipo_imov` filtraram-se `Apartamento`, `Casa`, 
+`Casa de Condomínio`, `Cobertura` e `Flat`. Em `situacao`, foram filtradas as 
+classificadas em "Urbana".
 
-##### Geração de *dummies* de tipos de uso
+##### Geração de _dummies_ de tipos de uso
 
-Foram geradas variáveis *dummy* para os tipos de uso constantes na base
-de dados: `d\_apartamento`, `d\_casa`, `d\_casa\_cond`, `d\_cobertura` e
-`d\_flat`.
+Foram geradas variáveis _dummy_ para os tipos de uso constantes na base de
+dados: `d_apartamento`, `d_casa`, `d_casa_cond`, `d_cobertura` e `d_flat`.
 
 ##### Imputação de valores
 
-Às observações com valores nulos (0) ou ausentes (NA), foram imputados
-valores, a partir da média dos k vizinhos mais próximos - KNN (k = 8),
-para as seguintes variáveis:
+Às observações com valores nulos (0) ou ausentes (NA), foram imputados valores,
+a partir da média dos k vizinhos mais próximos - KNN (k = 8), para as seguintes
+variáveis:
 
--   `val_iptu`: remoção prévia de valores superiores a R\$ 120 mil,
-    considerados *outliers* após inspeção visual (valores
-    discrepantemente altos sem padrão espacial discernível). Foram
-    realizadas 8 remoções. Apenas os valores `NA` foram imputados, pois
-    valores nulos de IPTU podem corresponder à realidade no caso de
-    imóveis isentos;
-
--   `ca_max`: corresponde ao Coeficiente de Aproveitamento máximo na
-    localização do lote. Além dos valores ausentes, foram imputados os
-    valores nulos, pois não se considera realista valores nulos para
-    imóveis edificados;
-
--   `to_max`: corresponde à Taxa de Ocupação máxima na localização do
-    lote. Foram imputados valores ausentes e nulos, pelas mesmas razões
-    do `ca_max`;
-
--   `renda_med_pct`: corresponde à renda média per capita do setor
-    censitário. Dada a inexistência de valores nulos, apenas os valores
-    ausentes foram imputados;
-
--   `classe\_declividade`: corresponde à classe de declividade da
-    localização do lote, variando de 1 = plano a 5 = montanhoso. Após
-    conversão do campo para a classe *integer*, imputaram-se apenas os
-    valores ausentes, dada a inexistência de valores nulos;
-
--   `var_ren_media`: corresponde à variância da renda média no setor
-    censitário. Foram imputados apenas os valores ausentes, dada a
-    inexistência de valores nulos.
+- `val_iptu`: remoção prévia de valores superiores a R\$ 120 mil, considerados 
+_outliers_ após inspeção visual (valores discrepantemente altos sem padrão 
+espacial discernível). Foram realizadas 8 remoções. Apenas os valores `NA` foram 
+imputados, pois valores nulos de IPTU podem corresponder à realidade no caso de 
+imóveis isentos;
+    
+- `ca_max`: corresponde ao Coeficiente de Aproveitamento máximo na localização 
+do lote. Além dos valores ausentes, foram imputados os valores nulos, pois não 
+se considera realista valores nulos para imóveis edificados;
+    
+- `to_max`: corresponde à Taxa de Ocupação máxima na localização do lote. Foram
+imputados valores ausentes e nulos, pelas mesmas razões do `ca_max`;
+    
+- `renda_med_pct`: corresponde à renda média per capita do setor censitário. 
+Dada a inexistência de valores nulos, apenas os valores ausentes foram imputados;
+    
+- `classe_declividade`: corresponde à classe de declividade da localização do 
+lote, variando de 1 = plano a 5 = montanhoso. Após conversão do campo para a 
+classe *integer*, imputaram-se apenas os valores ausentes, dada a 
+inexistência de valores nulos;
+    
+*   `var_ren_media`: corresponde à variância da renda média no setor censitário.
+Foram imputados apenas os valores ausentes, dada a inexistência de valores nulos.
+    
 
 ##### Remoção de observações com valores NA ou artificialmente baixos para Área total
 
-Todas as observações cuja variável `Area_total` exibisse valores
-ausentes ou menores ou iguais a 10 foram removidas. Além disso, foram
-removidas todas as observações com valores ausentes nas variáveis
-`qtd_vg_garagem`, `qtd_suites`, `area_total`.
+Todas as observações cuja variável `Area_total` exibisse valores ausentes ou
+menores ou iguais a 10 foram removidas. Além disso, foram removidas todas as
+observações com valores ausentes nas variáveis `qtd_vg_garagem`, `qtd_suites`,
+`area_total`.
 
-##### Taxa condominial como variável *dummy*
+##### Taxa condominial como variável _dummy_
 
-A muitos imóveis nâo incide taxa condominial. Por essa razão, foram
-criadas colunas para valores `NA` de `taxa_condominial` (como variável
-dummy) e imputados valores 0 para `NAs` nas colunas originais.
+A muitos imóveis nâo incide taxa condominial. Por essa razão, foram criadas
+colunas para valores `NA` de `taxa_condominial` (como variável dummy) e imputados
+valores 0 para `NAs` nas colunas originais.
 
 ##### Tranformação logarítmica
 
-De modo a reduzir a assimetria da distribuição das variáveis, tanto a
-dependente como as independentes, com exceção das *dummies*, foram
-logaritmizadas. Antes, os valores nulos foram transformados segundo as
-respectivas distribuições das variáveis e valores mínimos, conforme
-rotina a seguir:
+De modo a reduzir a assimetria da distribuição das variáveis, tanto a dependente
+como as independentes, com exceção das _dummies_, foram logaritmizadas. Antes,
+os valores nulos foram transformados segundo as respectivas distribuições das
+variáveis e valores mínimos, conforme rotina a seguir:
 
--   `area_anun`, `area_total` $<= 10 \rightarrow$ removidos;
-
--   `qtd_lote`, `val_iptu`, `dens_demo_hab_km2` $= 0 \rightarrow 0,1$;
-
--   `dens_equip\_educ`, `dens_equip_saud`, `dist_area_inund`
-    $= 0 \rightarrow 0,01$;
-
--   `qtd_vg_garagem`, `qtd_suites`, $= 0 \rightarrow 0,1$;
-
--   `dist_litoral`, `total_pess`, $= 0 \rightarrow 1,0$;
-
--   `lote_medio_m2` $= 0 \rightarrow 10,0$
+- `area_anun`, `area_total` $\leq 10 \rightarrow \text{removidos}$;
+  
+- `qtd_lote`, `val_iptu`, `dens_demo_hab_km2` $= 0 \rightarrow 0,1$;
+  
+- `dens_equip_educ`, `dens_equip_saud`, `dist_area_inund` $= 0 \rightarrow 0,01$;
+  
+- `qtd_vg_garagem`, `qtd_suites`, $= 0 \rightarrow 0,1$;
+  
+- `dist_litoral`, `total_pess`, $= 0 \rightarrow 1,0$;
+  
+- `lote_medio_m2` $= 0 \rightarrow 10,0$
+    
 
 ##### Detecção de outliers por regressão robusta com M-estimadores
 
-A regressão robusta é uma técnica de regressão desenvolvida para reduzir
-a influência de outliers ou de violações pressupostos da regressão
-linear convencional. Ao contrário do método dos Mínimo Quadrados
-Ordinários (MQO), a regressão robusta penaliza menos os erros extremos,
-diminuindo o impacto de pontos fora do padrão. Assim, essas observações
-recebem pesos (w) menores (Raza *et al.,* 2024).
+A regressão robusta é uma técnica de regressão desenvolvida para reduzir a
+influência de outliers ou de violações pressupostos da regressão linear
+convencional. Ao contrário do método dos Mínimo Quadrados Ordinários (MQO), a
+regressão robusta penaliza menos os erros extremos, diminuindo o impacto de
+pontos fora do padrão. Assim, essas observações recebem pesos (w) menores 
+[@EnhancingPerformancePresence2024].
 
 Antes da regressão robusta, performou-se uma regressão linear simples
-exploratória (`OLS_exploratoria`) para verificação de eventuais
-variáveis não significativas e de multicolinearidade. As variáveis
-empregadas, logaritmizadas, foram definidas como:
+exploratória (`OLS_exploratoria`) para verificação de eventuais variáveis não
+significativas e de multicolinearidade. As variáveis empregadas, logaritmizadas,
+foram definidas como:
 
--   *Variável dependente*: valor de venda anunciado
-    (`log_anun_val_venda`);
+- _Variável dependente_: valor de venda anunciado (`log_anun_val_venda`);
+    
+- _Variáveis independentes_: área privativa (`log_area_anun`); n° de vagas de 
+garagem (`log_qtd_vg_garagem`); n° de suítes (`log_qtd_suites`); n° de 
+banheiros (` log_qtd_banheiros` ); taxa de condomínio (` log_tx_condom`); valor 
+de IPTU (`log_val_iptu`); área total do lote (`log_area_total`); coeficiente de 
+aproveitamento máximo (`log_ca_max`); taxa de ocupação máxima (`log_to_max`); 
+densidade demográfica em hab/km² (`log_dens_demo_hab_km2`); densidade de 
+equipamentos educacionais (`log_dens_equip_educ`); densidade de equipamentos de 
+saúde (`log_dens_equip_saud`); distância ao Centro de Florianópolis 
+(`log_dist_centro`); distância ao litoral (`log_dist_litoral`); área média do lote
+em m² (log_lote_medio_m2); quantidade de domicílios (`log_qtd_domic`) total de 
+pessoas residentes (`log_total_pess`); variação da renda média 
+(`log_var_ren_media`); renda média per capita (log_renda_med_pct); classe de 
+declividade (`log_classe_declividade`); distância a áreas inundáveis 
+(`log_dist_area_inund`); quantidade de lotes (`log_qtd_lotes`), tipo de imóvel -
+dummy (`d_casa`, `d_casa_cond`, `d_cobertura`, `d_flat`) e dummy de taxa de 
+condomínio (`tx_cond_na`).
+    
 
--   *Variáveis independentes*: área privativa (`log_area_anun`); n° de
-    vagas de garagem (`log_qtd_vg_garagem`); n° de suítes
-    (`log_qtd_suites`); n° de banheiros (`log_qtd_banheiros` ); taxa de
-    condomínio (`log_tx_condom`); valor de IPTU (`log_val_iptu`); área
-    total do lote (`log_area_total`); coeficiente de aproveitamento
-    máximo (`log_ca_max`); taxa de ocupação máxima (`log_to_max`);
-    densidade demográfica em hab/km² (`log_dens_demo_hab_km2`);
-    densidade de equipamentos educacionais (`log_dens_equip_educ`);
-    densidade de equipamentos de saúde (`log_dens_equip_saud`);
-    distância ao Centro de Florianópolis (`log_dist_centro`); distância
-    ao litoral (`log_dist_litoral`); área média do lote em m²
-    (log_lote_medio_m2); quantidade de domicílios (`log_qtd_domic`)
-    total de pessoas residentes (`log_total_pess`); variação da renda
-    média (`log_var_ren_media`); renda média per capita
-    (log_renda_med_pct); classe de declividade
-    (`log_classe_declividade`); distância a áreas inundáveis
-    (`log_dist_area_inund`); quantidade de lotes (`log_qtd_lotes`), tipo
-    de imóvel - dummy (`d_casa`, `d_casa_cond`, `d_cobertura`, `d_flat`)
-    e dummy de taxa de condomínio (`tx_cond_na`).
+Os resultados demonstram a não significância de `log_dens_equip_educ`
+(p = 0.6544) e ` log_dist_centro` (p = 0.2430), removidas.
 
-Os resultados demonstram a não significância de `log\_dens\_equip\_educ`
-(p = 0.6544) e `log\_dist\_centro` (p = 0.2430), removidas.
+Em seguida foi executado o modelo robusto (`modelo_robusto_Lotes`), com a mesma
+especificação da `OLS_exploratoria`, exceto as varáveis removidas na etapa 
+anterior.
 
-Em seguida foi executado o modelo robusto (modelo_robusto_Lotes), com a
-mesma especificação da OLS_exploratoria, exceto as varáveis removidas na
-etapa anterior.
-
-Após a extração dos pesos *w* e de sua distribuição foram consideradas
-outliers as 5% observações com menores pesos, o que corresponde a *w* \<
-0.6137, as quais foram então excluídas.
+Após a extração dos pesos _w_ e de sua distribuição foram consideradas outliers 
+as 5% observações com menores pesos, o que corresponde a _w_ &lt; 0.6137, as 
+quais foram então excluídas.
 
 ##### Variável Padrão construtivo (PC)
 
 Foi criada uma variável `Padrão Construtivo` (PC), com clusterização a
-partir de `anun\_val\_venda` e `renda\_med\_pct`. Foram definidas 3
-classes (k = 3): baixo padrão, médio padrão e alto padrão.
+partir de `anun_val_venda` e `renda_med_pct`. Foram 
+definidas 3 classes (k = 3): baixo padrão, médio padrão e alto padrão.
 
-Um método para a previsão espacial de clusters é a *kigagem indicativa*,
-a qual revela a probabilidade de uma variável pertencer a uma
-determinada classe no espaço, gerando uma classificação final a partir
-do maior valor de probabilidade para aquele ponto. Faz sentido porque
-tanto valor como renda exibem forte componente espacial. Portanto, PC
-também exibe alta correlação espacial.
+Um método para a previsão espacial de clusters é a _krigagem indicativa_, a qual 
+revela a probabilidade de uma variável pertencer a uma determinada classe no 
+espaço, gerando uma classificação final a partir do maior valor de probabilidade
+para aquele ponto. Faz sentido porque tanto valor como renda exibem forte 
+componente espacial. Portanto, PC também exibe alta correlação espacial.
 
-No entanto, a krigagem indicativa revelou-se extremamente onerosa
-computacionalmente. Adota-se, portanto, o k-NN espacial, mais leve
-computacionalmente e conceitualmente próximo à krigagem indicativa (Miao
-*et al.*, 2025). Este método Compara com os k-vizinhos mais próximos e
-verifica a que clusters (PC) eles pertencem, adotando-se uma abordagem
-probabilística (% de vizinhos em cada classe). O número de vizinhos foi
-definido como k = 8.
+No entanto, a krigagem indicativa revelou-se extremamente onerosa 
+computacionalmente. Adota-se, portanto, o k-NN espacial, mais leve 
+computacionalmente e conceitualmente próximo à krigagem indicativa 
+[@ApplicationSemivariogrambasedKNN2026]. Este método Compara com os k-vizinhos 
+mais próximos e verifica a que clusters (PC) eles pertencem, adotando-se uma 
+abordagem probabilística (% de vizinhos em cada classe). O número de vizinhos 
+foi definido como k = 8.
+
 
 #### Modelo OLS
 
-O primeiro modelo produzido foi uma regressão linear simples (OLS) com a
-mesma especificação da regressão robusta, através da função `lm` (nativa
-do R). O modelo OLS exibiu os seguintes resultados:
+O primeiro modelo produzido foi uma regressão linear simples (OLS) com a mesma
+especificação da regressão robusta, através da função `lm` (nativa do R).
+O modelo OLS exibiu os seguintes resultados:
 
--   Desvio padrão residual = 0.2917 em 45375 graus de liberdade;
--   R²-ajustado = 0.8249;
--   Estatística F = 8225 em 26 e 45375 graus de liberdade;
--   $p < 2.2e-16$.
+- Desvio padrão residual = 0.2917 em 45375 graus de liberdade;
+- R²-ajustado = 0.8249;
+- Estatística F = 8225 em 26 e 45375 graus de liberdade;
+- $p < 2.2e-16$.
+    
 
-Os quatro gráficos diagnósticos gerados (*Residuals vs Fitted*, *Q-Q
-Residuals*, *Scale-Location*, *Residuals vs Leverage*) revelam pequena
-não linearidade residual, resíduos não normalmente distribuídos,
-heterocedasticidade moderada e ausência de outliers ou observações muito
-influentes. A não linearidade e não normalidade podem dever-se à
-dependência e heterogeneidade espacial. Assim, foi efetuada uma análise
-espacial exploratória, mediante análise de autocorrelação espacial de
-Moran, com os seguintes resultados:
+Os quatro gráficos diagnósticos gerados (_Residuals vs Fitted_, _Q-Q Residuals_,
+_Scale-Location_, _Residuals vs Leverage_) revelam pequena não linearidade
+residual, resíduos não normalmente distribuídos, heterocedasticidade moderada e
+ausência de outliers ou observações muito influentes. A não linearidade e não
+normalidade podem dever-se à dependência e heterogeneidade espacial. Assim, foi
+efetuada uma análise espacial exploratória, mediante análise de autocorrelação
+espacial de Moran, com os seguintes resultados:
 
--   I de Moran: 0.4696;
-
--   I de Moran esperado sem autocorrelação espacial: -2.202352e-05;
-
--   teste t: 254.24;
-
--   $p < 2.2e-16$
+- I de Moran: 0.4696;
+    
+- I de Moran esperado sem autocorrelação espacial: -2.202352e-05;
+    
+- teste t: 254.24;
+    
+- $p < 2.2e-16$
+    
 
 Valores que confirmam forte autocorrelação espacial nos resíduos.
 
-Nesse sentido, um modelo combinado hierárquico - MH + *machine
-learning* - ML nos resíduos (doravante MHML) é capaz de mitigar a
-autocorrelação espacial. O MH absorve parte da heterogeneidade espacial,
-enquanto o ML nos resíduos captura não linearidades, efeitos locais
-(equivalente ao GWR) e a microestrutura local (Liu; Kounadi;
-Zurita-Milla, 2022).
+Nesse sentido, um modelo combinado hierárquico - MH + _machine learning_ - ML
+nos resíduos (doravante MHML) é capaz de mitigar a autocorrelação espacial. O MH
+absorve parte da heterogeneidade espacial, enquanto o ML nos resíduos captura
+não linearidades, efeitos locais (equivalente ao GWR) e a microestrutura local
+[@IncorporatingSpatialAutocorrelation2022].
 
 #### Modelo Hierárquico (MH)
 
-Seguidamente, foi aplicado um modelo hierárquico (MH), com a mesma
-especificação do OLS, incluindo setores censitários como níveis
-hierarquicamente aninhados nos distritos: `(1 | cd_dist/cd_setor)` . A
-função adotada é `lmer` (pacote `lme4`).
+Seguidamente, foi aplicado um modelo hierárquico (MH), com a mesma especificação
+do OLS, incluindo setores censitários como níveis hierarquicamente aninhados nos
+distritos: `(1 | cd_dist/cd_setor)` . A função adotada é `lmer` (pacote `lme4`).
 
-O MH resultou nos seguintes valores de variância para os níveis
-hierárquicos:
+O MH resultou nos seguintes valores de variância para os níveis hierárquicos:
 
--   var. cd_setor = 0.02187 (21.52%)
--   var. cd_dist = 0.02069 (20.36%)
--   var. residual = 0.05906 (58.11%)
+- var. `cd_setor` = 0.02187 (21.52%)
+- var. `cd_dist` = 0.02069 (20.36%)
+- var. residual = 0.05906 (58.11%)
+    
 
-O que implica em alta variância espacial (\~42%), justificando o modelo
-hierárquico. Observa-se que setor é o nível dominante, mas distrito é
-quase tão importante.
+O que implica em alta variância espacial (~42%), justificando o modelo 
+hierárquico. Observa-se que setor é o nível dominante, mas distrito é quase tão
+importante.
 
 Em termos de ajuste da regressão, foram obtidos:
 
--   R² marginal (efeitos fixos) = 0.782
--   R² condicional (efeitos fixos + aleatórios) = 0.873
-
+- R² marginal (efeitos fixos) = 0.782
+- R² condicional (efeitos fixos + aleatórios) = 0.873
+    
 #### Modelo Combinado - MHML
 
-O modelo hierárquico captura a estrutura global e os efeitos espaciais
-de cada nível, enquanto o modelo baseado em *machine learning* (ML)
-captura não linearidades e interações restantes. Vários estudos sugerem
-que, dentre os modelos ML, os baseados em Boost exibem desempenho
-superior aos baseados em Random Forests (RF) (Hjort et al., 2022; Liu
-*et al.*, 2024; Ho; Tang; Wong, 2021). Essa abordagem híbrida é
-conhecida como *stacking residual* ou *two-stage modeling*, em que um
-modelo estatístico principal é complementado por um algoritmo de machine
-learning aplicado aos erros sistemáticos não explicados inicialmente.
+O modelo hierárquico captura a estrutura global e os efeitos espaciais de cada 
+nível, enquanto o modelo baseado em _machine learning_ (ML) captura não 
+linearidades e interações restantes. Vários estudos sugerem que, dentre os 
+modelos ML, os baseados em Boost exibem desempenho superior aos baseados em 
+Random Forests (RF) [@HousePricePrediction2022; @DoesBetterAccessibility2024;
+@PredictingPropertyPrices2021]. Essa abordagem híbrida é conhecida como 
+_stacking residual_ ou _two-stage modeling_, em que um modelo estatístico 
+principal é complementado por um algoritmo de machine learning aplicado aos 
+erros sistemáticos não explicados inicialmente.
 
-Estudos comparativos mostram que o XGBoost e o LightGBM apresentam
-desempenho muito semelhante (Chango-Sailema et al., 2026, sendo que em
-alguns casos o LightGBM supera (Indah et. al., 2025). Em vista dessas
-vantagens, optou-se pelo LightGBM, que possui melhor custo-benefício,
-performance comparável ao XGBoost e é mais leve.
+Estudos comparativos mostram que o XGBoost e o LightGBM apresentam desempenho
+muito semelhante [@XGBoostVsLightGBM2026], sendo que em alguns casos o
+LightGBM supera [@ComparisonRandomForest2025]. Em vista dessas vantagens, 
+optou-se pelo LightGBM, que possui melhor custo-benefício, performance 
+comparável ao XGBoost e é mais leve.
 
 ##### Estratégia de estimação
 
 A base de dados foi inicialmente dividida em:
 
--   70% para treino;
-
--   30% para teste
+- 70% para treino;
+- 30% para teste
+    
 
 No conjunto de treino, realizou-se nova subdivisão:
 
--   80% treino interno;
+- 80% treino interno;
+- 20% validação.
+    
 
--   20% validação.
-
-O subconjunto de validação foi utilizado durante o treinamento do
-LightGBM, com mecanismo de *early stopping*, prevenindo sobreajuste.
+O subconjunto de validação foi utilizado durante o treinamento do LightGBM, com 
+mecanismo de _early stopping_, prevenindo sobreajuste.
 
 ##### Primeira etapa: modelo hierárquico (MH)
 
-Inicialmente foi ajustado o modelo hierárquico linear com a mesma
-especificação anterior.
+Inicialmente foi ajustado o modelo hierárquico linear com a mesma especificação 
+anterior.
 
 ##### Modelagem dos resíduos
 
-Após a estimação do MH, foram calculados os resíduos, os quais
-representam parcela do valor dos imóveis não capturada pelo modelo
-hierárquico, incluindo relações não lineares, interações complexas entre
-variáveis, heterogeneidades locais e padrões difíceis de representar em
-regressão linear. Sobre esses resíduos foi treinado o algoritmo
-LightGBM.
+Após a estimação do MH, foram calculados os resíduos, os quais representam
+parcela do valor dos imóveis não capturada pelo modelo hierárquico, incluindo
+relações não lineares, interações complexas entre variáveis, heterogeneidades
+locais e padrões difíceis de representar em regressão linear. Sobre esses
+resíduos foi treinado o algoritmo LightGBM.
 
 ##### Parâmetros do LightGBM
 
-O modelo foi ajustado com parâmetros conservadores, priorizando
-generalização:
+O modelo foi ajustado com parâmetros conservadores, priorizando generalização:
 
--   learning rate = 0.03;
--   n° leaves = 20;
--   feature fraction = 0.7;
--   bagging fraction = 0.7;
--   bagging frequency = 5;
--   n° rounds = 200.
+- learning rate = 0.03;
+- n° leaves = 20;
+- feature fraction = 0.7;
+- bagging fraction = 0.7;
+- bagging frequency = 5;
+- n° rounds = 200.
+    
 
-Foi adotado critério de parada antecipada após 20 iterações sem melhora
-na validação.
+Foi adotado critério de parada antecipada após 20 iterações sem melhora na 
+validação.
 
 ##### Predição final
 
 A previsão final resulta da soma entre: previsão estrutural do Modelo
-Hierárquico + correção residual aprendida pelo LightGBM. Como o modelo
-foi estimado em escala logarítmica, aplicou-se retransfomação
-exponencial com *Smearing Correction*, corrigindo o viés da volta à
-escala monetária.
+Hierárquico + correção residual aprendida pelo LightGBM. Como o modelo foi
+estimado em escala logarítmica, aplicou-se retransfomação exponencial com
+_Smearing Correction_, corrigindo o viés da volta à escala monetária.
 
 ##### Resultados comparativos
 
@@ -895,57 +881,53 @@ escala monetária.
 | MH     | 0.8555 | 734.440 | 389.775 | 19.48% |
 | MHML   | 0.8884 | 633.703 | 351.822 | 18.44% |
 
-*Valores monetários em R\$.*
+
+_Valores monetários em R$._
 
 O modelo combinado (MHML) apresentou o melhor desempenho em todos os
-indicadores. Em relação ao OLS houve aumento substancial do poder
-explicativo, redução expressiva do erro absoluto médio e redução do erro
-percentual médio. Em relação ao modelo hierárquico isolado (MH) o
-LightGBM conseguiu capturar padrões residuais relevantes, houve ganho
-adicional de precisão e manteve-se a interpretação estrutural do MH,
-adicionando flexibilidade preditiva.
+indicadores. Em relação ao OLS houve aumento substancial do poder explicativo,
+redução expressiva do erro absoluto médio e redução do erro percentual médio. Em
+relação ao modelo hierárquico isolado (MH) o LightGBM conseguiu capturar padrões
+residuais relevantes, houve ganho adicional de precisão e manteve-se a
+interpretação estrutural do MH, adicionando flexibilidade preditiva.
 
 Apesar do ganho de desempenho, persistem erros relevantes no MHML:
 
--   MAE ≈ R\$ 352 mil;
+- $\text{MAE} \approx \text{R\$ } 352 mil$;
+- $\text{MAPE} \approx 18,4\%$
 
--   MAPE ≈ 18,4%
-
-Isso indica que, embora robusto, o mercado imobiliário ainda contém
-elevada heterogeneidade não totalmente observável.
+Isso indica que, embora robusto, o mercado imobiliário ainda contém elevada 
+heterogeneidade não totalmente observável.
 
 ##### Modelo final operacional
 
-Após a validação comparativa, o MHML foi reestimado utilizando 100% da
-base de dados, gerando a variável final `Valor_previsto_MHML_todos`.
-Essa variável corresponde ao valor estimado de mercado dos imóveis
-segundo o modelo combinado final.
+Após a validação comparativa, o MHML foi reestimado utilizando 100% da base de
+dados, gerando a variável final `Valor_previsto_MHML_todos`. Essa
+variável corresponde ao valor estimado de mercado dos imóveis segundo o modelo
+combinado final.
 
 #### Geração de superfície contínua de valores unitários (IDW)
 
-Com o objetivo de incorporar ao modelo de previsão de valores para lotes
-uma variável espacial representativa da dinâmica do mercado residencial,
-foi gerada uma superfície contínua de valores unitários (VU em R\$/m²) a
-partir dos imóveis observados, utilizando o método de interpolação
-*Inverse Distance Weighting* (IDW). Essa superfície foi posteriormente
-exportada em formato raster (GeoTIFF) para uso como variável explicativa
-espacial no modelo de lotes.
+Com o objetivo de incorporar ao modelo de previsão de valores para lotes uma
+variável espacial representativa da dinâmica do mercado residencial, foi gerada
+uma superfície contínua de valores unitários (VU em R$/m²) a partir dos imóveis
+observados, utilizando o método de interpolação _Inverse Distance Weighting_
+(IDW). Essa superfície foi posteriormente exportada em formato raster (GeoTIFF)
+para uso como variável explicativa espacial no modelo de lotes.
 
-A área de interpolação foi contruída com zona de influência de 1000 m em
-torno dos pontos amostrais. Posteriormente, foi gerada grade regular com
-resolução espacial de 100 m, sendo que cada célula da grade corresponde
-ao local onde o valor unitário foi estimado.
+A área de interpolação foi contruída com zona de influência de 1000 m em torno
+dos pontos amostrais. Posteriormente, foi gerada grade regular com resolução
+espacial de 100 m, sendo que cada célula da grade corresponde ao local onde o
+valor unitário foi estimado.
 
 Adotaram-se os seguintes parâmetros para a interpolação IDW:
 
--   Potência (idp) = 2;
+- Potência (idp) = 2;
+- Máximo de vizinhos (nmax) = 50;
+- Distância máxima (maxdist) = 3000 m.
 
--   Máximo de vizinhos (nmax) = 50;
-
--   Distância máxima (maxdist) = 3000 m.
-
-Assim, cada célula foi estimada com base em até 50 imóveis localizados
-num raio máximo de 3 km.
+Assim, cada célula foi estimada com base em até 50 imóveis localizados num raio
+máximo de 3 km.
 
 ## Desafios {#sec-desafios-modelagem}
 
@@ -1042,58 +1024,54 @@ definição de métricas adequadas para os modelos.
 
 ## Conclusões
 
-A Etapa 3 permitiu consolidar a estrutura metodológica de modelagem estatística e espacial voltada à construção da Planta de Valores Genéricos (PVG) e à estimação dos Valores de Referência no contexto da Prova de Conceito (PoC) de Florianópolis/SC. Os resultados obtidos demonstraram a viabilidade técnica da abordagem adotada, evidenciando que a integração entre dados de mercado, variáveis geoespaciais e técnicas de modelagem estatística possibilita representar de forma consistente o comportamento do mercado imobiliário urbano.
+A Etapa 3 permitiu consolidar a estrutura metodológica de modelagem estatística
+e espacial voltada à construção da Planta de Valores Genéricos (PVG) e à
+estimação dos Valores de Referência no contexto da Prova de Conceito (PoC) de
+Florianópolis/SC. Os resultados obtidos demonstraram a viabilidade técnica da
+abordagem adotada, evidenciando que a integração entre dados de mercado,
+variáveis geoespaciais e técnicas de modelagem estatística possibilita
+representar de forma consistente o comportamento do mercado imobiliário urbano.
 
-A etapa permitiu estruturar um fluxo de modelagem integrado, contemplando desde a limpeza robusta das bases de dados até a geração de modelos preditivos para imóveis edificados e lotes urbanos. A utilização de técnicas de regressão robusta, classificação de padrão construtivo por agrupamento não supervisionado, segmentação espacial e modelagem geoestatística contribuiu para aumentar a consistência analítica dos resultados e reduzir os impactos de ruídos e outliers presentes nas bases de mercado.
+A etapa permitiu estruturar um fluxo de modelagem integrado, contemplando desde
+a limpeza robusta das bases de dados até a geração de modelos preditivos para
+imóveis edificados e lotes urbanos. A utilização de técnicas de regressão
+robusta, classificação de padrão construtivo por agrupamento não supervisionado,
+segmentação espacial e modelagem geoestatística contribuiu para aumentar a
+consistência analítica dos resultados e reduzir os impactos de ruídos e outliers
+presentes nas bases de mercado.
 
-Os modelos desenvolvidos apresentaram desempenho estatístico relevante, especialmente considerando a complexidade e heterogeneidade do mercado imobiliário urbano. O modelo de imóveis edificados alcançou elevado poder explicativo, permitindo a geração de superfícies de valores unitários do metro quadrado construído, enquanto o modelo de lotes urbanos demonstrou capacidade consistente de representar os valores da terra urbana mesmo diante da ausência de diversas variáveis físicas tradicionalmente utilizadas em avaliações imobiliárias.
+Os modelos desenvolvidos apresentaram desempenho estatístico relevante,
+especialmente considerando a complexidade e heterogeneidade do mercado
+imobiliário urbano. O modelo de imóveis edificados alcançou elevado poder
+explicativo, permitindo a geração de superfícies de valores unitários do metro
+quadrado construído, enquanto o modelo de lotes urbanos demonstrou capacidade
+consistente de representar os valores da terra urbana mesmo diante da ausência
+de diversas variáveis físicas tradicionalmente utilizadas em avaliações
+imobiliárias.
 
-Outro resultado importante desta etapa foi a consolidação de uma estratégia de modelagem interpretável e auditável, alinhada às necessidades institucionais da Receita Federal do Brasil. Diferentemente de abordagens exclusivamente baseadas em modelos de “caixa preta”, a metodologia adotada buscou preservar a capacidade de interpretação econômica das variáveis, a rastreabilidade das decisões metodológicas e a transparência do processo de formação dos valores estimados. Essa característica é fundamental para garantir legitimidade técnica, auditabilidade e futura internalização institucional da solução.
+Outro resultado importante desta etapa foi a consolidação de uma estratégia de
+modelagem interpretável e auditável, alinhada às necessidades institucionais da
+Receita Federal do Brasil. Diferentemente de abordagens exclusivamente baseadas
+em modelos de “caixa preta”, a metodologia adotada buscou preservar a capacidade
+de interpretação econômica das variáveis, a rastreabilidade das decisões
+metodológicas e a transparência do processo de formação dos valores estimados.
+Essa característica é fundamental para garantir legitimidade técnica,
+auditabilidade e futura internalização institucional da solução.
 
-A etapa também permitiu identificar limitações metodológicas relevantes, especialmente relacionadas à qualidade das variáveis disponíveis, à heterogeneidade espacial dos mercados e às dificuldades associadas à modelagem de lotes vagos e áreas de expansão urbana. Esses achados possuem caráter estratégico, pois orientam os próximos refinamentos metodológicos e evidenciam os pontos críticos que deverão ser tratados antes da expansão da metodologia em escala nacional.
+A etapa também permitiu identificar limitações metodológicas relevantes,
+especialmente relacionadas à qualidade das variáveis disponíveis, à
+heterogeneidade espacial dos mercados e às dificuldades associadas à modelagem
+de lotes vagos e áreas de expansão urbana. Esses achados possuem caráter
+estratégico, pois orientam os próximos refinamentos metodológicos e evidenciam
+os pontos críticos que deverão ser tratados antes da expansão da metodologia em
+escala nacional.
 
-Por fim, os resultados alcançados demonstram que a modelagem desenvolvida na PoC constitui uma base sólida para evolução do projeto, tanto na ampliação territorial quanto na preparação para integração com os ambientes operacionais da RFB. A combinação entre modelagem estatística, inteligência geoespacial e controle metodológico estabelecida nesta etapa representa um avanço significativo na construção de uma arquitetura nacional de avaliação em massa capaz de produzir valores de referência de forma padronizada, escalável e tecnicamente consistente.
+Por fim, os resultados alcançados demonstram que a modelagem desenvolvida na PoC
+constitui uma base sólida para evolução do projeto, tanto na ampliação
+territorial quanto na preparação para integração com os ambientes operacionais
+da RFB. A combinação entre modelagem estatística, inteligência geoespacial e
+controle metodológico estabelecida nesta etapa representa um avanço
+significativo na construção de uma arquitetura nacional de avaliação em massa
+capaz de produzir valores de referência de forma padronizada, escalável e
+tecnicamente consistente.
 
-
-
-#### x. Referências
-
-CHANGO-SAILEMA, W. G.; VELAZTEGUÍ-IZURIETA, H.; PAZUÑA-NARANJO, W. P.
-*et al.* XGBoost vs. LightGBM: An XAI Approach to National Vehicle Fleet
-Analysis\_. Computation\_, v. 14, n. 4, 81, 2026.
-
-HJORT, A.; PENSAR, J.; SCHEEL, I.; SOMMERVOLL, D. House price prediction
-with gradient boosted trees under different loss functions. *Journal of
-Property Research*, v. 39, n. 4, p. 338-364, 2022.
-
-HO, W. K. O.; TANG, B.; WONG, S. W.. Predicting property prices with
-machine learning algorithms. *Journal of Property Research*, v. 38, n.
-1, p. 48-70, 2021.
-
-INDAH, Y. M.; ARISTAWIDYA, R.; FITRIANTO, A.; ERFIANI, E.; JUMANSYAH, L.
-M. R. D.. Comparison of Random Forest, XGBoost and LightGBM Methods on
-the Human Development Index Classification. *Jambura Journal of
-Mathematics*, v. 7, n. 1, p. 14-18, 2025.
-
-LIU, Xiang; CHEN, Xiaohong; ORFORD, Scott; TIAN, Mingshu; ZOU, Guojian.
-Does better accessibility always mean higher house prices? *Environment
-and Planning B: Urban Analytics and City Science*, v. 51, n. 9, p.
-2179-2195, 2024.
-
-LIU, X.; KOUNADI, O.; ZURITA-MILLA, R.. Incorporating spatial
-autocorrelation in machine learning models using spatial lag and
-eigenvector spatial filtering features. *ISPRS International Journal of
-Geo-Information*, v. 11, n. 4, 2022.
-
-MIAO, Y.; LI, H.; XUE, L.; SHEN, C.; WANG, F. Application of a
-semi-variogram-based KNN algorithm in the spatial prediction of soil
-heavy metals. *Environmental Pollution*, v. 390, p. 127436, 2026.
-
-RAZA, A.; TALIB, M.; NOOR-UL-AMIN, M.; GUNAIME, N.; BOUKHRIS, I.; NABI,
-M. Enhancing performance in the presence of outliers with redescending
-M-estimators. *Scientific Reports*, v. 14, 13529, 2024. Disponível em:
-<https://doi.org/10.1038/s41598-024-64239-6>. Acesso em: 16 abr 2026.
-
-TARASOV, S.; DESSOULAVY-SLIWINSKI, B. Algorithm-Driven Hedonic Real
-Estate Pricing – An Explainable AI Approach. *Real Estate Management and
-Valuation*, v. 33, n. 1, 2025.

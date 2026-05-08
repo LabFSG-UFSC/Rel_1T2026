@@ -28,21 +28,21 @@ Por fim, serão intensificadas as atividades relacionadas à preparação da int
 
 ### Principais Ações Prioritárias
 
-•	Refinamento dos modelos de avaliação em massa e da PVG;
+-	Refinamento dos modelos de avaliação em massa e da PVG;
 
-•	Ampliação da qualidade, cobertura e consistência dos dados integrados ao Data Lake;
+-	Ampliação da qualidade, cobertura e consistência dos dados integrados ao Data Lake;
 
-•	Evolução dos processos de geocodificação e validação posicional;
+-	Evolução dos processos de geocodificação e validação posicional;
 
-•	Consolidação das bases cartográficas territoriais e variáveis geográficas;
+-	Consolidação das bases cartográficas territoriais e variáveis geográficas;
 
-•	Fortalecimento da infraestrutura tecnológica e dos ambientes de processamento;
+-	Fortalecimento da infraestrutura tecnológica e dos ambientes de processamento;
 
-•	Consolidação dos fluxos automatizados de processamento e auditoria;
+-	Consolidação dos fluxos automatizados de processamento e auditoria;
 
-•	Evolução das plataformas de visualização e análise dos resultados;
+-	Evolução das plataformas de visualização e análise dos resultados;
 
-•	Estruturação preliminar dos mecanismos de integração e internalização na RFB.
+-	Estruturação preliminar dos mecanismos de integração e internalização na RFB.
 
 ## Marcos Estruturantes Previstos
 
@@ -58,14 +58,14 @@ Por fim, prevê-se o início progressivo da Etapa 4 - Internalização e Operaç
 
 ### Síntese dos Próximos Marcos
 
-•	Validação técnica dos modelos preliminares junto à RFB;
+-	Validação técnica dos modelos preliminares junto à RFB;
 
-•	Consolidação da base territorial validada;
+-	Consolidação da base territorial validada;
 
-•	Evolução e ampliação do Data Lake e da arquitetura de dados;
+-	Evolução e ampliação do Data Lake e da arquitetura de dados;
 
-•	Expansão territorial dos Lotes 1 e 2;
+-	Expansão territorial dos Lotes 1 e 2;
 
-•	Consolidação dos mecanismos automatizados de processamento e auditoria;
+-	Consolidação dos mecanismos automatizados de processamento e auditoria;
 
-•	Início progressivo da Etapa 4 — Internalização e Operação.
+-	Início progressivo da Etapa 4 — Internalização e Operação.

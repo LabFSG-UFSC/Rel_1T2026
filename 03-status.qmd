@@ -9,7 +9,7 @@ No âmbito da execução, foi definida uma estratégia baseada em lotes de traba
 A partir dessa etapa inicial, foi estruturada uma lógica de expansão baseada em capitais, considerando critérios de diversidade regional e heterogeneidade de porte urbano. Foram definidos, inicialmente, cinco lotes de trabalho, cuja organização está apresentada no Quadro 2 - estrutura de execução por lotes, contemplando a distribuição dos municípios selecionados e a lógica de expansão controlada adotada no projeto. A definição dos municípios dentro desses lotes considerou, inicialmente, a seleção de capitais representativas de diferentes regiões do país e distintos portes populacionais, de forma a capturar a variabilidade estrutural do território nacional.
 
 | Lote | Municipio | Descricao |
-|---|---|---|
+|----|----|----|
 | POC Florianópolis | Florianópolis | Ambiente de validação metodológica |
 | Lote 1 | Porto Velho, Fortaleza, Belo Horizonte, Campo Grande | Primeira expansão controlada |
 | Lote 2 | Curitiba, Manaus, Salvador, Rio de Janeiro, Cuiabá | Segunda expansão controlada |
@@ -21,19 +21,17 @@ A partir dessa etapa inicial, foi estruturada uma lógica de expansão baseada e
 
 Adicionalmente, foram elaboradas representações cartográficas específicas para cada lote de trabalho, por meio de mapas temáticos que destacam os estados correspondentes às capitais selecionadas (FIGURA 1). Esses mapas permitem visualizar de forma clara a distribuição territorial dos lotes, facilitando a compreensão da estratégia de expansão progressiva adotada no projeto, bem como a cobertura geográfica inicial da metodologia em nível nacional.
 
-Figura 1: mapas temáticos que destacam os estados correspondentes às capitais selecionadas
+![Mapas temáticos que destacam os estados correspondentes às capitais selecionadas](img/geral/fig-01-lotes-capitais.png)
 
-![Figura 1 - mapas temáticos que destacam os estados correspondentes às capitais selecionadas](img/geral/fig-01-lotes-capitais.png)
-
-Paralelamente, foi estruturada uma proposta de escalonamento nacional das atividades, baseada na hierarquia urbana e na representatividade territorial dos municípios, construída a partir dos dados de domicílios do Cadastro Nacional de Endereços para Fins Estatísticos (CNEFE).  Essa base contempla o universo de endereços de imóveis (residenciais e não residenciais), permitindo uma leitura mais abrangente da distribuição territorial e maior aderência às necessidades do projeto.
+Paralelamente, foi estruturada uma proposta de escalonamento nacional das atividades, baseada na hierarquia urbana e na representatividade territorial dos municípios, construída a partir dos dados de domicílios do Cadastro Nacional de Endereços para Fins Estatísticos (CNEFE). Essa base contempla o universo de endereços de imóveis (residenciais e não residenciais), permitindo uma leitura mais abrangente da distribuição territorial e maior aderência às necessidades do projeto.
 
 Inicialmente, são apresentados, na Figura 2, os quantitativos de municípios e a representatividade percentual dos endereços do CNEFE por categoria de centralidade urbana, evidenciando a concentração dos endereços nas capitais e centros regionais.
 
-![Figura 2 - quantitativos de municípios e a representatividade percentual dos endereços do CNEFE por categoria de centralidade urbana](img/geral/fig-02-cnefe-centralidade.png)
+![Quantitativos de municípios e a representatividade percentual dos endereços do CNEFE por categoria de centralidade urbana](img/geral/fig-02-cnefe-centralidade.png)
 
 Na sequência, a Figura 3 ilustra espacialmente essa distribuição, por meio de um mapa temático que apresenta o percentual de representação dos endereços por município, permitindo visualizar a lógica de concentração territorial e reforçando a estratégia de escalonamento adotada no projeto.
 
-![Figura 3 - distribuição espacial do percentual da representação dos endereços por municípios do Brasil](img/geral/fig-03-distribuicao-enderecos.jpeg)
+![Distribuição espacial do percentual da representação dos endereços por municípios do Brasil](img/geral/fig-03-distribuicao-enderecos.jpeg)
 
 Essa distribuição evidencia que a estratégia de atuação iniciada pelas capitais e centros regionais permite alcançar, de forma progressiva, uma parcela significativa do território nacional, considerando o universo de endereços de imóveis cadastrados, o que é particularmente relevante para a modelagem de valores de referência.
 
@@ -45,9 +43,7 @@ De forma geral, essa organização por lotes permite testar, ajustar e consolida
 
 A Figura 4 apresenta a visão consolidada do avanço das atividades e dos lotes de execução do projeto, permitindo uma leitura integrada do seu estágio atual. Nela é sintetizado o status geral por etapa, evidenciando o nível de desenvolvimento de cada frente de trabalho, bem como a evolução das atividades ao longo dos diferentes lotes, sob uma perspectiva técnica e operacional.
 
-![Figura 4 - visão consolidada do avanço das atividades e dos lotes de execução do projeto](img/geral/fig-04-status-etapas.png)
-
-![Legenda da Figura 4](img/geral/fig-04-status-legenda.png)
+![Visão consolidada do avanço das atividades e dos lotes de execução do projeto](img/geral/fig-04-status-etapas.png)
 
 Na Etapa 0 – Planejamento e Governança, as atividades voltadas à estruturação da governança do projeto foram integralmente concluídas e devidamente validadas. Destacam-se a definição dos fluxos de tomada de decisão, a organização das instâncias técnicas e de gestão, bem como o estabelecimento dos mecanismos de acompanhamento, monitoramento e controle das atividades.
 
@@ -71,12 +67,12 @@ Essa preparação é fundamental para assegurar que a transição da solução p
 
 A análise integrada do cronograma físico e dos indicadores operacionais demonstra que o projeto se encontra em estágio consistente de desenvolvimento, com:
 
-•	Consolidação da POC Florianópolis como ambiente de validação
+-   Consolidação da POC Florianópolis como ambiente de validação
 
-•	Avanço progressivo dos primeiros lotes de expansão
+-   Avanço progressivo dos primeiros lotes de expansão
 
-•	Estruturação das bases necessárias para escalabilidade
+-   Estruturação das bases necessárias para escalabilidade
 
-•	Evolução contínua da arquitetura de dados, cartografia e modelagem
+-   Evolução contínua da arquitetura de dados, cartografia e modelagem
 
 A estratégia baseada em lotes tem se mostrado adequada, permitindo controle do processo, validação incremental e preparação estruturada para expansão em nível nacional.

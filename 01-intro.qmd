@@ -1,19 +1,67 @@
 # Introdução
 
-O presente relatório técnico tem por finalidade apresentar, de forma estruturada e detalhada, o avanço das atividades desenvolvidas no âmbito do Projeto TED firmado entre a Receita Federal do Brasil (RFB) e a Universidade Federal de Santa Catarina (UFSC), voltado à construção, validação e institucionalização de uma metodologia nacional para determinação de Valores de Referência de imóveis urbanos, em consonância com as diretrizes estabelecidas pela Lei Complementar nº 214/2025 e com as demandas do novo sistema tributário brasileiro.
+O presente relatório técnico tem por finalidade apresentar, de forma estruturada
+e detalhada, o avanço das atividades desenvolvidas no âmbito do Projeto TED
+firmado entre a Receita Federal do Brasil (RFB) e a Universidade Federal de
+Santa Catarina (UFSC), voltado à construção, validação e institucionalização de
+uma metodologia nacional para determinação de Valores de Referência de imóveis
+urbanos, em consonância com as diretrizes estabelecidas pela Lei Complementar nº
+214/2025 e com as demandas do novo sistema tributário brasileiro.
 
-O projeto teve início em 26 de dezembro de 2025, sendo que seus primeiros meses foram dedicados às atividades de mobilização inicial, estruturação da equipe técnica, organização dos ambientes de trabalho e alinhamento estratégico entre as instituições envolvidas. Esse período foi fundamental para a definição das diretrizes operacionais, estabelecimento dos fluxos de governança e preparação das bases necessárias para o início das atividades técnicas. Nesse contexto, destaca-se a elaboração, apresentação e validação do Plano de Gerenciamento do Projeto, que foi apresentado em 03/02/2026 e formalmente entregue em 05/02/2026, constituindo um marco estruturante para a condução das atividades.
+O projeto teve início em 26 de dezembro de 2025, sendo que seus primeiros meses
+foram dedicados às atividades de mobilização inicial, estruturação da equipe
+técnica, organização dos ambientes de trabalho e alinhamento estratégico entre
+as instituições envolvidas. Esse período foi fundamental para a definição das
+diretrizes operacionais, estabelecimento dos fluxos de governança e preparação
+das bases necessárias para o início das atividades técnicas. Nesse contexto,
+destaca-se a elaboração, apresentação e validação do Plano de Gerenciamento do
+Projeto, que foi apresentado em 03/02/2026 e formalmente entregue em 05/02/2026,
+constituindo um marco estruturante para a condução das atividades.
 
-O período contemplado neste relatório corresponde ao ciclo trimestral de acompanhamento do projeto, compreendendo os meses de fevereiro a abril de 2026, no qual foram desenvolvidas atividades estratégicas relacionadas à implementação da Prova de Conceito (POC) no município de Florianópolis. Essa POC tem papel central no projeto, pois constitui o ambiente de experimentação, validação e consolidação dos processos metodológicos, tecnológicos e operacionais que darão suporte à futura aplicação em escala nacional.
+O período contemplado neste relatório corresponde ao ciclo trimestral de
+acompanhamento do projeto, compreendendo os meses de fevereiro a abril de 2026,
+no qual foram desenvolvidas atividades estratégicas relacionadas à implementação
+da Prova de Conceito (POC) no município de Florianópolis. Essa POC tem papel
+central no projeto, pois constitui o ambiente de experimentação, validação e
+consolidação dos processos metodológicos, tecnológicos e operacionais que darão
+suporte à futura aplicação em escala nacional.
 
-Neste contexto, o relatório abrange de forma integrada as atividades realizadas nas diferentes etapas do projeto, desde a estruturação da governança e organização dos dados até o desenvolvimento de modelos de avaliação em massa e a preparação para sua internalização. São apresentados os fluxos estabelecidos, os resultados obtidos, os estudos realizados para embasamento metodológico, as iniciativas de intercâmbio técnico, bem como a infraestrutura tecnológica implantada para suporte às atividades.
+Neste contexto, o relatório abrange de forma integrada as atividades realizadas
+nas diferentes etapas do projeto, desde a estruturação da governança e
+organização dos dados até o desenvolvimento de modelos de avaliação em massa e a
+preparação para sua internalização. São apresentados os fluxos estabelecidos, os
+resultados obtidos, os estudos realizados para embasamento metodológico, as
+iniciativas de intercâmbio técnico, bem como a infraestrutura tecnológica
+implantada para suporte às atividades.
 
-Adicionalmente, o documento evidencia os principais entregáveis produzidos no período, os desafios enfrentados ao longo da execução, os avanços alcançados em termos de consolidação metodológica e os aspectos relacionados à escalabilidade da solução proposta. A abordagem adotada busca garantir não apenas o registro das atividades realizadas, mas também a rastreabilidade dos processos, a transparência das decisões técnicas e a aderência aos critérios de qualidade e governança definidos no projeto.
+Adicionalmente, o documento evidencia os principais entregáveis produzidos no
+período, os desafios enfrentados ao longo da execução, os avanços alcançados em
+termos de consolidação metodológica e os aspectos relacionados à escalabilidade
+da solução proposta. A abordagem adotada busca garantir não apenas o registro
+das atividades realizadas, mas também a rastreabilidade dos processos, a
+transparência das decisões técnicas e a aderência aos critérios de qualidade e
+governança definidos no projeto.
 
-Por fim, o relatório se insere no contexto de acompanhamento sistemático das ações do TED, contribuindo para o alinhamento entre as equipes técnicas da UFSC e da RFB, e subsidiando as instâncias de validação e tomada de decisão, com vistas à consolidação de uma solução robusta, auditável e replicável para o território nacional.
+Por fim, o relatório se insere no contexto de acompanhamento sistemático das
+ações do TED, contribuindo para o alinhamento entre as equipes técnicas da UFSC
+e da RFB, e subsidiando as instâncias de validação e tomada de decisão, com
+vistas à consolidação de uma solução robusta, auditável e replicável para o
+território nacional.
+
 
 ## Objetivo do Relatório
 
-Este relatório tem como objetivo consolidar, de forma sistematizada, as evidências técnicas e operacionais das atividades desenvolvidas no período, no contexto da implementação da Prova de Conceito (POC) em Florianópolis. O documento organiza e apresenta os principais resultados alcançados, os fluxos estruturados, os produtos gerados e os desafios identificados ao longo da execução das diferentes etapas do projeto.
+Este relatório tem como objetivo consolidar, de forma sistematizada, as
+evidências técnicas e operacionais das atividades desenvolvidas no período, no
+contexto da implementação da Prova de Conceito (POC) em Florianópolis. O
+documento organiza e apresenta os principais resultados alcançados, os fluxos
+estruturados, os produtos gerados e os desafios identificados ao longo da
+execução das diferentes etapas do projeto.
 
-Adicionalmente, busca-se evidenciar o grau de maturidade das soluções desenvolvidas, especialmente no que se refere à estruturação dos dados, à modelagem de avaliação em massa e à preparação para a internalização dos processos. O relatório também tem a função de apoiar o acompanhamento contínuo do projeto, oferecendo subsídios técnicos para análise, validação e encaminhamento das próximas fases, em alinhamento com as diretrizes estabelecidas pela Receita Federal do Brasil.
+Adicionalmente, busca-se evidenciar o grau de maturidade das soluções
+desenvolvidas, especialmente no que se refere à estruturação dos dados, à
+modelagem de avaliação em massa e à preparação para a internalização dos
+processos. O relatório também tem a função de apoiar o acompanhamento contínuo
+do projeto, oferecendo subsídios técnicos para análise, validação e
+encaminhamento das próximas fases, em alinhamento com as diretrizes
+estabelecidas pela Receita Federal do Brasil.
