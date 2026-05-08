@@ -1,17 +1,67 @@
 # Considerações Finais
 
-O primeiro ciclo trimestral de execução do Projeto TED RFB/UFSC demonstrou avanço consistente na estruturação técnica, metodológica e operacional da solução proposta para determinação dos Valores de Referência de imóveis urbanos em escala nacional. As atividades desenvolvidas no período permitiram consolidar a Prova de Conceito de Florianópolis como ambiente central de validação, teste e amadurecimento dos processos que deverão orientar a futura expansão territorial da metodologia.
+O primeiro ciclo trimestral de execução do Projeto TED RFB/UFSC demonstrou
+avanço consistente na estruturação técnica, metodológica e operacional da
+solução proposta para determinação dos Valores de Referência de imóveis urbanos
+em escala nacional. As atividades desenvolvidas no período permitiram consolidar
+a Prova de Conceito de Florianópolis como ambiente central de validação, teste e
+amadurecimento dos processos que deverão orientar a futura expansão territorial
+da metodologia.
 
-Os resultados apresentados ao longo deste relatório evidenciam que o projeto avançou de forma integrada nas frentes de arquitetura de dados, Observatório do Mercado Imobiliário, bases cartográficas territoriais, geração de variáveis geoespaciais, modelagem de avaliação em massa, infraestrutura tecnológica e governança operacional. Essa integração permitiu transformar bases heterogêneas e inicialmente fragmentadas em estruturas organizadas, rastreáveis e tecnicamente qualificadas, capazes de subsidiar análises territoriais e modelos de avaliação com maior robustez.
+Os resultados apresentados ao longo deste relatório evidenciam que o projeto
+avançou de forma integrada nas frentes de arquitetura de dados, Observatório do
+Mercado Imobiliário, bases cartográficas territoriais, geração de variáveis
+geoespaciais, modelagem de avaliação em massa, infraestrutura tecnológica e
+governança operacional. Essa integração permitiu transformar bases heterogêneas
+e inicialmente fragmentadas em estruturas organizadas, rastreáveis e
+tecnicamente qualificadas, capazes de subsidiar análises territoriais e modelos
+de avaliação com maior robustez.
 
-A Prova de Conceito de Florianópolis demonstrou a viabilidade da abordagem metodológica adotada, especialmente ao permitir o teste do fluxo completo do projeto, desde a ingestão e qualificação dos dados de mercado até a geração de modelos econométricos, superfícies de valor e produtos territoriais associados à construção da Planta de Valores Genéricos. Os resultados alcançados confirmam o potencial de replicação da metodologia, ao mesmo tempo em que evidenciam pontos críticos que deverão ser aprimorados antes de sua aplicação em escala nacional.
+A Prova de Conceito de Florianópolis demonstrou a viabilidade da abordagem
+metodológica adotada, especialmente ao permitir o teste do fluxo completo do
+projeto, desde a ingestão e qualificação dos dados de mercado até a geração de
+modelos econométricos, superfícies de valor e produtos territoriais associados à
+construção da Planta de Valores Genéricos. Os resultados alcançados confirmam o
+potencial de replicação da metodologia, ao mesmo tempo em que evidenciam pontos
+críticos que deverão ser aprimorados antes de sua aplicação em escala nacional.
 
-Entre os principais avanços do período, destacam-se a consolidação de uma base qualificada de ofertas imobiliárias, o desenvolvimento de rotinas próprias de geocodificação e validação espacial, a estruturação das bases cartográficas em camadas de maturidade, a geração de variáveis geográficas aplicáveis à modelagem, o desenvolvimento de modelos preliminares para imóveis edificados e lotes urbanos, bem como a implantação de infraestrutura tecnológica dedicada ao processamento, armazenamento, versionamento e auditoria dos dados.
+Entre os principais avanços do período, destacam-se a consolidação de uma base
+qualificada de ofertas imobiliárias, o desenvolvimento de rotinas próprias de
+geocodificação e validação espacial, a estruturação das bases cartográficas em
+camadas de maturidade, a geração de variáveis geográficas aplicáveis à
+modelagem, o desenvolvimento de modelos preliminares para imóveis edificados e
+lotes urbanos, bem como a implantação de infraestrutura tecnológica dedicada ao
+processamento, armazenamento, versionamento e auditoria dos dados.
 
-Também foram identificados desafios relevantes, especialmente relacionados à qualidade e padronização das bases de dados, ao tratamento de lotes vagos e terrenos urbanos, à dependência de variáveis proxy, à necessidade de automação dos fluxos operacionais e à preparação da solução para internalização no ambiente institucional da Receita Federal do Brasil. A identificação desses desafios constitui resultado importante do próprio processo de validação, pois permite orientar de forma objetiva os ajustes metodológicos, tecnológicos e operacionais necessários às próximas etapas.
+Também foram identificados desafios relevantes, especialmente relacionados à
+qualidade e padronização das bases de dados, ao tratamento de lotes vagos e
+terrenos urbanos, à dependência de variáveis proxy, à necessidade de automação
+dos fluxos operacionais e à preparação da solução para internalização no
+ambiente institucional da Receita Federal do Brasil. A identificação desses
+desafios constitui resultado importante do próprio processo de validação, pois
+permite orientar de forma objetiva os ajustes metodológicos, tecnológicos e
+operacionais necessários às próximas etapas.
 
-Ressalta-se que o material técnico detalhado da Prova de Conceito, referente a cada uma das etapas desenvolvidas, integrará este relatório na forma de apêndice, constituindo registro complementar das metodologias aplicadas, dos procedimentos executados, dos resultados obtidos e das evidências técnicas produzidas no período. Esse apêndice terá papel fundamental para garantir maior transparência, rastreabilidade e aprofundamento documental dos produtos apresentados neste relatório.
+Ressalta-se que o material técnico detalhado da Prova de Conceito, referente a
+cada uma das etapas desenvolvidas, integrará este relatório na forma de
+apêndice, constituindo registro complementar das metodologias aplicadas, dos
+procedimentos executados, dos resultados obtidos e das evidências técnicas
+produzidas no período. Esse apêndice terá papel fundamental para garantir maior
+transparência, rastreabilidade e aprofundamento documental dos produtos
+apresentados neste relatório.
 
-Dessa forma, conclui-se que o projeto alcançou, neste primeiro trimestre de execução, um estágio relevante de maturidade inicial, com validação preliminar dos principais componentes técnicos da metodologia e consolidação das bases necessárias para sua evolução. Os resultados obtidos indicam que a solução proposta apresenta potencial para expansão gradual e controlada, desde que acompanhada do fortalecimento contínuo dos mecanismos de governança, automação, validação técnica, infraestrutura e integração institucional.
+Dessa forma, conclui-se que o projeto alcançou, neste primeiro trimestre de
+execução, um estágio relevante de maturidade inicial, com validação preliminar
+dos principais componentes técnicos da metodologia e consolidação das bases
+necessárias para sua evolução. Os resultados obtidos indicam que a solução
+proposta apresenta potencial para expansão gradual e controlada, desde que
+acompanhada do fortalecimento contínuo dos mecanismos de governança, automação,
+validação técnica, infraestrutura e integração institucional.
 
-As próximas etapas deverão concentrar-se no refinamento dos modelos, na ampliação dos lotes territoriais, na consolidação das bases cartográficas e de mercado, na evolução dos mecanismos de visualização e na preparação progressiva da internalização da metodologia pela Receita Federal do Brasil. Assim, o período analisado representa uma etapa estruturante do projeto, marcando a transição entre a concepção metodológica inicial e a consolidação de uma arquitetura técnica com potencial de aplicação nacional.
+As próximas etapas deverão concentrar-se no refinamento dos modelos, na
+ampliação dos lotes territoriais, na consolidação das bases cartográficas e de
+mercado, na evolução dos mecanismos de visualização e na preparação progressiva
+da internalização da metodologia pela Receita Federal do Brasil. Assim, o
+período analisado representa uma etapa estruturante do projeto, marcando a
+transição entre a concepção metodológica inicial e a consolidação de uma
+arquitetura técnica com potencial de aplicação nacional.

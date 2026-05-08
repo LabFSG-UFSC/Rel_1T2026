@@ -11,13 +11,15 @@ crossref:
   appendix-title: "Apêndice"
   appendix-delim: " - "
   
+toc: true
+toc-depth: 4
+  
 book:
   title: "Relatório 1T2026"
   author: "UFSC"
   date: today
  # date-format: long
   date-format: "MMMM, YYYY"
-  
   chapters:
     - index.qmd
     - 01-intro.qmd

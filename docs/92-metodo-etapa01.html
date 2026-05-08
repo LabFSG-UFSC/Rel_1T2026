@@ -320,39 +320,79 @@ window.Quarto = {
   <ul>
   <li><a href="#introdução" id="toc-introdução" class="nav-link active" data-scroll-target="#introdução"><span class="header-section-number">B.1</span> Introdução</a></li>
   <li><a href="#fluxo-de-dados-estruturado" id="toc-fluxo-de-dados-estruturado" class="nav-link" data-scroll-target="#fluxo-de-dados-estruturado"><span class="header-section-number">B.2</span> Fluxo de dados estruturado</a>
+  <ul>
+  <li><a href="#fontes-de-dados" id="toc-fontes-de-dados" class="nav-link" data-scroll-target="#fontes-de-dados"><span class="header-section-number">B.2.1</span> Fontes de dados</a>
   <ul class="collapse">
-  <li><a href="#fontes-de-dados" id="toc-fontes-de-dados" class="nav-link" data-scroll-target="#fontes-de-dados"><span class="header-section-number">B.2.1</span> Fontes de dados</a></li>
-  <li><a href="#ingestão" id="toc-ingestão" class="nav-link" data-scroll-target="#ingestão"><span class="header-section-number">B.2.2</span> Ingestão</a></li>
-  <li><a href="#tratamento" id="toc-tratamento" class="nav-link" data-scroll-target="#tratamento"><span class="header-section-number">B.2.3</span> Tratamento</a></li>
+  <li><a href="#dados-de-ofertas-imobiliárias-mercado" id="toc-dados-de-ofertas-imobiliárias-mercado" class="nav-link" data-scroll-target="#dados-de-ofertas-imobiliárias-mercado"><span class="header-section-number">B.2.1.1</span> Dados de Ofertas Imobiliárias (Mercado)</a></li>
+  <li><a href="#dados-de-referência-espacial-oficial-governo" id="toc-dados-de-referência-espacial-oficial-governo" class="nav-link" data-scroll-target="#dados-de-referência-espacial-oficial-governo"><span class="header-section-number">B.2.1.2</span> Dados de Referência Espacial Oficial (Governo)</a></li>
+  </ul></li>
+  <li><a href="#ingestão" id="toc-ingestão" class="nav-link" data-scroll-target="#ingestão"><span class="header-section-number">B.2.2</span> Ingestão</a>
+  <ul class="collapse">
+  <li><a href="#extração-e-carga-inicial" id="toc-extração-e-carga-inicial" class="nav-link" data-scroll-target="#extração-e-carga-inicial"><span class="header-section-number">B.2.2.1</span> Extração e Carga Inicial</a></li>
+  <li><a href="#setup-de-infraestrutura-e-banco-de-dados" id="toc-setup-de-infraestrutura-e-banco-de-dados" class="nav-link" data-scroll-target="#setup-de-infraestrutura-e-banco-de-dados"><span class="header-section-number">B.2.2.2</span> Setup de Infraestrutura e Banco de Dados</a></li>
+  <li><a href="#otimização-de-índices-gin" id="toc-otimização-de-índices-gin" class="nav-link" data-scroll-target="#otimização-de-índices-gin"><span class="header-section-number">B.2.2.3</span> Otimização de Índices (GIN)</a></li>
+  <li><a href="#fluxo-de-processamento-alto-nível" id="toc-fluxo-de-processamento-alto-nível" class="nav-link" data-scroll-target="#fluxo-de-processamento-alto-nível"><span class="header-section-number">B.2.2.4</span> Fluxo de Processamento (Alto Nível)</a></li>
+  </ul></li>
+  <li><a href="#tratamento" id="toc-tratamento" class="nav-link" data-scroll-target="#tratamento"><span class="header-section-number">B.2.3</span> Tratamento</a>
+  <ul class="collapse">
+  <li><a href="#normalização-e-geocodificação-primária-pyspark-etl" id="toc-normalização-e-geocodificação-primária-pyspark-etl" class="nav-link" data-scroll-target="#normalização-e-geocodificação-primária-pyspark-etl"><span class="header-section-number">B.2.3.1</span> Normalização e Geocodificação Primária (PySpark ETL)</a></li>
+  <li><a href="#saneamento-de-registros-detecção-de-outliers" id="toc-saneamento-de-registros-detecção-de-outliers" class="nav-link" data-scroll-target="#saneamento-de-registros-detecção-de-outliers"><span class="header-section-number">B.2.3.2</span> Saneamento de Registros (Detecção de Outliers)</a></li>
+  <li><a href="#validação-cruzada-avançada-geocoder-v3---postgis" id="toc-validação-cruzada-avançada-geocoder-v3---postgis" class="nav-link" data-scroll-target="#validação-cruzada-avançada-geocoder-v3---postgis"><span class="header-section-number">B.2.3.3</span> Validação Cruzada Avançada (Geocoder V3 - PostGIS)</a></li>
+  <li><a href="#veredito-e-tolerância-dinâmica" id="toc-veredito-e-tolerância-dinâmica" class="nav-link" data-scroll-target="#veredito-e-tolerância-dinâmica"><span class="header-section-number">B.2.3.4</span> Veredito e Tolerância Dinâmica</a></li>
+  <li><a href="#triagem-de-precisão-e-recuperação-espacial-vias-curtas" id="toc-triagem-de-precisão-e-recuperação-espacial-vias-curtas" class="nav-link" data-scroll-target="#triagem-de-precisão-e-recuperação-espacial-vias-curtas"><span class="header-section-number">B.2.3.5</span> Triagem de Precisão e Recuperação Espacial (Vias Curtas)</a></li>
+  </ul></li>
   <li><a href="#armazenamento" id="toc-armazenamento" class="nav-link" data-scroll-target="#armazenamento"><span class="header-section-number">B.2.4</span> Armazenamento</a></li>
   </ul></li>
   <li><a href="#resultados-obtidos-v3" id="toc-resultados-obtidos-v3" class="nav-link" data-scroll-target="#resultados-obtidos-v3"><span class="header-section-number">B.3</span> Resultados Obtidos (V3)</a>
-  <ul class="collapse">
+  <ul>
   <li><a href="#estrutura" id="toc-estrutura" class="nav-link" data-scroll-target="#estrutura"><span class="header-section-number">B.3.1</span> Estrutura</a></li>
-  <li><a href="#bases-consolidadas-v3" id="toc-bases-consolidadas-v3" class="nav-link" data-scroll-target="#bases-consolidadas-v3"><span class="header-section-number">B.3.2</span> Bases Consolidadas (V3)</a></li>
+  <li><a href="#bases-consolidadas-v3" id="toc-bases-consolidadas-v3" class="nav-link" data-scroll-target="#bases-consolidadas-v3"><span class="header-section-number">B.3.2</span> Bases Consolidadas (V3)</a>
+  <ul class="collapse">
+  <li><a href="#decisão-sobre-coordenadas-finais" id="toc-decisão-sobre-coordenadas-finais" class="nav-link" data-scroll-target="#decisão-sobre-coordenadas-finais"><span class="header-section-number">B.3.2.1</span> Decisão sobre Coordenadas Finais</a></li>
+  <li><a href="#análise-de-conformidade-150m" id="toc-análise-de-conformidade-150m" class="nav-link" data-scroll-target="#análise-de-conformidade-150m"><span class="header-section-number">B.3.2.2</span> Análise de Conformidade (≤150m)</a></li>
+  <li><a href="#estatísticas-de-distância-registros-com-match" id="toc-estatísticas-de-distância-registros-com-match" class="nav-link" data-scroll-target="#estatísticas-de-distância-registros-com-match"><span class="header-section-number">B.3.2.3</span> Estatísticas de Distância (registros com match)</a></li>
+  <li><a href="#performance-por-tipo-de-imóvel" id="toc-performance-por-tipo-de-imóvel" class="nav-link" data-scroll-target="#performance-por-tipo-de-imóvel"><span class="header-section-number">B.3.2.4</span> Performance por Tipo de Imóvel</a></li>
+  <li><a href="#distribuição-por-nível-de-matching-cnefe" id="toc-distribuição-por-nível-de-matching-cnefe" class="nav-link" data-scroll-target="#distribuição-por-nível-de-matching-cnefe"><span class="header-section-number">B.3.2.5</span> Distribuição por Nível de Matching CNEFE</a></li>
+  </ul></li>
   <li><a href="#dicionário-de-dados-v3" id="toc-dicionário-de-dados-v3" class="nav-link" data-scroll-target="#dicionário-de-dados-v3"><span class="header-section-number">B.3.3</span> Dicionário de dados (V3)</a></li>
   </ul></li>
   <li><a href="#sec-analises-aprofundadas" id="toc-sec-analises-aprofundadas" class="nav-link" data-scroll-target="#sec-analises-aprofundadas"><span class="header-section-number">B.4</span> Análises Aprofundadas e Validação</a>
+  <ul>
+  <li><a href="#metodologia-de-recuperação-vias-curtas-short-streets" id="toc-metodologia-de-recuperação-vias-curtas-short-streets" class="nav-link" data-scroll-target="#metodologia-de-recuperação-vias-curtas-short-streets"><span class="header-section-number">B.4.1</span> 1. Metodologia de Recuperação: Vias Curtas (Short Streets)</a>
   <ul class="collapse">
-  <li><a href="#metodologia-de-recuperação-vias-curtas-short-streets" id="toc-metodologia-de-recuperação-vias-curtas-short-streets" class="nav-link" data-scroll-target="#metodologia-de-recuperação-vias-curtas-short-streets"><span class="header-section-number">B.4.1</span> 1. Metodologia de Recuperação: Vias Curtas (Short Streets)</a></li>
-  <li><a href="#sec-lote-terreno" id="toc-sec-lote-terreno" class="nav-link" data-scroll-target="#sec-lote-terreno"><span class="header-section-number">B.4.2</span> Análise Exploratória: Desempenho em Lotes e Terrenos</a></li>
-  <li><a href="#validação-de-acurácia-benchmarking-com-google-maps" id="toc-validação-de-acurácia-benchmarking-com-google-maps" class="nav-link" data-scroll-target="#validação-de-acurácia-benchmarking-com-google-maps"><span class="header-section-number">B.4.3</span> Validação de Acurácia (Benchmarking com Google Maps)</a></li>
+  <li><a href="#metodologia" id="toc-metodologia" class="nav-link" data-scroll-target="#metodologia"><span class="header-section-number">B.4.1.1</span> Metodologia</a></li>
+  <li><a href="#resultados" id="toc-resultados" class="nav-link" data-scroll-target="#resultados"><span class="header-section-number">B.4.1.2</span> Resultados</a></li>
+  </ul></li>
+  <li><a href="#sec-lote-terreno" id="toc-sec-lote-terreno" class="nav-link" data-scroll-target="#sec-lote-terreno"><span class="header-section-number">B.4.2</span> Análise Exploratória: Desempenho em Lotes e Terrenos</a>
+  <ul class="collapse">
+  <li><a href="#metodologia-1" id="toc-metodologia-1" class="nav-link" data-scroll-target="#metodologia-1"><span class="header-section-number">B.4.2.1</span> Metodologia</a></li>
+  <li><a href="#resultados-1" id="toc-resultados-1" class="nav-link" data-scroll-target="#resultados-1"><span class="header-section-number">B.4.2.2</span> Resultados</a></li>
+  </ul></li>
+  <li><a href="#validação-de-acurácia-benchmarking-com-google-maps" id="toc-validação-de-acurácia-benchmarking-com-google-maps" class="nav-link" data-scroll-target="#validação-de-acurácia-benchmarking-com-google-maps"><span class="header-section-number">B.4.3</span> Validação de Acurácia (Benchmarking com Google Maps)</a>
+  <ul class="collapse">
+  <li><a href="#metodologia-2" id="toc-metodologia-2" class="nav-link" data-scroll-target="#metodologia-2"><span class="header-section-number">B.4.3.1</span> Metodologia</a></li>
+  <li><a href="#resultados-sintéticos" id="toc-resultados-sintéticos" class="nav-link" data-scroll-target="#resultados-sintéticos"><span class="header-section-number">B.4.3.2</span> Resultados Sintéticos</a></li>
+  <li><a href="#principais-conclusões-do-estudo" id="toc-principais-conclusões-do-estudo" class="nav-link" data-scroll-target="#principais-conclusões-do-estudo"><span class="header-section-number">B.4.3.3</span> Principais Conclusões do Estudo</a></li>
+  </ul></li>
   <li><a href="#recomendações-e-próximos-passos" id="toc-recomendações-e-próximos-passos" class="nav-link" data-scroll-target="#recomendações-e-próximos-passos"><span class="header-section-number">B.4.4</span> Recomendações e Próximos Passos</a></li>
   </ul></li>
   <li><a href="#desafios" id="toc-desafios" class="nav-link" data-scroll-target="#desafios"><span class="header-section-number">B.5</span> Desafios</a>
-  <ul class="collapse">
+  <ul>
   <li><a href="#qualidade-de-dados" id="toc-qualidade-de-dados" class="nav-link" data-scroll-target="#qualidade-de-dados"><span class="header-section-number">B.5.1</span> Qualidade de dados</a></li>
-  <li><a href="#validação-posicional-e-integridade-da-oferta-são-processos-independentes" id="toc-validação-posicional-e-integridade-da-oferta-são-processos-independentes" class="nav-link" data-scroll-target="#validação-posicional-e-integridade-da-oferta-são-processos-independentes"><span class="header-section-number">B.5.2</span> Validação Posicional e Integridade da Oferta são Processos Independentes</a></li>
+  <li><a href="#validação-posicional-e-integridade-da-oferta-são-processos-independentes" id="toc-validação-posicional-e-integridade-da-oferta-são-processos-independentes" class="nav-link" data-scroll-target="#validação-posicional-e-integridade-da-oferta-são-processos-independentes"><span class="header-section-number">B.5.2</span> Validação Posicional e Integridade da Oferta são Processos Independentes</a>
+  <ul class="collapse">
+  <li><a href="#problema-crítico-lotesterrenos" id="toc-problema-crítico-lotesterrenos" class="nav-link" data-scroll-target="#problema-crítico-lotesterrenos"><span class="header-section-number">B.5.2.1</span> Problema Crítico: Lotes/Terrenos</a></li>
+  </ul></li>
   <li><a href="#padronização" id="toc-padronização" class="nav-link" data-scroll-target="#padronização"><span class="header-section-number">B.5.3</span> Padronização</a></li>
   <li><a href="#integração" id="toc-integração" class="nav-link" data-scroll-target="#integração"><span class="header-section-number">B.5.4</span> Integração</a></li>
   </ul></li>
   <li><a href="#escalabilidade" id="toc-escalabilidade" class="nav-link" data-scroll-target="#escalabilidade"><span class="header-section-number">B.6</span> Escalabilidade</a>
-  <ul class="collapse">
+  <ul>
   <li><a href="#replicabilidade-do-modelo" id="toc-replicabilidade-do-modelo" class="nav-link" data-scroll-target="#replicabilidade-do-modelo"><span class="header-section-number">B.6.1</span> Replicabilidade do modelo</a></li>
   <li><a href="#dependências-externas" id="toc-dependências-externas" class="nav-link" data-scroll-target="#dependências-externas"><span class="header-section-number">B.6.2</span> Dependências externas</a></li>
   </ul></li>
   <li><a href="#conclusão" id="toc-conclusão" class="nav-link" data-scroll-target="#conclusão"><span class="header-section-number">B.7</span> Conclusão</a>
-  <ul class="collapse">
+  <ul>
   <li><a href="#resultado-final-base-duplamente-validada" id="toc-resultado-final-base-duplamente-validada" class="nav-link" data-scroll-target="#resultado-final-base-duplamente-validada"><span class="header-section-number">B.7.1</span> Resultado Final: Base Duplamente Validada</a></li>
   </ul></li>
   </ul>

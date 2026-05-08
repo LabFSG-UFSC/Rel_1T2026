@@ -2,31 +2,29 @@
 
 ## Introdução
 
-O presente relatório detalha a metodologia e os resultados da Prova de
-Conceito (POC) do Observatório do Mercado Imobiliário (OMI), realizada
-em Florianópolis/SC. O monitoramento do mercado por meio de dados de
-portais web é uma prática consolidada na América Latina como instrumento
-de apoio à avaliação em massa e à política fiscal. Neste contexto, o
-objetivo principal deste projeto é construir uma base de dados limpa e
-confiável para apoiar a Receita Federal do Brasil (RFB) no cálculo do
-Valor de Referência do Cadastro Imobiliário Brasileiro (CIB), superando
-a dependência de informações puramente autodeclaradas.
+O presente relatório detalha a metodologia e os resultados da Prova de Conceito
+(POC) do Observatório do Mercado Imobiliário (OMI), realizada em
+Florianópolis/SC. O monitoramento do mercado por meio de dados de portais web é
+uma prática consolidada na América Latina como instrumento de apoio à avaliação
+em massa e à política fiscal. Neste contexto, o objetivo principal deste projeto
+é construir uma base de dados limpa e confiável para apoiar a Receita Federal do
+Brasil (RFB) no cálculo do Valor de Referência do Cadastro Imobiliário
+Brasileiro (CIB), superando a dependência de informações puramente
+autodeclaradas.
 
-O desafio prático não é novo: embora a coleta massiva de dados brutos de
-mercado já seja uma rotina tecnológica difundida; garantir que cada
-evento tenha localização confiável e atributos íntegros o suficiente
-para uma análise fiscal rigorosa é o verdadeiro obstáculo. Os dados
-brutos extraídos de portais comerciais chegam com dois tipos críticos de
-ruído:
+O desafio prático não é novo: embora a coleta massiva de dados brutos de mercado
+já seja uma rotina tecnológica difundida; garantir que cada evento tenha
+localização confiável e atributos íntegros o suficiente para uma análise fiscal
+rigorosa é o verdadeiro obstáculo. Os dados brutos extraídos de portais
+comerciais chegam com dois tipos críticos de ruído:
 
 -   Ruído Posicional: CEPs incorretos, números de porta ausentes e
-    coordenadas deslocadas em centenas de metros — imprecisões
-    suficientes para vincular um imóvel ao setor censitário errado.
+coordenadas deslocadas em centenas de metros — imprecisões suficientes para
+vincular um imóvel ao setor censitário errado.
 
 -   Ruído Cadastral: duplicatas do mesmo imóvel em anúncios distintos,
-    valores de área ou preço estatisticamente anômalos, campos
-    obrigatórios ausentes e terminologias fora do padrão da
-    administração pública.
+valores de área ou preço estatisticamente anômalos, campos obrigatórios ausentes
+e terminologias fora do padrão da administração pública.
 
 Esta POC estruturou um pipeline que ataca os dois problemas em paralelo
 e de forma independente. Para sanar a questão posicional, adotamos o

@@ -67,7 +67,7 @@ processos de tratamento e validação das informações e o nível de maturidade
 alcançado na estruturação do Observatório, constituindo a base para o
 desenvolvimento das etapas subsequentes.
 
-- Construção de uma base confiável de ofertas imobiliárias
+#### Construção de uma base confiável de ofertas imobiliárias
 
 No âmbito da Prova de Conceito (PoC) de Florianópolis, foi estruturado um
 processo completo de qualificação de dados imobiliários, superando a lógica
@@ -654,15 +654,27 @@ Destacam-se, ainda, os avanços na geração de outputs territoriais, na incorpo
 
 A Etapa 3 demonstrou desempenho estatístico consistente na modelagem dos valores imobiliários da POC Florianópolis. foram elaborados dois modelos econométricos para os imóveis de Florianópolis: um modelo voltado à estimativa de valores de imóveis edificados e outro específico para a modelagem dos lotes urbanos. Essa abordagem dual permitiu tratar de forma diferenciada as dinâmicas de formação de valor associadas às edificações e ao solo urbano, garantindo maior aderência metodológica ao comportamento do mercado imobiliário.
 
-No caso dos imóveis edificados, foi ajustado um modelo de regressão linear múltipla, incorporando variáveis locacionais, socioeconômicas, tipológicas e construtivas. As variáveis utilizadas encontram-se listadas na figura 5.
+No caso dos imóveis edificados, foi ajustado um modelo de regressão linear múltipla, incorporando variáveis locacionais, socioeconômicas, tipológicas e construtivas. As variáveis utilizadas encontram-se listadas na @fig-variaveis-edificados.
 
-![Variáveis utilizadas – imóveis edificados](img/pvg/fig-05-variaveis-edificados.png)
+![Variáveis utilizadas – imóveis edificados](img/pvg/fig-05-variaveis-edificados.png){#fig-variaveis-edificados}
 
-O modelo apresentou desempenho robusto, com R² = 0,86 e R² ajustado = 0,86, além de erro-padrão dos resíduos de 0,17, considerando 32.128 graus de liberdade. Esses resultados evidenciam elevada capacidade explicativa, permitindo a geração consistente de fatores de homogeneização e a construção da superfície de valores do metro quadrado construído (VUM2), posteriormente utilizada na integração com o modelo de lotes.
+O modelo apresentou desempenho robusto, com R² = 0,86 e R² ajustado = 0,86, além
+de erro-padrão dos resíduos de 0,17, considerando 32.128 graus de liberdade.
+Esses resultados evidenciam elevada capacidade explicativa, permitindo a geração
+consistente de fatores de homogeneização e a construção da superfície de valores
+do metro quadrado construído (VUM2), posteriormente utilizada na integração com
+o modelo de lotes.
 
-Para os lotes urbanos, a modelagem seguiu uma estratégia em duas etapas. Inicialmente, foi ajustado um modelo preliminar, cujos resíduos foram espacializados por meio de krigagem. A partir desses resíduos krigados, foi construída uma variável explicativa de localização, denominada layer, incorporada ao modelo final de lotes. Essa variável capturou a componente espacial não explicada pelas variáveis tradicionais, refinando significativamente o desempenho do modelo. A figura 6 apresenta as variáveis utilizadas para compor o modelo.
+Para os lotes urbanos, a modelagem seguiu uma estratégia em duas etapas.
+Inicialmente, foi ajustado um modelo preliminar, cujos resíduos foram
+espacializados por meio de krigagem. A partir desses resíduos krigados, foi
+construída uma variável explicativa de localização, denominada layer,
+incorporada ao modelo final de lotes. Essa variável capturou a componente
+espacial não explicada pelas variáveis tradicionais, refinando
+significativamente o desempenho do modelo. A @fig-variaveis-lotes apresenta as
+variáveis utilizadas para compor o modelo.
 
-![Variáveis utilizadas – lotes e terrenos](img/pvg/fig-06-variaveis-lotes.png)
+![Variáveis utilizadas – lotes e terrenos](img/pvg/fig-06-variaveis-lotes.png){#fig-variaveis-lotes}
 
 O modelo econométrico final para os lotes apresentou R² = 0,82 (R² ajustado = 0,82), com erro-padrão dos resíduos de aproximadamente 0,34 e cerca de 3.796 graus de liberdade, evidenciando um desempenho consistente. Em termos interpretativos, o modelo explica cerca de 82% dos preços unitários de mercado, resultado particularmente relevante quando se considera a ausência de diversas variáveis relacionadas às características físicas dos lotes, como frente, forma, pedologia, entre outras.
 
@@ -712,9 +724,9 @@ Embora, no caso específico de Florianópolis, os modelos tenham apresentado bom
 
 #### Integração entre modelos
 
-A Etapa 3 estruturou um fluxo integrado no qual os modelos não operam de forma isolada. O modelo de imóveis edificados foi utilizado para estimar valores do metro quadrado construído e gerar a variável VUM2, que posteriormente foi incorporada ao modelo de lotes. A Figura 7 ilustra este processo.
+A Etapa 3 estruturou um fluxo integrado no qual os modelos não operam de forma isolada. O modelo de imóveis edificados foi utilizado para estimar valores do metro quadrado construído e gerar a variável VUM2, que posteriormente foi incorporada ao modelo de lotes. A @fig-fluxo-modelos ilustra este processo.
 
-![Ilustração fluxo dos modelos](img/pvg/fig-07-fluxo-modelos.png)
+![Ilustração fluxo dos modelos](img/pvg/fig-07-fluxo-modelos.png){#fig-fluxo-modelos}
 
 Além disso, os resíduos do modelo preliminar de lotes foram krigados e transformados na variável espacial layer, incorporada ao modelo final. Esse encadeamento permitiu combinar informações provenientes dos imóveis edificados, dos lotes, das variáveis cartográficas e da dependência espacial não capturada inicialmente.
 

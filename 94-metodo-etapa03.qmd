@@ -257,7 +257,7 @@ processo é repetido até estabilização, minimizando a soma dos quadrados
 das distâncias intragrupo. Como resultado, obtém-se uma tipologia
 objetiva de padrão construtivo, sem impor limiares arbitrários de preço.
 
-![](img/pvg/figura_1.png)
+![Fluxo da classificação de padrão construtivo](img/pvg/figura_1.png){#fig-pvg1}
 
 ![Fluxo metodológico da classificação de padrão
 construtivo.](img/pvg/fluxo-padrao-construtivo.svg){#fig-padrao-construtivo
@@ -279,7 +279,7 @@ apresenta distribuição mais dispersa, com valores a partir de R\$
 20.000/m² e cauda longa até R\$ 70.000/m², refletindo a heterogeneidade
 do segmento de alto padrão em Florianópolis.
 
-![](img/pvg/figura_2.png)
+![Histogramas dos imóveis classificados por padrão construtivo](img/pvg/figura_2.png){#fig-pvg2}
 
 ![Distribuição do valor unitário por padrão de imóvel —
 Apartamentos.](img/pvg/histograma-padrao-apartamentos.png){#fig-hist-padrao-aptos
@@ -292,7 +292,7 @@ as casas apresentam faixas de valor unitário mais comprimidas e menor
 dispersão no padrão alto, o que evidencia diferenças estruturais entre
 as duas tipologias.
 
-![](img/pvg/figura_3.png)
+![](img/pvg/figura_3.png){#fig-pvg3}
 
 ![Distribuição do valor unitário por padrão de imóvel —
 Casas.](img/pvg/histograma-padrao-casas.png){#fig-hist-padrao-casas
@@ -320,12 +320,12 @@ formal, essa estratégia melhora a representação da heterogeneidade
 espacial em cada tipologia e cria estratos técnicos úteis para os
 modelos de valor.
 
-![](img/pvg/figura_4.png)
+![Fluxo da classificação espacial por tipologia](img/pvg/figura_4.png){#fig-pvg4}
 
 ![Fluxo metodológico do agrupamento espacial por
 tipologia.](img/pvg/fluxo-agrupamento.svg){#fig-agrupamento width="85%"}
 
-![](img/pvg/figura_5.png)
+![](img/pvg/figura_5.png){#fig-pvg5}
 
 ![Clusterização espacial por tipologia com comparação entre
 class_3_cluster e class_5_cluster (apartamentos, casas e
