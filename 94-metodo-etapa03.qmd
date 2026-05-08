@@ -1,51 +1,5 @@
 # Materiais, Métodos e Resultados da Etapa 3 - Modelagem e Planta de Valores Genéricos (PVG) {#sec-est}
 
-## Introdução
-
-A Etapa 3 do projeto corresponde ao desenvolvimento da modelagem estatística e
-espacial voltada à construção da Planta de Valores Genéricos (PVG) e à
-estimativa dos Valores de Referência dos imóveis urbanos no contexto da Prova de
-Conceito (POC) de Florianópolis/SC. Esta etapa representa o núcleo analítico do
-projeto, pois integra as bases estruturadas nas etapas anteriores — observatório
-do mercado imobiliário, variáveis geoespaciais e bases cartográficas
-territoriais — para geração de modelos capazes de representar o comportamento do
-mercado imobiliário de forma consistente, auditável e escalável.
-
-A modelagem foi estruturada com base em princípios de avaliação em massa,
-buscando equilibrar desempenho estatístico, coerência econômica e
-interpretabilidade dos resultados. Nesse contexto, a abordagem adotada combina
-métodos estatísticos clássicos, técnicas geoestatísticas e procedimentos de
-segmentação espacial, permitindo representar simultaneamente os fatores
-locacionais, construtivos e territoriais que influenciam a formação dos valores
-imobiliários.
-
-O fluxo metodológico desenvolvido foi organizado de forma incremental e
-controlada, iniciando pela limpeza e qualificação das bases oriundas do
-Observatório do Mercado Imobiliário, seguida da definição e tratamento das
-variáveis explicativas, classificação dos imóveis segundo padrão construtivo e
-segmentação espacial dos mercados. Posteriormente, foram ajustados modelos
-específicos para imóveis edificados e para lotes urbanos, permitindo a geração
-de superfícies de valor e de variáveis derivadas utilizadas na composição da
-PVG.
-
-Para os imóveis edificados, a modelagem buscou estimar os valores unitários do
-metro quadrado construído (VUM2), considerando atributos físicos, econômicos e
-locacionais dos imóveis. Já para os lotes urbanos, foram desenvolvidos modelos
-específicos capazes de representar o comportamento do valor da terra urbana,
-incorporando variáveis territoriais, renda, acessibilidade, infraestrutura
-urbana e influência espacial. Essa estratégia permitiu estruturar uma abordagem
-aderente ao método evolutivo de avaliação, possibilitando posteriormente a
-composição dos valores finais dos imóveis.
-
-Além do desenvolvimento dos modelos, esta etapa teve papel fundamental na
-validação metodológica da POC, permitindo avaliar o comportamento das variáveis,
-testar estratégias de segmentação territorial, verificar a aderência dos
-resultados ao mercado imobiliário real e identificar limitações associadas à
-qualidade dos dados e à heterogeneidade espacial do município. Os resultados
-obtidos constituem uma base importante para o refinamento dos modelos e para a
-preparação da expansão da metodologia para outros municípios e contextos
-territoriais.
-
 ```{r, include = FALSE}
 library(ggplot2)
 set_theme(theme_minimal())
@@ -90,7 +44,7 @@ adjR2 <- function(model) {
 A Etapa 3 do projeto corresponde ao desenvolvimento da modelagem estatística e
 espacial voltada à construção da Planta de Valores Genéricos (PVG) e à
 estimativa dos Valores de Referência dos imóveis urbanos no contexto da Prova de
-Conceito (PoC) de Florianópolis/SC. Esta etapa representa o núcleo analítico do
+Conceito (POC) de Florianópolis/SC. Esta etapa representa o núcleo analítico do
 projeto, pois integra as bases estruturadas nas etapas anteriores — observatório
 do mercado imobiliário, variáveis geoespaciais e bases cartográficas
 territoriais — para geração de modelos capazes de representar o comportamento do
@@ -123,7 +77,7 @@ aderente ao método evolutivo de avaliação, possibilitando posteriormente a
 composição dos valores finais dos imóveis.
 
 Além do desenvolvimento dos modelos, esta etapa teve papel fundamental na
-validação metodológica da PoC, permitindo avaliar o comportamento das variáveis,
+validação metodológica da POC, permitindo avaliar o comportamento das variáveis,
 testar estratégias de segmentação territorial, verificar a aderência dos
 resultados ao mercado imobiliário real e identificar limitações associadas à
 qualidade dos dados e à heterogeneidade espacial do município. Os resultados
@@ -391,14 +345,13 @@ library(broom)
 library(kableExtra)
 load("../POC-FLN/model/Edif_OLS.rda")
 tab <- FinalFit |>
-  tidy(conf.int = TRUE, conf.level = .80, exponentiate = TRUE)
+  tidy(exponentiate = TRUE)
 
 tab[which(tab$term == "(Intercept)"), "term"] <- "Intercepto"
 
 tab |>
   kable(digits = 2, format.args = list(decimal.mark = ",", big.mark = "."),
-        col.names = c("Termo", "Coef.", "Erro-padrão", "Estat. t", "p-valor", 
-                      "IC_inf", "IC_sup"),
+        col.names = c("Termo", "Coef.", "Erro-padrão", "Estat. t", "p-valor"),
         booktabs = TRUE) |>
  # kable_styling() |>
   footnote(alphabet = c(
@@ -436,14 +389,13 @@ library(kableExtra)
 library(DescTools)
 load("../POC-FLN/model/Lotes_GLM.rda")
 tab <- GammaR2 |>
-  tidy(conf.int = TRUE, conf.level = .80, exponentiate = TRUE)
+  tidy(exponentiate = TRUE)
 
 tab[which(tab$term == "(Intercept)"), "term"] <- "Intercepto"
 
 tab |>
   kable(digits = 2, format.args = list(decimal.mark = ",", big.mark = "."),
-        col.names = c("Termo", "Est.", "Erro-padrão", "Est. t", "p-valor", 
-                      "IC_inf", "IC_sup")) |>
+        col.names = c("Termo", "Est.", "Erro-padrão", "Est. t", "p-valor")) |>
   footnote(alphabet = c(
     paste("Erro-padrão dos resíduos: ", brf(sigma(GammaR2)), "em ", 
           df.residual(GammaR2), "graus de liberdade"),
@@ -519,14 +471,13 @@ ordinária) de lotes, da @tbl-LotesModel:
 
 load("../POC-FLN/model/LotesFinalFit.rda")
 tab <- FinalFit |>
-  tidy(conf.int = T, conf.level = .80, exponentiate = F) 
+  tidy(exponentiate = F) 
 
 tab[which(tab$term == "(Intercept)"), "term"] <- "Intercepto"
 
 tab |>
   kable(digits = 2, format.args = list(decimal.mark = ",", big.mark = "."),
-        col.names = c("Termo", "Est.", "Erro-padrão", "Est. t", "p-valor", 
-                      "IC_inf", "IC_sup"))  |>
+        col.names = c("Termo", "Est.", "Erro-padrão", "Est. t", "p-valor"))  |>
   footnote(alphabet = c(
     paste("Erro-padrão dos resíduos: ", brf(sigma(FinalFit)), "em ", 
           df.residual(FinalFit), "graus de liberdade"),
@@ -578,14 +529,13 @@ library(sandwich)
 
 tab <- 
   coeftest(FinalFit, vcov = vcovHC(FinalFit, type = "HC3")) |>
-  tidy(conf.int = T, conf.level = .80, exponentiate = T) 
+  tidy(exponentiate = T) 
 
 tab[which(tab$term == "(Intercept)"), "term"] <- "Intercepto"
 
 tab |>
   kable(digits = 2, format.args = list(decimal.mark = ",", big.mark = "."),
-        col.names = c("Termo", "Est.", "Erro-padrão", "Est. t", "p-valor", 
-                      "IC_inf", "IC_sup"))  |>
+        col.names = c("Termo", "Est.", "Erro-padrão", "Est. t", "p-valor"))  |>
   footnote(alphabet = c(
     paste("Erro-padrão dos resíduos: ", brf(sigma(FinalFit)), "em ", 
           df.residual(FinalFit), "graus de liberdade"),
