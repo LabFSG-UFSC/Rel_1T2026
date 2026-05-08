@@ -11,13 +11,15 @@ crossref:
   appendix-title: "Apêndice"
   appendix-delim: " - "
   
+toc: true
+toc-depth: 4
+  
 book:
   title: "Relatório 1T2026"
   author: "UFSC"
   date: today
  # date-format: long
   date-format: "MMMM, YYYY"
-  
   chapters:
     - index.qmd
     - 01-intro.qmd
@@ -35,15 +37,67 @@ book:
     - 93-metodo-etapa02.qmd
     - 94-metodo-etapa03.qmd
     - 95-metodo-etapa04.qmd
+  cover-image: img/Capa_rel_trimestral.png
+  cover-image-alt: "Description of my book cover"
+  page-footer: 
+    left: "© 2026 UFSC"
+    center: "![](img/Logo com RFB e UFSC.png){width=250px}"
+  downloads: [pdf, epub]
+  repo-url: https://github.com/LabFSG-UFSC/Rel_1T2026/
+  repo-actions: [edit]
+  sharing: [twitter, facebook]
     
 bibliography: references.bib
+csl: ABNT_UFPR_2011-Mendeley.csl
+link-citations: true
+
+lang: pt-br
 
 format:
   html:
+    css: [styles.css, cover-style.css]
     theme:
       - cosmo
       - brand
   pdf:
     documentclass: scrreprt
+    geometry:
+      - top=30mm
+      - bottom=35mm
+      - right=20mm
+      - left=30mm
+    fig-format: png
+    fig-dpi: 300  # Recommended to maintain quality
+    extract-media: img
+    include-in-header:
+      text: |
+        \usepackage{longtable}
+        \usepackage{booktabs}
+        \usepackage{array}
+        \usepackage{multirow}
+        % Capa:
+        \usepackage{tikz}
+        \usepackage{everypage}
+        \AtBeginDocument{
+          \begin{tikzpicture}[remember picture,overlay]
+            \node at (current page.center) {
+              \includegraphics[width=\paperwidth,height=\paperheight]{img/Capa rel mensal - geral.png}
+            };
+          \end{tikzpicture}
+          \clearpage
+        }
+        % Imagem de fundo:
+        \AddEverypageHook{
+          \begin{tikzpicture}[remember picture,overlay]
+            \node at (current page.center) {
+              \includegraphics[width=\paperwidth,height=\paperheight]{img/img-background_2.png}
+            };
+          \end{tikzpicture}
+        }
+        % Rodapé:
+        \input{footer.tex}
+    link-citations: true
+    fontsize: 14pt
 
-editor: visual
+
+editor: source

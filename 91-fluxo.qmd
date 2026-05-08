@@ -1,3 +1,3 @@
-# Fluxo Metodológico
+# Fluxo Metodológico {#sec-fluxo-metodologico}
 
 ![Fluxo da obtenção do valor de referência](img/fluxo/fluxo_unificado_v3.png)

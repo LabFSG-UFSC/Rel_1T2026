@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,9 +10,6 @@
 
 <title>Relatório 1T2026</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -37,14 +34,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="./01-intro.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -59,21 +57,23 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
   }
 }</script>
 
 
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="cover-style.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -82,13 +82,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Apresentação</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -98,14 +98,53 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Relatório 1T2026</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/LabFSG-UFSC/Rel_1T2026/" title="Código fonte" class="quarto-navigation-tool px-1" aria-label="Código fonte"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Baixar" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Baixar"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Relatório-1T2026.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Baixar PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Relatório-1T2026.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Baixar ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <a href="" title="Compartilhar" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Compartilhar"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
+        <div id="quarto-search" class="" title="Procurar"></div>
         </div>
         </div>
     <div class="sidebar-menu-container"> 
@@ -167,14 +206,14 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+ <span class="menu-text">Referências</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Appendices</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+ <span class="menu-text">Apêndices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -212,12 +251,12 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">Índice</h2>
    
   <ul>
   <li><a href="#apresentação" id="toc-apresentação" class="nav-link active" data-scroll-target="#apresentação">Apresentação</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/LabFSG-UFSC/Rel_1T2026/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -232,16 +271,16 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Autor</div>
     <div class="quarto-title-meta-contents">
              <p>UFSC </p>
           </div>
   </div>
     
     <div>
-    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-heading">Data de Publicação</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May, 2026</p>
+      <p class="date">maio, 2026</p>
     </div>
   </div>
   
@@ -253,33 +292,39 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+
 <section id="apresentação" class="level1 unnumbered">
-<h1 class="unnumbered">Apresentação</h1>
+<h1 class="unnumbered">Apresentação</h1><p><img src="img/Capa_rel_trimestral.png" title="Relatório 1T2026" class="quarto-cover-image nolightbox img-fluid" alt="Description of my book cover"></p>
 <p>A Universidade Federal de Santa Catarina – UFSC, no âmbito do Termo de Execução Descentralizada (TED) firmado com a Receita Federal do Brasil – RFB, com gestão administrativa e financeira da Fundação de Ensino e Engenharia de Santa Catarina – FEESC, vem apresentar o Relatório Técnico referente ao período de execução do projeto de desenvolvimento da metodologia de determinação do Valor de Referência para o Cadastro Imobiliário Brasileiro.</p>
 <p>O presente relatório contempla as atividades desenvolvidas no período correspondente ao primeiro ciclo de execução do projeto, com destaque para a fase inicial de mobilização, estruturação técnica, organização das bases de dados, desenvolvimento da Prova de Conceito (POC) em Florianópolis/SC e avanço das etapas relacionadas ao Observatório do Mercado Imobiliário, Bases Cartográficas Territoriais e Modelagem.</p>
 <p>Neste relatório estão apresentados os principais resultados alcançados no período, incluindo os avanços metodológicos, a estruturação das bases de dados e a evolução das atividades técnicas, considerando o acompanhamento sistemático das etapas previstas no Plano de Gerenciamento do Projeto.</p>
 <p>Os principais dados institucionais do projeto estão a seguir relacionados:</p>
-<p>• Instrumento: Termo de Execução Descentralizada (TED) – RFB/UFSC</p>
-<p>• Data da assinatura: 23/12/2026</p>
-<p>• Início das atividades: 26/12/2025</p>
-<p>• Duração: 60 meses</p>
-<p>• Valor: 7.800.000,00</p>
-<p>• Nº Contrato/ Convenio - FEESC: 174/2025</p>
-<p>• Nº do Processo: 23080.064460/2019-37</p>
-<p>• Coordenação Geral: Prof.&nbsp;Everton da Silva</p>
-<p>• Instituição Executora: Universidade Federal de Santa Catarina – UFSC</p>
-<p>• Gestão Administrativa: Fundação de Ensino e Engenharia de Santa Catarina – FEESC</p>
-<p>• Objeto: Apoiar a Receita Federal na definição e execução de metodologia para apuração do Valor de Referência de imóveis urbanos, considerando determinações da Lei Complementar nº 214, de 16 de janeiro de 2025.</p>
-<p>• Data de início do projeto: 26/12/2025</p>
-<p>• Plano de Gerenciamento: Apresentado em 03/02/2026 e entregue/validado em 05/02/2026</p>
+<ul>
+<li><p>Instrumento: Termo de Execução Descentralizada (TED) – RFB/UFSC</p></li>
+<li><p>Data da assinatura: 23/12/2026</p></li>
+<li><p>Início das atividades: 26/12/2025</p></li>
+<li><p>Duração: 60 meses</p></li>
+<li><p>Valor: 7.800.000,00</p></li>
+<li><p>Nº Contrato/ Convenio - FEESC: 174/2025</p></li>
+<li><p>Nº do Processo: 23080.064460/2019-37</p></li>
+<li><p>Coordenação Geral: Prof.&nbsp;Everton da Silva</p></li>
+<li><p>Instituição Executora: Universidade Federal de Santa Catarina – UFSC</p></li>
+<li><p>Gestão Administrativa: Fundação de Ensino e Engenharia de Santa Catarina – FEESC</p></li>
+<li><p>Objeto: Apoiar a Receita Federal na definição e execução de metodologia para apuração do Valor de Referência de imóveis urbanos, considerando determinações da Lei Complementar nº 214, de 16 de janeiro de 2025.</p></li>
+<li><p>Data de início do projeto: 26/12/2025</p></li>
+<li><p>Plano de Gerenciamento: Apresentado em 03/02/2026 e entregue/validado em 05/02/2026</p></li>
+</ul>
 <p>A equipe executora do projeto no âmbito da Universidade Federal de Santa Catarina (UFSC), com apoio da Fundação de Ensino e Engenharia de Santa Catarina (FEESC), está estruturada de forma a garantir a adequada condução técnica, científica e administrativa das atividades previstas no TED. Essa organização contempla a atuação integrada de um Comitê Técnico, responsável pelo desenvolvimento metodológico, execução das atividades técnicas e validação dos produtos, e de um Comitê Administrativo, responsável pelo suporte à gestão do projeto, incluindo acompanhamento financeiro, contratual e operacional.</p>
 <p>O Comitê Técnico é composto por docentes e pesquisadores vinculados ao Grupo de Pesquisa GOTT – Grupo de Observação e Transformação do Território, com reconhecida experiência nas áreas de cadastro territorial, avaliação imobiliária e geotecnologias. Já o Comitê Administrativo, vinculado à FEESC, assegura a execução administrativa e financeira do projeto, garantindo conformidade com os instrumentos institucionais e suporte às atividades técnicas.</p>
-<p>A composição detalhada da equipe técnica executora da UFSC/FEESC, incluindo alunos, técnicos, docentes e pesquisadores, organizada por etapa do plano de trabalho, encontra-se descrita no quadro 1, permitindo a visualização detalhada da alocação de recursos humanos, conforme as frentes de atuação definidas no projeto.</p>
-<p>QUADRO 1 – Equipe Técnica Executora UFSC/FEESC</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/geral/fig-quadro-01-equipe-tecnica.png" class="img-fluid figure-img"></p>
-<figcaption>Quadro 1 - Equipe Técnica Executora UFSC/FEESC</figcaption>
+<p>A composição detalhada da equipe técnica executora da UFSC/FEESC, incluindo alunos, técnicos, docentes e pesquisadores, organizada por etapa do plano de trabalho, encontra-se descrita na <a href="#fig-quadro1" class="quarto-xref">Figura&nbsp;<span>1</span></a>, permitindo a visualização detalhada da alocação de recursos humanos, conforme as frentes de atuação definidas no projeto.</p>
+<div id="fig-quadro1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-quadro1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/geral/fig-quadro-01-equipe-tecnica.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-quadro1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1: Equipe Técnica Executora UFSC/FEESC
+</figcaption>
 </figure>
 </div>
 <p>O presente relatório está estruturado conforme as fases e etapas definidas no Plano de Gerenciamento do Projeto (PGP), com base na organização metodológica do TED, contemplando a descrição das atividades desenvolvidas, os resultados alcançados e a análise do avanço técnico do projeto.</p>
@@ -314,12 +359,12 @@ ul.task-list li input[type="checkbox"] {
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copiada");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copiada");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -699,6 +744,19 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 UFSC</p>
+</div>   
+    <div class="nav-footer-center">
+<p><img src="img/Logo com RFB e UFSC.png" class="img-fluid" width="250"></p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/LabFSG-UFSC/Rel_1T2026/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 

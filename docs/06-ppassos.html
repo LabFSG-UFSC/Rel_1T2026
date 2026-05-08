@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>6&nbsp; Proximos passos – Relatório 1T2026</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -37,14 +34,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="./05-desafios.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -59,21 +57,23 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
   }
 }</script>
 
 
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="cover-style.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -82,13 +82,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./06-ppassos.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Proximos passos</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -98,14 +98,53 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Relatório 1T2026</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/LabFSG-UFSC/Rel_1T2026/" title="Código fonte" class="quarto-navigation-tool px-1" aria-label="Código fonte"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Baixar" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Baixar"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Relatório-1T2026.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Baixar PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Relatório-1T2026.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Baixar ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <a href="" title="Compartilhar" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Compartilhar"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
+        <div id="quarto-search" class="" title="Procurar"></div>
         </div>
         </div>
     <div class="sidebar-menu-container"> 
@@ -167,14 +206,14 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+ <span class="menu-text">Referências</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Appendices</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+ <span class="menu-text">Apêndices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -212,19 +251,19 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">Índice</h2>
    
   <ul>
   <li><a href="#ações-prioritárias" id="toc-ações-prioritárias" class="nav-link active" data-scroll-target="#ações-prioritárias"><span class="header-section-number">6.1</span> Ações Prioritárias</a>
-  <ul class="collapse">
+  <ul>
   <li><a href="#principais-ações-prioritárias" id="toc-principais-ações-prioritárias" class="nav-link" data-scroll-target="#principais-ações-prioritárias"><span class="header-section-number">6.1.1</span> Principais Ações Prioritárias</a></li>
   </ul></li>
   <li><a href="#marcos-estruturantes-previstos" id="toc-marcos-estruturantes-previstos" class="nav-link" data-scroll-target="#marcos-estruturantes-previstos"><span class="header-section-number">6.2</span> Marcos Estruturantes Previstos</a>
-  <ul class="collapse">
+  <ul>
   <li><a href="#síntese-dos-próximos-marcos" id="toc-síntese-dos-próximos-marcos" class="nav-link" data-scroll-target="#síntese-dos-próximos-marcos"><span class="header-section-number">6.2.1</span> Síntese dos Próximos Marcos</a></li>
   </ul></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/LabFSG-UFSC/Rel_1T2026/edit/main/06-ppassos.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -264,14 +303,16 @@ ul.task-list li input[type="checkbox"] {
 <p>Por fim, serão intensificadas as atividades relacionadas à preparação da internalização da metodologia, incluindo definição preliminar de requisitos técnicos, formatos de intercâmbio de dados, mecanismos de integração institucional e estruturação inicial dos ambientes operacionais que futuramente deverão ser utilizados pela Receita Federal do Brasil.</p>
 <section id="principais-ações-prioritárias" class="level3" data-number="6.1.1">
 <h3 data-number="6.1.1" class="anchored" data-anchor-id="principais-ações-prioritárias"><span class="header-section-number">6.1.1</span> Principais Ações Prioritárias</h3>
-<p>• Refinamento dos modelos de avaliação em massa e da PVG;</p>
-<p>• Ampliação da qualidade, cobertura e consistência dos dados integrados ao Data Lake;</p>
-<p>• Evolução dos processos de geocodificação e validação posicional;</p>
-<p>• Consolidação das bases cartográficas territoriais e variáveis geográficas;</p>
-<p>• Fortalecimento da infraestrutura tecnológica e dos ambientes de processamento;</p>
-<p>• Consolidação dos fluxos automatizados de processamento e auditoria;</p>
-<p>• Evolução das plataformas de visualização e análise dos resultados;</p>
-<p>• Estruturação preliminar dos mecanismos de integração e internalização na RFB.</p>
+<ul>
+<li><p>Refinamento dos modelos de avaliação em massa e da PVG;</p></li>
+<li><p>Ampliação da qualidade, cobertura e consistência dos dados integrados ao Data Lake;</p></li>
+<li><p>Evolução dos processos de geocodificação e validação posicional;</p></li>
+<li><p>Consolidação das bases cartográficas territoriais e variáveis geográficas;</p></li>
+<li><p>Fortalecimento da infraestrutura tecnológica e dos ambientes de processamento;</p></li>
+<li><p>Consolidação dos fluxos automatizados de processamento e auditoria;</p></li>
+<li><p>Evolução das plataformas de visualização e análise dos resultados;</p></li>
+<li><p>Estruturação preliminar dos mecanismos de integração e internalização na RFB.</p></li>
+</ul>
 </section>
 </section>
 <section id="marcos-estruturantes-previstos" class="level2" data-number="6.2">
@@ -283,12 +324,14 @@ ul.task-list li input[type="checkbox"] {
 <p>Por fim, prevê-se o início progressivo da Etapa 4 - Internalização e Operação, consolidando a transição gradual entre o ambiente experimental atualmente desenvolvido e o futuro ambiente institucional de operação da metodologia.</p>
 <section id="síntese-dos-próximos-marcos" class="level3" data-number="6.2.1">
 <h3 data-number="6.2.1" class="anchored" data-anchor-id="síntese-dos-próximos-marcos"><span class="header-section-number">6.2.1</span> Síntese dos Próximos Marcos</h3>
-<p>• Validação técnica dos modelos preliminares junto à RFB;</p>
-<p>• Consolidação da base territorial validada;</p>
-<p>• Evolução e ampliação do Data Lake e da arquitetura de dados;</p>
-<p>• Expansão territorial dos Lotes 1 e 2;</p>
-<p>• Consolidação dos mecanismos automatizados de processamento e auditoria;</p>
-<p>• Início progressivo da Etapa 4 — Internalização e Operação.</p>
+<ul>
+<li><p>Validação técnica dos modelos preliminares junto à RFB;</p></li>
+<li><p>Consolidação da base territorial validada;</p></li>
+<li><p>Evolução e ampliação do Data Lake e da arquitetura de dados;</p></li>
+<li><p>Expansão territorial dos Lotes 1 e 2;</p></li>
+<li><p>Consolidação dos mecanismos automatizados de processamento e auditoria;</p></li>
+<li><p>Início progressivo da Etapa 4 — Internalização e Operação.</p></li>
+</ul>
 
 
 </section>
@@ -320,12 +363,12 @@ ul.task-list li input[type="checkbox"] {
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copiada");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copiada");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -708,6 +751,19 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 UFSC</p>
+</div>   
+    <div class="nav-footer-center">
+<p><img src="img/Logo com RFB e UFSC.png" class="img-fluid" width="250"></p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/LabFSG-UFSC/Rel_1T2026/edit/main/06-ppassos.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 

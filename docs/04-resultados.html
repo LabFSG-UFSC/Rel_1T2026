@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>4&nbsp; Principais Resultados Estratégicos – Relatório 1T2026</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -23,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -37,14 +54,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="./03-status.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -59,21 +77,52 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="cover-style.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -82,13 +131,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04-resultados.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Principais Resultados Estratégicos</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -98,14 +147,53 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Relatório 1T2026</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/LabFSG-UFSC/Rel_1T2026/" title="Código fonte" class="quarto-navigation-tool px-1" aria-label="Código fonte"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Baixar" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Baixar"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Relatório-1T2026.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Baixar PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Relatório-1T2026.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Baixar ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <a href="" title="Compartilhar" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Compartilhar"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
+        <div id="quarto-search" class="" title="Procurar"></div>
         </div>
         </div>
     <div class="sidebar-menu-container"> 
@@ -167,14 +255,14 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+ <span class="menu-text">Referências</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Appendices</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+ <span class="menu-text">Apêndices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -212,17 +300,50 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">Índice</h2>
    
   <ul>
   <li><a href="#validação-da-poc" id="toc-validação-da-poc" class="nav-link active" data-scroll-target="#validação-da-poc"><span class="header-section-number">4.1</span> Validação da POC</a>
+  <ul>
+  <li><a href="#etapa-1-observatório-do-mercado-imobiliário" id="toc-etapa-1-observatório-do-mercado-imobiliário" class="nav-link" data-scroll-target="#etapa-1-observatório-do-mercado-imobiliário"><span class="header-section-number">4.1.1</span> Etapa 1: Observatório do Mercado Imobiliário</a>
   <ul class="collapse">
-  <li><a href="#etapa-1-observatório-do-mercado-imobiliário" id="toc-etapa-1-observatório-do-mercado-imobiliário" class="nav-link" data-scroll-target="#etapa-1-observatório-do-mercado-imobiliário"><span class="header-section-number">4.1.1</span> Etapa 1: Observatório do Mercado Imobiliário</a></li>
-  <li><a href="#etapa-2-bases-cartográficas-territoriais" id="toc-etapa-2-bases-cartográficas-territoriais" class="nav-link" data-scroll-target="#etapa-2-bases-cartográficas-territoriais"><span class="header-section-number">4.1.2</span> Etapa 2: Bases Cartográficas Territoriais</a></li>
-  <li><a href="#etapa-3-bases-cartográficas-territoriais" id="toc-etapa-3-bases-cartográficas-territoriais" class="nav-link" data-scroll-target="#etapa-3-bases-cartográficas-territoriais"><span class="header-section-number">4.1.3</span> Etapa 3: Bases Cartográficas Territoriais</a></li>
+  <li><a href="#construção-de-uma-base-confiável-de-ofertas-imobiliárias" id="toc-construção-de-uma-base-confiável-de-ofertas-imobiliárias" class="nav-link" data-scroll-target="#construção-de-uma-base-confiável-de-ofertas-imobiliárias"><span class="header-section-number">4.1.1.1</span> Construção de uma base confiável de ofertas imobiliárias</a></li>
+  <li><a href="#estruturação-de-um-pipeline-completo-de-dados" id="toc-estruturação-de-um-pipeline-completo-de-dados" class="nav-link" data-scroll-target="#estruturação-de-um-pipeline-completo-de-dados"><span class="header-section-number">4.1.1.2</span> Estruturação de um pipeline completo de dados</a></li>
+  <li><a href="#uso-do-cnefe-como-referência-oficial-de-validação-posicional" id="toc-uso-do-cnefe-como-referência-oficial-de-validação-posicional" class="nav-link" data-scroll-target="#uso-do-cnefe-como-referência-oficial-de-validação-posicional"><span class="header-section-number">4.1.1.3</span> Uso do CNEFE como referência oficial de validação posicional</a></li>
+  <li><a href="#desenvolvimento-e-aplicação-do-geocoder-v3" id="toc-desenvolvimento-e-aplicação-do-geocoder-v3" class="nav-link" data-scroll-target="#desenvolvimento-e-aplicação-do-geocoder-v3"><span class="header-section-number">4.1.1.4</span> Desenvolvimento e aplicação do Geocoder V3</a></li>
+  <li><a href="#processamento-expressivo-da-base-da-poc-florianópolis" id="toc-processamento-expressivo-da-base-da-poc-florianópolis" class="nav-link" data-scroll-target="#processamento-expressivo-da-base-da-poc-florianópolis"><span class="header-section-number">4.1.1.5</span> Processamento expressivo da base da POC Florianópolis</a></li>
+  <li><a href="#criação-de-filtros-independentes-de-qualidade" id="toc-criação-de-filtros-independentes-de-qualidade" class="nav-link" data-scroll-target="#criação-de-filtros-independentes-de-qualidade"><span class="header-section-number">4.1.1.6</span> Criação de filtros independentes de qualidade</a></li>
+  <li><a href="#geração-da-base-duplamente-validada" id="toc-geração-da-base-duplamente-validada" class="nav-link" data-scroll-target="#geração-da-base-duplamente-validada"><span class="header-section-number">4.1.1.7</span> Geração da base duplamente validada</a></li>
+  <li><a href="#melhoria-da-cobertura-analítica-com-vias-curtas" id="toc-melhoria-da-cobertura-analítica-com-vias-curtas" class="nav-link" data-scroll-target="#melhoria-da-cobertura-analítica-com-vias-curtas"><span class="header-section-number">4.1.1.8</span> Melhoria da cobertura analítica com vias curtas</a></li>
+  <li><a href="#identificação-de-limitações-para-lotes-e-terrenos" id="toc-identificação-de-limitações-para-lotes-e-terrenos" class="nav-link" data-scroll-target="#identificação-de-limitações-para-lotes-e-terrenos"><span class="header-section-number">4.1.1.9</span> Identificação de limitações para lotes e terrenos</a></li>
+  <li><a href="#validação-comparativa-com-google-maps" id="toc-validação-comparativa-com-google-maps" class="nav-link" data-scroll-target="#validação-comparativa-com-google-maps"><span class="header-section-number">4.1.1.10</span> Validação comparativa com Google Maps</a></li>
+  </ul></li>
+  <li><a href="#etapa-2-bases-cartográficas-territoriais" id="toc-etapa-2-bases-cartográficas-territoriais" class="nav-link" data-scroll-target="#etapa-2-bases-cartográficas-territoriais"><span class="header-section-number">4.1.2</span> Etapa 2: Bases Cartográficas Territoriais</a>
+  <ul class="collapse">
+  <li><a href="#transformação-da-etapa-2-em-frente-produtiva-real" id="toc-transformação-da-etapa-2-em-frente-produtiva-real" class="nav-link" data-scroll-target="#transformação-da-etapa-2-em-frente-produtiva-real"><span class="header-section-number">4.1.2.1</span> Transformação da Etapa 2 em frente produtiva real</a></li>
+  <li><a href="#implantação-do-fluxo-bronzeprataouro" id="toc-implantação-do-fluxo-bronzeprataouro" class="nav-link" data-scroll-target="#implantação-do-fluxo-bronzeprataouro"><span class="header-section-number">4.1.2.2</span> Implantação do fluxo Bronze–Prata–Ouro</a></li>
+  <li><a href="#produção-territorial-em-11-municípios" id="toc-produção-territorial-em-11-municípios" class="nav-link" data-scroll-target="#produção-territorial-em-11-municípios"><span class="header-section-number">4.1.2.3</span> Produção territorial em 11 municípios</a></li>
+  <li><a href="#consolidação-da-poc-florianópolis-como-entrega-integrada" id="toc-consolidação-da-poc-florianópolis-como-entrega-integrada" class="nav-link" data-scroll-target="#consolidação-da-poc-florianópolis-como-entrega-integrada"><span class="header-section-number">4.1.2.4</span> Consolidação da PoC Florianópolis como entrega integrada</a></li>
+  <li><a href="#estruturação-do-dicionário-e-modelagem-de-dados-espaciais" id="toc-estruturação-do-dicionário-e-modelagem-de-dados-espaciais" class="nav-link" data-scroll-target="#estruturação-do-dicionário-e-modelagem-de-dados-espaciais"><span class="header-section-number">4.1.2.5</span> Estruturação do dicionário e modelagem de dados espaciais</a></li>
+  <li><a href="#geração-de-variáveis-geográficas-para-avaliação-em-massa" id="toc-geração-de-variáveis-geográficas-para-avaliação-em-massa" class="nav-link" data-scroll-target="#geração-de-variáveis-geográficas-para-avaliação-em-massa"><span class="header-section-number">4.1.2.6</span> Geração de variáveis geográficas para avaliação em massa</a></li>
+  <li><a href="#padronização-de-arquivos-nomenclatura-e-versionamento" id="toc-padronização-de-arquivos-nomenclatura-e-versionamento" class="nav-link" data-scroll-target="#padronização-de-arquivos-nomenclatura-e-versionamento"><span class="header-section-number">4.1.2.7</span> Padronização de arquivos, nomenclatura e versionamento</a></li>
+  <li><a href="#implantação-de-infraestrutura-geoespacial-com-postgis" id="toc-implantação-de-infraestrutura-geoespacial-com-postgis" class="nav-link" data-scroll-target="#implantação-de-infraestrutura-geoespacial-com-postgis"><span class="header-section-number">4.1.2.8</span> Implantação de infraestrutura geoespacial com PostGIS</a></li>
+  <li><a href="#qualidade-espacial-e-consistência-topológica-como-critério-de-aceite" id="toc-qualidade-espacial-e-consistência-topológica-como-critério-de-aceite" class="nav-link" data-scroll-target="#qualidade-espacial-e-consistência-topológica-como-critério-de-aceite"><span class="header-section-number">4.1.2.9</span> Qualidade espacial e consistência topológica como critério de aceite</a></li>
+  <li><a href="#preparação-da-etapa-para-a-escalabilidade" id="toc-preparação-da-etapa-para-a-escalabilidade" class="nav-link" data-scroll-target="#preparação-da-etapa-para-a-escalabilidade"><span class="header-section-number">4.1.2.10</span> Preparação da etapa para a escalabilidade</a></li>
+  </ul></li>
+  <li><a href="#etapa-3-bases-cartográficas-territoriais" id="toc-etapa-3-bases-cartográficas-territoriais" class="nav-link" data-scroll-target="#etapa-3-bases-cartográficas-territoriais"><span class="header-section-number">4.1.3</span> Etapa 3: Bases Cartográficas Territoriais</a>
+  <ul class="collapse">
+  <li><a href="#desempenho-dos-modelos-econométricos" id="toc-desempenho-dos-modelos-econométricos" class="nav-link" data-scroll-target="#desempenho-dos-modelos-econométricos"><span class="header-section-number">4.1.3.1</span> Desempenho dos modelos econométricos</a></li>
+  <li><a href="#modelo-preliminar-de-lotes-base-intermediária" id="toc-modelo-preliminar-de-lotes-base-intermediária" class="nav-link" data-scroll-target="#modelo-preliminar-de-lotes-base-intermediária"><span class="header-section-number">4.1.3.2</span> Modelo preliminar de lotes — base intermediária</a></li>
+  <li><a href="#classificação-objetiva-de-padrão-construtivo" id="toc-classificação-objetiva-de-padrão-construtivo" class="nav-link" data-scroll-target="#classificação-objetiva-de-padrão-construtivo"><span class="header-section-number">4.1.3.3</span> Classificação objetiva de padrão construtivo</a></li>
+  <li><a href="#regionalização-geoespacial-submercados" id="toc-regionalização-geoespacial-submercados" class="nav-link" data-scroll-target="#regionalização-geoespacial-submercados"><span class="header-section-number">4.1.3.4</span> Regionalização geoespacial — submercados</a></li>
+  <li><a href="#integração-entre-modelos" id="toc-integração-entre-modelos" class="nav-link" data-scroll-target="#integração-entre-modelos"><span class="header-section-number">4.1.3.5</span> Integração entre modelos</a></li>
+  <li><a href="#outputs-territoriais-gerados" id="toc-outputs-territoriais-gerados" class="nav-link" data-scroll-target="#outputs-territoriais-gerados"><span class="header-section-number">4.1.3.6</span> Outputs territoriais gerados</a></li>
+  <li><a href="#estratégia-de-modelagem-escalável-e-controlada" id="toc-estratégia-de-modelagem-escalável-e-controlada" class="nav-link" data-scroll-target="#estratégia-de-modelagem-escalável-e-controlada"><span class="header-section-number">4.1.3.7</span> Estratégia de modelagem escalável e controlada</a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#evolução-da-infraestrutura-tecnológica-labfsg" id="toc-evolução-da-infraestrutura-tecnológica-labfsg" class="nav-link" data-scroll-target="#evolução-da-infraestrutura-tecnológica-labfsg"><span class="header-section-number">4.2</span> Evolução da infraestrutura Tecnológica (LABFSG)</a>
-  <ul class="collapse">
+  <ul>
   <li><a href="#estruturação-de-uma-arquitetura-distribuída-e-especializada" id="toc-estruturação-de-uma-arquitetura-distribuída-e-especializada" class="nav-link" data-scroll-target="#estruturação-de-uma-arquitetura-distribuída-e-especializada"><span class="header-section-number">4.2.1</span> Estruturação de uma arquitetura distribuída e especializada</a></li>
   <li><a href="#consolidação-de-um-ambiente-de-dados-centralizado-e-confiável" id="toc-consolidação-de-um-ambiente-de-dados-centralizado-e-confiável" class="nav-link" data-scroll-target="#consolidação-de-um-ambiente-de-dados-centralizado-e-confiável"><span class="header-section-number">4.2.2</span> Consolidação de um ambiente de dados centralizado e confiável</a></li>
   <li><a href="#implantação-de-capacidade-analítica-operacional-integrada" id="toc-implantação-de-capacidade-analítica-operacional-integrada" class="nav-link" data-scroll-target="#implantação-de-capacidade-analítica-operacional-integrada"><span class="header-section-number">4.2.3</span> Implantação de capacidade analítica operacional integrada</a></li>
@@ -235,12 +356,23 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#consolidação-de-ambiente-preparado-para-escalabilidade-e-internalização" id="toc-consolidação-de-ambiente-preparado-para-escalabilidade-e-internalização" class="nav-link" data-scroll-target="#consolidação-de-ambiente-preparado-para-escalabilidade-e-internalização"><span class="header-section-number">4.2.10</span> Consolidação de ambiente preparado para escalabilidade e internalização</a></li>
   </ul></li>
   <li><a href="#blocos-transversais" id="toc-blocos-transversais" class="nav-link" data-scroll-target="#blocos-transversais"><span class="header-section-number">4.3</span> Blocos transversais</a>
+  <ul>
+  <li><a href="#estudos-realizados" id="toc-estudos-realizados" class="nav-link" data-scroll-target="#estudos-realizados"><span class="header-section-number">4.3.1</span> Estudos realizados</a>
   <ul class="collapse">
-  <li><a href="#estudos-realizados" id="toc-estudos-realizados" class="nav-link" data-scroll-target="#estudos-realizados"><span class="header-section-number">4.3.1</span> Estudos realizados</a></li>
+  <li><a href="#qualidade-das-coordenadas-do-cnefe-por-nível-de-posição" id="toc-qualidade-das-coordenadas-do-cnefe-por-nível-de-posição" class="nav-link" data-scroll-target="#qualidade-das-coordenadas-do-cnefe-por-nível-de-posição"><span class="header-section-number">4.3.1.1</span> Qualidade das Coordenadas do CNEFE por Nível de Posição</a></li>
+  <li><a href="#parâmetro-de-coordenadas-cnefe-argis" id="toc-parâmetro-de-coordenadas-cnefe-argis" class="nav-link" data-scroll-target="#parâmetro-de-coordenadas-cnefe-argis"><span class="header-section-number">4.3.1.2</span> Parâmetro de Coordenadas CNEFE × Argis</a></li>
+  <li><a href="#agrupamento-do-cnefe-e-uso-de-variáveis-ofi" id="toc-agrupamento-do-cnefe-e-uso-de-variáveis-ofi" class="nav-link" data-scroll-target="#agrupamento-do-cnefe-e-uso-de-variáveis-ofi"><span class="header-section-number">4.3.1.3</span> Agrupamento do CNEFE e Uso de Variáveis OFI</a></li>
+  <li><a href="#classificação-fuzzy-dos-municípios" id="toc-classificação-fuzzy-dos-municípios" class="nav-link" data-scroll-target="#classificação-fuzzy-dos-municípios"><span class="header-section-number">4.3.1.4</span> Classificação Fuzzy dos Municípios</a></li>
+  <li><a href="#integração-cnefe-fuzzy-para-definição-dos-lotes" id="toc-integração-cnefe-fuzzy-para-definição-dos-lotes" class="nav-link" data-scroll-target="#integração-cnefe-fuzzy-para-definição-dos-lotes"><span class="header-section-number">4.3.1.5</span> Integração CNEFE + Fuzzy para Definição dos Lotes</a></li>
+  <li><a href="#variáveis-derivadas-de-imagens-de-satélite" id="toc-variáveis-derivadas-de-imagens-de-satélite" class="nav-link" data-scroll-target="#variáveis-derivadas-de-imagens-de-satélite"><span class="header-section-number">4.3.1.6</span> Variáveis Derivadas de Imagens de Satélite</a></li>
+  <li><a href="#mapeamento-de-imobiliárias-em-municípios-50-mil-habitantes" id="toc-mapeamento-de-imobiliárias-em-municípios-50-mil-habitantes" class="nav-link" data-scroll-target="#mapeamento-de-imobiliárias-em-municípios-50-mil-habitantes"><span class="header-section-number">4.3.1.7</span> Mapeamento de Imobiliárias em Municípios &lt; 50 mil Habitantes</a></li>
+  <li><a href="#fundamentos-da-avaliação-em-massa" id="toc-fundamentos-da-avaliação-em-massa" class="nav-link" data-scroll-target="#fundamentos-da-avaliação-em-massa"><span class="header-section-number">4.3.1.8</span> Fundamentos da Avaliação em Massa</a></li>
+  <li><a href="#síntese-integrada-dos-estudos" id="toc-síntese-integrada-dos-estudos" class="nav-link" data-scroll-target="#síntese-integrada-dos-estudos"><span class="header-section-number">4.3.1.9</span> Síntese Integrada dos Estudos</a></li>
   </ul></li>
-  <li><a href="#plataforma-para-visualização-dos-dados" id="toc-plataforma-para-visualização-dos-dados" class="nav-link" data-scroll-target="#plataforma-para-visualização-dos-dados"><span class="header-section-number">4.4</span> Plataforma para visualização dos dados</a></li>
+  <li><a href="#plataforma-para-visualização-dos-dados" id="toc-plataforma-para-visualização-dos-dados" class="nav-link" data-scroll-target="#plataforma-para-visualização-dos-dados"><span class="header-section-number">4.3.2</span> Plataforma para visualização dos dados</a></li>
+  </ul></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/LabFSG-UFSC/Rel_1T2026/edit/main/04-resultados.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -277,87 +409,93 @@ ul.task-list li input[type="checkbox"] {
 <section id="etapa-1-observatório-do-mercado-imobiliário" class="level3" data-number="4.1.1">
 <h3 data-number="4.1.1" class="anchored" data-anchor-id="etapa-1-observatório-do-mercado-imobiliário"><span class="header-section-number">4.1.1</span> Etapa 1: Observatório do Mercado Imobiliário</h3>
 <p>No âmbito da Etapa 1 – Observatório do Mercado Imobiliário, foram identificados e sistematizados dez resultados estratégicos principais, que refletem os avanços alcançados na validação da Prova de Conceito (POC) de Florianópolis. Esses resultados evidenciam a evolução da arquitetura de dados, a consolidação dos processos de tratamento e validação das informações e o nível de maturidade alcançado na estruturação do Observatório, constituindo a base para o desenvolvimento das etapas subsequentes.</p>
-<p>• Construção de uma base confiável de ofertas imobiliárias</p>
+<section id="construção-de-uma-base-confiável-de-ofertas-imobiliárias" class="level4" data-number="4.1.1.1">
+<h4 data-number="4.1.1.1" class="anchored" data-anchor-id="construção-de-uma-base-confiável-de-ofertas-imobiliárias"><span class="header-section-number">4.1.1.1</span> Construção de uma base confiável de ofertas imobiliárias</h4>
 <p>No âmbito da Prova de Conceito (PoC) de Florianópolis, foi estruturado um processo completo de qualificação de dados imobiliários, superando a lógica tradicional baseada exclusivamente na coleta bruta de anúncios. A metodologia adotada contemplou rotinas integradas de ingestão, saneamento cadastral, padronização textual, eliminação de duplicidades, validação de consistência e controle de integridade dos registros.</p>
 <p>A base inicial foi composta por 83.869 ofertas imobiliárias provenientes de portais de mercado, contendo elevado nível de ruído posicional e cadastral, incluindo inconsistências de endereçamento, ausência de atributos obrigatórios, duplicidades e divergências entre registros equivalentes. Para enfrentar essas limitações, foram aplicadas rotinas automáticas e semiautomáticas de tratamento, associadas a mecanismos de classificação e validação da qualidade dos dados.</p>
 <p>O processo permitiu reduzir significativamente as inconsistências estruturais da base, elevando o nível de confiabilidade das informações utilizadas nas etapas subsequentes do projeto. Além da melhoria da consistência cadastral, a metodologia possibilitou maior rastreabilidade dos registros, padronização operacional e controle sobre a origem e transformação dos dados ao longo do pipeline analítico.</p>
 <p>Dessa forma, a PoC demonstrou a viabilidade de construção de uma base de mercado estruturada e tecnicamente confiável para uso fiscal, reduzindo a dependência de informações puramente autodeclaradas e ampliando o potencial de utilização dos dados de mercado na geração do Valor de Referência.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Criação de uma base de mercado qualificada, com maior consistência, rastreabilidade e confiabilidade para uso fiscal, reduzindo a dependência de dados autodeclarados ou sem validação, constituindo o núcleo de dados do Observatório do Mercado Imobiliário.</p>
-<section id="estruturação-de-um-pipeline-completo-de-dados" class="level4" data-number="4.1.1.1">
-<h4 data-number="4.1.1.1" class="anchored" data-anchor-id="estruturação-de-um-pipeline-completo-de-dados"><span class="header-section-number">4.1.1.1</span> Estruturação de um pipeline completo de dados</h4>
+</section>
+<section id="estruturação-de-um-pipeline-completo-de-dados" class="level4" data-number="4.1.1.2">
+<h4 data-number="4.1.1.2" class="anchored" data-anchor-id="estruturação-de-um-pipeline-completo-de-dados"><span class="header-section-number">4.1.1.2</span> Estruturação de um pipeline completo de dados</h4>
 <p>Foi desenvolvido um pipeline técnico integrado para processamento de dados imobiliários em larga escala, contemplando todas as etapas do fluxo operacional do Observatório: ingestão, tratamento, validação, classificação e armazenamento dos dados.</p>
 <p>A arquitetura implementada integrou o Datalake em formato Parquet ao ambiente analítico PostgreSQL/PostGIS, permitindo processamento eficiente de grandes volumes de dados espaciais e alfanuméricos. O fluxo operacional foi estruturado de forma modular e reprodutível, possibilitando rastreabilidade integral das transformações realizadas em cada etapa do processamento.</p>
 <p>A metodologia implementada contemplou:</p>
-<p>• ingestão automatizada e normalização dos dados;</p>
-<p>• padronização textual e cadastral;</p>
-<p>• geocodificação via ArcGIS;</p>
-<p>• validação cruzada com a base oficial do CNEFE;</p>
-<p>• classificação de qualidade posicional e cadastral;</p>
-<p>• armazenamento estruturado em ambiente espacial relacional.</p>
+<ul>
+<li><p>ingestão automatizada e normalização dos dados;</p></li>
+<li><p>padronização textual e cadastral;</p></li>
+<li><p>geocodificação via ArcGIS;</p></li>
+<li><p>validação cruzada com a base oficial do CNEFE;</p></li>
+<li><p>classificação de qualidade posicional e cadastral;</p></li>
+<li><p>armazenamento estruturado em ambiente espacial relacional.</p></li>
+</ul>
 <p>Essa estrutura permitiu processar de forma controlada os 83.869 registros da PoC de Florianópolis, assegurando desempenho computacional, escalabilidade operacional e controle metodológico sobre os resultados obtidos.</p>
 <p>Além do ganho operacional, a adoção de um pipeline estruturado permitiu separar claramente as etapas de transformação, validação e qualificação dos dados, favorecendo auditoria técnica, repetibilidade metodológica e futura replicação do modelo em outros municípios.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Operação baseada em processo técnico (pipeline) reprodutível, documentado e escalável, com capacidade de processamento de grandes volumes de dados, garantindo rastreabilidade, desempenho, controle de qualidade e potencial de replicação nacional.</p>
 </section>
-<section id="uso-do-cnefe-como-referência-oficial-de-validação-posicional" class="level4" data-number="4.1.1.2">
-<h4 data-number="4.1.1.2" class="anchored" data-anchor-id="uso-do-cnefe-como-referência-oficial-de-validação-posicional"><span class="header-section-number">4.1.1.2</span> Uso do CNEFE como referência oficial de validação posicional</h4>
+<section id="uso-do-cnefe-como-referência-oficial-de-validação-posicional" class="level4" data-number="4.1.1.3">
+<h4 data-number="4.1.1.3" class="anchored" data-anchor-id="uso-do-cnefe-como-referência-oficial-de-validação-posicional"><span class="header-section-number">4.1.1.3</span> Uso do CNEFE como referência oficial de validação posicional</h4>
 <p>O Cadastro Nacional de Endereços para Fins Estatísticos (CNEFE/IBGE) foi adotado como referência oficial de validação espacial da Prova de Conceito, atuando como ground truth para qualificação das coordenadas provenientes do mercado imobiliário.</p>
 <p>A utilização do CNEFE permitiu incorporar ao processo metodológico uma base governamental com cobertura nacional, padronização textual de endereços e classificação do nível de precisão geográfica (nv_geo_coord), proporcionando maior rigor técnico à validação posicional dos registros.</p>
 <p>A metodologia foi estruturada para realizar correspondências progressivas entre os dados de mercado e a base oficial, utilizando critérios hierárquicos de validação e thresholds ajustados conforme o nível de precisão espacial do CNEFE. Essa abordagem permitiu reduzir inconsistências de localização e aumentar a confiabilidade espacial dos dados utilizados no projeto.</p>
 <p>A integração com o CNEFE foi decisiva para viabilizar os 54.007 matches válidos obtidos na PoC, consolidando um modelo metodológico aderente às exigências técnicas da Receita Federal do Brasil para construção do Valor de Referência.</p>
 <p>Além da validação espacial, a utilização do CNEFE permitiu incorporar uma camada institucional de confiabilidade ao Observatório, reduzindo a dependência exclusiva das coordenadas oriundas dos portais comerciais.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Fortalecimento da robustez metodológica por meio do uso de base governamental oficial (CNEFE) como referência para validação espacial, garantindo maior confiabilidade dos resultados e alinhamento institucional.</p>
 </section>
-<section id="desenvolvimento-e-aplicação-do-geocoder-v3" class="level4" data-number="4.1.1.3">
-<h4 data-number="4.1.1.3" class="anchored" data-anchor-id="desenvolvimento-e-aplicação-do-geocoder-v3"><span class="header-section-number">4.1.1.3</span> Desenvolvimento e aplicação do Geocoder V3</h4>
+<section id="desenvolvimento-e-aplicação-do-geocoder-v3" class="level4" data-number="4.1.1.4">
+<h4 data-number="4.1.1.4" class="anchored" data-anchor-id="desenvolvimento-e-aplicação-do-geocoder-v3"><span class="header-section-number">4.1.1.4</span> Desenvolvimento e aplicação do Geocoder V3</h4>
 <p>No desenvolvimento da Prova de Conceito de Florianópolis, foi concebido e implementado o Geocoder V3, um motor avançado de validação espacial estruturado especificamente para enfrentar os elevados níveis de ruído presentes nos dados do mercado imobiliário.</p>
 <p>A metodologia foi baseada em uma lógica hierárquica de decisão em cascata (níveis L1 a L6), priorizando inicialmente correspondências determinísticas de maior rigor — como CEP, logradouro e número — e avançando progressivamente para abordagens mais flexíveis, incluindo fuzzy matching, interpolação espacial e regras adaptativas de aceitação.</p>
-<p>Os thresholds de validação foram calibrados dinamicamente conforme o nível de precisão geográfica do CNEFE (nv_geo_coord), permitindo equilibrar taxa de recuperação dos registros e controle da qualidade posicional.</p>
+<p>Os <em>thresholds</em> de validação foram calibrados dinamicamente conforme o nível de precisão geográfica do CNEFE (nv_geo_coord), permitindo equilibrar taxa de recuperação dos registros e controle da qualidade posicional.</p>
 <p>A aplicação da metodologia resultou em 54.007 registros com correspondência válida na base oficial, representando uma taxa de sucesso de 87,9% sobre os 61.416 registros elegíveis para validação espacial.</p>
 <p>Além da elevada capacidade de correspondência, destacou-se o desempenho computacional do modelo, permitindo o processamento de aproximadamente 52 mil registros em cerca de 2,4 minutos, com desempenho aproximadamente 17 vezes superior às abordagens inicialmente avaliadas durante o desenvolvimento da PoC.</p>
 <p>Os resultados demonstram não apenas a viabilidade técnica do Geocoder V3, mas também sua capacidade operacional para aplicação em larga escala, consolidando o modelo como componente central da arquitetura metodológica do Observatório.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Implementação de solução técnica própria para validação e qualificação espacial das ofertas imobiliárias, com elevada precisão, alto desempenho computacional e capacidade de operação em larga escala, com potencial de replicação em nível nacional.</p>
 </section>
-<section id="processamento-expressivo-da-base-da-poc-florianópolis" class="level4" data-number="4.1.1.4">
-<h4 data-number="4.1.1.4" class="anchored" data-anchor-id="processamento-expressivo-da-base-da-poc-florianópolis"><span class="header-section-number">4.1.1.4</span> Processamento expressivo da base da POC Florianópolis</h4>
+<section id="processamento-expressivo-da-base-da-poc-florianópolis" class="level4" data-number="4.1.1.5">
+<h4 data-number="4.1.1.5" class="anchored" data-anchor-id="processamento-expressivo-da-base-da-poc-florianópolis"><span class="header-section-number">4.1.1.5</span> Processamento expressivo da base da POC Florianópolis</h4>
 <p>A Prova de Conceito demonstrou de forma consistente a capacidade operacional do Observatório para processamento de dados imobiliários em larga escala, abrangendo todo o ciclo de tratamento, validação e qualificação das informações de mercado.</p>
 <p>A base inicial foi composta por 83.869 ofertas imobiliárias, integralmente submetidas às rotinas estruturadas do pipeline analítico, incluindo filtros de elegibilidade, validação posicional, classificação de qualidade e controle de integridade cadastral.</p>
 <p>Desse universo, 61.416 registros foram considerados elegíveis para validação espacial, atendendo aos critérios mínimos de completude e consistência cadastral definidos na metodologia. Na sequência, 54.007 registros apresentaram correspondência válida com a base oficial do CNEFE, evidenciando elevada capacidade de integração entre dados de mercado e referência governamental.</p>
 <p>Após aplicação dos filtros de qualidade posicional e cadastral, o processo resultou em aproximadamente 14.921 registros classificados como duplamente validados, correspondendo ao núcleo de maior confiabilidade da base analítica, o que resultou em uma taxa de retenção final da ordem de 30% com alta qualidade posicional, refletindo o rigor metodológico adotado na qualificação da base.</p>
 <p>Além dos resultados quantitativos, destacou-se o desempenho computacional da infraestrutura implementada, evidenciando capacidade operacional para processamento massivo sem comprometimento da qualidade ou do tempo de resposta.</p>
 <p>A PoC validou não apenas a metodologia sob o ponto de vista técnico, mas também sua viabilidade operacional em ambiente real, demonstrando potencial para expansão em escala nacional.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Validação da capacidade operacional para processamento de grandes volumes de dados imobiliários, com eficiência computacional, controle de qualidade e viabilidade em escala urbana.</p>
 </section>
-<section id="criação-de-filtros-independentes-de-qualidade" class="level4" data-number="4.1.1.5">
-<h4 data-number="4.1.1.5" class="anchored" data-anchor-id="criação-de-filtros-independentes-de-qualidade"><span class="header-section-number">4.1.1.5</span> Criação de filtros independentes de qualidade</h4>
+<section id="criação-de-filtros-independentes-de-qualidade" class="level4" data-number="4.1.1.6">
+<h4 data-number="4.1.1.6" class="anchored" data-anchor-id="criação-de-filtros-independentes-de-qualidade"><span class="header-section-number">4.1.1.6</span> Criação de filtros independentes de qualidade</h4>
 <p>Foi estruturado um modelo metodológico baseado em dois eixos independentes de validação: qualidade posicional e qualidade cadastral/econômica. Permitindo uma análise mais precisa e controlada dos dados de mercado. Essa abordagem separa explicitamente a qualidade posicional que está relacionada à acurácia da localização do imóvel, da qualidade cadastral/econômica que está associada à consistência dos atributos da oferta, como área, valor e características físicas.</p>
 <p>A qualidade posicional foi avaliada por meio das rotinas de validação espacial implementadas no Geocoder V3, permitindo classificar os registros conforme o grau de confiabilidade da localização do imóvel (flag is_problematic).</p>
 <p>Paralelamente, a qualidade cadastral/econômica foi tratada por meio de rotinas específicas de detecção de inconsistências, duplicidades, campos ausentes e outliers estatísticos (flag is_outlier), garantindo controle sobre integridade dos atributos descritivos e econômicos dos imóveis.</p>
 <p>Os resultados evidenciaram a importância dessa separação metodológica. Do conjunto analisado, 25.325 registros apresentaram validação posicional satisfatória; entretanto, apenas 14.921 registros atenderam simultaneamente aos critérios de qualidade espacial e integridade cadastral.</p>
 <p>Esse comportamento demonstrou que a validação espacial isoladamente não é suficiente para garantir a confiabilidade fiscal do dado, tornando necessária a análise combinada dos dois eixos de qualidade.</p>
 <p>A estrutura implantada amplia a flexibilidade analítica do Observatório, permitindo utilização diferenciada dos registros conforme o objetivo técnico da análise e aumentando a transparência sobre os critérios de qualificação utilizados.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Implementação de modelo de validação baseado em filtros independentes de qualidade (posicional e cadastral), ampliando o controle sobre os dados e permitindo análises mais precisas, transparentes e tecnicamente consistentes. Essa estrutura possibilita tratar de forma distinta a validação espacial e a integridade dos atributos, reconhecendo que uma oferta pode estar corretamente localizada, mas apresentar inconsistências em variáveis como valor, área ou duplicidade.</p>
 </section>
-<section id="geração-da-base-duplamente-validada" class="level4" data-number="4.1.1.6">
-<h4 data-number="4.1.1.6" class="anchored" data-anchor-id="geração-da-base-duplamente-validada"><span class="header-section-number">4.1.1.6</span> Geração da base duplamente validada</h4>
+<section id="geração-da-base-duplamente-validada" class="level4" data-number="4.1.1.7">
+<h4 data-number="4.1.1.7" class="anchored" data-anchor-id="geração-da-base-duplamente-validada"><span class="header-section-number">4.1.1.7</span> Geração da base duplamente validada</h4>
 <p>A aplicação integrada dos critérios de qualidade posicional e cadastral resultou na construção de uma base final duplamente validada, representando o principal produto técnico da Prova de Conceito (POC) de Florianópolis. Essa base corresponde ao subconjunto de registros que atendem simultaneamente:</p>
-<p> aos critérios de validação posicional;</p>
-<p> aos critérios de consistência cadastral e econômica;</p>
-<p> aos controles de integridade e ausência de inconsistências relevantes.</p>
+<ul>
+<li><p>aos critérios de validação posicional;</p></li>
+<li><p>aos critérios de consistência cadastral e econômica;</p></li>
+<li><p>aos controles de integridade e ausência de inconsistências relevantes.</p></li>
+</ul>
 <p>Como resultado, foram identificados 14.921 registros plenamente validados, o que corresponde a aproximadamente 17,8% da base total de ofertas analisadas. Estes registros foram classificados como aptos para utilização em análises fiscais e modelagem de valor, constituindo a camada de maior confiabilidade do Observatório. Além disso, a qualidade espacial dessa base é evidenciada por uma mediana de erro posicional de 8,86 metros, indicando alta precisão na localização dos registros, compatível com aplicações fiscais e análises territoriais detalhadas.</p>
 <p>Metodologicamente, essa estrutura representa uma evolução relevante em relação às abordagens tradicionais de monitoramento imobiliário, pois reconhece que a qualidade espacial e a qualidade cadastral devem ser avaliadas de forma independente e complementar.</p>
 <p>Esse conjunto de dados representa, portanto, uma base qualificada e confiável, apta para utilização direta em processos de avaliação em massa, modelagem de valores e definição de políticas públicas. Ao restringir a análise aos registros que atendem aos dois critérios de qualidade, o projeto reduz significativamente o risco de distorções decorrentes de inconsistências ou imprecisões, assegurando maior robustez aos resultados.</p>
 <p>Dessa forma, a geração dessa base duplamente validada consolida a efetividade da metodologia adotada, demonstrando sua capacidade de transformar dados heterogêneos de mercado em informação estruturada, confiável e aderente às exigências institucionais.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Disponibilização de uma base de dados duplamente validada, com elevado rigor técnico e alta precisão posicional, representando um conjunto qualificado de imóveis apto para análises fiscais diretas e aplicações em políticas de avaliação em massa, com elevado nível de confiabilidade.</p>
 </section>
-<section id="melhoria-da-cobertura-analítica-com-vias-curtas" class="level4" data-number="4.1.1.7">
-<h4 data-number="4.1.1.7" class="anchored" data-anchor-id="melhoria-da-cobertura-analítica-com-vias-curtas"><span class="header-section-number">4.1.1.7</span> Melhoria da cobertura analítica com vias curtas</h4>
+<section id="melhoria-da-cobertura-analítica-com-vias-curtas" class="level4" data-number="4.1.1.8">
+<h4 data-number="4.1.1.8" class="anchored" data-anchor-id="melhoria-da-cobertura-analítica-com-vias-curtas"><span class="header-section-number">4.1.1.8</span> Melhoria da cobertura analítica com vias curtas</h4>
 <p>No âmbito da Prova de Conceito (PoC) de Florianópolis, foi desenvolvida e aplicada uma metodologia específica de recuperação espacial para registros classificados com precisão intermediária (precisão = 3), com o objetivo de ampliar a cobertura analítica da base sem comprometer os critérios de qualidade posicional estabelecidos pelo projeto.</p>
 <p>A metodologia foi estruturada a partir da análise de proximidade espacial entre os imóveis e a malha viária, com foco na identificação de vias curtas — logradouros integralmente inseridos em um único setor censitário. A premissa técnica adotada considera que imóveis posicionados mais próximos de vias curtas apresentam maior confiabilidade territorial, mesmo em situações de endereçamento incompleto ou parcialmente inconsistente.</p>
 <p>Essa abordagem permitiu implementar um processo controlado de inferência espacial para reaproveitamento de registros que, em metodologias convencionais, seriam descartados por insuficiência de precisão cadastral. O modelo foi concebido com caráter conservador, incorporando apenas registros cuja evidência espacial apresentasse consistência suficiente para manutenção da confiabilidade analítica da base.</p>
@@ -365,39 +503,45 @@ ul.task-list li input[type="checkbox"] {
 <p>Como resultado, a cobertura analítica da base foi ampliada de aproximadamente 73% para 81%, representando ganho expressivo na disponibilidade de dados utilizáveis para as etapas subsequentes de modelagem e análise territorial.</p>
 <p>Além do aumento quantitativo da cobertura, a estratégia demonstrou a capacidade do modelo de equilibrar expansão analítica e controle de qualidade, evitando introdução de distorções relevantes na base final.</p>
 <p>Os resultados evidenciam que técnicas controladas de inferência espacial podem atuar como mecanismo complementar de qualificação territorial, especialmente em cenários urbanos caracterizados por baixa completude cadastral ou inconsistências de endereçamento.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Ampliação da cobertura analítica da base por meio de técnicas controladas de inferência espacial, possibilitando o reaproveitamento de registros inicialmente considerados frágeis, com manutenção dos critérios de qualidade e sem comprometimento da precisão posicional.</p>
 </section>
-<section id="identificação-de-limitações-para-lotes-e-terrenos" class="level4" data-number="4.1.1.8">
-<h4 data-number="4.1.1.8" class="anchored" data-anchor-id="identificação-de-limitações-para-lotes-e-terrenos"><span class="header-section-number">4.1.1.8</span> Identificação de limitações para lotes e terrenos</h4>
+<section id="identificação-de-limitações-para-lotes-e-terrenos" class="level4" data-number="4.1.1.9">
+<h4 data-number="4.1.1.9" class="anchored" data-anchor-id="identificação-de-limitações-para-lotes-e-terrenos"><span class="header-section-number">4.1.1.9</span> Identificação de limitações para lotes e terrenos</h4>
 <p>Durante a execução da Prova de Conceito (PoC) de Florianópolis, foi identificado desempenho significativamente inferior no processamento de imóveis não edificados, especialmente lotes vagos e terrenos urbanos, quando comparado aos demais tipos de imóveis analisados. Esse comportamento evidenciou uma limitação estrutural relevante tanto das bases disponíveis quanto da própria metodologia de validação posicional aplicada no projeto.</p>
 <p>Os resultados demonstraram que a taxa de processamento para lotes e terrenos atingiu aproximadamente 55,0%, valor significativamente inferior à média geral observada para os demais tipos de imóveis, cuja taxa de correspondência situou-se em torno de 89,6%. Além da menor capacidade de validação, esse segmento apresentou maior distância média entre coordenadas, da ordem de 569,92 metros, indicando maior dispersão espacial e menor aderência aos critérios de precisão estabelecidos pelo modelo.</p>
 <p>A análise metodológica permitiu identificar como principais fatores associados a esse desempenho:</p>
-<p>• ausência ou inconsistência de numeração predial, situação recorrente em lotes vagos;</p>
-<p>• menor cobertura do CNEFE para imóveis não edificados, uma vez que a base oficial é predominantemente estruturada a partir de endereços vinculados a edificações;</p>
-<p>• degradação dos scores de matching durante os processos de validação, especialmente em registros com baixa completude cadastral ou divergência significativa entre os dados informados e os registros oficiais disponíveis.</p>
+<ul>
+<li><p>ausência ou inconsistência de numeração predial, situação recorrente em lotes vagos;</p></li>
+<li><p>menor cobertura do CNEFE para imóveis não edificados, uma vez que a base oficial é predominantemente estruturada a partir de endereços vinculados a edificações;</p></li>
+<li><p>degradação dos scores de matching durante os processos de validação, especialmente em registros com baixa completude cadastral ou divergência significativa entre os dados informados e os registros oficiais disponíveis.</p></li>
+</ul>
 <p>Os resultados evidenciam que, embora o modelo desenvolvido apresente elevada robustez para imóveis edificados, existem desafios específicos relacionados à validação territorial de lotes e terrenos urbanos, sobretudo em áreas de expansão urbana ou baixa padronização cadastral.</p>
 <p>A identificação dessas limitações constitui um resultado metodológico importante da PoC, pois permite orientar de forma objetiva os aprimoramentos necessários para evolução do modelo, incluindo:</p>
-<p>• revisão e calibração de thresholds específicos;</p>
-<p>• incorporação de bases territoriais complementares;</p>
-<p>• utilização de referências espaciais auxiliares;</p>
-<p>• desenvolvimento de estratégias diferenciadas para imóveis não edificados.</p>
+<ul>
+<li><p>revisão e calibração de thresholds específicos;</p></li>
+<li><p>incorporação de bases territoriais complementares;</p></li>
+<li><p>utilização de referências espaciais auxiliares;</p></li>
+<li><p>desenvolvimento de estratégias diferenciadas para imóveis não edificados.</p></li>
+</ul>
 <p>Além disso, a análise demonstrou que parte das limitações observadas decorre não apenas da metodologia implementada, mas também das próprias fragilidades estruturais existentes nas bases territoriais urbanas atualmente disponíveis.</p>
 <p>Dessa forma, a PoC contribuiu para delimitar tecnicamente um dos principais desafios associados à expansão nacional do modelo, fornecendo subsídios concretos para futuras evoluções metodológicas e operacionais do Observatório.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Identificação de limitações estruturais no processamento de lotes e terrenos, configurando um ponto crítico metodológico que demanda tratamento específico antes da expansão em nível nacional, orientando o aprimoramento da abordagem para assegurar maior abrangência, consistência e qualidade das análises.</p>
 </section>
-<section id="validação-comparativa-com-google-maps" class="level4" data-number="4.1.1.9">
-<h4 data-number="4.1.1.9" class="anchored" data-anchor-id="validação-comparativa-com-google-maps"><span class="header-section-number">4.1.1.9</span> Validação comparativa com Google Maps</h4>
+<section id="validação-comparativa-com-google-maps" class="level4" data-number="4.1.1.10">
+<h4 data-number="4.1.1.10" class="anchored" data-anchor-id="validação-comparativa-com-google-maps"><span class="header-section-number">4.1.1.10</span> Validação comparativa com Google Maps</h4>
 <p>Foi realizada uma análise de acurácia posicional utilizando o Google Maps como referência externa de validação (ground truth), com o objetivo de avaliar o desempenho relativo das coordenadas provenientes do mercado (ArcGIS) e da base oficial (CNEFE). A análise foi conduzida com uma amostra de aproximadamente 3.200 registros, geocodificados manualmente, permitindo maior no processo de comparação e avaliação da qualidade espacial.</p>
 <p>Os resultados demonstraram que:</p>
-<p> o ArcGIS apresentou melhor desempenho médio geral para posicionamento imediato dos registros;</p>
-<p> o CNEFE apresentou desempenho superior nos níveis mais rigorosos de precisão espacial (níveis 1 e 2);</p>
-<p> o nível L1 do modelo apresentou aproximadamente 88,3% dos registros posicionados a menos de 50 metros da referência.</p>
+<ul>
+<li><p>ArcGIS apresentou melhor desempenho médio geral para posicionamento imediato dos registros;</p></li>
+<li><p>CNEFE apresentou desempenho superior nos níveis mais rigorosos de precisão espacial (níveis 1 e 2);</p></li>
+<li><p>nível L1 do modelo apresentou aproximadamente 88,3% dos registros posicionados a menos de 50 metros da referência.</p></li>
+</ul>
 <p>Os resultados também evidenciaram heterogeneidade espacial na qualidade dos dados, indicando diferenças relevantes de desempenho conforme a região urbana e o nível de precisão analisado.</p>
 <p>A análise confirmou que nenhuma fonte isolada é suficiente para atender integralmente aos requisitos de qualidade espacial do projeto, demonstrando que a solução mais robusta reside na combinação metodológica entre dados de mercado e base oficial.</p>
 <p>Essa validação externa constituiu um importante mecanismo de calibração das regras de decisão do modelo, permitindo definir de forma mais criteriosa qual fonte deve prevalecer em diferentes cenários operacionais.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Validação externa da qualidade do modelo, confirmando a robustez da abordagem híbrida baseada na integração entre dados de mercado (ArcGIS) e base oficial (CNEFE), bem como a construção de uma base empírica para calibração das regras de decisão, permitindo definir, de forma criteriosa, qual coordenada deve prevalecer em diferentes contextos operacionais.</p>
 </section>
 </section>
@@ -408,68 +552,69 @@ ul.task-list li input[type="checkbox"] {
 <h4 data-number="4.1.2.1" class="anchored" data-anchor-id="transformação-da-etapa-2-em-frente-produtiva-real"><span class="header-section-number">4.1.2.1</span> Transformação da Etapa 2 em frente produtiva real</h4>
 <p>A Etapa 2 deixou de se restringir ao planejamento metodológico e passou a operar como uma frente efetiva de produção territorial. No primeiro trimestre de 2026, foram consolidados fluxos operacionais, definidos critérios de organização, armazenamento, nomenclatura, governança, acompanhamento por sprints e integração com as demais frentes do projeto.</p>
 <p>Esse avanço permitiu transformar a base cartográfica territorial em um produto técnico concreto, com geração de dados por município, estruturação de banco espacial, documentação metodológica e produção de variáveis geográficas. A etapa passou, portanto, a produzir insumos efetivos para a modelagem de avaliação em massa.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Consolidação da Etapa 2 como frente produtiva real do projeto, com capacidade de gerar bases territoriais, organizar dados espaciais e fornecer insumos qualificados para as etapas seguintes. A cartografia passou a funcionar como uma linha de produção territorial organizada, e não apenas como atividade de apoio.</p>
 </section>
 <section id="implantação-do-fluxo-bronzeprataouro" class="level4" data-number="4.1.2.2">
 <h4 data-number="4.1.2.2" class="anchored" data-anchor-id="implantação-do-fluxo-bronzeprataouro"><span class="header-section-number">4.1.2.2</span> Implantação do fluxo Bronze–Prata–Ouro</h4>
 <p>Foi implantado o fluxo de maturidade dos dados em três camadas: Bronze, Prata e Ouro. A camada Bronze reúne os dados brutos cartográficos e secundários; a camada Prata concentra os dados organizados, integrados, padronizados e qualificados; e a camada Ouro representa a versão final consolidada, validada e pronta para publicação e catalogação.</p>
 <p>No trimestre, o fluxo avançou do desenho conceitual para a execução prática. A camada Bronze foi efetivamente materializada para 11 municípios, com 16 camadas cartográficas por município, enquanto a camada Prata também foi estruturada para 11 municípios, com 14 camadas por município. A camada Ouro ainda não foi concluída, mas já orienta o planejamento das entregas finais.</p>
-<p>Resultado estratégico: Implantação de uma arquitetura territorial baseada em maturidade de dados, com separação entre dados brutos, dados qualificados e produtos finais, garantindo rastreabilidade, controle de versões e qualidade progressiva. Criação de um modelo operacional replicável para produção cartográfica em escala.</p>
+<p><strong>Resultado estratégico</strong>:</p>
+<p>Implantação de uma arquitetura territorial baseada em maturidade de dados, com separação entre dados brutos, dados qualificados e produtos finais, garantindo rastreabilidade, controle de versões e qualidade progressiva. Criação de um modelo operacional replicável para produção cartográfica em escala.</p>
 </section>
 <section id="produção-territorial-em-11-municípios" class="level4" data-number="4.1.2.3">
 <h4 data-number="4.1.2.3" class="anchored" data-anchor-id="produção-territorial-em-11-municípios"><span class="header-section-number">4.1.2.3</span> Produção territorial em 11 municípios</h4>
 <p>A produção cartográfica alcançou escala inicial concreta, com geração de bases territoriais para 11 municípios: Florianópolis, Fortaleza, Campo Grande, Porto Velho, Belo Horizonte, Rio de Janeiro, Curitiba, Salvador, Manaus, Cuiabá e Cajuri.</p>
 <p>Foram produzidos 11 municípios na camada Bronze, cada um com 16 camadas cartográficas, e 11 municípios na camada Prata, cada um com 14 camadas, ainda que em diferentes níveis de maturidade e completude. Esse resultado demonstra que a etapa deixou de ser experimental e passou a operar com produção territorial replicável.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Demonstração da capacidade operacional da Etapa 2 para produzir bases cartográficas municipais em escala inicial, com estrutura padronizada e potencial de expansão para novos lotes.</p>
 </section>
 <section id="consolidação-da-poc-florianópolis-como-entrega-integrada" class="level4" data-number="4.1.2.4">
 <h4 data-number="4.1.2.4" class="anchored" data-anchor-id="consolidação-da-poc-florianópolis-como-entrega-integrada"><span class="header-section-number">4.1.2.4</span> Consolidação da PoC Florianópolis como entrega integrada</h4>
 <p>A POC de Florianópolis foi consolidada como a principal entrega integrada e demonstradora da Etapa 2. Ela funcionou como ambiente de teste, validação e refinamento metodológico, integrando base cartográfica, variáveis geográficas, amostra do Observatório do Mercado Imobiliário e estrutura de banco espacial PostGIS.</p>
 <p>Como resultado concreto, foram disponibilizadas à Etapa 3 as 14 camadas da base Prata de Florianópolis, juntamente com 60 variáveis geográficas geradas para o município. A PoC ultrapassou, assim, a condição de experimento interno e passou a operar como referência concreta de produto territorial para a modelagem.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Validação da PoC Florianópolis como caso demonstrador da integração entre cartografia, variáveis geográficas, dados do mercado imobiliário e modelagem de avaliação em massa. A POC deixou de ser apenas teste e passou a ser produto territorial efetivo para a modelagem.</p>
 </section>
 <section id="estruturação-do-dicionário-e-modelagem-de-dados-espaciais" class="level4" data-number="4.1.2.5">
 <h4 data-number="4.1.2.5" class="anchored" data-anchor-id="estruturação-do-dicionário-e-modelagem-de-dados-espaciais"><span class="header-section-number">4.1.2.5</span> Estruturação do dicionário e modelagem de dados espaciais</h4>
 <p>Foi estruturado o dicionário de dados da Etapa 2, com o registro de 37 camadas distribuídas entre Bronze e Prata. Esse dicionário organiza nomes de camadas, atributos, tipos de dados, geometrias, chaves, campos obrigatórios e informações de origem.</p>
 <p>Além disso, foi desenvolvida uma modelagem preliminar do banco de dados espacial, incluindo classes cartográficas, variáveis geográficas e relações entre entidades territoriais. Esse trabalho subsidia a persistência estruturada dos dados no PostGIS e prepara a futura consolidação da camada Ouro.</p>
-<p>Resultado estratégico: Criação de uma base lógica e documental para padronização, interoperabilidade, rastreabilidades e governança dos dados espaciais da Etapa 2.</p>
+<p><strong>Resultado estratégico</strong>: Criação de uma base lógica e documental para padronização, interoperabilidade, rastreabilidades e governança dos dados espaciais da Etapa 2.</p>
 </section>
 <section id="geração-de-variáveis-geográficas-para-avaliação-em-massa" class="level4" data-number="4.1.2.6">
 <h4 data-number="4.1.2.6" class="anchored" data-anchor-id="geração-de-variáveis-geográficas-para-avaliação-em-massa"><span class="header-section-number">4.1.2.6</span> Geração de variáveis geográficas para avaliação em massa</h4>
 <p>A Etapa 2 avançou na definição, classificação e geração de variáveis geográficas voltadas à avaliação em massa. Foram identificadas 76 variáveis geográficas com potencial de uso na modelagem, das quais 60 já foram efetivamente geradas.</p>
 <p>Essas variáveis foram organizadas conforme diferentes escalas territoriais, incluindo setor censitário, município e amostra do Observatório do Mercado Imobiliário. Entre os exemplos mencionados no relatório estão distância ao litoral, distância à massa d’água, densidade de equipamentos, lote médio, quantidade de lotes, renda, indicadores municipais e variáveis ambientais. A relação das 76 variáveis geográficas com potencial de uso na modelagem e as 60 efetivamente geradas encontram-se listadas no Apêndice 2.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Geração de um conjunto inicial robusto de variáveis geográficas, capaz de qualificar a base territorial e subsidiar tecnicamente os modelos de avaliação em massa. A cartografia passou a produzir dados uteis para avaliação em massa, e não apenas mapas.</p>
 </section>
 <section id="padronização-de-arquivos-nomenclatura-e-versionamento" class="level4" data-number="4.1.2.7">
 <h4 data-number="4.1.2.7" class="anchored" data-anchor-id="padronização-de-arquivos-nomenclatura-e-versionamento"><span class="header-section-number">4.1.2.7</span> Padronização de arquivos, nomenclatura e versionamento</h4>
 <p>Foi implantada uma lógica de padronização dos arquivos GeoPackage, com identificação por geocódigo do município, nome do município, número da revisão e data de produção. Também foi definida a organização por UF, município e camada de maturidade dos dados.</p>
 <p>Na camada Prata, foi estabelecida a separação entre área parcial, destinada a arquivos transitórios e em edição, e área final, destinada a revisões congeladas e imutáveis. Essa estrutura permite comparar versões, rastrear entregas e garantir maior controle sobre a evolução dos dados.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Implantação de um padrão de organização, nomenclatura e versionamento que fortalece a rastreabilidade, a auditabilidade e a escalabilidade da produção cartográfica.</p>
 </section>
 <section id="implantação-de-infraestrutura-geoespacial-com-postgis" class="level4" data-number="4.1.2.8">
 <h4 data-number="4.1.2.8" class="anchored" data-anchor-id="implantação-de-infraestrutura-geoespacial-com-postgis"><span class="header-section-number">4.1.2.8</span> Implantação de infraestrutura geoespacial com PostGIS</h4>
 <p>Foi estruturada uma infraestrutura geoespacial baseada em PostgreSQL/PostGIS, com organização em três bancos principais: bronze, prata e ouro. Cada banco representa um estágio de maturidade dos dados, permitindo separar dados brutos, dados qualificados e dados finais para publicação.</p>
 <p>Também foram definidos schemas por unidade da federação, mecanismos de ingestão automatizada de arquivos GeoPackage, tabela de controle de ingestão, colunas de rastreabilidade e mecanismos de auditoria por trigger. Essa infraestrutura permite evoluir de um fluxo baseado apenas em arquivos para uma arquitetura de dados espacial mais robusta.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Transição de um fluxo baseaem arquivos para a implantação de uma infraestrutura geoespacial capaz de suportar armazenamento, processamento, rastreabilidade, auditoria e integração territorial em escala.</p>
 </section>
 <section id="qualidade-espacial-e-consistência-topológica-como-critério-de-aceite" class="level4" data-number="4.1.2.9">
 <h4 data-number="4.1.2.9" class="anchored" data-anchor-id="qualidade-espacial-e-consistência-topológica-como-critério-de-aceite"><span class="header-section-number">4.1.2.9</span> Qualidade espacial e consistência topológica como critério de aceite</h4>
 <p>A qualidade espacial foi incorporada como critério permanente de aceite da Etapa 2. O relatório destaca verificações de leitura dos arquivos, compatibilidade do sistema de referência, presença de atributos mínimos, validade geométrica, aderência ao município, coerência espacial, duplicidades, lacunas, sobreposições e inconsistências topológicas.</p>
 <p>Esses controles foram especialmente relevantes para camadas como setores censitários, setores urbanos, logradouros, faces de logradouro, subsetores e edificações. A passagem da Bronze para a Prata passou a depender desse processo de conferência, saneamento e qualificação técnica.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Incorporação da qualidade espacial e da consistência topológica como requisitos formais para aceitação das bases territoriais e redução do risco de propagação de erros para a modelagem.</p>
 </section>
 <section id="preparação-da-etapa-para-a-escalabilidade" class="level4" data-number="4.1.2.10">
 <h4 data-number="4.1.2.10" class="anchored" data-anchor-id="preparação-da-etapa-para-a-escalabilidade"><span class="header-section-number">4.1.2.10</span> Preparação da etapa para a escalabilidade</h4>
 <p>A Etapa 2 encerrou o trimestre com uma base conceitual, operacional e tecnológica favorável à escalabilidade. A produção de 11 municípios na Bronze, 11 municípios na Prata, 37 camadas no dicionário, 76 variáveis identificadas e 60 variáveis geradas demonstra capacidade inicial comprovada.</p>
 <p>Ao mesmo tempo, a escalabilidade plena dependerá da consolidação da infraestrutura tecnológica, da automação dos fluxos, da redução de etapas manuais, do fortalecimento da rastreabilidade e da estabilização metodológica da geração de variáveis geográficas.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Preparação da Etapa 2 para expansão em escala nacional, com base em fluxo padronizado, infraestrutura geoespacial, governança dos dados e produção inicial validada.</p>
 </section>
 </section>
@@ -480,25 +625,31 @@ ul.task-list li input[type="checkbox"] {
 <section id="desempenho-dos-modelos-econométricos" class="level4" data-number="4.1.3.1">
 <h4 data-number="4.1.3.1" class="anchored" data-anchor-id="desempenho-dos-modelos-econométricos"><span class="header-section-number">4.1.3.1</span> Desempenho dos modelos econométricos</h4>
 <p>A Etapa 3 demonstrou desempenho estatístico consistente na modelagem dos valores imobiliários da POC Florianópolis. foram elaborados dois modelos econométricos para os imóveis de Florianópolis: um modelo voltado à estimativa de valores de imóveis edificados e outro específico para a modelagem dos lotes urbanos. Essa abordagem dual permitiu tratar de forma diferenciada as dinâmicas de formação de valor associadas às edificações e ao solo urbano, garantindo maior aderência metodológica ao comportamento do mercado imobiliário.</p>
-<p>No caso dos imóveis edificados, foi ajustado um modelo de regressão linear múltipla, incorporando variáveis locacionais, socioeconômicas, tipológicas e construtivas. As variáveis utilizadas encontram-se listadas na figura 5.</p>
-<p>Figura 5: variáveis utilizadas – imóveis edificados</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/pvg/fig-05-variaveis-edificados.png" class="img-fluid figure-img"></p>
-<figcaption>Figura 5 - variáveis utilizadas – imóveis edificados</figcaption>
+<p>No caso dos imóveis edificados, foi ajustado um modelo de regressão linear múltipla, incorporando variáveis locacionais, socioeconômicas, tipológicas e construtivas. As variáveis utilizadas encontram-se listadas na <a href="#fig-variaveis-edificados" class="quarto-xref">Figura&nbsp;<span>4.1</span></a>.</p>
+<div id="fig-variaveis-edificados" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-variaveis-edificados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/pvg/fig-05-variaveis-edificados.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-variaveis-edificados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.1: Variáveis utilizadas – imóveis edificados
+</figcaption>
 </figure>
 </div>
 <p>O modelo apresentou desempenho robusto, com R² = 0,86 e R² ajustado = 0,86, além de erro-padrão dos resíduos de 0,17, considerando 32.128 graus de liberdade. Esses resultados evidenciam elevada capacidade explicativa, permitindo a geração consistente de fatores de homogeneização e a construção da superfície de valores do metro quadrado construído (VUM2), posteriormente utilizada na integração com o modelo de lotes.</p>
-<p>Para os lotes urbanos, a modelagem seguiu uma estratégia em duas etapas. Inicialmente, foi ajustado um modelo preliminar, cujos resíduos foram espacializados por meio de krigagem. A partir desses resíduos krigados, foi construída uma variável explicativa de localização, denominada layer, incorporada ao modelo final de lotes. Essa variável capturou a componente espacial não explicada pelas variáveis tradicionais, refinando significativamente o desempenho do modelo. A figura 6 apresenta as variáveis utilizadas para compor o modelo.</p>
-<p>Figura 6: variáveis utilizadas – lotes e terrenos</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/pvg/fig-06-variaveis-lotes.png" class="img-fluid figure-img"></p>
-<figcaption>Figura 6 - variáveis utilizadas – lotes e terrenos</figcaption>
+<p>Para os lotes urbanos, a modelagem seguiu uma estratégia em duas etapas. Inicialmente, foi ajustado um modelo preliminar, cujos resíduos foram espacializados por meio de krigagem. A partir desses resíduos krigados, foi construída uma variável explicativa de localização, denominada layer, incorporada ao modelo final de lotes. Essa variável capturou a componente espacial não explicada pelas variáveis tradicionais, refinando significativamente o desempenho do modelo. A <a href="#fig-variaveis-lotes" class="quarto-xref">Figura&nbsp;<span>4.2</span></a> apresenta as variáveis utilizadas para compor o modelo.</p>
+<div id="fig-variaveis-lotes" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-variaveis-lotes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/pvg/fig-06-variaveis-lotes.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-variaveis-lotes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.2: Variáveis utilizadas – lotes e terrenos
+</figcaption>
 </figure>
 </div>
 <p>O modelo econométrico final para os lotes apresentou R² = 0,82 (R² ajustado = 0,82), com erro-padrão dos resíduos de aproximadamente 0,34 e cerca de 3.796 graus de liberdade, evidenciando um desempenho consistente. Em termos interpretativos, o modelo explica cerca de 82% dos preços unitários de mercado, resultado particularmente relevante quando se considera a ausência de diversas variáveis relacionadas às características físicas dos lotes, como frente, forma, pedologia, entre outras.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Consolidação de um arcabouço econométrico robusto e integrado, aplicável tanto a imóveis edificados quanto a lotes urbanos, incorporando componente espacial avançada e estabelecendo uma base técnica consistente para a geração da PVG e dos valores de referência. Modelos estatisticamente robustos que garantem precisão e confiabilidade para a avaliação em massa.</p>
 </section>
 <section id="modelo-preliminar-de-lotes-base-intermediária" class="level4" data-number="4.1.3.2">
@@ -507,7 +658,7 @@ ul.task-list li input[type="checkbox"] {
 <p>A incorporação da variável VUM2 foi um elemento central nesse processo, permitindo integrar a informação proveniente do mercado de imóveis edificados à modelagem dos lotes. A partir dessa estrutura, foi possível ajustar o modelo linear generalizado e avaliar o comportamento dos resíduos.</p>
 <p>O modelo preliminar apresentou Pseudo-R² de Nagelkerke = 0,62, erro-padrão dos resíduos de 0,50, com 3.820 graus de liberdade, e AIC de 62.643,75. Esses indicadores confirmam que o modelo apresenta desempenho consistente para uma etapa intermediária, ainda sem a incorporação explícita da componente espacial.</p>
 <p>O papel desse modelo preliminar foi fundamental para a evolução metodológica da Etapa 3, pois permitiu identificar a presença de dependência espacial nos resíduos. Esses resíduos foram posteriormente krigados, possibilitando a construção de uma variável explicativa de localização, denominada layer, que foi incorporada ao modelo de regressão final dos lotes. Esse procedimento permitiu capturar efeitos espaciais não explicados pelas variáveis tradicionais, refinando significativamente o desempenho do modelo final.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Construção de uma base intermediária robusta para a modelagem de lotes, permitindo a incorporação da componente espacial por meio da krigagem dos resíduos e contribuindo para a evolução metodológica do modelo final, com ganho consistente de capacidade explicativa.</p>
 </section>
 <section id="classificação-objetiva-de-padrão-construtivo" class="level4" data-number="4.1.3.3">
@@ -516,7 +667,7 @@ ul.task-list li input[type="checkbox"] {
 <p>A metodologia foi aplicada separadamente para os conjuntos de apartamentos e casas, de modo a preservar a heterogeneidade entre as tipologias e evitar distorções na formação dos agrupamentos. Inicialmente, a variável de valor unitário foi padronizada e, em seguida, submetida a um processo de agrupamento não supervisionado utilizando o algoritmo K-Means (k = 3).</p>
 <p>Os grupos resultantes foram ordenados com base na média do valor unitário e posteriormente rotulados em três classes técnicas: baixo padrão, padrão normal e alto padrão. Para apartamentos, o padrão baixo concentrou-se predominantemente entre R$ 5.000 e R$ 15.000/m², o padrão normal entre R$ 10.000 e R$ 20.000/m², e o padrão alto a partir de R$ 20.000/m², com cauda longa atingindo valores próximos a R$ 70.000/m². Para casas, o padrão baixo concentrou-se até R$ 10.000/m², o padrão normal entre R$ 8.000 e R$ 15.000/m², e o padrão alto acima de R$ 15.000/m².</p>
 <p>Essa abordagem elimina a necessidade de definição de limites arbitrários, garantindo uma classificação baseada em evidência empírica e aderente à dinâmica do mercado imobiliário local.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Criação de uma classificação técnica, objetiva e baseada em dados para o padrão construtivo dos imóveis, reduzindo subjetividade e fortalecendo a homogeneização das informações utilizadas na modelagem. Tipologia objetiva, replicável e alinhada à estrutura econômica do mercado.</p>
 </section>
 <section id="regionalização-geoespacial-submercados" class="level4" data-number="4.1.3.4">
@@ -525,61 +676,76 @@ ul.task-list li input[type="checkbox"] {
 <p>Para a segmentação espacial, foi aplicado um método de agrupamento não supervisionado (K-Means), de forma independente por tipologia. O algoritmo possibilita a separação do território em zonas com comportamento locacional semelhante, agrupando imóveis a partir da proximidade entre suas coordenadas, o que permite identificar padrões espaciais de concentração de valores e delimitar submercados imobiliários.</p>
 <p>Foram testadas diferentes configurações de segmentação, com 3 e 5 clusters, sendo posteriormente consolidada a variável class_5_cluster como referência operacional no fluxo de modelagem e na construção da PVG. A escolha da segmentação em cinco grupos foi motivada pelo melhor equilíbrio entre nível de detalhamento territorial e estabilidade dos agrupamentos, garantindo representatividade adequada dos submercados sem fragmentação excessiva.</p>
 <p>Embora, no caso específico de Florianópolis, os modelos tenham apresentado bom desempenho com a subdivisão administrativa por distritos, a regionalização geoespacial foi mantida como abordagem metodológica estratégica, especialmente visando sua aplicação em municípios onde essa divisão não é tão estruturada ou homogênea.</p>
-<p>Resultado estratégico: Estruturação de uma regionalização geoespacial baseada em dados, capaz de representar a heterogeneidade do mercado imobiliário e apoiar o desenvolvimento de modelos mais aderentes às dinâmicas territoriais.</p>
+<p><strong>Resultado estratégico</strong>: Estruturação de uma regionalização geoespacial baseada em dados, capaz de representar a heterogeneidade do mercado imobiliário e apoiar o desenvolvimento de modelos mais aderentes às dinâmicas territoriais.</p>
 </section>
 <section id="integração-entre-modelos" class="level4" data-number="4.1.3.5">
 <h4 data-number="4.1.3.5" class="anchored" data-anchor-id="integração-entre-modelos"><span class="header-section-number">4.1.3.5</span> Integração entre modelos</h4>
-<p>A Etapa 3 estruturou um fluxo integrado no qual os modelos não operam de forma isolada. O modelo de imóveis edificados foi utilizado para estimar valores do metro quadrado construído e gerar a variável VUM2, que posteriormente foi incorporada ao modelo de lotes. Afigura 7 ilustra este processo.</p>
-<p>Figura 7: Ilustração fluxo dos modelos</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/pvg/fig-07-fluxo-modelos.png" class="img-fluid figure-img"></p>
-<figcaption>Figura 7 - Ilustração fluxo dos modelos</figcaption>
+<p>A Etapa 3 estruturou um fluxo integrado no qual os modelos não operam de forma isolada. O modelo de imóveis edificados foi utilizado para estimar valores do metro quadrado construído e gerar a variável VUM2, que posteriormente foi incorporada ao modelo de lotes. A <a href="#fig-fluxo-modelos" class="quarto-xref">Figura&nbsp;<span>4.3</span></a> ilustra este processo.</p>
+<div id="fig-fluxo-modelos" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fluxo-modelos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/pvg/fig-07-fluxo-modelos.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fluxo-modelos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.3: Ilustração fluxo dos modelos
+</figcaption>
 </figure>
 </div>
 <p>Além disso, os resíduos do modelo preliminar de lotes foram krigados e transformados na variável espacial layer, incorporada ao modelo final. Esse encadeamento permitiu combinar informações provenientes dos imóveis edificados, dos lotes, das variáveis cartográficas e da dependência espacial não capturada inicialmente.</p>
 <p>No modelo final de lotes, a variável layer apresentou forte contribuição explicativa, reforçando a importância da componente locacional no processo de formação dos valores.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Integração metodológica entre modelos de imóveis edificados, lotes e componente espacial, aumentando a coerência técnica e a capacidade explicativa da avaliação em massa. A cadeia lógica entre modelos aumentou a consistência e qualidade das estimativas.</p>
 </section>
 <section id="outputs-territoriais-gerados" class="level4" data-number="4.1.3.6">
 <h4 data-number="4.1.3.6" class="anchored" data-anchor-id="outputs-territoriais-gerados"><span class="header-section-number">4.1.3.6</span> Outputs territoriais gerados</h4>
 <p>A Etapa 3 resultou na geração de um conjunto estruturado de outputs territoriais, fundamentais para a representação espacial do mercado imobiliário e para a operacionalização da Planta de Valores Genéricos (PVG).</p>
 <p>O principal produto foi a geração de superfícies contínuas de valores unitários (R$/m²), obtidas por meio da interpolação espacial dos valores estimados nos modelos. Para essa finalidade, foi adotado o método IDW – Inverse Distance Weighting, com os seguintes parâmetros:</p>
-<p>• Grade regular de 100 metros, garantindo resolução espacial compatível com a escala urbana;</p>
-<p>• Zona de influência de 1.000 metros, assegurando coerência local das estimativas;</p>
-<p>• Potência (idp = 2), priorizando a influência dos imóveis mais próximos;</p>
-<p>• Máximo de 50 vizinhos por célula, controlando a densidade de informação utilizada;</p>
-<p>• Distância máxima de 3.000 metros, limitando a extrapolação espacial.</p>
+<ul>
+<li><p>Grade regular de 100 metros, garantindo resolução espacial compatível com a escala urbana;</p></li>
+<li><p>Zona de influência de 1.000 metros, assegurando coerência local das estimativas;</p></li>
+<li><p>Potência (idp = 2), priorizando a influência dos imóveis mais próximos;</p></li>
+<li><p>Máximo de 50 vizinhos por célula, controlando a densidade de informação utilizada;</p></li>
+<li><p>Distância máxima de 3.000 metros, limitando a extrapolação espacial.</p></li>
+</ul>
 <p>Dessa forma, cada célula da superfície foi estimada com base em até 50 imóveis localizados em um raio máximo de 3 km, garantindo equilíbrio entre suavização espacial e aderência aos dados observados.</p>
 <p>Além das superfícies contínuas, foram gerados os seguintes outputs territoriais complementares:</p>
-<p>• Classificação geoespacial de submercados:</p>
+<ol type="i">
+<li>Classificação geoespacial de submercados:</li>
+</ol>
 <p>Realizada por meio de agrupamento não supervisionado (K-Means), aplicado às coordenadas geográficas (latitude e longitude), previamente padronizadas. A classificação foi conduzida separadamente para apartamentos, casas e lotes, sendo testadas configurações com 3 e 5 clusters. A variável class_5_cluster foi consolidada para uso operacional, por apresentar melhor equilíbrio entre detalhamento territorial e estabilidade dos agrupamentos, permitindo a delimitação de zonas com comportamento locacional homogêneo.</p>
-<p>• Camadas territoriais integradas aos modelos:</p>
+<ol start="2" type="i">
+<li>Camadas territoriais integradas aos modelos:</li>
+</ol>
 <p>Estruturadas a partir da integração entre os resultados dos modelos econométricos e as variáveis espaciais derivadas. Destaca-se a incorporação da variável VUM2 (valor unitário do metro quadrado construído) e da variável layer, obtida a partir da krigagem dos resíduos do modelo preliminar de lotes. Essa integração permite associar diretamente localização, atributos do imóvel e valor estimado em uma base única e consistente.</p>
-<p>• Base espacial estruturada para a PVG:</p>
+<ol start="3" type="i">
+<li>Base espacial estruturada para a PVG:</li>
+</ol>
 <p>Os outputs foram organizados em formato geoespacial contínuo e padronizado, permitindo sua utilização direta na construção da Planta de Valores Genéricos. Essa base garante consistência entre a modelagem estatística, a representação espacial e a aplicação tributária, possibilitando a definição de zonas homogêneas de valor com respaldo técnico.</p>
 <p>Do ponto de vista metodológico, a geração desses outputs representa a transição de uma modelagem puramente estatística para uma abordagem espacialmente explícita, na qual a localização passa a desempenhar papel estruturante na formação dos valores.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Geração de outputs territoriais estruturados, com base em métodos e parâmetros explicitamente definidos, permitindo representar a dinâmica espacial do mercado imobiliário e viabilizar a aplicação consistente da PVG com elevado nível de precisão, transparência e escalabilidade. Ou seja, geração de produtos concreto, aplicáveis diretamente a política tributária.</p>
 </section>
 <section id="estratégia-de-modelagem-escalável-e-controlada" class="level4" data-number="4.1.3.7">
 <h4 data-number="4.1.3.7" class="anchored" data-anchor-id="estratégia-de-modelagem-escalável-e-controlada"><span class="header-section-number">4.1.3.7</span> Estratégia de modelagem escalável e controlada</h4>
 <p>A estratégia de modelagem adotada na Etapa 3 foi estruturada com base em um fluxo metodológico controlado, incremental e auditável, evitando a automatização integral sem validação técnica. O processo de construção dos modelos foi conduzido por meio de seleção iterativa de variáveis, com inclusão e exclusão sucessiva, buscando o equilíbrio entre capacidade explicativa, estabilidade dos coeficientes e coerência econômica, além de reduzir o risco de overfitting.</p>
 <p>A abordagem metodológica integrou diferentes componentes de forma estruturada, incluindo:</p>
-<p>• modelos econométricos paramétricos (regressão linear para imóveis edificados e GLM para lotes);</p>
-<p>• incorporação de variáveis geoespaciais, como a variável layer, derivada da krigagem dos resíduos do modelo preliminar;</p>
-<p>• uso da variável VUM2, proveniente do modelo de imóveis edificados, como elemento de integração entre modelos;</p>
-<p>• classificação de submercados por meio de técnicas de clusterização espacial;</p>
-<p>• validação contínua dos resultados com base em métricas estatísticas e análise crítica dos resíduos.</p>
+<ul>
+<li><p>modelos econométricos paramétricos (regressão linear para imóveis edificados e GLM para lotes);</p></li>
+<li><p>incorporação de variáveis geoespaciais, como a variável layer, derivada da krigagem dos resíduos do modelo preliminar;</p></li>
+<li><p>uso da variável VUM2, proveniente do modelo de imóveis edificados, como elemento de integração entre modelos;</p></li>
+<li><p>classificação de submercados por meio de técnicas de clusterização espacial;</p></li>
+<li><p>validação contínua dos resultados com base em métricas estatísticas e análise crítica dos resíduos.</p></li>
+</ul>
 <p>Os resultados obtidos na PoC Florianópolis demonstram a consistência dessa estratégia. O modelo final de imóveis edificados apresentou R² de 0,86, enquanto o modelo final de lotes atingiu aproximadamente R² de 0,82, mesmo na ausência de variáveis físicas detalhadas dos terrenos. Esses resultados evidenciam que a combinação entre modelagem econométrica e tratamento espacial permite alcançar elevado poder explicativo com base em dados disponíveis em escala nacional.</p>
 <p>Do ponto de vista da escalabilidade, o relatório destaca que a replicação da metodologia para outros municípios deve ocorrer de forma controlada e adaptativa, respeitando as especificidades locais de mercado, disponibilidade de dados e estrutura urbana. Nesse contexto, o fluxo metodológico desenvolvido permite:</p>
-<p>• padronização das etapas de modelagem (tratamento, classificação, estimação e validação);</p>
-<p>• rastreabilidade completa dos dados e dos modelos utilizados;</p>
-<p>• replicação do processo com ajustes parametrizados, evitando reconfiguração completa a cada município;</p>
-<p>• manutenção de controle técnico sobre os resultados, mesmo em cenários de expansão.</p>
+<ul>
+<li><p>padronização das etapas de modelagem (tratamento, classificação, estimação e validação);</p></li>
+<li><p>rastreabilidade completa dos dados e dos modelos utilizados;</p></li>
+<li><p>replicação do processo com ajustes parametrizados, evitando reconfiguração completa a cada município;</p></li>
+<li><p>manutenção de controle técnico sobre os resultados, mesmo em cenários de expansão.</p></li>
+</ul>
 <p>Dessa forma, a estratégia não se baseia em uma reprodução automática e indiscriminada dos modelos, mas sim em um processo padronizado, supervisionado e tecnicamente fundamentado, que combina escalabilidade com governança e qualidade analítica.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Consolidação de uma estratégia de modelagem escalável, baseada em fluxo metodológico padronizado, integração entre modelos econométricos e componentes espaciais, e validação técnica contínua, garantindo replicabilidade com controle de qualidade e aderência às diferentes realidades municipais, em alinhamento com as exigências de aplicação institucional pela RFB. Uma metodologia preparada para a expansão nacional com governança e qualidade.</p>
 </section>
 </section>
@@ -594,70 +760,70 @@ ul.task-list li input[type="checkbox"] {
 <h3 data-number="4.2.1" class="anchored" data-anchor-id="estruturação-de-uma-arquitetura-distribuída-e-especializada"><span class="header-section-number">4.2.1</span> Estruturação de uma arquitetura distribuída e especializada</h3>
 <p>A infraestrutura tecnológica do projeto foi estruturada a partir de uma arquitetura distribuída composta por três servidores especializados e integrados, cada um desempenhando funções complementares dentro do fluxo operacional do projeto. O servidor sv-labfsg foi configurado como núcleo de persistência e serviços centrais, concentrando o banco PostgreSQL/PostGIS, a pilha do OpenProject e os mecanismos de armazenamento persistente. O sv-thinkcentre foi dedicado ao processamento técnico e analítico, operando rotinas intensivas em Python e R, além da rstudio-vm para apoio às atividades de modelagem e processamento geoespacial. Já o sv-acesso passou a operar como camada institucional de entrada, publicação e controle de acesso aos serviços internos.</p>
 <p>A arquitetura foi concebida para reduzir o acoplamento entre persistência, processamento e acesso, permitindo segmentação operacional, isolamento de riscos e maior previsibilidade de desempenho. A distribuição das cargas em componentes distintos favoreceu a estabilidade do ambiente, a escalabilidade futura e a implementação de práticas formais de governança tecnológica.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Implantação de uma arquitetura distribuída e especializada, estruturada em camadas funcionais independentes, permitindo maior controle operacional, segurança dos serviços e preparação para expansão nacional da infraestrutura do projeto.</p>
 </section>
 <section id="consolidação-de-um-ambiente-de-dados-centralizado-e-confiável" class="level3" data-number="4.2.2">
 <h3 data-number="4.2.2" class="anchored" data-anchor-id="consolidação-de-um-ambiente-de-dados-centralizado-e-confiável"><span class="header-section-number">4.2.2</span> Consolidação de um ambiente de dados centralizado e confiável</h3>
 <p>O ambiente central de dados foi consolidado no servidor sv-labfsg, equipado com PostgreSQL 16 e extensão PostGIS, configurado como núcleo analítico e geoespacial do projeto. O armazenamento foi estruturado sobre RAID1 dedicado aos dados persistentes, garantindo redundância física e maior resiliência operacional.</p>
 <p>Além da separação física dos dados, foi adotada uma estratégia de segregação lógica entre o banco analítico geoespacial do projeto e o banco operacional do OpenProject executado em container Docker, permitindo políticas independentes de backup, restauração, auditoria e governança. O modelo foi complementado por uma estrutura lógica em camadas bronze, prata e ouro, organizada territorialmente por schemas estaduais e nacionais, favorecendo rastreabilidade, padronização e maturidade progressiva dos dados.</p>
-<p>Resultado estratégico:</p>
-<p>Consolidação de um ambiente centralizado de dados geoespaciais com redundância física, separação lógica de domínios e organização analítica escalável, garantindo integridade, auditabilidade e suporte à avaliação em massa em escala nacional</p>
+<p><strong>Resultado estratégico</strong>:</p>
+<p>Consolidação de um ambiente centralizado de dados geoespaciais com redundância física, separação lógica de domínios e organização analítica escalável, garantindo integridade, auditabilidade e suporte à avaliação em massa em escala nacional.</p>
 </section>
 <section id="implantação-de-capacidade-analítica-operacional-integrada" class="level3" data-number="4.2.3">
 <h3 data-number="4.2.3" class="anchored" data-anchor-id="implantação-de-capacidade-analítica-operacional-integrada"><span class="header-section-number">4.2.3</span> Implantação de capacidade analítica operacional integrada</h3>
 <p>A capacidade analítica do projeto foi estruturada no servidor sv-thinkcentre, equipado com processador AMD Ryzen 7 5700G, 30 GiB de RAM, armazenamento NVMe para operações rápidas e SSD SATA para persistência complementar. Esse ambiente passou a sustentar as rotinas de ETL, modelagem estatística, processamento espacial e execução de scripts em Python e R utilizados na Prova de Conceito de Florianópolis.</p>
 <p>A integração direta entre o ambiente analítico e o PostgreSQL/PostGIS permitiu executar pipelines completos sem replicação intermediária de bases, reduzindo sobrecarga operacional e aumentando a eficiência do fluxo de processamento. Essa estrutura sustentou rotinas complexas do Observatório do Mercado Imobiliário, incluindo validação cruzada via Geocoder V3, processamento de aproximadamente 52 mil registros em cerca de 2,4 minutos e execução integrada das rotinas estatísticas de modelagem e geração de variáveis geoespaciais.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Implantação de um ambiente analítico integrado e conectado ao núcleo geoespacial do projeto, permitindo processamento contínuo, execução de pipelines complexos e suporte operacional à modelagem em massa.</p>
 </section>
 <section id="criação-de-uma-camada-institucional-de-acesso-e-publicação" class="level3" data-number="4.2.4">
 <h3 data-number="4.2.4" class="anchored" data-anchor-id="criação-de-uma-camada-institucional-de-acesso-e-publicação"><span class="header-section-number">4.2.4</span> Criação de uma camada institucional de acesso e publicação</h3>
 <p>O servidor sv-acesso foi estruturado como camada institucional de mediação e publicação dos serviços internos do projeto, concentrando DNS interno, proxy HTTP e mecanismos de encaminhamento e autenticação de requisições.</p>
 <p>Essa estratégia eliminou a necessidade de exposição direta dos ambientes críticos de banco de dados e processamento, reduzindo a superfície de ataque da infraestrutura e centralizando os mecanismos de controle de acesso. O modelo também favoreceu rastreabilidade das conexões, segmentação lógica dos serviços e organização institucional da infraestrutura.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Criação de camada institucional segura de acesso e publicação, permitindo controle centralizado, redução de riscos operacionais e maior segurança dos ambientes críticos do projeto.</p>
 </section>
 <section id="implementação-de-estratégia-robusta-de-backup-multicamada" class="level3" data-number="4.2.5">
 <h3 data-number="4.2.5" class="anchored" data-anchor-id="implementação-de-estratégia-robusta-de-backup-multicamada"><span class="header-section-number">4.2.5</span> Implementação de estratégia robusta de backup multicamada</h3>
 <p>Foi implantada uma política estruturada de backup baseada em múltiplas camadas de preservação e recuperação dos dados. O ambiente passou a operar com backup diário automatizado do OpenProject via systemd, geração de dumps lógicos do PostgreSQL, empacotamento de assets e criação de manifestos com hash para verificação de integridade. Paralelamente, foram implementadas rotinas completas de backup do servidor, incluindo PostgreSQL, artefatos operacionais e repositórios técnicos.</p>
 <p>Todos os fluxos foram integrados ao NAS Synology institucional do laboratório, garantindo redundância física externa e reduzindo dependência exclusiva da infraestrutura local. O modelo combina backup por serviço, por servidor e por ambiente externo, fortalecendo a resiliência operacional do projeto.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Implementação de estratégia multicamada de backup e recuperação, assegurando redundância, integridade, rastreabilidade e continuidade operacional do ambiente tecnológico.</p>
 </section>
 <section id="estabelecimento-de-governança-operacional-sobre-ambiente-crítico" class="level3" data-number="4.2.6">
 <h3 data-number="4.2.6" class="anchored" data-anchor-id="estabelecimento-de-governança-operacional-sobre-ambiente-crítico"><span class="header-section-number">4.2.6</span> Estabelecimento de governança operacional sobre ambiente crítico</h3>
 <p>O servidor sv-labfsg foi formalmente classificado como ambiente crítico da infraestrutura, por concentrar os serviços persistentes, banco geoespacial e aplicações centrais do projeto. Em função disso, foi implantado um fluxo rigoroso de governança operacional para qualquer alteração em produção.</p>
 <p>As intervenções passaram a exigir planejamento prévio, validação obrigatória de backup, definição formal de rollback e registro estruturado no repositório operacional versionado. Essa abordagem transformou o controle de mudanças em procedimento institucionalizado, reduzindo riscos técnicos e ampliando a auditabilidade do ambiente.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Estabelecimento de governança formal para ambientes críticos, institucionalizando o controle de mudanças e fortalecendo a segurança operacional do projeto.</p>
 </section>
 <section id="estruturação-formal-da-organização-de-dados-e-diretórios" class="level3" data-number="4.2.7">
 <h3 data-number="4.2.7" class="anchored" data-anchor-id="estruturação-formal-da-organização-de-dados-e-diretórios"><span class="header-section-number">4.2.7</span> Estruturação formal da organização de dados e diretórios</h3>
 <p>A organização dos dados foi estruturada segundo a especialização funcional dos servidores. No sv-labfsg foi consolidado o diretório /srv/data para armazenamento do PostgreSQL e dos dados persistentes do OpenProject. No sv-thinkcentre foram definidos /srv/dados e /srv/fast como áreas operacionais de processamento e armazenamento técnico. Já a rstudio-vm recebeu estrutura colaborativa dedicada em /srv/rstudio-shared.</p>
 <p>A organização operacional foi complementada por diretórios versionados em /opt/operacao e integração com o ambiente externo do Synology institucional, criando uma estrutura padronizada de armazenamento, rastreabilidade e documentação técnica.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Padronização da estrutura operacional de dados e diretórios, aumentando organização, manutenção, rastreabilidade e capacidade de gestão do ambiente tecnológico.</p>
 </section>
 <section id="implementação-de-ambiente-colaborativo-controlado" class="level3" data-number="4.2.8">
 <h3 data-number="4.2.8" class="anchored" data-anchor-id="implementação-de-ambiente-colaborativo-controlado"><span class="header-section-number">4.2.8</span> Implementação de ambiente colaborativo controlado</h3>
 <p>Foi estruturado um ambiente colaborativo controlado no rstudio-vm, baseado em diretório compartilhado institucional (/srv/rstudio-shared) acessado por usuários autorizados via links simbólicos em suas áreas pessoais.</p>
 <p>O modelo implementou separação clara entre áreas individuais e colaborativas, permitindo compartilhamento seguro de scripts, modelos, resultados e artefatos técnicos sem necessidade de ampliação indevida de privilégios administrativos. O controle passou a ser realizado por grupos específicos e permissões segregadas.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Implantação de ambiente colaborativo seguro e controlado, permitindo integração técnica entre equipes sem comprometer a segurança e a governança dos dados.</p>
 </section>
 <section id="integração-entre-infraestrutura-local-e-armazenamento-externo-institucional" class="level3" data-number="4.2.9">
 <h3 data-number="4.2.9" class="anchored" data-anchor-id="integração-entre-infraestrutura-local-e-armazenamento-externo-institucional"><span class="header-section-number">4.2.9</span> Integração entre infraestrutura local e armazenamento externo institucional</h3>
 <p>A infraestrutura local do projeto foi integrada ao ambiente institucional Synology/NAS do laboratório, utilizado como camada externa de armazenamento, backup e preservação do acervo técnico-operacional.</p>
 <p>Essa integração permitiu ampliar a resiliência da infraestrutura, garantindo redundância física dos dados, suporte à recuperação operacional e maior robustez institucional para continuidade do projeto.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Integração entre infraestrutura local e armazenamento institucional externo, fortalecendo a segurança, redundância e continuidade dos dados do projeto.</p>
 </section>
 <section id="consolidação-de-ambiente-preparado-para-escalabilidade-e-internalização" class="level3" data-number="4.2.10">
 <h3 data-number="4.2.10" class="anchored" data-anchor-id="consolidação-de-ambiente-preparado-para-escalabilidade-e-internalização"><span class="header-section-number">4.2.10</span> Consolidação de ambiente preparado para escalabilidade e internalização</h3>
 <p>A infraestrutura consolidada integra arquitetura distribuída, banco geoespacial estruturado em camadas bronze/prata/ouro, controle de acesso individualizado, versionamento operacional via Git, mecanismos formais de rastreabilidade e governança documentada.</p>
 <p>O conjunto de soluções implantadas criou uma base tecnológica robusta para suportar a expansão progressiva do projeto em escala nacional, replicação metodológica para novos municípios e futura internalização institucional pela Receita Federal do Brasil. A infraestrutura foi concebida não apenas como ambiente de experimentação da PoC, mas como arquitetura operacional compatível com cenários de produção institucional.</p>
-<p>Resultado estratégico:</p>
+<p><strong>Resultado estratégico</strong>:</p>
 <p>Consolidação de ambiente tecnológico maduro, escalável, auditável e preparado para expansão nacional e internalização institucional pela Receita Federal do Brasil.</p>
 </section>
 </section>
@@ -667,21 +833,25 @@ ul.task-list li input[type="checkbox"] {
 <h3 data-number="4.3.1" class="anchored" data-anchor-id="estudos-realizados"><span class="header-section-number">4.3.1</span> Estudos realizados</h3>
 <p>Além das etapas centrais de modelagem e construção das Plantas de Valores Genéricos (PVGs), o projeto incorporou um conjunto de estudos metodológicos complementares, denominados Blocos Transversais, desenvolvidos com o objetivo de fortalecer a robustez técnica, a cobertura territorial e a capacidade de expansão nacional da metodologia.</p>
 <p>Esses estudos atuam de forma integrada sobre diferentes dimensões do processo de avaliação em massa, abrangendo:</p>
-<p>• validação e qualificação espacial das bases territoriais;</p>
-<p>• análise da qualidade das coordenadas do CNEFE;</p>
-<p>• definição de parâmetros de agrupamento regional;</p>
-<p>• integração de variáveis territoriais e ambientais;</p>
-<p>• aplicação de classificação fuzzy para redução de rigidez estatística;</p>
-<p>• utilização de dados derivados de sensoriamento remoto;</p>
-<p>• expansão da base de ofertas imobiliárias em municípios de pequeno porte.</p>
+<ul>
+<li><p>validação e qualificação espacial das bases territoriais;</p></li>
+<li><p>análise da qualidade das coordenadas do CNEFE;</p></li>
+<li><p>definição de parâmetros de agrupamento regional;</p></li>
+<li><p>integração de variáveis territoriais e ambientais;</p></li>
+<li><p>aplicação de classificação fuzzy para redução de rigidez estatística;</p></li>
+<li><p>utilização de dados derivados de sensoriamento remoto;</p></li>
+<li><p>expansão da base de ofertas imobiliárias em municípios de pequeno porte.</p></li>
+</ul>
 <p>Os blocos transversais possuem caráter estratégico porque permitem compreender limitações, testar abordagens alternativas e estruturar mecanismos de escalabilidade da solução, reduzindo riscos metodológicos associados à heterogeneidade territorial brasileira.</p>
 <p>De forma integrada, os estudos contribuíram para:</p>
-<p>• aumentar a cobertura espacial da base de dados;</p>
-<p>• melhorar a consistência territorial dos agrupamentos;</p>
-<p>• ampliar a capacidade explicativa dos modelos;</p>
-<p>• apoiar a definição de lotes e recortes territoriais;</p>
-<p>• identificar limitações operacionais e oportunidades de expansão da metodologia;</p>
-<p>• fortalecer a futura internalização da solução pela Receita Federal do Brasil.</p>
+<ul>
+<li><p>aumentar a cobertura espacial da base de dados;</p></li>
+<li><p>melhorar a consistência territorial dos agrupamentos;</p></li>
+<li><p>ampliar a capacidade explicativa dos modelos;</p></li>
+<li><p>apoiar a definição de lotes e recortes territoriais;</p></li>
+<li><p>identificar limitações operacionais e oportunidades de expansão da metodologia;</p></li>
+<li><p>fortalecer a futura internalização da solução pela Receita Federal do Brasil.</p></li>
+</ul>
 <p>A seguir, são apresentados os principais estudos desenvolvidos no âmbito dos Blocos Transversais.</p>
 <section id="qualidade-das-coordenadas-do-cnefe-por-nível-de-posição" class="level4" data-number="4.3.1.1">
 <h4 data-number="4.3.1.1" class="anchored" data-anchor-id="qualidade-das-coordenadas-do-cnefe-por-nível-de-posição"><span class="header-section-number">4.3.1.1</span> Qualidade das Coordenadas do CNEFE por Nível de Posição</h4>
@@ -725,76 +895,278 @@ ul.task-list li input[type="checkbox"] {
 <p>A metodologia envolveu a identificação dos municípios com até 50 mil habitantes, levantamento sistemático de imobiliárias locais, expansão da coleta de ofertas imobiliárias e consolidação territorial das bases de dados. O estudo foi estruturado em etapas sucessivas de priorização territorial, análise da distribuição espacial das ofertas e validação das informações coletadas, buscando identificar municípios com maior potencial de expansão da base de mercado.</p>
 <p>Os resultados demonstraram elevado potencial de ampliação da cobertura territorial da base imobiliária nacional. Foram mapeados 4.889 municípios, identificados 1.549 municípios-alvo e analisados 595 municípios em duas etapas de priorização. O levantamento resultou na identificação de 1.475 imobiliárias distribuídas em 487 municípios. Os resultados evidenciaram forte potencial de expansão da cobertura da base de ofertas, aumento da representatividade de municípios pequenos e redução de vazios de mercado. O estudo demonstrou que municípios de pequeno porte possuem capacidade relevante de contribuição para consolidação de uma base nacional de mercado imobiliário, desde que sejam adotadas estratégias específicas de integração territorial e expansão da coleta de dados.</p>
 </section>
-<section id="síntese-integrada-dos-estudos" class="level4" data-number="4.3.1.8">
-<h4 data-number="4.3.1.8" class="anchored" data-anchor-id="síntese-integrada-dos-estudos"><span class="header-section-number">4.3.1.8</span> Síntese Integrada dos Estudos</h4>
+<section id="fundamentos-da-avaliação-em-massa" class="level4" data-number="4.3.1.8">
+<h4 data-number="4.3.1.8" class="anchored" data-anchor-id="fundamentos-da-avaliação-em-massa"><span class="header-section-number">4.3.1.8</span> Fundamentos da Avaliação em Massa</h4>
+<p>Segundo <span class="citation" data-cites="Carranza2026">CARRANZA et al. (<a href="references.html#ref-Carranza2026" role="doc-biblioref">2026</a>)</span>, existem diversas abordagens viáveis para a avaliação em massa de imóveis urbanos. <span class="citation" data-cites="Carranza2026">CARRANZA et al. (<a href="references.html#ref-Carranza2026" role="doc-biblioref">2026</a>)</span> elencam três dessas diferentes abordagens - estimação via algoritmos de <em>Machine Learning</em>, Geoestatística (krigagem) e modelos lineares - e as compara no contexto da América Latina.</p>
+<p>Cada uma destas diferentes abordagens possui pontos fortes e fracos. De um lado, segundo <span class="citation" data-cites="Carranza2026">CARRANZA et al. (<a href="references.html#ref-Carranza2026" role="doc-biblioref">2026</a>)</span>, a estimação via modelos lineares tem a vantagem de explicar claramente aos contribuintes como são compostos os valores de mercado estimados, ainda que a performance destes modelos geralmente seja mais baixa na previsão destes valores. De outro lado, os algoritmos de <em>Machine Learning</em> apresentam performance superior, porém falham em explicar ao contribuinte como são formados os valores de mercado. Entre estas duas abordagens citadas situa-se a geoestatística que, segundo <span class="citation" data-cites="Carranza2026">CARRANZA et al. (<a href="references.html#ref-Carranza2026" role="doc-biblioref">2026</a>)</span>, atinge uma performance aceitável, ainda que apresente problemas em identificar barreiras urbanas.</p>
+<p>Neste trabalho procurou-se combinar as diferentes abordagens para uma melhor estimação dos valores de mercado. Como será visto ao longo deste capítulo, os algoritmos de <em>Machine Learning</em>, a geoestatística e os modelos lineares foram combinados de maneira que possibilitou a estimação de valores de mercado de maneira suficientemente precisa, sem abrir mão do poder de explicação da formação de valores.</p>
+<section id="metodologia" class="level5" data-number="4.3.1.8.1">
+<h5 data-number="4.3.1.8.1" class="anchored" data-anchor-id="metodologia"><span class="header-section-number">4.3.1.8.1</span> Metodologia</h5>
+<p>O método adotado para a estimação de valores de mercado neste trabalho é o método evolutivo, método consagrado que estima o valor de mercado de um imóvel através da soma dos seus componentes (terra e capital):</p>
+<p><span id="eq-Evolutivo"><span class="math display">\[V_{\text{Imóvel}} = (V_{\text{Terreno}} + V_{\text{Benfeitorias}})\cdot FC \tag{4.1}\]</span></span></p>
+<p>Em que:</p>
+<ul>
+<li><span class="math inline">\(V_{\text{Imóvel}}\)</span> é o valor de mercado do imóvel acabado;</li>
+<li><span class="math inline">\(V_{\text{Terreno}}\)</span> é o valor de mercado do lote sobre o qual o imóvel encontra-se edificado;</li>
+<li><span class="math inline">\(V_{\text{Benfeitorias}}\)</span> é o valor do capital aplicado em benfeitorias no imóvel e;</li>
+<li><span class="math inline">\(FC\)</span> é um “fator de comercialização” empregado para ajustar a diferença entre o valor real de mercado do imóvel e a diferença entre a soma dos seus componentes.</li>
+</ul>
+<p>Como descrito nos Capítulos <a href="92-metodo-etapa01.html" class="quarto-xref"><span>B</span></a> e <a href="93-metodo-etapa02.html" class="quarto-xref"><span>C</span></a>, para a estimação foram coletados dados de anúncios de imóveis edificados e não-edificados, que foram fortalecidos com variáveis cartográficas para adicionar poder de explicação aos valores de mercado. Procurou-se, durante o processo de estimação, extrair o máximo de informação de todo o conjunto de dados, que envolvem anúncios não apenas de lotes, mas também de casas, apartamentos e outros tipos de imóveis, tanto para a venda quanto para locação.</p>
+<p>Os valores de benfeitorias podem ser calculados através dos custos de construção divulgados pelos SINDUSCON locais. Os valores dos terrenos, por outro lado, devem ser estimados via modelos lineares, geoestatística ou algoritmos preditivos de aprendizado de máquina. Para o fator de comercialização, o ideal é que este seja inferido através de dados de mercado de imóveis edificados.</p>
+</section>
+<section id="resultados" class="level5" data-number="4.3.1.8.2">
+<h5 data-number="4.3.1.8.2" class="anchored" data-anchor-id="resultados"><span class="header-section-number">4.3.1.8.2</span> Resultados</h5>
+<section id="análise-exploratória" class="level6" data-number="4.3.1.8.2.1">
+<h6 data-number="4.3.1.8.2.1" class="anchored" data-anchor-id="análise-exploratória"><span class="header-section-number">4.3.1.8.2.1</span> Análise Exploratória</h6>
+<p>A análise explotarória de dados foi feita com auxílio do R, versão 4.5.2.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Reading layer `variavel_geografica_setor_censitario' from data source 
+  `/Users/droubi/Documents/LabFSG/POC-FLN/data/4205407_Florianopolis_r006_2026-03-23.gpkg' 
+  using driver `GPKG'
+Simple feature collection with 1004 features and 54 fields
+Geometry type: MULTIPOLYGON
+Dimension:     XY
+Bounding box:  xmin: -48.61347 ymin: -27.85377 xmax: -48.32788 ymax: -27.26797
+Geodetic CRS:  SIRGAS 2000</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-EDALotes" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-EDALotes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="04-resultados_files/figure-html/fig-EDALotes-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-EDALotes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.4: Análise Exploratória para os dados de Lotes
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Na <a href="#fig-EDALotes" class="quarto-xref">Figura&nbsp;<span>4.4</span></a> é possível perceber a presença de forte assimetria nos dados oriundos do observatório do mercado imobiliário (variáveis <code>PU</code>e <code>area</code>), causada pela presença de <em>outliers</em> na amostra.</p>
+</section>
+<section id="limpeza-dos-dados" class="level6" data-number="4.3.1.8.2.2">
+<h6 data-number="4.3.1.8.2.2" class="anchored" data-anchor-id="limpeza-dos-dados"><span class="header-section-number">4.3.1.8.2.2</span> Limpeza dos dados</h6>
+<p>Os dados foram limpos utilizando-se regressão robusta. O método de regressão robusta escolhido foi o método dos mínimos quadrados ponderados <span class="citation" data-cites="Rousseeuw_least_1984">(ver <a href="references.html#ref-Rousseeuw_least_1984" role="doc-biblioref">ROUSSEEUW, 1984</a>)</span>.</p>
+</section>
+<section id="geração-da-renda-krigada" class="level6" data-number="4.3.1.8.2.3">
+<h6 data-number="4.3.1.8.2.3" class="anchored" data-anchor-id="geração-da-renda-krigada"><span class="header-section-number">4.3.1.8.2.3</span> Geração da Renda Krigada</h6>
+<p>Os dados de renda do chefe do domicílio do IBGE foram tratados pela equipe de estimação. Inicialmente foi gerada a variável renda per capita, obtida conforme a <a href="#eq-RendaPerCapita" class="quarto-xref">Equação&nbsp;<span>4.2</span></a>:</p>
+<p><span id="eq-RendaPerCapita"><span class="math display">\[R_{\text{per capita}} = \frac{R_{\text{chefe dom.}}}{N} \tag{4.2}\]</span></span></p>
+<p>Em que:</p>
+<ul>
+<li><span class="math inline">\(R_{\text{chefe dom.}}\)</span> é a renda do chefe do domicílio divulgada pelo censo 2022 (IBGE);</li>
+<li><span class="math inline">\(N\)</span> é o número de pessoas por domicílio, também divulgada pelo IBGE.</li>
+</ul>
+<p>Na <a href="#fig-rendakrigada" class="quarto-xref">Figura&nbsp;<span>4.5</span></a> pode ser visualizado o resultado da krigagem da variável <span class="math inline">\(R_{\text{per capita}}\)</span> para o município de Florianópolis.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-rendakrigada" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rendakrigada-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="04-resultados_files/figure-html/fig-rendakrigada-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rendakrigada-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.5: Renda per capita krigada para o município de Florianópolis.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="ajuste-do-modelo-de-imóveis-edificados" class="level6" data-number="4.3.1.8.2.4">
+<h6 data-number="4.3.1.8.2.4" class="anchored" data-anchor-id="ajuste-do-modelo-de-imóveis-edificados"><span class="header-section-number">4.3.1.8.2.4</span> Ajuste do modelo de imóveis edificados</h6>
+<p>Após a limpeza dos dados, foi executado o processo de classificação dos dados segundo o padrão construtivo. Os dados foram agrupados em três padrões construtivos, a saber, padrão baixo, normal e alto, conforme descrito na <a href="94-metodo-etapa03.html#sec-classif-pc" class="quarto-xref"><span>Seção D.4.1</span></a>.</p>
+<p>Então, foi ajustado um modelo de regressão linear múltipla para descrever o comportamento do mercado imobiliário de casas e apartamentos em Florianópolis <a href="94-metodo-etapa03.html#sec-modelo-edificados" class="quarto-xref">ver&nbsp;<span>D.5.1</span></a>.</p>
+</section>
+<section id="sec-VUM2" class="level6" data-number="4.3.1.8.2.5">
+<h6 data-number="4.3.1.8.2.5" class="anchored" data-anchor-id="sec-VUM2"><span class="header-section-number">4.3.1.8.2.5</span> Geração da superfície de VU de m2 construído</h6>
+<p>Após o ajuste do modelo de mínimos quadrados ordinários, os dados da amostra utilizados para o ajuste do modelo foram homogeneizados de acordo com fatores de homogeneização estimados diretamente do modelo. Por exemplo, para a variável área, foi derivado o fator área, conforme a <a href="#eq-FatorArea" class="quarto-xref">Equação&nbsp;<span>4.3</span></a>:</p>
+<p><span id="eq-FatorArea"><span class="math display">\[F_{\text{Área}} = \left ( \frac{A_\text{imóvel}}{100} \right)^{-0,25} \tag{4.3}\]</span></span></p>
+<p>Veja <a href="#nte-fatores" class="quarto-xref">Note&nbsp;<span>4.2</span></a> para entender com é feita a derivação racional de fatores de homogeneização.</p>
+<p>Após o procedimento de homoegeneização, foi gerada uma superfície de valores de metro quadrado construído com os dados homogeneizados através do algoritmo IDW (<em>inverse distance weighting</em>).</p>
+<div id="nte-idw" class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nota&nbsp;4.1: Inverse Distance Weighting
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Segundo <span class="citation" data-cites="Embrapa2004">DRUCK et al. (<a href="references.html#ref-Embrapa2004" role="doc-biblioref">2004, p. 83</a>)</span>, “uma alternativa simples para gerar uma superfície bidimensional” consiste em ajustar uma função bidimensional sobre as amostras, prevendo valores em uma grade (<span class="math inline">\(\hat z_i\)</span>), com a seguinte formulação:</p>
+<p><span id="eq-IDW"><span class="math display">\[
+\hat z_i = \frac{\sum_{j = 1}^n w_{ij}z_j}{\sum_{j=1}^n w_{ij}}
+\tag{4.4}\]</span></span></p>
+<p>Em que:</p>
+<ul>
+<li><span class="math inline">\(z_j\)</span> é o valor da cota (VU) de uma amostra vizinha do ponto <span class="math inline">\(i\)</span> da grade;</li>
+<li><span class="math inline">\(w_{ij}\)</span> é um fator de ponderação.</li>
+</ul>
+<p>Com base neste esquema básico supra-mencionado, é possível gerar vários interpoladores (vizinho mais próximo, média simples ou média ponderada). A ponderação mais usada consiste em adotar pesos que variam com o inverso de uma potência <span class="math inline">\(k\)</span> da distância euclidiana do ponto da amostra ao ponto da grade em que se deseja prever valores (<span class="math inline">\(d_{ij}\)</span>), assim:</p>
+<p><span id="eq-IDW2"><span class="math display">\[
+w_{ij} = \frac{1}{d_{ij}^k}
+\tag{4.5}\]</span></span></p>
+<p>Em que: - <span class="math inline">\(d_{ij} = \sqrt{(x_i-x_j)^2 + (y_i - y_j)^2}\)</span></p>
+</div>
+</div>
+<div id="nte-fatores" class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nota&nbsp;4.2: Derivação Racional de Fatores
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A derivação racional de fatores de homogeneização é feita de acordo com os coeficientes estimados em um modelo de regressão linear múltipla (RLM).</p>
+<p>Os fatores serão aditivos quando o modelo RLM for ajustado na escala de preços unitários (PU), ou serão multiplicativos quando o modelo RLM for ajustado com a transformação da variável dependente para a escala logaritmica, o que é usual na Engenharia de Avaliações.</p>
+<p>Para entender, basta perceber que, para um modelo ajustado na escala logaritmica, tem-se:</p>
+<p><span id="eq-ModeloMultiplicativo"><span class="math display">\[\widehat{\log(PU)} = \hat \beta_0 + \hat \beta_1 x_1 + \ldots + \hat\beta_kx_k \tag{4.6}\]</span></span></p>
+<p>Efetuando a exponenciação em ambos os lados de <a href="#eq-ModeloMultiplicativo" class="quarto-xref">Equação&nbsp;<span>4.6</span></a>, tem-se:</p>
+<p><span id="eq-ModeloMultiplicativo2"><span class="math display">\[\widehat{PU} = \exp(\hat \beta_0 + \hat \beta_1 x_1 + \ldots + \hat\beta_kx_k) \tag{4.7}\]</span></span></p>
+<p>Como a exponencial da soma é o produto das exponenciais, a <a href="#eq-ModeloMultiplicativo2" class="quarto-xref">Equação&nbsp;<span>4.7</span></a> torna-se:</p>
+<p><span id="eq-ModeloMultiplicativo3"><span class="math display">\[\widehat{PU} = \exp(\hat \beta_0)\cdot\exp(\hat \beta_1 x_1)\cdot \ldots \cdot \exp(\hat\beta_kx_k) \tag{4.8}\]</span></span></p>
+<p>Donde entende-se o motivo dos fatores derivados com este modelo serem multiplicativos, pois, deste modelo, deduz-se:</p>
+<p><span class="math display">\[F_1 = \exp(\hat \beta_1 x_1); F_2 = \exp(\hat \beta_2 x_2); \ldots ; F_k =  \exp(\hat\beta_kx_k)\]</span></p>
+</div>
+</div>
+</section>
+</section>
+<section id="ajuste-do-modelo-de-lotes" class="level5" data-number="4.3.1.8.3">
+<h5 data-number="4.3.1.8.3" class="anchored" data-anchor-id="ajuste-do-modelo-de-lotes"><span class="header-section-number">4.3.1.8.3</span> Ajuste do modelo de lotes</h5>
+<p>Com a superfície de valores de metro quadrado construído elaborada conforme descrito na <a href="#sec-VUM2" class="quarto-xref"><span>Seção 4.3.1.8.2.5</span></a>.</p>
+</section>
+<section id="geração-da-superfície-de-valores-unitários-de-lotes" class="level5" data-number="4.3.1.8.4">
+<h5 data-number="4.3.1.8.4" class="anchored" data-anchor-id="geração-da-superfície-de-valores-unitários-de-lotes"><span class="header-section-number">4.3.1.8.4</span> Geração da superfície de valores unitários de lotes</h5>
+<p>A superfície de valores unitários de lotes urbanos foi obtida através de um procedimento geoestatístico denominado krigagem ordinária, que interpola valores de uma amostra a uma grade regular de pontos.</p>
+<p>Primeiramente, os preços unitários da amostra de lotes foram homogeneizados conforme procedimento descrito na <a href="#nte-fatores" class="quarto-xref">Note&nbsp;<span>4.2</span></a>, a partir do modelo final de lotes obtido (ver <a href="94-metodo-etapa03.html#tbl-LotesModel" class="quarto-xref">Tabela&nbsp;<span>D.3</span></a> no <a href="94-metodo-etapa03.html" class="quarto-xref"><span>Apêndice D</span></a>), criando assim o que se denomina em geoestatística como variável regionalizada. Depois, estes preços unitários homogeneizados foram</p>
+</section>
+<section id="conexão-com-normas-técnicas" class="level5" data-number="4.3.1.8.5">
+<h5 data-number="4.3.1.8.5" class="anchored" data-anchor-id="conexão-com-normas-técnicas"><span class="header-section-number">4.3.1.8.5</span> Conexão com Normas Técnicas</h5>
+<p>A avaliação em massa de imóveis urbanos ainda é matéria pendente de normatização na Associação Brasileira de Normas Técnicas (ABNT). A norma técnica brasileira existente de avaliação em massa de imóveis foi elaborada em conjunto por duas importantes entidades profissionais, a saber, o Instituto Brasileiro de Avaliações e Perícias de Engenharia (IBAPE ) e a Sociedade Brasileira de Engenharia de Avaliações (SOBREA). Este texto normativo, no entanto, ainda carece de força legal. Uma comissão da ABNT, portanto, tem discutido, com base neste texto normativo existente, a criação de um volume adicional para a NBR 14.653, que irá contemplar especificamente a matéria da avaliação em massa de imóveis urbanos para fins tributários.</p>
+</section>
+<section id="lições-aprendidas-na-poc" class="level5" data-number="4.3.1.8.6">
+<h5 data-number="4.3.1.8.6" class="anchored" data-anchor-id="lições-aprendidas-na-poc"><span class="header-section-number">4.3.1.8.6</span> Lições aprendidas na PoC</h5>
+<p>Os procedimentos metodológicos adotados na PoC tiveram que ser adaptados à realidade fática brasileira, em que o cadastro urbano de imóveis ainda pende de um grande processo de desenvolvimento. Inexiste uma solução única e eficaz que permita a definição do valor de referência dos imóveis de uma determinada região de forma inequívoca. Pelo contrário, uma solução viável deve ser buscada para cada caso, dependendo das informações geográficas e mercadológicas existentes.</p>
+<p>A PoC Florianópolis foi importante especialmente para o aprendizado de como os fluxos de atividades das diversas etapas podem ser replicados em cada localidade ao longo do projeto, ainda que inexista garantia de que este fluxo manter-se-á eficaz em todas as localidades e ao longo do tempo. No entanto, ainda que adaptações porventura mostrem-se necessárias ao longo do projeto, a definição de um fluxo inicial replicável é o principal resultado obtido com a PoC Florianópolis.</p>
+</section>
+</section>
+<section id="síntese-integrada-dos-estudos" class="level4" data-number="4.3.1.9">
+<h4 data-number="4.3.1.9" class="anchored" data-anchor-id="síntese-integrada-dos-estudos"><span class="header-section-number">4.3.1.9</span> Síntese Integrada dos Estudos</h4>
 <p>Os estudos desenvolvidos no âmbito dos Blocos Transversais demonstram a construção de uma estratégia metodológica integrada, estruturada para enfrentar os principais desafios associados à modelagem territorial em escala nacional e à futura implementação de um sistema de valores de referência aplicável aos diferentes contextos urbanos brasileiros.</p>
 <p>De maneira complementar, os estudos atuaram em múltiplas frentes técnicas, incluindo a validação espacial das bases territoriais, a qualificação das coordenadas do CNEFE, a definição de parâmetros de agrupamento regional, a integração de dados censitários e geoespaciais, a aplicação de métodos de classificação fuzzy e a incorporação de variáveis derivadas de imagens de satélite e inteligência artificial. Paralelamente, também foram desenvolvidas estratégias voltadas à expansão da base de ofertas imobiliárias, especialmente em municípios de pequeno e médio porte, onde historicamente há menor disponibilidade de dados estruturados de mercado.</p>
 <p>A integração desses estudos permitiu reduzir limitações associadas à heterogeneidade territorial brasileira, ampliando a capacidade de representação espacial da metodologia e fortalecendo a consistência dos agrupamentos territoriais utilizados na modelagem. Os resultados demonstraram que abordagens híbridas, combinando diferentes fontes de dados e múltiplas escalas territoriais, apresentam desempenho superior quando comparadas a modelos baseados em estruturas rígidas ou em fontes isoladas de informação.</p>
 <p>Os estudos também evidenciaram a importância da utilização de variáveis territoriais e ambientais derivadas de sensoriamento remoto, capazes de capturar características urbanas relevantes que nem sempre estão disponíveis em bases cadastrais tradicionais. A incorporação desses indicadores ampliou a capacidade explicativa dos modelos e contribuiu para representar de forma mais adequada as diferenças intraurbanas e regionais existentes no território nacional.</p>
 <p>Outro resultado relevante foi a consolidação de estratégias para ampliação da cobertura da base imobiliária nacional, permitindo incorporar municípios com menor densidade de ofertas e reduzida estrutura de mercado formal. Essa expansão fortalece diretamente a construção do Observatório do Mercado Imobiliário, ampliando a abrangência territorial da base de dados e aumentando o potencial de utilização da metodologia em escala nacional.</p>
 <p>De forma integrada, os Blocos Transversais contribuíram para:</p>
-<p>• aumentar a robustez metodológica da futura modelagem nacional de valores de referência;</p>
-<p>• melhorar a qualidade e a consistência espacial das bases utilizadas;</p>
-<p>• apoiar a definição de lotes e agrupamentos territoriais mais aderentes à realidade brasileira;</p>
-<p>• ampliar a cobertura espacial e a representatividade da base de mercado;</p>
-<p>• identificar limitações operacionais e metodológicas relevantes para futuras etapas do projeto;</p>
-<p>• estruturar mecanismos de escalabilidade, rastreabilidade e validação técnica da solução.</p>
+<ul>
+<li><p>aumentar a robustez metodológica da futura modelagem nacional de valores de referência;</p></li>
+<li><p>melhorar a qualidade e a consistência espacial das bases utilizadas;</p></li>
+<li><p>apoiar a definição de lotes e agrupamentos territoriais mais aderentes à realidade brasileira;</p></li>
+<li><p>ampliar a cobertura espacial e a representatividade da base de mercado;</p></li>
+<li><p>identificar limitações operacionais e metodológicas relevantes para futuras etapas do projeto;</p></li>
+<li><p>estruturar mecanismos de escalabilidade, rastreabilidade e validação técnica da solução.</p></li>
+</ul>
 <p>Assim, os estudos não apenas apoiaram tecnicamente as etapas de modelagem e construção das PVGs, mas também estabeleceram fundamentos estratégicos essenciais para a futura internalização, expansão e sustentabilidade operacional da metodologia no âmbito da Receita Federal do Brasil.</p>
 </section>
 </section>
-</section>
-<section id="plataforma-para-visualização-dos-dados" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="plataforma-para-visualização-dos-dados"><span class="header-section-number">4.4</span> Plataforma para visualização dos dados</h2>
+<section id="plataforma-para-visualização-dos-dados" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="plataforma-para-visualização-dos-dados"><span class="header-section-number">4.3.2</span> Plataforma para visualização dos dados</h3>
 <p>A Plataforma para Visualização dos Dados consiste em um sistema de informação territorial web configurado para apoiar o acompanhamento, a análise e a visualização das informações produzidas no âmbito do projeto, permitindo a consolidação integrada de dados geoespaciais e alfanuméricos em ambiente online.</p>
 <p>A solução está sendo estruturada com o objetivo de facilitar o monitoramento evolutivo das entregas técnicas realizadas pelas diferentes equipes envolvidas no projeto, proporcionando um ambiente centralizado para publicação, organização e análise das bases territoriais utilizadas no processo de construção dos Valores de Referência. A Figuras 08 apresentam exemplos da interface da plataforma e das funcionalidades atualmente configuradas para visualização e análise dos dados territoriais.</p>
 <p>Entre as funcionalidades atualmente configuradas na plataforma, destaca-se o módulo de carregamento e publicação de informações geoespaciais e alfanuméricas. Esse módulo permite a inserção de novos cadastros editáveis por meio de um fluxo automatizado simplificado, estruturado em cinco etapas, possibilitando o carregamento de arquivos no formato shapefile, bem como sua visualização geoespacial temática associada a recursos estatísticos integrados.</p>
 <p>Outro recurso relevante corresponde à geração dinâmica de mapas temáticos, permitindo a elaboração de análises espaciais qualitativas e quantitativas a partir das informações previamente carregadas no sistema. A funcionalidade contempla aplicação de filtros, classificação temática, definição do número de classes e parametrização de escalas de cores, contribuindo para a interpretação territorial dos dados e para o suporte às análises técnicas desenvolvidas no projeto.</p>
 <p>A plataforma está sendo configurada com base na solução GeoQualify, sistema com licenciamento AGPL, o que possibilita utilização gratuita por órgãos públicos, além de permitir customizações e evolução contínua da solução mediante acesso ao código-fonte. Essa característica favorece a flexibilidade tecnológica, a adaptabilidade às necessidades institucionais da Receita Federal do Brasil e a futura escalabilidade da solução para ambientes de maior abrangência operacional.</p>
-<p>Figuras 08 apresentam exemplos da interface da plataforma</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/transversal/fig-08-plataforma-01.png" class="img-fluid figure-img"></p>
-<figcaption>Figura 8.1 - Interface da plataforma</figcaption>
+<p>As Figuras <a href="#fig-inter1" class="quarto-xref"><span>4.6</span></a> a <a href="#fig-inter7" class="quarto-xref"><span>4.12</span></a> apresentam exemplos da interface da plataforma.</p>
+<div id="fig-inter1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-inter1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/transversal/fig-08-plataforma-01.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-inter1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.6: Interface da plataforma - 1
+</figcaption>
 </figure>
 </div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/transversal/fig-08-plataforma-02.png" class="img-fluid figure-img"></p>
-<figcaption>Figura 8.2 - Interface da plataforma</figcaption>
+<div id="fig-inter2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-inter2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/transversal/fig-08-plataforma-02.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-inter2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.7: Interface da plataforma - 2
+</figcaption>
 </figure>
 </div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/transversal/fig-08-plataforma-03.png" class="img-fluid figure-img"></p>
-<figcaption>Figura 8.3 - Interface da plataforma</figcaption>
+<div id="fig-inter3" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-inter3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/transversal/fig-08-plataforma-03.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-inter3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.8: Interface da plataforma - 3
+</figcaption>
 </figure>
 </div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/transversal/fig-08-plataforma-04.png" class="img-fluid figure-img"></p>
-<figcaption>Figura 8.4 - Interface da plataforma</figcaption>
+<div id="fig-inter4" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-inter4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/transversal/fig-08-plataforma-04.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-inter4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.9: Interface da plataforma - 4
+</figcaption>
 </figure>
 </div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/transversal/fig-08-plataforma-05.png" class="img-fluid figure-img"></p>
-<figcaption>Figura 8.5 - Interface da plataforma</figcaption>
+<div id="fig-inter5" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-inter5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/transversal/fig-08-plataforma-05.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-inter5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.10: Interface da plataforma - 5
+</figcaption>
 </figure>
 </div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/transversal/fig-08-plataforma-06.png" class="img-fluid figure-img"></p>
-<figcaption>Figura 8.6 - Interface da plataforma</figcaption>
+<div id="fig-inter6" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-inter6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/transversal/fig-08-plataforma-06.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-inter6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.11: Interface da plataforma - 6
+</figcaption>
 </figure>
 </div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/transversal/fig-08-plataforma-07.png" class="img-fluid figure-img"></p>
-<figcaption>Figura 8.7 - Interface da plataforma</figcaption>
+<div id="fig-inter7" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-inter7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/transversal/fig-08-plataforma-07.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-inter7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.12: Interface da plataforma - 7
+</figcaption>
 </figure>
 </div>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Carranza2026" class="csl-entry" role="listitem">
+CARRANZA, J. P.; BOLOGNA, E. L.; LUCCA, C. M. The missing link: <span>Comparing</span> mass appraisal techniques and their implications for urban land valuation policies in <span>Latin</span> <span>America</span>. <strong>Land Use Policy</strong>, v. 166, p. 107998, 2026. Disponível em: &lt;<a href="https://www.sciencedirect.com/science/article/pii/S0264837726000827">https://www.sciencedirect.com/science/article/pii/S0264837726000827</a>&gt;.
+</div>
+<div id="ref-Embrapa2004" class="csl-entry" role="listitem">
+DRUCK, S.; CARVALHO, M. S.; CÂMARA, G.; MONTEIRO, A. MI. V. (ORGS.). <strong>Análise Espacial de Dados Geográficos</strong>. Planaltina, DF: Embrapa Cerrados, 2004.
+</div>
+<div id="ref-Rousseeuw_least_1984" class="csl-entry" role="listitem">
+ROUSSEEUW, P. J. Least <span>Median</span> of <span>Squares</span> <span>Regression</span>. <strong>Journal of the American Statistical Association</strong>, v. 79, n. 388, p. 871–880, 1984. [American Statistical Association, Taylor &amp; Francis, Ltd.]. Disponível em: &lt;<a href="http://www.jstor.org/stable/2288718">http://www.jstor.org/stable/2288718</a>&gt;. Acesso em: 5/3/2026.
+</div>
+</div>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -823,12 +1195,12 @@ ul.task-list li input[type="checkbox"] {
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copiada");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copiada");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -1211,6 +1583,19 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 UFSC</p>
+</div>   
+    <div class="nav-footer-center">
+<p><img src="img/Logo com RFB e UFSC.png" class="img-fluid" width="250"></p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/LabFSG-UFSC/Rel_1T2026/edit/main/04-resultados.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 
