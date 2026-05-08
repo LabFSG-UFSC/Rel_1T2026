@@ -2,7 +2,7 @@
 
 A síntese a seguir apresenta uma visão consolidada do avanço das atividades no período, estruturada a partir de dois eixos complementares: (1.2.1) a análise do progresso técnico alcançado nas principais frentes do projeto e (1.2.2) a consolidação das atividades desenvolvidas, evidenciando a integração entre dados, modelagem, infraestrutura e governança. Essa abordagem permite não apenas compreender o estágio atual da Prova de Conceito (POC) em Florianópolis, mas também identificar os elementos já estruturados e aqueles em processo de amadurecimento, com foco na construção de uma arquitetura de dados robusta, na consistência dos processos e na preparação para escalabilidade da solução.
 
-## 2.1.1 Visão geral do progresso técnico
+## Visão geral do progresso técnico
 
 No período analisado, observou-se avanço consistente na estruturação da Prova de Conceito (POC) de Florianópolis, com evolução integrada nas frentes de dados, modelagem, infraestrutura e governança. Esse avanço reflete a consolidação inicial do fluxo estruturado do processo, articulando de forma progressiva as etapas de organização das bases de dados, tratamento das informações e desenvolvimento dos modelos de avaliação em massa (1ª versão)
 
@@ -10,34 +10,34 @@ Destaca-se, nesse contexto, a evolução na construção da arquitetura de dados
 
 No campo da modelagem, foram realizados testes iniciais com geração de resultados preliminares, os quais permitem não apenas avaliar o desempenho dos modelos, mas também validar, de forma incremental, a abordagem metodológica adotada. Esses resultados constituem uma base importante para o refinamento das etapas subsequentes e para a consolidação do processo em direção à escalabilidade.
 
-## 2.2.2. Consolidação das principais frentes de trabalho
+##  Consolidação das principais frentes de trabalho
 
 As principais frentes de trabalho consolidadas no trimestre refletem o avanço integrado das dimensões estruturantes do projeto, articulando dados, território, modelagem, infraestrutura e governança. A seguir, detalham-se essas frentes com base nas atividades desenvolvidas e nos resultados obtidos:
 
-### 2.2.2.1. Estruturação da arquitetura de dados e integração de bases heterogêneas
+###  Estruturação da arquitetura de dados e integração de bases heterogêneas
 
 Esta frente concentrou esforços na organização de um ambiente estruturado para armazenamento, tratamento e integração de dados provenientes de diferentes fontes, com distintas características e níveis de qualidade. Foram realizadas atividades de padronização, limpeza, compatibilização e consolidação das bases, permitindo a construção de uma arquitetura de dados capaz de suportar análises consistentes e reprodutíveis. Esse processo foi fundamental para viabilizar a integração entre dados cadastrais, territoriais e de mercado, estabelecendo a base para as etapas subsequentes do projeto.
 
-### 2.2.2.2. Organização e validação das bases territoriais
+###  Organização e validação das bases territoriais
 
 As atividades desta frente envolveram a estruturação das bases cartográficas utilizadas na POC, com foco na consistência geométrica, topológica e na aderência ao sistema de referência adotado. Foram realizados procedimentos de validação para garantir a integridade espacial dos dados, incluindo verificação de sobreposições, lacunas e inconsistências geométricas. A organização dessas bases é essencial para assegurar a qualidade das análises espaciais e a correta associação entre imóveis, atributos e valores.
 
-### 2.2.2.3. Definição e tratamento de variáveis geoespaciais e cadastrais
+###  Definição e tratamento de variáveis geoespaciais e cadastrais
 
 Nesta frente, foram identificadas, estruturadas e tratadas as variáveis que compõem os modelos de avaliação em massa, considerando aspectos locacionais, físicos e funcionais dos imóveis. O processo incluiu a seleção de variáveis relevantes, a padronização de atributos, o tratamento de inconsistências e a geração de novas variáveis derivadas, especialmente de natureza geoespacial. Essa etapa é determinante para a qualidade dos modelos, uma vez que influencia diretamente sua capacidade explicativa e preditiva.
 
-### 2.2.2.4. Desenvolvimento inicial dos modelos de avaliação em massa
+###  Desenvolvimento inicial dos modelos de avaliação em massa
 
 Foram conduzidos testes iniciais de modelagem com base nas variáveis estruturadas, visando a construção de modelos capazes de estimar valores de referência de forma sistemática. As atividades incluíram a definição de abordagens metodológicas, a aplicação de técnicas estatísticas e computacionais e a análise dos resultados obtidos. Os modelos desenvolvidos nesta fase possuem caráter preliminar, sendo utilizados para validação da metodologia e identificação de ajustes necessários para aprimoramento.
 
-### 2.2.2.5. Implementação da infraestrutura tecnológica no laboratório
+###  Implementação da infraestrutura tecnológica no laboratório
 
 Paralelamente às atividades técnicas, foi implantada a infraestrutura computacional necessária para suporte ao projeto, incluindo servidores dedicados, ambiente de armazenamento e organização de dados, bem como ferramentas para processamento e análise. Essa infraestrutura foi estruturada de forma a garantir desempenho, segurança, controle de acesso e rastreabilidade das informações, constituindo um elemento fundamental para a execução das atividades e para a escalabilidade futura.
 
-### 2.2.2.6. Estruturação dos fluxos de governança e validação técnica
+### Estruturação dos fluxos de governança e validação técnica
 
 Foi estabelecido um fluxo estruturado de governança, contemplando a organização das instâncias de decisão, os processos de validação técnica e os mecanismos de acompanhamento das atividades. Esse fluxo assegura que os produtos desenvolvidos sejam submetidos à análise e validação pelas instâncias competentes, promovendo alinhamento institucional, controle de qualidade e formalização das decisões ao longo do projeto.
 
-### 2.2.2.7. Realização de intercâmbios técnicos para fortalecimento metodológico
+###  Realização de intercâmbios técnicos para fortalecimento metodológico
 
 Foram realizadas atividades de intercâmbio técnico com instituições e especialistas, com o objetivo de incorporar boas práticas, referências metodológicas e experiências consolidadas na área de cadastro territorial e avaliação imobiliária. Essas iniciativas contribuíram para o aprimoramento da abordagem adotada no projeto, ampliando a base de conhecimento e fortalecendo a consistência técnica das soluções desenvolvidas.

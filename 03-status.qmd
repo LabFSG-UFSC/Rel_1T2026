@@ -1,58 +1,23 @@
 # Status Geral do Projeto por Etapa
 
-•	Status Geral do Projeto por Etapa
-
 A avaliação do status do projeto no período foi realizada com base no avanço físico das atividades, considerando a execução das etapas previstas no plano de trabalho, bem como a evolução dos diferentes lotes de produção associados à Prova de Conceito (POC) de Florianópolis e à estratégia de expansão territorial.
 
 Para fins de acompanhamento, foi estruturado um cronograma físico de execução, complementado por painéis de monitoramento (dashboards), que permitem visualizar de forma quantitativa o progresso das atividades. Esses instrumentos consolidam informações como volume de dados processados, número de registros estruturados, variáveis geradas e modelos testados, possibilitando uma leitura integrada do avanço do projeto, tanto sob a perspectiva técnica quanto operacional.
 
 No âmbito da execução, foi definida uma estratégia baseada em lotes de trabalho, com o objetivo de organizar o desenvolvimento de forma escalonada, controlada e progressiva. A abordagem adotada teve início com a POC de Florianópolis, que atua como ambiente de validação metodológica, permitindo testar, ajustar e consolidar os processos antes da expansão para outros contextos territoriais.
 
-A partir dessa etapa inicial, foi estruturada uma lógica de expansão baseada em capitais, considerando critérios de diversidade regional e heterogeneidade de porte urbano. Foram definidos, inicialmente, cinco lotes de trabalho, cuja organização está apresentada na Quadro 2 - estrutura de execução por lotes, contemplando a distribuição dos municípios selecionados e a lógica de expansão controlada adotada no projeto. A definição dos municípios dentro desses lotes considerou, inicialmente, a seleção de capitais representativas de diferentes regiões do país e distintos portes populacionais, de forma a capturar a variabilidade estrutural do território nacional.
+A partir dessa etapa inicial, foi estruturada uma lógica de expansão baseada em capitais, considerando critérios de diversidade regional e heterogeneidade de porte urbano. Foram definidos, inicialmente, cinco lotes de trabalho, cuja organização está apresentada no Quadro 2 - estrutura de execução por lotes, contemplando a distribuição dos municípios selecionados e a lógica de expansão controlada adotada no projeto. A definição dos municípios dentro desses lotes considerou, inicialmente, a seleção de capitais representativas de diferentes regiões do país e distintos portes populacionais, de forma a capturar a variabilidade estrutural do território nacional.
 
-Quadro 2: estrutura de execução por lote
+| Lote | Municipio | Descricao |
+|---|---|---|
+| POC Florianópolis | Florianópolis | Ambiente de validação metodológica |
+| Lote 1 | Porto Velho, Fortaleza, Belo Horizonte, Campo Grande | Primeira expansão controlada |
+| Lote 2 | Curitiba, Manaus, Salvador, Rio de Janeiro, Cuiabá | Segunda expansão controlada |
+| Lote 3 | Porto Alegre, Boa Vista, Recife, São Paulo, Goiânia | Terceira expansão controlada |
+| Lote 4 | Belém, Macapá, João Pessoa, Vitória, Palmas | Quarta expansão controlada |
+| Lote 5 | Rio Branco, São Luís, Aracaju, Teresina, Natal, Distrito Federal | Quinta expansão controlada |
 
-Lote
-
-Municípios
-
-Descrição
-
-POC Florianópolis
-
-Florianópolis
-
-Ambiente de validação metodológica
-
-Lote 1
-
-Porto Velho, Fortaleza, Belo Horizonte, Campo Grande
-
-Primeira expansão controlada
-
-Lote 2
-
-Curitiba, Manaus, Salvador, Rio de Janeiro, Cuiabá
-
-Segunda expansão controlada
-
-Lote 3
-
-Porto Alegre, Boa Vista, Recife, São Paulo, Goiânia
-
-Terceira expansão controlada
-
-Lote 4
-
-Belém, Macapá, João Pessoa, Vitória, Palmas
-
-Quarta expansão controlada
-
-Lote 5
-
-Rio Branco, São Luís, Aracaju, Teresina, Natal, Distrito Federal
-
-Quinta expansão controlada
+: Quadro 2: estrutura de execução por lote
 
 Adicionalmente, foram elaboradas representações cartográficas específicas para cada lote de trabalho, por meio de mapas temáticos que destacam os estados correspondentes às capitais selecionadas (FIGURA 1). Esses mapas permitem visualizar de forma clara a distribuição territorial dos lotes, facilitando a compreensão da estratégia de expansão progressiva adotada no projeto, bem como a cobertura geográfica inicial da metodologia em nível nacional.
 
@@ -64,13 +29,9 @@ Paralelamente, foi estruturada uma proposta de escalonamento nacional das ativid
 
 Inicialmente, são apresentados, na Figura 2, os quantitativos de municípios e a representatividade percentual dos endereços do CNEFE por categoria de centralidade urbana, evidenciando a concentração dos endereços nas capitais e centros regionais.
 
-Figura 2: quantitativos de municípios e a representatividade percentual dos endereços do CNEFE por categoria de centralidade urbana
-
 ![Figura 2 - quantitativos de municípios e a representatividade percentual dos endereços do CNEFE por categoria de centralidade urbana](img/geral/fig-02-cnefe-centralidade.png)
 
 Na sequência, a Figura 3 ilustra espacialmente essa distribuição, por meio de um mapa temático que apresenta o percentual de representação dos endereços por município, permitindo visualizar a lógica de concentração territorial e reforçando a estratégia de escalonamento adotada no projeto.
-
-FIGURA 3: distribuição espacial do percentual da representação dos endereções por municípios do Brasil
 
 ![Figura 3 - distribuição espacial do percentual da representação dos endereços por municípios do Brasil](img/geral/fig-03-distribuicao-enderecos.jpeg)
 
@@ -83,8 +44,6 @@ Importante destacar que a definição dos próximos lotes de trabalho encontra-s
 De forma geral, essa organização por lotes permite testar, ajustar e consolidar os processos em diferentes contextos territoriais, assegurando robustez, adaptabilidade e aderência da metodologia antes de sua ampliação em escala nacional.
 
 A Figura 4 apresenta a visão consolidada do avanço das atividades e dos lotes de execução do projeto, permitindo uma leitura integrada do seu estágio atual. Nela é sintetizado o status geral por etapa, evidenciando o nível de desenvolvimento de cada frente de trabalho, bem como a evolução das atividades ao longo dos diferentes lotes, sob uma perspectiva técnica e operacional.
-
-Figura 4: visão consolidada do avanço das atividades e dos lotes de execução do projeto
 
 ![Figura 4 - visão consolidada do avanço das atividades e dos lotes de execução do projeto](img/geral/fig-04-status-etapas.png)
 
