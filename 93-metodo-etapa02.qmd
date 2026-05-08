@@ -34,7 +34,7 @@ Em fevereiro e março, o fluxo evoluiu de um desenho conceitual para uma lógica
 
 A execução do fluxo territorial no trimestre demonstrou que sua estrutura deixou de ser apenas referencial e passou a orientar a produção real da etapa. A camada Bronze foi efetivamente materializada para 11 municípios, com geração padronizada de 16 camadas cartográficas por município, enquanto a camada Prata também passou a contar com 11 municípios produzidos, em estrutura de 14 camadas por município, embora em diferentes níveis de maturidade e completude. Esse avanço mostra que o fluxo Bronze–Prata–Ouro já se encontra operacionalizado nos dois primeiros níveis, ainda que a camada Ouro permaneça como objetivo metodologicamente definido, mas não integralmente consolidado no período.
 
-O *Fluxo operacional detalhado da ETAPA 2* que apresenta o processo de produção da base cartográfica e das variáveis geográficas encontra-se no apêndice 3.1.
+O *Fluxo operacional detalhado da ETAPA 2* que apresenta o processo de produção da base cartográfica e das variáveis geográficas encontra-se no apêndice E.
 
 ### Entrada de dados cartográficos
 
@@ -63,8 +63,6 @@ Ao longo do trimestre a equipe consolidou uma lista básica de dados cartográfi
 
 Essa composição demonstra que a entrada de dados da ETAPA 2 não se restringiu à cartografia pública clássica, mas foi desenhada desde o início para permitir integração cartográfica e temática.
 
-Quadro 1 – Lista de dados cartográficos de entrada da ETAPA 2
-
 | Nome da Camada | Descrição | Geometria | Fonte |
 |:-----------------|:-----------------|:-----------------|:-----------------|
 | uf | Camada de representação das unidades da federação | polígono | IBGE 2024 |
@@ -83,6 +81,8 @@ Quadro 1 – Lista de dados cartográficos de entrada da ETAPA 2
 | linha_costa | Camada de representação das linhas de definição da costa do litoral | linha | Agência Nacional de Águas e Saneamento Básico - ANA |
 | massa_dagua | Camada de armazenamento dos dados da massa d'água | polígono | Agência Nacional de Águas e Saneamento Básico - ANA |
 | declividade | Camada de identificação da declividade da amostra | ponto | Gerada a partir do raster de declividade do Brasil da SGB 2017 |
+
+: Tabela dados cartográficos de entrada da ETAPA 2 {#tbl-tabela-dados-cartograficos}
 
 Como resultado prático da consolidação das fontes e do processo de extração, a entrada de dados cartográficos não permaneceu apenas em nível de planejamento, mas se materializou em bases municipais efetivamente geradas. Ao final do trimestre, foram produzidos 11 arquivos no formato geopackage da camada Bronze, contendo 18 camadas por município, sendo duas não catalogadas neste relatório, integrando dados oficiais, colaborativos e temáticos em uma estrutura padronizada para uso nas etapas seguintes de qualificação, modelagem e derivação de variáveis geográficas. Esse resultado evidencia que a etapa de entrada de dados já alcançou escala inicial consistente e permitiu transformar o catálogo de fontes em base territorial concreta.
 
@@ -159,31 +159,36 @@ O efeito prático da padronização foi decisivo para a produção das bases ter
 ### Variáveis Geográficas
 
 A definição do conjunto de variáveis geográficas constitui uma etapa estruturante do fluxo territorial, pois estabelece o escopo analítico da ETAPA 2 e orienta, desde o início, quais dados cartográficos, alfanuméricos e temáticos precisam ser coletados, organizados, integrados e validados. Nas reuniões de planejamento da etapa, esse ponto aparece como uma das decisões centrais: discutir e determinar o conjunto de variáveis e produtos geográficos a serem entregues, definir sua metodologia de produção e alinhar sua relação com a Etapa 3 de Avaliação em Massa.
+
 No procedimento operacional, as variáveis geográficas são tratadas como atributos derivados de dados espaciais que representam características mensuráveis do território, tais como distância, densidade, acessibilidade, indicadores ambientais e atributos de infraestrutura. O próprio planejamento operacional do projeto organiza a produção da etapa de forma que a base cartográfica seja preparada e qualificada primeiro, para então servir de suporte à recuperação dos insumos necessários, ao cálculo das variáveis e à sua posterior validação. Isso deixa claro que a definição prévia das variáveis não é uma atividade acessória, mas um elemento que condiciona o desenho de todo o fluxo de trabalho.
+
 A relevância dessa definição também está ligada à seleção das fontes de dados. A equipe passou a classificar as variáveis segundo a viabilidade de obtenção de suas fontes, distinguindo itens com fontes fáceis, em análise e difíceis. Essa classificação foi importante para decidir o que poderia ser produzido de imediato, o que exigiria testes adicionais e o que deveria eventualmente ser revisto com a equipe de modelagem. Em termos operacionais, isso significa que o conjunto de variáveis funciona como um filtro que determina quais camadas cartográficas devem ser geradas, quais bases secundárias precisam ser incorporadas e quais dependências externas impactam o cronograma da etapa.
+
 Outro aspecto fundamental é que a definição das variáveis permite estabelecer a camada territorial de referência em que cada uma delas será processada. Ao longo das discussões técnicas, a equipe avaliou se determinadas variáveis deveriam ser calculadas sobre subsetores, setores censitários, municípios ou diretamente sobre a amostra do OMI. A equipe identificou que parte das variáveis seria vinculada ao setor censitário e parte dependeria da amostra do OMI, além da criação da classe para atributos em escala municipal. Esse refinamento foi decisivo porque afeta a modelagem do banco, o tipo de agregação espacial, a estratégia de processamento e a forma de integração com a etapa de estimação.
+
 A definição do conjunto de variáveis também é relevante para a modelagem e documentação da base de dados. A prévia do modelo relacional mostra que a etapa passou a estruturar classes específicas para cadastro conceitual das variáveis e para armazenamento de seus valores, permitindo registrar código, nome, descrição, resolução espacial, metodologia, fonte, tipo de dado e unidade de medida, bem como associar os valores calculados a diferentes tipos de entidades territoriais. Isso evidencia que o escopo das variáveis não apenas direciona o processamento geográfico, mas organiza a própria arquitetura lógica do banco espacial e do dicionário de dados.
+
 Por fim, a definição do conjunto de variáveis foi essencial porque conecta a ETAPA 2 à finalidade maior do projeto. O plano de gerenciamento estabelece que as variáveis territoriais derivadas devem fornecer robustez estatística, coerência espacial e aderência técnica à modelagem dos valores de imóveis urbanos, abrangendo componentes como densidade urbana, acessibilidade, infraestrutura, atratividade territorial, características ambientais e outras métricas explicativas relevantes. Assim, definir corretamente o escopo das variáveis significa garantir que o fluxo territorial produza não apenas uma base cartográfica organizada, mas um conjunto de informações efetivamente útil para sustentar a modelagem da Avaliação em Massa.
+
 Em termos de resultado, o trabalho de definição, classificação e processamento das variáveis já produziu um conjunto expressivo de saídas. Até o momento, foram identificadas 76 variáveis geográficas com potencial de uso na modelagem, das quais 60 já foram efetivamente geradas. Esse volume demonstra avanço substancial da etapa, ainda que parte do conjunto permaneça em amadurecimento metodológico ou dependente de fontes externas. No trimestre, o caso mais consolidado foi Florianópolis, para o qual foram produzidas e disponibilizadas à equipe de Estimação as 60 variáveis geográficas geradas, associadas às 14 camadas da base Prata, configurando a principal entrega integrada da ETAPA 2 até o momento.
-
-
 
 ## Atividades desenvolvidas
 
-No período do primeiro trimestre de 2026, as atividades desenvolvidas no âmbito da ETAPA 2 – Bases Cartográficas Territoriais concentraram-se na consolidação das condições metodológicas, operacionais, tecnológicas e técnicas necessárias à produção da base cartográfica e das variáveis geográficas. O conjunto de ações executadas permitiu estruturar o fluxo de trabalho da etapa, organizar sua governança, implantar o ambiente de suporte à produção, documentar o processo operacional, modelar a estrutura inicial de dados espaciais e produzir entregas concretas, com destaque para a documentação do fluxo operacional, a geração de bases cartográficas em formato GeoPackage e PostGIS para capitais dos lotes prioritários 1 e 2, e a produção da base cartográfica e das variáveis geográficas para a PoC de Florianópolis.
+No período do primeiro trimestre de 2026, as atividades desenvolvidas no âmbito da ETAPA 2 – Bases Cartográficas Territoriais concentraram-se na consolidação das condições metodológicas, operacionais, tecnológicas e técnicas necessárias à produção da base cartográfica e das variáveis geográficas. O conjunto de ações executadas permitiu estruturar o fluxo de trabalho da etapa, organizar sua governança, implantar o ambiente de suporte à produção, documentar o processo operacional, modelar a estrutura inicial de dados espaciais e produzir entregas concretas, com destaque para a documentação do fluxo operacional, a geração de bases cartográficas em formato GeoPackage e PostGIS para capitais dos lotes prioritários 1 e 2, e a produção da base cartográfica e das variáveis geográficas para a POC de Florianópolis.
 
 As atividades desenvolvidas neste trimestre resultaram em entregas concretas e mensuráveis: 11 municípios gerados na Bronze, com 16 camadas cartográficas por município; 11 municípios estruturados na Prata, com 14 camadas por município; 37 camadas registradas no dicionário de dados; 76 variáveis geográficas identificadas, das quais 60 geradas; e a entrega para a ETAPA 3 do pacote de Florianópolis, composto pelas 14 camadas Prata e pelas 60 variáveis geográficas produzidas. Esses números ajudam a demonstrar que as atividades do trimestre não se limitaram à organização interna da etapa, mas se converteram em base territorial efetivamente produzida e utilizada como insumo do projeto.
 
-### Atividades de infraestrutura tecnologica e banco
+### Infraestrutura tecnológica e banco de dados
 
 Esta atividade compreendeu a organização da infraestrutura tecnológica de suporte à etapa. Foi estruturado o ambiente de banco espacial, inicialmente com a verificação de disponibilidade de máquina para servidor temporário e, em seguida, com a preparação do ambiente PostgreSQL/PostGIS para receber a integração entre Cartografia e Estimação.
 
 Também foram definidos os ambientes de armazenamento e circulação dos artefatos técnicos, com uso de Synology e Google Drive para organização de dados brutos, arquivos intermediários e entregas revisadas. Essa infraestrutura permitiu organizar a produção em ciclos rastreáveis, controlar versões, manter backup dos artefatos e preparar a transição do fluxo baseado apenas em arquivos para um fluxo apoiado em persistência em banco espacial.
 
-No plano técnico, essa frente incluiu ainda a definição da estrutura inicial dos bancos bronze, prata e ouro, a discussão sobre schemas por unidade da federação, o carregamento inicial de camadas cartográficas no PostGIS e a preparação da arquitetura necessária para receber a integração entre os dados territoriais e as amostras do OMI.
+No plano técnico, essa frente incluiu ainda a definição da estrutura inicial dos bancos bronze, prata e ouro, a discussão sobre schemas por unidade da federação, o carregamento inicial de camadas cartográficas no PostGIS e a preparação da arquitetura necessária para receber a integração entre os dados territoriais e as amostras do OMI. Conforme exemplificados na figura (@fig-estrutura-de-armazenamento-fonte-labFSG) e (@fig-estrutura-de-armazenamento-fonte-SETIC)
 
-inserir a figura 6 do doc drive
+![Estrutura de armazenamento de dados no Postgresql. Fonte LabFSG: https://150.162.76.87:9090/](img/bct/figura_6.png){#fig-estrutura-de-armazenamento-fonte-labFSG}
 
+![Estrutura de armazenamento de dados no Postgresql. Fonte SETIC: https://pgadmin.setic.ufsc.br/browser/](img/bct/figura_6.1.png){#fig-estrutura-de-armazenamento-fonte-SETIC}
 
 ### Documentação do fluxo operacional e modelagem de dados
 
@@ -191,11 +196,9 @@ Esta atividade concentrou-se na documentação do processo operacional e na mode
 
 Esse trabalho evoluiu para a consolidação de uma versão inicial do fluxo operacional, para a revisão contínua do dicionário de dados e para o aprofundamento da modelagem lógica do banco espacial com foco nas camadas **Bronze** e **Prata**. A necessidade de alinhar atributos das camadas de dados, validar a estrutura inicial proposta, gerar um DER para visualização dos relacionamentos e complementar a estrutura lógica das camadas em função das variáveis geográficas a serem produzidas foram os grandes desafios enfrentados nesta frente de atuação da equipe da ETAPA 2.
 
-Em termos de produto, essa frente subsidia diretamente a geração da documentação do fluxo operacional, a consolidação do dicionário de dados e a construção da base conceitual necessária para a persistência estruturada dos dados cartográficos e das variáveis geográficas no banco espacial.
+Em termos de produto, essa frente subsidia diretamente a geração da documentação do fluxo operacional, a consolidação do dicionário de dados e a construção da base conceitual necessária para a persistência estruturada dos dados cartográficos e das variáveis geográficas no banco espacial. Conforme exemplificados na figura (@fig-modelo-preliminar-do-banco-de-dados).
 
-Figura 7 – Modelo preliminar do banco de dados espacial da ETAPA 2
-
-![](img/bct/figura_7.png)
+![Figura 3 – Modelo preliminar do banco de dados espacial da ETAPA 2](img/bct/figura_7.png){#fig-modelo-preliminar-do-banco-de-dados}
 
 fonte: [https://dbdiagram.io/d/Cartografia-e-Variaveis-Geograficas-r2-6994bdb4bd82f5fce2fa48c5](https://quarto.org/)
 
@@ -215,23 +218,15 @@ Neste trimestre, a equipe estruturou e documentou em maior detalhe o pipeline de
 
 Esse pipeline foi relevante porque estabeleceu uma rotina reprodutível, escalável e tecnicamente consistente para montagem da base cartográfica bruta municipal, integrando fontes oficiais, colaborativas e derivadas de imagens, com padronização de nomenclatura, coerência espacial entre camadas e preparação objetiva dos insumos para as etapas posteriores de qualificação, modelagem e derivação de variáveis geográficas. Maiores detalhes deste pipeline podem ser verificados no *Anexo Pipeline de Geoprocessamento da Base Cartográfica da Camada Bronze*.
 
-A lista dos municípios priorizados neste trimestre para produção dos dados cartográficos foram: Florianópolis, Fortaleza, Campo Grande, Porto Velho, Belo Horizonte, Rio de Janeiro, Curitiba, Salvador, Manaus, Cuiabá e Cajuri.
+A lista dos municípios priorizados neste trimestre para produção dos dados cartográficos foram: Florianópolis, Fortaleza, Campo Grande, Porto Velho, Belo Horizonte, Rio de Janeiro, Curitiba, Salvador, Manaus, Cuiabá e Cajuri. Conforme exemplificados na figura (@fig-arquivos-geopackage-produzidos), (@fig-arquivos-geopackage-organizados), (@fig-exemplificacao-do-conteudo-de-um-arquivo-geopackage-da-camada-bronze)e (@fig-exemplicacao-do-conteudo-de-um-arquivo-geopackage-da-camada-prata).
 
-Figura 8 – Arquivos geopackage produzidos e versionados
+![Figura 4 – Arquivos geopackage produzidos e versionados](img/bct/figura_8.png){#fig-arquivos-geopackage-produzidos}
 
-![](img/bct/figura_8.png)
+![Figura 5 – Arquivos geopackage organizados em diretórios estruturados](img/bct/figura_9.png){#fig-arquivos-geopackage-organizados}
 
-Figura 9  – Arquivos geopackage organizados em diretórios estruturados
+![Figura 6 – Exemplificação do conteúdo de um arquivo geopackage da camada Bronze](img/bct/figura_10.png){#fig-exemplificacao-do-conteudo-de-um-arquivo-geopackage-da-camada-bronze}
 
-![](img/bct/figura_9.png)
-
-Figura 10 – Exemplificação do conteúdo de um arquivo geopackage da camada Bronze
-
-![](img/bct/figura_10.png)
-
-Figura 11 – Exemplificação do conteúdo de um arquivo geopackage da camada Prata
-
-![](img/bct/figura_11.png)
+![Figura 7 – Exemplificação do conteúdo de um arquivo geopackage da camada Prata](img/bct/figura_11.png){#fig-exemplificacao-do-conteudo-de-um-arquivo-geopackage-da-camada-prata}
 
 Além da extração, organização, validação e padronização das camadas vetoriais, as atividades de produção cartográfica também abrangeram o estudo e a geração experimental de produtos temáticos derivados de imagens de sensoriamento remoto, com o objetivo de avaliar sua aplicabilidade como variáveis geográficas relevantes para o processo de avaliação em massa. Essa frente foi desenvolvida especialmente no contexto da POC de Florianópolis, como forma de verificar o potencial analítico de índices espectrais obtidos a partir de imagens Sentinel-2 processadas no Google Earth Engine.
 
@@ -319,9 +314,7 @@ A sexta frente abrangeu a produção, classificação, revisão e ampliação da
 
 Em seguida, foi realizada uma primeira rodada de processamento das variáveis consideradas mais fáceis, acompanhada do refinamento metodológico das variáveis mais complexas e da revisão de sua camada de referência espacial. Ao longo do trimestre, o conjunto de variáveis consideradas incluiu, entre outras, distância à massa d’água, distância ao litoral, percentual de impermeabilização, quantidade de lotes, tamanho do lote médio e variáveis municipais como FPM, FUNDEB, renda per capita, IDH e categoria turística. Em abril, a equipe da ETAPA 2 definiu a separação explícita entre variáveis vinculadas à amostra do OMI, ao setor censitário e ao município, além da disponibilização de das variáveis geradas na versão da camada Prata.
 
-Esse conjunto de atividades foi essencial para demonstrar a viabilidade técnica da estrutura de variáveis geográficas da etapa, ainda que parte delas permanecesse dependente de complementação de fontes, refinamento metodológico ou liberação de insumos externos. Os quadros a seguir resumem as variáveis geográficas produzidas e agregadas por setor censitário, município e amostra do OMI.
-
-Quadro 2 – Lista das variáveis geográficas agregadas por setor censitário
+Esse conjunto de atividades foi essencial para demonstrar a viabilidade técnica da estrutura de variáveis geográficas da etapa, ainda que parte delas permanecesse dependente de complementação de fontes, refinamento metodológico ou liberação de insumos externos. As tabelas a seguir resumem as variáveis geográficas produzidas e agregadas por setor censitário, município e amostra do OMI.
 
 | NM_CAMPO_BD | DESC_CAMPO | TIPO_BD | PK | UNIQUE | NOT_NULL | ORIGINAL? |
 |:----------|:----------|:----------|:----------|:----------|:----------|:----------|
@@ -378,7 +371,7 @@ Quadro 2 – Lista das variáveis geográficas agregadas por setor censitário
 | renda_krigada_mediana | Valor da renda mediana processada por krigagem | numeric | FALSE | FALSE | FALSE | FALSE |
 | renda_krigada_moda | Valor da moda da renda processada por krigagem | numeric | FALSE | FALSE | FALSE | FALSE |
 
-Quadro 3 – Lista das variáveis geográficas agregadas por município
+: Tabela das variáveis geográficas agregadas por setor censitário {#tbl-tabela-das-variáveis-geográficas-agregadas-por-setor-censitário}
 
 | NM_CAMPO_BD | DESC_CAMPO | TIPO_BD | PK | UNIQUE | NOT_NULL | ORIGINAL? |
 |:----------|:----------|:----------|:----------|:----------|:----------|:----------|
@@ -417,7 +410,7 @@ Quadro 3 – Lista das variáveis geográficas agregadas por município
 | fundeb_coun_vaar_2025 | Valor anual por aluno do fundo | numeric | FALSE | FALSE | FALSE | FALSE |
 | fundeb_coun_vaaf_2025 | Valor anual por aluno do fundo | numeric | FALSE | FALSE | FALSE | FALSE |
 
-Quadro 4 – Lista das variáveis geográficas agregadas por amostra do OMI
+: Tabela das variáveis geográficas agregadas por município {#tbl-tabela-das-variáveis-geográficas-agregadas-por-muniípio}
 
 | NM_CAMPO_BD | DSC_CAMPO | TIPO_BD | NOT_NULL | ORIGINAL? | UNIQUE | PK |
 |:----------|:----------|:----------|:----------|:----------|:----------|:----------|
@@ -479,6 +472,8 @@ Quadro 4 – Lista das variáveis geográficas agregadas por amostra do OMI
 | verif_outlier | Revisão manual de outliers. | boolean | FALSE | FALSE | FALSE | FALSE |
 | processo_geo | Processo de geocodificação utilizado. | varchar | FALSE | FALSE | FALSE | FALSE |
 
+: Tabela das variáveis geográficas agregadas por amostra do OMI{#tbl-tabela-das-variáveis-geográficas-agregadas-por-amostra-do-OMI}
+
 ### POC Florianópolis
 
 A sétima frente concentrou-se na execução da **POC de Florianópolis**, que funcionou como principal ambiente demonstrador e de validação da lógica da ETAPA 2. Em março, a POC foi assumida como prioridade operacional, com foco na preparação das variáveis geográficas e da amostra do OMI em modelo de banco de dados PostGIS.
@@ -499,25 +494,21 @@ O manual do *Fluxo de Geração da Base Cartográfica e das Variáveis Geográfi
 
 Conforme apresentado no item Padronização, a codificação dos arquivos GeoPackage seguiu nomenclatura que permite rastreabilidade e auditabilidade. A possibilidade de armazenamento dos arquivos GeoPackage na estrutura do Synology é a garantia de auditabilidade, rastreabilidade e segurança dos arquivos dentro do LabFSG.
 
-A figura 12 exemplifica a estrutura de armazenamento de arquivos geopackage na qual é possível verificar a localização do arquivo, sua data, o responsável pela criação ou modificação e outros detalhes que identificam o arquivo.
+A figura (@fig-exemplificacao-da-organizacao-de-arquivos-camada-prata-1) e (@fig-exemplicacao-da-organizacao-de-arquivos-camada-prata-2) exemplifica a estrutura de armazenamento de arquivos geopackage na qual é possível verificar a localização do arquivo, sua data, o responsável pela criação ou modificação e outros detalhes que identificam o arquivo.
 
-Figura 12 – Exemplificação da organização de arquivos geopackage da camada Prata
+![Figura 8 – Exemplificação da organização de arquivos geopackage da camada Prata](img/bct/figura_12.png){#fig-exemplicacao-da-organizacao-de-arquivos-camada-prata-1}
 
-![](img/bct/figura_12.png)
+![Figura 9 – Exemplificação da organização de arquivos geopackage da camada Prata](img/bct/figura_12.1.png){#fig-exemplicacao-da-organizacao-de-arquivos-camada-prata-2}
 
-![](img/bct/figura_12.1.png)
+A organização das bases foi definida com ênfase em versionamento, rastreabilidade e separação entre áreas de trabalho e entregas congeladas. Para a camada Bronze, foi definido um padrão de armazenamento por UF e município, com nome de arquivo padronizado contendo geocódigo, nome do município, número de revisão e data. Para a camada Prata, foi estabelecida separação entre pasta parcial, destinada a rascunhos e edições, e pasta final, destinada a revisões congeladas e imutáveis.Conforme exemplificados nas figuras (@fig-ilustracao-da-organizacao), (@fig-ilustracao-da-organizacao-da-camada-bronze), (@fig-ilustracao-da-organizacao-da-camada-prata), (@fig-ilustracao-da-organizacao-da-camada-prata) e (@fig-ilustracao-da-organizacao-da-camada-ouro).
 
-A organização das bases foi definida com ênfase em versionamento, rastreabilidade e separação entre áreas de trabalho e entregas congeladas. Para a camada Bronze, foi definido um padrão de armazenamento por UF e município, com nome de arquivo padronizado contendo geocódigo, nome do município, número de revisão e data. Para a camada Prata, foi estabelecida separação entre pasta parcial, destinada a rascunhos e edições, e pasta final, destinada a revisões congeladas e imutáveis.
+![Figura 10 - Ilustração da organização dos dados e esquemas](img/bct/figura_13.png){#fig-ilustracao-da-organizacao}
 
-Figura 13 - Ilustração da organização dos dados e esquemas
+![Figura 11 - Ilustração da organização dos dados e esquemas da camada bronze](img/bct/figura_13.1.png){#fig-ilustracao-da-organizacao-da-camada-bronze}
 
-![](img/bct/figura_13.png)
+![Figura 12 - Ilustração da organização dos dados e esquemas da camada prata](img/bct/figura_13.2.png){#fig-ilustracao-da-organizacao-da-camada-prata}
 
-![](img/bct/figura_13.1.png)
-
-![](img/bct/figura_13.2.png)
-
-![](img/bct/figura_13.3.png)
+![Figura 13 - Ilustração da organização dos dados e esquemas da camada ouro](img/bct/figura_13.3.png){#fig-ilustracao-da-organizacao-da-camada-ouro}
 
 A organização dos dados da ETAPA 2 passou a ser estruturada também no banco espacial PostgreSQL/PostGIS, com adoção de três bancos principais — **bronze**, **prata** e **ouro** — que representam, respectivamente, as camadas de dados brutos, dados tratados/qualificados e dados consolidados para publicação. Em cada banco foi adotado um modelo de organização territorial, com um esquema geral e um esquema para cada unidade da federação, de modo que os dados são organizados prioritariamente por território e não por tema. Nesse modelo, camadas da Cartografia, do OMI e Estimação coexistem dentro do mesmo esquema territorial, sendo diferenciadas por convenção de nomenclatura.
 
@@ -526,8 +517,6 @@ Para garantir governança adequada, foram previstos grupos de acesso por funçã
 A ingestão de dados geográficos foi definida como um procedimento automatizado de carga de arquivos GeoPackage para o banco PostgreSQL/PostGIS, aplicável à mesma lógica operacional das camadas Bronze e Prata. O processo pode ser executado via QGIS ou via scripts Python em terminal, mediante configuração prévia das credenciais de acesso, definição do schema de destino e indicação do arquivo-fonte a ser processado.
 
 Como regra de negócio, o procedimento distingue dois cenários: criação inicial, quando o esquema ainda não possui tabelas e a carga ocorre por inserção completa, e atualização/apêndice, quando as camadas já existem e novas revisões precisam ser incorporadas. Para preservar a integridade do ambiente, os scripts possuem trava de segurança para evitar sobrescrita indevida, extraem automaticamente metadados a partir do nome do arquivo — como revisão e data de produção —, padronizam nomes de camadas e colunas em minúsculo e forçam a geometria para tipos Multi. O processo também gera dois níveis de rastreabilidade: feedback em tempo real no console do QGIS ou terminal, com volumetria por camada importada, e registro histórico na tabela public.log_ingestao_dados, com status de processamento, SRID de origem, quantidade de feições e observações técnicas em caso de erro. Além disso, após a carga, cada tabela pode receber mecanismo de auditoria para registrar alterações futuras. Essa sistemática reforça a padronização, a rastreabilidade e a auditabilidade do fluxo de ingestão, tanto para a entrada dos dados brutos na Bronze quanto para a evolução dos dados tratados e revisados na Prata.
-
-Quadro 5 – Organização da ingestão de dados no banco de dados Postgresql
 
 | Campo | Tipo | Descrição |
 |:-----------------------|:-----------------------|:-----------------------|
@@ -545,21 +534,17 @@ Quadro 5 – Organização da ingestão de dados no banco de dados Postgresql
 | data_producao | date | A data de geração do dado, conforme metadado do arquivo. |
 | observacao_tecnica | text | Logs de erro detalhados ou notas sobre a qualidade do dado. |
 
-Figura 14 – Exemplificação do conteúdo da tabela de controle de ingestão de dados
+: Tabela Organização da ingestão de dados no banco de dados Postgresql{#tbl-tabela-Organização-da-ingestão-de-dados-no-banco-de-dados-Postgresql}
 
-![](img/bct/figura_14.png)
+![Figura 14 – Exemplificação do conteúdo da tabela de controle de ingestão de dados](img/bct/figura_14.png){#fig-exemplificacao-do-conteudo-da-tabela}
 
-Além do controle de ingestão e linhagem, a sistemática adotada também estabelece um controle de auditoria sobre as tabelas carregadas, tanto por meio de colunas de controle incorporadas às próprias tabelas quanto por meio de uma tabela específica de auditoria alimentada por trigger. Em cada tabela de dados cartográficos são adicionados campos de controle como data de carga, arquivo de origem, responsável pela carga e versão do modelo, permitindo identificar quando e por quem a carga foi realizada, a partir de qual arquivo e sob qual versão estrutural. Complementarmente, a tabela **public.log_auditoria** registra as alterações ocorridas nas tabelas cartográficas, armazenando informações como schema, nome da tabela, identificador do registro, tipo de operação executada, valores anteriores e novos em formato JSONB, usuário do banco e data do evento. Com isso, o ambiente passa a suportar não apenas a rastreabilidade da ingestão inicial, mas também a auditoria das alterações posteriores, fortalecendo a governança, a integridade histórica e a capacidade de inspeção sobre a evolução dos dados ao longo do fluxo operacional.
+Além do controle de ingestão e linhagem, a sistemática adotada também estabelece um controle de auditoria sobre as tabelas carregadas, tanto por meio de colunas de controle incorporadas às próprias tabelas quanto por meio de uma tabela específica de auditoria alimentada por trigger. Em cada tabela de dados cartográficos são adicionados campos de controle como data de carga, arquivo de origem, responsável pela carga e versão do modelo, permitindo identificar quando e por quem a carga foi realizada, a partir de qual arquivo e sob qual versão estrutural. Complementarmente, a tabela **public.log_auditoria** registra as alterações ocorridas nas tabelas cartográficas, armazenando informações como schema, nome da tabela, identificador do registro, tipo de operação executada, valores anteriores e novos em formato JSONB, usuário do banco e data do evento. Com isso, o ambiente passa a suportar não apenas a rastreabilidade da ingestão inicial, mas também a auditoria das alterações posteriores, fortalecendo a governança, a integridade histórica e a capacidade de inspeção sobre a evolução dos dados ao longo do fluxo operacional. Conforme exemplificados nas figuras (@fig-organizacao-da-auditoria), (@fig-exemplificacao-de-registro-de-auditoria-1) e na (@fig-exemplificacao-de-registro-de-auditoria-2).
 
-Figura 15 – Organização da auditoria de dados no banco de dados Postgresql
+![Figura 15 – Organização da auditoria de dados no banco de dados Postgresql](img/bct/figura_15.png){#fig-organizacao-da-auditoria}
 
-![](img/bct/figura_15.png)
+![Figura 16 – Exemplificação de registro de auditoria em camadas de dados estruturados](img/bct/figura_16.png){#fig-exemplificacao-de-registro-de-auditoria-1}
 
-Figura 16 – Exemplificação de registro de auditoria em camadas de dados estruturados
-
-![](img/bct/figura_16.png)
-
-![](img/bct/figura_16.1.png)
+![Figura 17 – Exemplificação de registro de auditoria em camadas de dados estruturados](img/bct/figura_16.1.png){#fig-exemplificacao-de-registro-de-auditoria-2}
 
 O Script Python de ingestão e organização de dados é ilustrado pelo código apresentado a seguir e a versão completa para terminal Python e QGIS é apresentada no Anexo Ingestão de dados no banco de dados espacial.
 
@@ -996,19 +981,13 @@ No estágio atual, a camada Bronze encontra-se suficientemente definida e, em gr
 
 Outro aspecto que reforça a robustez dessa base territorial é a incorporação de uma lógica de governança dos dados espaciais, que vai além da simples produção cartográfica. A existência de estrutura territorial em esquemas por UF, controle de ingestão e linhagem, colunas de controle nas tabelas, mecanismos de auditoria por gatilhos, regras de padronização e checkpoints de qualidade evidencia que a base territorial vem sendo constituída sob critérios institucionais de confiabilidade, rastreabilidade e custódia. Isso aumenta substancialmente sua relevância para o projeto, porque garante que os dados produzidos não sejam apenas utilizáveis no curto prazo, mas também sustentáveis e auditáveis ao longo da evolução do trabalho.
 
-Dessa forma, a base territorial ao final do trimestre pode ser caracterizada como uma **in**fraestrutura de dados geoespaciais em consolidação, já suficientemente madura para suportar a continuidade da produção cartográfica, a expansão da geração de variáveis geográficas e a integração progressiva com os processos de estimação. Embora ainda não integralmente concluída, ela representa um avanço substantivo do projeto, pois estabelece os alicerces técnicos, metodológicos e operacionais sobre os quais a etapa poderá evoluir para uma base territorial plenamente validada, publicada e apta ao uso.
+Dessa forma, a base territorial ao final do trimestre pode ser caracterizada como uma **in**fraestrutura de dados geoespaciais em consolidação, já suficientemente madura para suportar a continuidade da produção cartográfica, a expansão da geração de variáveis geográficas e a integração progressiva com os processos de estimação. Embora ainda não integralmente concluída, ela representa um avanço substantivo do projeto, pois estabelece os alicerces técnicos, metodológicos e operacionais sobre os quais a etapa poderá evoluir para uma base territorial plenamente validada, publicada e apta ao uso. Conforme exemplificados nas figuras (@fig-exemplicacao-camada-bronze), (@fig-exemplicacao-camada-prata) e (@fig-exemplicacao-de-dados-postgis-camada-bronze).
 
-Figura 17 – Exemplificação de arquivo GeoPackage versionado para a camada Bronze
+![Figura 18 – Exemplificação de arquivo GeoPackage versionado para a camada Bronze](img/bct/figura_17.png){#fig-exemplicacao-camada-bronze}
 
-![](img/bct/figura_17.png)
+![Figura 19 – Exemplificação de arquivo geopackage versionado para a camada Prada](img/bct/figura_18.png){#fig-exemplicacao-camada-prata}
 
-Figura 18 – Exemplificação de arquivo geopackage versionado para a camada Prada
-
-![](img/bct/figura_18.png)
-
-Figura 19 – Exemplificação de dados postgis versionados para a camada Bronze
-
-![](img/bct/figura_19.png)
+![Figura 20 – Exemplificação de dados postgis versionados para a camada Bronze](img/bct/figura_19.png){#fig-exemplicacao-de-dados-postgis-camada-bronze}
 
 ### Qualidade de dados espaciais e Consistência topológica
 
@@ -1072,10 +1051,8 @@ Em síntese, a ETAPA 2 já apresenta uma base conceitual e operacional favoráve
 
 Ao final do primeiro trimestre de 2026, pode-se reafirmar que a ETAPA 2 – Bases Cartográficas Territoriais deixou de se situar apenas no campo do planejamento metodológico e passou a operar com resultados concretos, mensuráveis e tecnicamente estruturados. O período foi marcado pela consolidação da governança da etapa, pela formalização do fluxo operacional, pela implantação da organização Bronze–Prata–Ouro, pela estruturação inicial do ambiente PostgreSQL/PostGIS e pela definição de mecanismos de padronização, rastreabilidade, ingestão e auditoria dos dados espaciais. Esses avanços criaram as condições institucionais e tecnológicas necessárias para transformar o processo territorial em uma frente efetiva de produção de dados para o projeto.
 
-No plano produtivo, os resultados alcançados demonstram avanço material da execução. Foram gerados 11 municípios na camada Bronze, com 16 camadas cartográficas por município, e 11 municípios na camada Prata, com 14 camadas por município, ainda que em níveis distintos de maturidade, sendo Florianópolis o caso mais completo e consolidado do período. 
+No plano produtivo, os resultados alcançados demonstram avanço material da execução. Foram gerados 11 municípios na camada Bronze, com 16 camadas cartográficas por município, e 11 municípios na camada Prata, com 14 camadas por município, ainda que em níveis distintos de maturidade, sendo Florianópolis o caso mais completo e consolidado do período.
 
-O dicionário de dados passou a registrar 37 camadas distribuídas entre Bronze e Prata, reforçando a organização lógica e documental da base territorial. No campo analítico, foram identificadas 76 variáveis geográficas e geradas 60 variáveis até o momento, o que demonstra avanço substancial do produto geográfico da etapa.
-Também pode ser destacado como resultado concreto do trimestre a entrega à equipe da ETAPA 3 do pacote territorial de Florianópolis, contendo as 14 camadas da base Prata e as 60 variáveis geográficas geradas. Essa entrega possui relevância estratégica porque representa o principal caso de integração entre a produção cartográfica, a modelagem de dados, a derivação de variáveis e a utilização efetiva dos produtos da ETAPA 2 como insumo para as etapas subsequentes do projeto. A PoC de Florianópolis, nesse sentido, cumpriu papel de validação metodológica, teste operacional e demonstração da viabilidade prática da arquitetura territorial construída ao longo do trimestre.
-Dessa forma, a síntese do período indica que a ETAPA 2 alcançou um patamar de estruturação avançada com produção efetiva, apoiado em fluxo formal, base territorial em formação, banco espacial em consolidação, dicionário de dados em evolução e geração concreta de variáveis geográficas. Ao mesmo tempo, os resultados já tornam mais visíveis os desafios dos ciclos seguintes, especialmente aqueles relacionados à consolidação da camada Prata, à futura constituição da camada Ouro, à robustez da infraestrutura tecnológica, à rastreabilidade e auditabilidade em escala e, sobretudo, à estabilização metodológica e operacional da geração das variáveis geográficas como produto escalável.
+O dicionário de dados passou a registrar 37 camadas distribuídas entre Bronze e Prata, reforçando a organização lógica e documental da base territorial. No campo analítico, foram identificadas 76 variáveis geográficas e geradas 60 variáveis até o momento, o que demonstra avanço substancial do produto geográfico da etapa. Também pode ser destacado como resultado concreto do trimestre a entrega à equipe da ETAPA 3 do pacote territorial de Florianópolis, contendo as 14 camadas da base Prata e as 60 variáveis geográficas geradas. Essa entrega possui relevância estratégica porque representa o principal caso de integração entre a produção cartográfica, a modelagem de dados, a derivação de variáveis e a utilização efetiva dos produtos da ETAPA 2 como insumo para as etapas subsequentes do projeto. A POC de Florianópolis, nesse sentido, cumpriu papel de validação metodológica, teste operacional e demonstração da viabilidade prática da arquitetura territorial construída ao longo do trimestre. Dessa forma, a síntese do período indica que a ETAPA 2 alcançou um patamar de estruturação avançada com produção efetiva, apoiado em fluxo formal, base territorial em formação, banco espacial em consolidação, dicionário de dados em evolução e geração concreta de variáveis geográficas. Ao mesmo tempo, os resultados já tornam mais visíveis os desafios dos ciclos seguintes, especialmente aqueles relacionados à consolidação da camada Prata, à futura constituição da camada Ouro, à robustez da infraestrutura tecnológica, à rastreabilidade e auditabilidade em escala e, sobretudo, à estabilização metodológica e operacional da geração das variáveis geográficas como produto escalável.
 
 Pode-se afirmar que o trimestre foi decisivo para estabelecer os fundamentos técnicos, operacionais e produtivos da ETAPA 2, convertendo planejamento, documentação, modelagem e infraestrutura em entregas territoriais concretas. O desafio dos próximos ciclos deixa de ser o de iniciar a estruturação e passa a ser o de consolidar, ampliar e escalar com segurança a base territorial e o conjunto de variáveis geográficas, de forma compatível com as necessidades institucionais da Receita Federal e com as exigências analíticas do processo de Avaliação em Massa Imóveis Urbanos.
