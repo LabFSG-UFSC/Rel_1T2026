@@ -43,7 +43,7 @@ novembro de 2025 em Florianópolis.
 
 ## Fluxo de dados estruturado
 
-O Fluxo detalhado desta etapa encontra-se no apêndice 1
+O Fluxo detalhado desta etapa encontra-se no apêndice A
 
 ### Fontes de dados
 
@@ -670,9 +670,6 @@ CNEFE.
 
 ### 1. Metodologia de Recuperação: Vias Curtas (Short Streets)
 
-*Análise completa disponível em [Apêndice — Análise Exploratória (Vias
-Curtas)](relatorios.qmd#sec-rel-vias-curtas).*
-
 **Período:** Janeiro - Março 2026 **Objetivo:** Demonstrar como
 registros de precisão intermediária (precisão = 3) podem ser recuperados
 através de análise espacial comparativa com malha viária de setores
@@ -762,8 +759,6 @@ influenciam diretamente a taxa de recuperação.
 
 ### Análise Exploratória: Desempenho em Lotes e Terrenos {#sec-lote-terreno}
 
-*Análise completa disponível em [Apêndice — Análise de Lote/Terreno
-V3](relatorios.qmd#sec-rel-lote-terreno).*
 
 **Período:** Março 2026 **Objetivo:** Investigar as causas raiz da menor
 taxa de processamento em imóveis não-edificados e propor estratégias de
@@ -957,8 +952,7 @@ unidades.
 
 A análise completa — com tabelas comparativas por bairro, distribuição
 por tipo de match e recomendações de ajuste de threshold — está
-documentada na [Seção 3.2](#sec-lote-terreno) e no [Apêndice — Análise
-de Lote/Terreno](relatorios.qmd#sec-rel-lote-terreno).
+documentada na [Seção 3.2](#sec-lote-terreno).
 
 ### Padronização
 
@@ -1017,7 +1011,7 @@ em contextos distintos.
 Aplicando simultaneamente os dois filtros de qualidade —
 `is_outlier = 0` (dado econômico limpo, sem duplicatas e campos válidos)
 **e** `is_problematic = FALSE` (posição confirmada pelo CNEFE) —, o
-resultado da PoC Florianópolis é:
+resultado da POC Florianópolis é:
 
 ::: {style="border-left: 4px solid #555; background-color: #f5f5f5; padding: 1.2em 1.5em; margin: 1.5em 0;"}
 **Dataset Pronto para Análise Fiscal Direta**

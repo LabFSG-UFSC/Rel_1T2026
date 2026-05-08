@@ -1,16 +1,6 @@
 # Desafios e riscos estruturais
 
-O desenvolvimento da Prova de Conceito (PoC) permitiu identificar um conjunto
-relevante de desafios e riscos estruturais associados às diferentes etapas do
-projeto, evidenciando que a construção de uma metodologia nacional de avaliação
-em massa depende não apenas da qualidade dos modelos estatísticos desenvolvidos,
-mas principalmente da maturidade dos processos de integração territorial,
-padronização de dados, infraestrutura tecnológica e governança operacional.
-Conforme identificado ao longo das análises realizadas, os desafios observados
-possuem caráter técnico, operacional e institucional, refletindo a elevada
-complexidade envolvida na consolidação de bases heterogêneas, na modelagem
-territorial em larga escala e na futura internalização da metodologia pela
-Receita Federal do Brasil.
+O desenvolvimento da Prova de Conceito (POC) permitiu identificar um conjunto relevante de desafios e riscos estruturais associados às diferentes etapas do projeto, evidenciando que a construção de uma metodologia nacional de avaliação em massa depende não apenas da qualidade dos modelos estatísticos desenvolvidos, mas principalmente da maturidade dos processos de integração territorial, padronização de dados, infraestrutura tecnológica e governança operacional. Conforme identificado ao longo das análises realizadas, os desafios observados possuem caráter técnico, operacional e institucional, refletindo a elevada complexidade envolvida na consolidação de bases heterogêneas, na modelagem territorial em larga escala e na futura internalização da metodologia pela Receita Federal do Brasil.
 
 Na Etapa 1 — Observatório do Mercado Imobiliário — os principais desafios
 estiveram relacionados à qualidade das bases de dados utilizadas na estruturação
@@ -23,15 +13,7 @@ intensivo das informações, incluindo limpeza, harmonização e padronização
 semântica dos registros, condição essencial para viabilizar análises
 territoriais consistentes.
 
-Também foram identificados desafios importantes relacionados à independência
-entre os processos de validação posicional e validação da integridade econômica
-das ofertas imobiliárias. A PoC demonstrou que a consistência espacial de um
-imóvel não garante, necessariamente, a confiabilidade econômica da oferta
-associada, exigindo a construção de mecanismos independentes de detecção de
-outliers e validação territorial. Nesse contexto, a integração entre coordenadas
-derivadas do ArcGIS e referências do CNEFE revelou a necessidade de regras
-específicas para resolução de conflitos posicionais, especialmente em áreas
-urbanas mais complexas.
+Também foram identificados desafios importantes relacionados à independência entre os processos de validação posicional e validação da integridade econômica das ofertas imobiliárias. A POC demonstrou que a consistência espacial de um imóvel não garante, necessariamente, a confiabilidade econômica da oferta associada, exigindo a construção de mecanismos independentes de detecção de outliers e validação territorial. Nesse contexto, a integração entre coordenadas derivadas do ArcGIS e referências do CNEFE revelou a necessidade de regras específicas para resolução de conflitos posicionais, especialmente em áreas urbanas mais complexas.
 
 Outro desafio crítico identificado na Etapa 1 refere-se ao processamento de
 lotes vagos e terrenos urbanos. Os resultados demonstraram que imóveis sem
@@ -80,16 +62,7 @@ metodológica de determinadas variáveis geográficas, que ainda não possuem fo
 estáveis, processos consolidados de atualização ou dicionários definitivos de
 dados.
 
-A Etapa 2 também evidenciou desafios relevantes de escalabilidade operacional.
-Parte significativa dos fluxos ainda depende de processos parcialmente manuais e
-de validação especializada, dificultando a expansão da produção territorial em
-escala nacional com custos, prazos e qualidade compatíveis com os objetivos
-institucionais do projeto. Nesse contexto, a infraestrutura tecnológica passou a
-ser um elemento crítico para sustentação da solução, exigindo ambientes robustos
-de armazenamento, processamento, backup, automação e segurança da informação.
-Conforme consolidado ao longo da PoC, a escalabilidade territorial da solução
-depende diretamente da capacidade de garantir integração, estabilidade,
-reprodutibilidade e rastreabilidade dos fluxos operacionais em nível nacional.
+A Etapa 2 também evidenciou desafios relevantes de escalabilidade operacional. Parte significativa dos fluxos ainda depende de processos parcialmente manuais e de validação especializada, dificultando a expansão da produção territorial em escala nacional com custos, prazos e qualidade compatíveis com os objetivos institucionais do projeto. Nesse contexto, a infraestrutura tecnológica passou a ser um elemento crítico para sustentação da solução, exigindo ambientes robustos de armazenamento, processamento, backup, automação e segurança da informação. Conforme consolidado ao longo da POC, a escalabilidade territorial da solução depende diretamente da capacidade de garantir integração, estabilidade, reprodutibilidade e rastreabilidade dos fluxos operacionais em nível nacional.
 
 Na Etapa 3 — Modelagem e Planta de Valores Genéricos (PVG) — os principais
 desafios estiveram relacionados à própria ausência de um cadastro urbano
@@ -102,15 +75,7 @@ viável, essa abordagem introduz limitações importantes, uma vez que as proxie
 podem não refletir adequadamente o comportamento real do mercado em diferentes
 contextos urbanos.
 
-Outro aspecto crítico identificado refere-se à elevada sensibilidade dos modelos
-às variáveis-chave utilizadas na modelagem. Os resultados demonstraram forte
-dependência de poucas variáveis explicativas, especialmente localização, área e
-indicadores territoriais derivados. Pequenas inconsistências nessas variáveis
-impactam diretamente os resultados das estimativas e podem comprometer a
-estabilidade da PVG gerada. A PoC também demonstrou que a modelagem de lotes
-vagos apresenta menor capacidade explicativa e maior heterogeneidade estatística
-quando comparada à modelagem de imóveis edificados, especialmente em áreas com
-baixa densidade amostral.
+Outro aspecto crítico identificado refere-se à elevada sensibilidade dos modelos às variáveis-chave utilizadas na modelagem. Os resultados demonstraram forte dependência de poucas variáveis explicativas, especialmente localização, área e indicadores territoriais derivados. Pequenas inconsistências nessas variáveis impactam diretamente os resultados das estimativas e podem comprometer a estabilidade da PVG gerada. A POC também demonstrou que a modelagem de lotes vagos apresenta menor capacidade explicativa e maior heterogeneidade estatística quando comparada à modelagem de imóveis edificados, especialmente em áreas com baixa densidade amostral.
 
 Adicionalmente, a validação da aderência dos resultados ao mercado ainda
 depende, em parte, de análises visuais e verificações especializadas,
@@ -120,12 +85,4 @@ metodologia já apresente elevado grau de maturidade técnica, ainda existem
 desafios relacionados à construção de mecanismos objetivos, automatizados e
 plenamente auditáveis de validação institucional da PVG em escala nacional.
 
-De forma geral, os desafios e riscos estruturais identificados ao longo da PoC
-reforçam que o avanço do projeto exige não apenas evolução metodológica da
-modelagem estatística, mas também fortalecimento contínuo da infraestrutura
-tecnológica, dos mecanismos de governança de dados, da padronização territorial
-e dos processos de integração entre bases espaciais e econômicas. Os resultados
-obtidos demonstram que a solução proposta já apresenta maturidade operacional
-relevante, porém sua expansão nacional dependerá diretamente da capacidade de
-garantir escalabilidade, estabilidade, auditabilidade e reprodutibilidade em
-diferentes realidades territoriais brasileiras.
+De forma geral, os desafios e riscos estruturais identificados ao longo da POC reforçam que o avanço do projeto exige não apenas evolução metodológica da modelagem estatística, mas também fortalecimento contínuo da infraestrutura tecnológica, dos mecanismos de governança de dados, da padronização territorial e dos processos de integração entre bases espaciais e econômicas. Os resultados obtidos demonstram que a solução proposta já apresenta maturidade operacional relevante, porém sua expansão nacional dependerá diretamente da capacidade de garantir escalabilidade, estabilidade, auditabilidade e reprodutibilidade em diferentes realidades territoriais brasileiras.
