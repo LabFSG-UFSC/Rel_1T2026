@@ -92,6 +92,8 @@ div.csl-indent {
 <script src="site_libs/quarto-diagram/mermaid.min.js"></script>
 <script src="site_libs/quarto-diagram/mermaid-init.js"></script>
 <link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -395,6 +397,15 @@ Figura&nbsp;D.1: Fluxograma da estimação do Valor de Referência.
 </div>
 </div>
 </div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="img/fluxo/fluxo-modelagem.png" class="img-fluid figure-img" width="2978"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="limpeza-dos-dados" class="level2" data-number="D.3">
 <h2 data-number="D.3" class="anchored" data-anchor-id="limpeza-dos-dados"><span class="header-section-number">D.3</span> Limpeza dos dados</h2>
@@ -522,17 +533,242 @@ Figura&nbsp;D.6: Clusterização espacial por tipologia com comparação entre c
 <section id="sec-modelo-edificados" class="level3" data-number="D.5.1">
 <h3 data-number="D.5.1" class="anchored" data-anchor-id="sec-modelo-edificados"><span class="header-section-number">D.5.1</span> Modelo de imóveis edificados</h3>
 <p>Uma vez realizada a limpeza e classificação dos dados segundo o padrão construtivo, foi ajustado um modelo de regressão linear múltipla sobre os dados de imóveis edificados (casas e apartamentos). De posse deste modelo, foram obtidos fatores de homogeneização a partir dos coeficientes estimados para as diversas variáveis explicativas. Então, com estes fatores assim ajustados, os dados da amostra de imóveis edificados foram homogeneizados, para fins de criação de uma superfície de valores de metro quadrado construído. As estatísticas do modelo de regressão de imóveis edificados podem ser vistas na <a href="#tbl-EdifModel" class="quarto-xref">Tabela&nbsp;<span>D.1</span></a>.</p>
+<div class="cell">
 <div id="tbl-EdifModel" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-EdifModel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabela&nbsp;D.1: Modelo de imóveis edificados. Coeficientes exponenciados.
 </figcaption>
 <div aria-describedby="tbl-EdifModel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div>
+<div class="cell-output-display">
+<table class="do-not-create-environment cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Termo</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Coef.</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Erro-padrão</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Estat. t</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">p-valor</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">IC_inf</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">IC_sup</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Intercepto</td>
+<td style="text-align: right;">12.555,05</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">2.311,38</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">12.489,52</td>
+<td style="text-align: right;">12.620,92</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">log1p(dist_litoral/100)</td>
+<td style="text-align: right;">0,99</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">-13,21</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,99</td>
+<td style="text-align: right;">0,99</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">log(renda_pct_krigada/1212)</td>
+<td style="text-align: right;">1,10</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">35,59</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">1,09</td>
+<td style="text-align: right;">1,10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tipo_imovelCobertura</td>
+<td style="text-align: right;">0,97</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">-7,73</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,96</td>
+<td style="text-align: right;">0,97</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tipo_imovelFlat</td>
+<td style="text-align: right;">0,98</td>
+<td style="text-align: right;">0,02</td>
+<td style="text-align: right;">-0,90</td>
+<td style="text-align: right;">0,37</td>
+<td style="text-align: right;">0,95</td>
+<td style="text-align: right;">1,01</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tipo_imovelCasa</td>
+<td style="text-align: right;">0,76</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">-65,96</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,75</td>
+<td style="text-align: right;">0,76</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tipo_imovelCasa de Condomínio</td>
+<td style="text-align: right;">0,79</td>
+<td style="text-align: right;">0,01</td>
+<td style="text-align: right;">-41,15</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,78</td>
+<td style="text-align: right;">0,79</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">log(area/100):TipologiaAptos</td>
+<td style="text-align: right;">0,88</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">-32,86</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,87</td>
+<td style="text-align: right;">0,88</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">log(area/100):TipologiaCasas</td>
+<td style="text-align: right;">0,90</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">-26,73</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,89</td>
+<td style="text-align: right;">0,90</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">TipologiaAptos:I(num_banheiros - 2)</td>
+<td style="text-align: right;">1,01</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">3,86</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">1,00</td>
+<td style="text-align: right;">1,01</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">TipologiaCasas:I(num_banheiros - 2)</td>
+<td style="text-align: right;">1,01</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">4,03</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">1,00</td>
+<td style="text-align: right;">1,01</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">TipologiaAptos:I(num_vagas_garagem - 2)</td>
+<td style="text-align: right;">1,05</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">24,70</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">1,05</td>
+<td style="text-align: right;">1,06</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">TipologiaCasas:I(num_vagas_garagem - 2)</td>
+<td style="text-align: right;">1,01</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">11,23</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">1,01</td>
+<td style="text-align: right;">1,01</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">TipologiaAptos:I(num_suites - 1)</td>
+<td style="text-align: right;">1,05</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">26,68</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">1,05</td>
+<td style="text-align: right;">1,05</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">TipologiaCasas:I(num_suites - 1)</td>
+<td style="text-align: right;">1,04</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">22,50</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">1,04</td>
+<td style="text-align: right;">1,04</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">TipologiaAptos:PCAlto</td>
+<td style="text-align: right;">1,55</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">143,46</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">1,54</td>
+<td style="text-align: right;">1,55</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">TipologiaCasas:PCAlto</td>
+<td style="text-align: right;">1,54</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">95,65</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">1,53</td>
+<td style="text-align: right;">1,55</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">TipologiaAptos:PCBaixo</td>
+<td style="text-align: right;">0,64</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">-146,19</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,64</td>
+<td style="text-align: right;">0,65</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">TipologiaCasas:PCBaixo</td>
+<td style="text-align: right;">0,62</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">-125,52</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,62</td>
+<td style="text-align: right;">0,62</td>
+</tr>
+</tbody><tfoot>
+<tr class="odd">
+<td style="text-align: left; padding: 0;"><sup>a</sup> Erro-padrão dos resíduos: 0,17 em 32128 graus de liberdade</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding: 0;"><sup>b</sup> R2: 0,86</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0;"><sup>c</sup> R2aj: 0,86</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding: 0;"><sup>d</sup> AIC: -22.881,53</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tfoot>
 
+</table>
 </div>
 </div>
 </figure>
+</div>
 </div>
 <p>Como é possível notar na <a href="#tbl-EdifModel" class="quarto-xref">Tabela&nbsp;<span>D.1</span></a>, foram utilizadas como variáveis explicativas do logarítmo natural dos preços unitários as variáveis citadas na <a href="#sec-variaveis-modelagem" class="quarto-xref"><span>Seção D.4</span></a>. É possível notar na <a href="#tbl-EdifModel" class="quarto-xref">Tabela&nbsp;<span>D.1</span></a>, ainda, que as variáveis explicativas <code>area</code>, <code>num_banheiros</code>, <code>num_vagas_garagem</code>, <code>num_suites</code> e <code>PC</code> foram consideradas com efeitos diferentes segundo a <code>Tipologia</code>.</p>
 <p>Este modelo foi utilizado para a geração de uma superfície de valores (ver <a href="#sec-resultados-modelagem" class="quarto-xref"><span>Seção D.7</span></a>).</p>
@@ -540,17 +776,134 @@ Tabela&nbsp;D.1: Modelo de imóveis edificados. Coeficientes exponenciados.
 <section id="modelo-de-lotes" class="level3" data-number="D.5.2">
 <h3 data-number="D.5.2" class="anchored" data-anchor-id="modelo-de-lotes"><span class="header-section-number">D.5.2</span> Modelo de Lotes</h3>
 <p>Com a variável <code>VUM2</code> criada a partir do modelo de lotes edificados, foi ajustado um modelo linear generalizado, com família gamma e função de ligação <code>log</code>. As estatísticas desse modelo podem ser vistas na <a href="#tbl-LotesGLM" class="quarto-xref">Tabela&nbsp;<span>D.2</span></a>.</p>
+<div class="cell">
 <div id="tbl-LotesGLM" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-LotesGLM-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabela&nbsp;D.2: Modelo linear generalizado de lotes urbanos. Coeficientes exponenciados.
 </figcaption>
 <div aria-describedby="tbl-LotesGLM-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div>
+<div class="cell-output-display">
+<table class="do-not-create-environment cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Termo</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Est.</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Erro-padrão</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Est. t</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">p-valor</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">IC_inf</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">IC_sup</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Intercepto</td>
+<td style="text-align: right;">2.449,01</td>
+<td style="text-align: right;">0,05</td>
+<td style="text-align: right;">169,54</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2.307,02</td>
+<td style="text-align: right;">2.600,87</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">log(area/450)</td>
+<td style="text-align: right;">0,70</td>
+<td style="text-align: right;">0,01</td>
+<td style="text-align: right;">-49,63</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0,69</td>
+<td style="text-align: right;">0,71</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">log1p(Dist)</td>
+<td style="text-align: right;">0,99</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">-3,93</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0,98</td>
+<td style="text-align: right;">0,99</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">log(VUM2/10000)</td>
+<td style="text-align: right;">2,56</td>
+<td style="text-align: right;">0,05</td>
+<td style="text-align: right;">18,97</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2,40</td>
+<td style="text-align: right;">2,73</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">log(renda_pct_krigada/1212)</td>
+<td style="text-align: right;">1,43</td>
+<td style="text-align: right;">0,03</td>
+<td style="text-align: right;">14,25</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1,38</td>
+<td style="text-align: right;">1,48</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">I(ca_max - 1)</td>
+<td style="text-align: right;">1,09</td>
+<td style="text-align: right;">0,01</td>
+<td style="text-align: right;">14,88</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1,08</td>
+<td style="text-align: right;">1,10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">log1p(dens_equip_saud)</td>
+<td style="text-align: right;">1,07</td>
+<td style="text-align: right;">0,01</td>
+<td style="text-align: right;">9,25</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1,06</td>
+<td style="text-align: right;">1,08</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tipo_usoResidencial</td>
+<td style="text-align: right;">0,73</td>
+<td style="text-align: right;">0,04</td>
+<td style="text-align: right;">-8,66</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0,70</td>
+<td style="text-align: right;">0,77</td>
+</tr>
+</tbody><tfoot>
+<tr class="odd">
+<td style="text-align: left; padding: 0;"><sup>a</sup> Erro-padrão dos resíduos: 0,50 em 3820 graus de liberdade</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding: 0;"><sup>b</sup> Pseudo-R2 (NagelKerke): 0,62</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0;"><sup>c</sup> AIC: 62.643,75</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tfoot>
 
+</table>
 </div>
 </div>
 </figure>
+</div>
 </div>
 <p>No modelo da <a href="#tbl-LotesGLM" class="quarto-xref">Tabela&nbsp;<span>D.2</span></a>, para a explicação dos valores unitários dos lotes foram utilizadas como variáveis explicativas <code>area</code>, <code>Dist</code>, <code>VUM2</code>, <code>renda_pct_krigada</code>, <code>ca_max</code>, <code>dens_equip_saud</code> e <code>tipo_uso</code>, descritas na <a href="#sec-variaveis-modelagem" class="quarto-xref"><span>Seção D.4</span></a>.</p>
 <p>Os resíduos do modelo da <a href="#tbl-LotesGLM" class="quarto-xref">Tabela&nbsp;<span>D.2</span></a> foram krigados, conforme procedimento descrito na <a href="#sec-atividades-modelagem" class="quarto-xref"><span>Seção D.6</span></a>, para posterior reutilização no modelo de regressão final para os lotes.</p>
@@ -578,44 +931,306 @@ Tabela&nbsp;D.2: Modelo linear generalizado de lotes urbanos. Coeficientes expon
 <h3 data-number="D.7.1" class="anchored" data-anchor-id="modelo-final"><span class="header-section-number">D.7.1</span> Modelo Final</h3>
 <p>Foi elaborado um modelo preliminar para os lotes de Florianópolis, apresentado na <a href="#tbl-LotesGLM" class="quarto-xref">Tabela&nbsp;<span>D.2</span></a>. Deste modelos foram extraídos resíduos para verificação da dependência espacial, que se mostrou presente, como de praxe. Os resíduos do modelo da <a href="#tbl-LotesGLM" class="quarto-xref">Tabela&nbsp;<span>D.2</span></a> foram então krigados.</p>
 <p>Com os resíduos krigados obtidos do modelo preliminar de lotes (<a href="#tbl-LotesGLM" class="quarto-xref">Tabela&nbsp;<span>D.2</span></a>), foi ajustada uma variável explicativa de localização (<code>layer</code>) para o ajuste do modelo final (modelo de regressão linear ordinária) de lotes, da <a href="#tbl-LotesModel" class="quarto-xref">Tabela&nbsp;<span>D.3</span></a>:</p>
+<div class="cell">
 <div id="tbl-LotesModel" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-LotesModel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabela&nbsp;D.3: Modelo de lotes urbanos.
 </figcaption>
 <div aria-describedby="tbl-LotesModel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div>
+<div class="cell-output-display">
+<table class="do-not-create-environment cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Termo</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Est.</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Erro-padrão</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Est. t</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">p-valor</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">IC_inf</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">IC_sup</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Intercepto</td>
+<td style="text-align: right;">7,49</td>
+<td style="text-align: right;">0,03</td>
+<td style="text-align: right;">256,23</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">7,45</td>
+<td style="text-align: right;">7,52</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">log(area/450)</td>
+<td style="text-align: right;">-0,38</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">-76,61</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">-0,39</td>
+<td style="text-align: right;">-0,38</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">log(VUM2/10000)</td>
+<td style="text-align: right;">1,08</td>
+<td style="text-align: right;">0,03</td>
+<td style="text-align: right;">32,09</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1,04</td>
+<td style="text-align: right;">1,13</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">log(renda_pct_krigada/1212)</td>
+<td style="text-align: right;">0,35</td>
+<td style="text-align: right;">0,02</td>
+<td style="text-align: right;">20,44</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0,33</td>
+<td style="text-align: right;">0,37</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">I(ca_max - 1)</td>
+<td style="text-align: right;">0,08</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">20,45</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0,08</td>
+<td style="text-align: right;">0,09</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">log1p(dens_equip_saud)</td>
+<td style="text-align: right;">0,07</td>
+<td style="text-align: right;">0,01</td>
+<td style="text-align: right;">13,21</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0,06</td>
+<td style="text-align: right;">0,08</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tipo_usoResidencial</td>
+<td style="text-align: right;">-0,18</td>
+<td style="text-align: right;">0,02</td>
+<td style="text-align: right;">-7,33</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">-0,21</td>
+<td style="text-align: right;">-0,15</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">layer</td>
+<td style="text-align: right;">1,00</td>
+<td style="text-align: right;">0,02</td>
+<td style="text-align: right;">59,38</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0,98</td>
+<td style="text-align: right;">1,02</td>
+</tr>
+</tbody><tfoot>
+<tr class="odd">
+<td style="text-align: left; padding: 0;"><sup>a</sup> Erro-padrão dos resíduos: 0,34 em 3796 graus de liberdade</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding: 0;"><sup>b</sup> R2: 0,82</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0;"><sup>c</sup> R2aj: 0,82</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tfoot>
 
+</table>
 </div>
 </div>
 </figure>
+</div>
 </div>
 <p>Como é possível notar na <a href="#tbl-LotesModel" class="quarto-xref">Tabela&nbsp;<span>D.3</span></a>, o modelo final tem poder de explicar em torno de 82% dos preços unitários de mercado, um resultado que pode ser considerado notável, se consideramos a falta de diversas variáveis acerca das características físicas dos lotes (frente, forma, pedologia e outras).</p>
 <p>Os gráficos da <span class="quarto-unresolved-ref">?fig-ResidualsFinais</span> mostram que não há presença de <em>outliers</em> ou pontos influenciantes no modelo. A normalidade dos resíduos, no entanto, hipótese da inferência clássica, não foi verificada, como fica claro quando se analisa o gráfico Q-Q.</p>
 <p>A falta da verificação da hipótese da normalidade dos resíduos, no entanto, não invalida o modelo de regressão linear. Conforme <span class="citation" data-cites="Matloff2017">MATLOFF (<a href="references.html#ref-Matloff2017" role="doc-biblioref">2017, p. 80–81</a>)</span>, <span class="math inline">\(\hat beta\)</span> é um estimador não-viesado e consistente mesmo na ausência de normalidade e/ou homoscedasticidade.</p>
 <p>O modelo da <a href="#tbl-LotesModel" class="quarto-xref">Tabela&nbsp;<span>D.3</span></a>, portanto, pode ser considerado viável para a predição de valores unitários de terrenos visando a aplicação do método evolutivo para toda a cidade. Porém, os testes estatísticas e os intervalos de confiança dos coeficientes apresentados na <a href="#tbl-LotesModel" class="quarto-xref">Tabela&nbsp;<span>D.3</span></a> não são válidos, pela ausência da normalidade. A <a href="#tbl-LotesModel2" class="quarto-xref">Tabela&nbsp;<span>D.4</span></a> apresenta, então, as estatísticas do modelo computadas com erros robustos (matriz HC3). Nota-se que não houve grandes modificações nos resultados dos testes e dos intervalos de confiança dos coeficientes em relação ao apresentados na <a href="#tbl-LotesModel" class="quarto-xref">Tabela&nbsp;<span>D.3</span></a>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-ResiduosFinais" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ResiduosFinais-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="94-metodo-etapa03_files/figure-html/fig-ResiduosFinais-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ResiduosFinais-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;D.7: Resíduos do modelo final de lotes.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
 <div id="tbl-LotesModel2" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-LotesModel2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabela&nbsp;D.4: Modelo de lotes urbanos. Erros robustos.
 </figcaption>
 <div aria-describedby="tbl-LotesModel2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div>
+<div class="cell-output-display">
+<table class="do-not-create-environment cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Termo</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Est.</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Erro-padrão</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Est. t</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">p-valor</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">IC_inf</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">IC_sup</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Intercepto</td>
+<td style="text-align: right;">7,49</td>
+<td style="text-align: right;">0,04</td>
+<td style="text-align: right;">195,79</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">7,44</td>
+<td style="text-align: right;">7,54</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">log(area/450)</td>
+<td style="text-align: right;">-0,38</td>
+<td style="text-align: right;">0,01</td>
+<td style="text-align: right;">-52,88</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">-0,39</td>
+<td style="text-align: right;">-0,37</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">log(VUM2/10000)</td>
+<td style="text-align: right;">1,08</td>
+<td style="text-align: right;">0,03</td>
+<td style="text-align: right;">31,82</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1,04</td>
+<td style="text-align: right;">1,13</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">log(renda_pct_krigada/1212)</td>
+<td style="text-align: right;">0,35</td>
+<td style="text-align: right;">0,02</td>
+<td style="text-align: right;">21,01</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0,33</td>
+<td style="text-align: right;">0,37</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">I(ca_max - 1)</td>
+<td style="text-align: right;">0,08</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">21,19</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0,08</td>
+<td style="text-align: right;">0,09</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">log1p(dens_equip_saud)</td>
+<td style="text-align: right;">0,07</td>
+<td style="text-align: right;">0,01</td>
+<td style="text-align: right;">12,78</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0,06</td>
+<td style="text-align: right;">0,08</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tipo_usoResidencial</td>
+<td style="text-align: right;">-0,18</td>
+<td style="text-align: right;">0,04</td>
+<td style="text-align: right;">-5,20</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">-0,23</td>
+<td style="text-align: right;">-0,14</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">layer</td>
+<td style="text-align: right;">1,00</td>
+<td style="text-align: right;">0,02</td>
+<td style="text-align: right;">50,75</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0,98</td>
+<td style="text-align: right;">1,03</td>
+</tr>
+</tbody><tfoot>
+<tr class="odd">
+<td style="text-align: left; padding: 0;"><sup>a</sup> Erro-padrão dos resíduos: 0,34 em 3796 graus de liberdade</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding: 0;"><sup>b</sup> R2: 0,82</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0;"><sup>c</sup> R2aj: 0,82</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tfoot>
 
+</table>
 </div>
 </div>
 </figure>
+</div>
 </div>
 </section>
 <section id="outputs-de-valor" class="level3" data-number="D.7.2">
 <h3 data-number="D.7.2" class="anchored" data-anchor-id="outputs-de-valor"><span class="header-section-number">D.7.2</span> <em>Outputs</em> de valor</h3>
 <section id="superfície-de-valores-de-metro-quadrado-construído" class="level4" data-number="D.7.2.1">
 <h4 data-number="D.7.2.1" class="anchored" data-anchor-id="superfície-de-valores-de-metro-quadrado-construído"><span class="header-section-number">D.7.2.1</span> Superfície de valores de metro quadrado construído</h4>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-superficieVU" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-superficieVU-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="94-metodo-etapa03_files/figure-html/fig-superficieVU-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-superficieVU-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;D.8: Mapa de Valores de metro quadrado construído (R$/m2).
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="planta-de-valores-genéricos" class="level4" data-number="D.7.2.2">
 <h4 data-number="D.7.2.2" class="anchored" data-anchor-id="planta-de-valores-genéricos"><span class="header-section-number">D.7.2.2</span> Planta de Valores Genéricos</h4>
 <p>Com o modelo da <a href="#tbl-LotesModel" class="quarto-xref">Tabela&nbsp;<span>D.3</span></a> é possível elaborar uma planta de valores genéricos (PVG) para a cidade de Florianópolis. Esta PVG deve ter uma escala condizente com a magnitude do projeto. Se por um lado não é viável tecnicamente a elaboração de PVG’s por face de quadras no contexto deste projeto, por outro lado a escala de trabalho não pode ser pequena a ponto de não permitir a aplicação uma tributação com um mínimo de equidade.</p>
-<p>Uma vez definida a escala, a PVG deverá ser gerada a partir da superfície de valores unitários de lotes mostrada na <span class="quarto-unresolved-ref">?fig-SuperficieVULotes</span>.</p>
+<p>Uma vez definida a escala, a PVG deverá ser gerada a partir da superfície de valores unitários de lotes mostrada na <a href="#fig-SuperficieVULotes" class="quarto-xref">Figura&nbsp;<span>D.9</span></a>.</p>
 </section>
 </section>
 <section id="outros-modelos" class="level3" data-number="D.7.3">
@@ -841,22 +1456,91 @@ Tabela&nbsp;D.4: Modelo de lotes urbanos. Erros robustos.
 <section id="importância-das-variáveis" class="level3" data-number="D.8.1">
 <h3 data-number="D.8.1" class="anchored" data-anchor-id="importância-das-variáveis"><span class="header-section-number">D.8.1</span> Importância das variáveis</h3>
 <p>As variáveis mais importantes para a estimação de valores unitários de lotes podem ser extraídas da análise da <a href="#tbl-correlacoes" class="quarto-xref">Tabela&nbsp;<span>D.5</span></a>: a variável mais importante para explicar os valores unitários dos lotes foi a variável <code>area</code>, seguida da variável de localização (<code>layer</code>) e da variável <code>VUM2</code>.</p>
+<div class="cell">
 <div id="tbl-correlacoes" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-correlacoes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabela&nbsp;D.5: Correlações
 </figcaption>
 <div aria-describedby="tbl-correlacoes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div>
-
+<div class="cell-output-display">
+<table class="do-not-create-environment cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Zero-order</th>
+<th style="text-align: right;">Partial</th>
+<th style="text-align: right;">Part</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">log(area/450)</td>
+<td style="text-align: right;">-0,57</td>
+<td style="text-align: right;">-0,78</td>
+<td style="text-align: right;">-0,53</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">log(VUM2/10000)</td>
+<td style="text-align: right;">0,44</td>
+<td style="text-align: right;">0,46</td>
+<td style="text-align: right;">0,22</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">log(renda_pct_krigada/1212)</td>
+<td style="text-align: right;">0,53</td>
+<td style="text-align: right;">0,31</td>
+<td style="text-align: right;">0,14</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">I(ca_max - 1)</td>
+<td style="text-align: right;">0,22</td>
+<td style="text-align: right;">0,32</td>
+<td style="text-align: right;">0,14</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">log1p(dens_equip_saud)</td>
+<td style="text-align: right;">0,21</td>
+<td style="text-align: right;">0,21</td>
+<td style="text-align: right;">0,09</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tipo_usoResidencial</td>
+<td style="text-align: right;">-0,07</td>
+<td style="text-align: right;">-0,12</td>
+<td style="text-align: right;">-0,05</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">layer</td>
+<td style="text-align: right;">0,41</td>
+<td style="text-align: right;">0,69</td>
+<td style="text-align: right;">0,41</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </figure>
+</div>
 </div>
 </section>
 <section id="aderência-ao-mercado" class="level3" data-number="D.8.2">
 <h3 data-number="D.8.2" class="anchored" data-anchor-id="aderência-ao-mercado"><span class="header-section-number">D.8.2</span> Aderência ao mercado</h3>
 <p>A aderência ao mercado do modelo de lotes urbanos pode ser verificada subjetivamente através da análise da superfície krigada de valores unitários homogeneizados para um lote residencial padrão com 450 <span class="math inline">\(m^2\)</span> de área.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-SuperficieVULotes" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-SuperficieVULotes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="94-metodo-etapa03_files/figure-html/fig-SuperficieVULotes-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-SuperficieVULotes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;D.9: Superfície de valores unitários para um lote padrão residencial de 450m2.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="sec-escalabilidade" class="level2" data-number="D.9">
