@@ -1,4 +1,4 @@
-# Apêndice B - Materiais, Métodos e Resultados da Etapa 1: Observatório do Mercado Imobiliário {#sec-obs}
+# Materiais, Métodos e Resultados da Etapa 1: Observatório do Mercado Imobiliário {#sec-obs}
 
 ## Introdução
 

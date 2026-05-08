@@ -6,6 +6,10 @@ execute:
   echo: false
   message: false
   warning: false
+
+crossref:
+  appendix-title: "Apêndice"
+  appendix-delim: " - "
   
 book:
   title: "Relatório 1T2026"
@@ -25,12 +29,11 @@ book:
     - 07-entregas.qmd
     - 08-conclusao.qmd
     - references.qmd
-    - part: "Apêndices"
-      chapters:
-        - 91-fluxo.qmd
-        - 92-metodo-etapa01.qmd
-        - 93-metodo-etapa02.qmd
-        - 94-metodo-etapa03.qmd
+  appendices:
+    - 91-fluxo.qmd
+    - 92-metodo-etapa01.qmd
+    - 93-metodo-etapa02.qmd
+    - 94-metodo-etapa03.qmd
     
 bibliography: references.bib
 

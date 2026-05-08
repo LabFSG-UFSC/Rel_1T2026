@@ -1,4 +1,13 @@
-# Apêndice D - Materiais, Métodos e Resultados da Etapa 3 - Modelagem e Planta de Valores Genéricos (PVG)
+---
+editor:
+  markdown:
+    wrap: 72
+execute:
+  enabled: false
+  eval: false
+---
+
+# Materiais, Métodos e Resultados da Etapa 3 - Modelagem e Planta de Valores Genéricos (PVG) {#sec-est}
 
 ## Introdução
 
