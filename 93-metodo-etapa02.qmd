@@ -1,16 +1,4 @@
----
-title: "My document"
-format:
-  pdf:
-    toc: true
-    number-sections: true
-    colorlinks: true
-    keep-tex: true
----
-
-# Apêndice 3
-
-# Materiais, Métodos e Resultados da Etapa 2 - Bases Cartográficas Territoriais {#sec-carto}
+# Apêndice 3 - Materiais, Métodos e Resultados da Etapa 2 - Bases Cartográficas Territoriais {#sec-carto}
 
 ## Introdução
 
@@ -1091,5 +1079,4 @@ Também pode ser destacado como resultado concreto do trimestre a entrega à equ
 Dessa forma, a síntese do período indica que a ETAPA 2 alcançou um patamar de estruturação avançada com produção efetiva, apoiado em fluxo formal, base territorial em formação, banco espacial em consolidação, dicionário de dados em evolução e geração concreta de variáveis geográficas. Ao mesmo tempo, os resultados já tornam mais visíveis os desafios dos ciclos seguintes, especialmente aqueles relacionados à consolidação da camada Prata, à futura constituição da camada Ouro, à robustez da infraestrutura tecnológica, à rastreabilidade e auditabilidade em escala e, sobretudo, à estabilização metodológica e operacional da geração das variáveis geográficas como produto escalável.
 
 Pode-se afirmar que o trimestre foi decisivo para estabelecer os fundamentos técnicos, operacionais e produtivos da ETAPA 2, convertendo planejamento, documentação, modelagem e infraestrutura em entregas territoriais concretas. O desafio dos próximos ciclos deixa de ser o de iniciar a estruturação e passa a ser o de consolidar, ampliar e escalar com segurança a base territorial e o conjunto de variáveis geográficas, de forma compatível com as necessidades institucionais da Receita Federal e com as exigências analíticas do processo de Avaliação em Massa Imóveis Urbanos.
-
 

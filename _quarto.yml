@@ -25,11 +25,12 @@ book:
     - 07-entregas.qmd
     - 08-conclusao.qmd
     - references.qmd
-  appendices:
-    - 91-fluxo.qmd
-    - 92-metodo-etapa01.qmd
-    - 93-metodo-etapa02.qmd
-    - 94-metodo-etapa03.qmd
+    - part: "Apêndices"
+      chapters:
+        - 91-fluxo.qmd
+        - 92-metodo-etapa01.qmd
+        - 93-metodo-etapa02.qmd
+        - 94-metodo-etapa03.qmd
     
 bibliography: references.bib
 
@@ -42,4 +43,3 @@ format:
     documentclass: scrreprt
 
 editor: visual
-

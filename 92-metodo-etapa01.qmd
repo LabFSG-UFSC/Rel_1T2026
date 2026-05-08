@@ -1,28 +1,4 @@
----
-title: "ETAPA 1: Observatório do Mercado Imobiliário"
-subtitle: "Prova de Conceito - Florianópolis/SC"
-author: "Equipe Observatório - Receita Federal do Brasil"
-date: "2026-03-31"
-format:
-  html:
-    embed-resources: true
-    toc: true
-    toc-depth: 3
-    number-sections: true
-    code-fold: true
-    theme: cosmo
-  pdf:
-    toc: true
-    number-sections: true
-    colorlinks: true
-editor: 
-  markdown: 
-    wrap: 72
----
-
-# Apêndice 2
-
-# Materiais, Métodos e Resultados da Etapa 1: Observatório do Mercado Imobiliário {#sec-obs}
+# Apêndice 2 - Materiais, Métodos e Resultados da Etapa 1: Observatório do Mercado Imobiliário {#sec-obs}
 
 ## Introdução
 
