@@ -67,11 +67,11 @@ instrumentos institucionais e suporte às atividades técnicas.
 
 A composição detalhada da equipe técnica executora da UFSC/FEESC, incluindo
 alunos, técnicos, docentes e pesquisadores, organizada por etapa do plano de
-trabalho, encontra-se descrita no quadro -@fig-quadro1, permitindo a
+trabalho, encontra-se descrita na @fig-quadro1, permitindo a
 visualização detalhada da alocação de recursos humanos, conforme as frentes de
 atuação definidas no projeto.
 
-![QUADRO 1 - Equipe Técnica Executora UFSC/FEESC](img/geral/fig-quadro-01-equipe-tecnica.png){#fig-quadro1}
+![Equipe Técnica Executora UFSC/FEESC](img/geral/fig-quadro-01-equipe-tecnica.png){#fig-quadro1}
 
 O presente relatório está estruturado conforme as fases e etapas definidas no
 Plano de Gerenciamento do Projeto (PGP), com base na organização metodológica do
