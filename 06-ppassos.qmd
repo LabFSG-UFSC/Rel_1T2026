@@ -1,14 +1,12 @@
 # Proximos passos
 
-•	Proximos passos
-
 A definição dos próximos passos do projeto está diretamente associada ao nível de maturidade alcançado durante a execução da Prova de Conceito (PoC), aos resultados obtidos nas etapas de estruturação do Observatório do Mercado Imobiliário, consolidação cartográfica territorial e modelagem da Planta de Valores Genéricos (PVG), bem como à necessidade de preparar a transição para uma fase de ampliação operacional e futura internalização institucional na Receita Federal do Brasil (RFB).
 
 Os resultados alcançados demonstraram viabilidade técnica da metodologia proposta, permitindo validar parte significativa da arquitetura de dados, dos processos de geocodificação, das estratégias de integração territorial e dos modelos preliminares de avaliação em massa. Entretanto, as análises realizadas também evidenciaram desafios estruturais relacionados à qualidade dos dados, escalabilidade operacional, padronização territorial, automação dos fluxos e estabilidade metodológica em diferentes contextos urbanos, tornando necessária a continuidade do processo de amadurecimento técnico da solução.
 
 Nesse contexto, os próximos passos estão organizados em dois grandes eixos complementares: (i) ações prioritárias de curto e médio prazo, voltadas à consolidação técnica e operacional da solução desenvolvida, e (ii) marcos estruturantes, responsáveis por orientar a evolução do projeto em direção à escalabilidade nacional, integração institucional e operacionalização futura no ambiente da RFB.
 
-## 6.1. Ações Prioritárias
+## Ações Prioritárias
 
 As ações prioritárias concentram-se no aprimoramento das frentes já desenvolvidas ao longo da PoC, com foco na qualificação dos dados, ampliação territorial, fortalecimento da infraestrutura tecnológica, evolução metodológica da modelagem e consolidação dos mecanismos de automação e governança.
 
@@ -28,7 +26,7 @@ Também será dada continuidade à evolução das plataformas de visualização 
 
 Por fim, serão intensificadas as atividades relacionadas à preparação da internalização da metodologia, incluindo definição preliminar de requisitos técnicos, formatos de intercâmbio de dados, mecanismos de integração institucional e estruturação inicial dos ambientes operacionais que futuramente deverão ser utilizados pela Receita Federal do Brasil.
 
-### 6.1.1.Principais Ações Prioritárias
+### Principais Ações Prioritárias
 
 •	Refinamento dos modelos de avaliação em massa e da PVG;
 
@@ -46,7 +44,7 @@ Por fim, serão intensificadas as atividades relacionadas à preparação da int
 
 •	Estruturação preliminar dos mecanismos de integração e internalização na RFB.
 
-## 6.2. Marcos Estruturantes Previstos
+## Marcos Estruturantes Previstos
 
 Os marcos previstos representam etapas estratégicas de consolidação e evolução do projeto, indicando a transição gradual de uma solução experimental validada em PoC para um ambiente operacional escalável e institucionalmente integrado.
 
@@ -58,7 +56,7 @@ No âmbito da expansão territorial, projeta-se o avanço dos Lotes 1 e 2 do pro
 
 Por fim, prevê-se o início progressivo da Etapa 4 - Internalização e Operação,  consolidando a transição gradual entre o ambiente experimental atualmente desenvolvido e o futuro ambiente institucional de operação da metodologia.
 
-### 6.2.1.Síntese dos Próximos Marcos
+### Síntese dos Próximos Marcos
 
 •	Validação técnica dos modelos preliminares junto à RFB;
 

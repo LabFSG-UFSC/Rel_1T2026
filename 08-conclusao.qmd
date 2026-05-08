@@ -1,7 +1,5 @@
 # Considerações Finais
 
-•	Considerações Finais
-
 O primeiro ciclo trimestral de execução do Projeto TED RFB/UFSC demonstrou avanço consistente na estruturação técnica, metodológica e operacional da solução proposta para determinação dos Valores de Referência de imóveis urbanos em escala nacional. As atividades desenvolvidas no período permitiram consolidar a Prova de Conceito de Florianópolis como ambiente central de validação, teste e amadurecimento dos processos que deverão orientar a futura expansão territorial da metodologia.
 
 Os resultados apresentados ao longo deste relatório evidenciam que o projeto avançou de forma integrada nas frentes de arquitetura de dados, Observatório do Mercado Imobiliário, bases cartográficas territoriais, geração de variáveis geoespaciais, modelagem de avaliação em massa, infraestrutura tecnológica e governança operacional. Essa integração permitiu transformar bases heterogêneas e inicialmente fragmentadas em estruturas organizadas, rastreáveis e tecnicamente qualificadas, capazes de subsidiar análises territoriais e modelos de avaliação com maior robustez.

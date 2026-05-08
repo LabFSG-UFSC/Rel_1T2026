@@ -1,7 +1,5 @@
 # Principais Entregas do Trimestre
 
-•	Principais Entregas do Trimestre
-
 As entregas realizadas no período refletem o avanço estruturado das atividades do projeto, evidenciando a consolidação progressiva dos componentes necessários à implementação da Prova de Conceito (POC). A seguir, detalham-se os principais entregáveis, com a respectiva contextualização técnica:
 
 •	Estrutura inicial da arquitetura de dados com bases integradas

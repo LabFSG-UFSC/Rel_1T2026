@@ -1,7 +1,5 @@
 # Principais Resultados Estratégicos
 
-•	Principais Resultados Estratégicos
-
 Os resultados alcançados no período vão além da execução operacional das atividades, evidenciando avanços estruturais relevantes para a consolidação da metodologia proposta no âmbito do projeto. Esses resultados refletem a maturidade progressiva das soluções desenvolvidas, especialmente no que se refere à integração entre dados, modelagem, infraestrutura e governança, bem como à capacidade de replicação em diferentes contextos territoriais.
 
 Outro aspecto de destaque no período foi o avanço na formalização e consolidação do fluxo metodológico do projeto, com a definição mais clara das etapas, dos encadeamentos entre processos e da padronização dos procedimentos técnicos. Essa evolução se refletiu na estruturação de um fluxo integrado para as Etapas 1 a 3 — Observatório, Bases Territoriais e Modelagem — contemplando desde a ingestão e tratamento dos dados, passando pela organização territorial e geração de variáveis, até a aplicação dos modelos de avaliação.
@@ -14,13 +12,13 @@ A seguir, são apresentados os principais resultados estratégicos do projeto, o
 
 No âmbito da POC, são evidenciados os avanços metodológicos e operacionais alcançados nas Etapas 1 a 3 do projeto. Na dimensão de infraestrutura, são apresentados os progressos relacionados à organização dos ambientes computacionais, armazenamento de dados e suporte às atividades técnicas. Por fim, nos blocos transversais, destacam-se os estudos desenvolvidos ao longo do período e a plataforma de visualização dos dados, que contribuem para a análise, validação e comunicação dos resultados.
 
-## 4.1. Validação da POC
+## Validação da POC
 
 A seguir, são apresentados os resultados referentes à validação da Prova de Conceito (POC) de Florianópolis, que constitui o principal ambiente de teste e consolidação da metodologia proposta no projeto. Essa etapa tem como objetivo avaliar, de forma integrada, a consistência dos dados, a robustez dos processos e a aderência dos resultados obtidos, permitindo verificar a viabilidade técnica da abordagem adotada e sua capacidade de replicação em escala nacional. Os resultados estão organizados por etapa do projeto, evidenciando os avanços alcançados e o nível de maturidade metodológica em cada frente de atuação.
 
 Nesse contexto, inicia-se a análise pela Etapa 1 – Observatório do Mercado Imobiliário, responsável pela estruturação, qualificação e validação dos dados de mercado. Trata-se de uma etapa fundamental para o projeto, uma vez que estabelece a base informacional sobre a qual se apoiam as demais fases, influenciando diretamente a consistência das variáveis, a qualidade da modelagem e a confiabilidade dos resultados finais.
 
-### 4.1.1.  Etapa 1: Observatório do Mercado Imobiliário
+### Etapa 1: Observatório do Mercado Imobiliário
 
 No âmbito da Etapa 1 – Observatório do Mercado Imobiliário, foram identificados e sistematizados dez resultados estratégicos principais, que refletem os avanços alcançados na validação da Prova de Conceito (POC) de Florianópolis. Esses resultados evidenciam a evolução da arquitetura de dados, a consolidação dos processos de tratamento e validação das informações e o nível de maturidade alcançado na estruturação do Observatório, constituindo a base para o desenvolvimento das etapas subsequentes.
 
@@ -38,7 +36,7 @@ Resultado estratégico:
 
 Criação de uma base de mercado qualificada, com maior consistência, rastreabilidade e confiabilidade para uso fiscal, reduzindo a dependência de dados autodeclarados ou sem validação, constituindo o núcleo de dados do Observatório do Mercado Imobiliário.
 
-#### 4.1.1.2. Estruturação de um pipeline completo de dados
+#### Estruturação de um pipeline completo de dados
 
 Foi desenvolvido um pipeline técnico integrado para processamento de dados imobiliários em larga escala, contemplando todas as etapas do fluxo operacional do Observatório: ingestão, tratamento, validação, classificação e armazenamento dos dados.
 
@@ -66,7 +64,7 @@ Resultado estratégico:
 
 Operação baseada em processo técnico (pipeline) reprodutível, documentado e escalável, com capacidade de processamento de grandes volumes de dados, garantindo rastreabilidade, desempenho, controle de qualidade e potencial de replicação nacional.
 
-#### 4.1.1.3. Uso do CNEFE como referência oficial de validação posicional
+#### Uso do CNEFE como referência oficial de validação posicional
 
 O Cadastro Nacional de Endereços para Fins Estatísticos (CNEFE/IBGE) foi adotado como referência oficial de validação espacial da Prova de Conceito, atuando como ground truth para qualificação das coordenadas provenientes do mercado imobiliário.
 
@@ -82,7 +80,7 @@ Resultado estratégico:
 
 Fortalecimento da robustez metodológica por meio do uso de base governamental oficial (CNEFE) como referência para validação espacial, garantindo maior confiabilidade dos resultados e alinhamento institucional.
 
-#### 4.1.1.4. Desenvolvimento e aplicação do Geocoder V3
+#### Desenvolvimento e aplicação do Geocoder V3
 
 No desenvolvimento da Prova de Conceito de Florianópolis, foi concebido e implementado o Geocoder V3, um motor avançado de validação espacial estruturado especificamente para enfrentar os elevados níveis de ruído presentes nos dados do mercado imobiliário.
 
@@ -100,7 +98,7 @@ Resultado estratégico:
 
 Implementação de solução técnica própria para validação e qualificação espacial das ofertas imobiliárias, com elevada precisão, alto desempenho computacional e capacidade de operação em larga escala, com potencial de replicação em nível nacional.
 
-#### 4.1.1.5. Processamento expressivo da base da POC Florianópolis
+#### Processamento expressivo da base da POC Florianópolis
 
 A Prova de Conceito demonstrou de forma consistente a capacidade operacional do Observatório para processamento de dados imobiliários em larga escala, abrangendo todo o ciclo de tratamento, validação e qualificação das informações de mercado.
 
@@ -118,7 +116,7 @@ Resultado estratégico:
 
 Validação da capacidade operacional para processamento de grandes volumes de dados imobiliários, com eficiência computacional, controle de qualidade e viabilidade em escala urbana.
 
-#### 4.1.1.6. Criação de filtros independentes de qualidade
+#### Criação de filtros independentes de qualidade
 
 Foi estruturado um modelo metodológico baseado em dois eixos independentes de validação: qualidade posicional e qualidade cadastral/econômica. Permitindo uma análise mais precisa e controlada dos dados de mercado. Essa abordagem separa explicitamente a qualidade posicional que está relacionada à acurácia da localização do imóvel, da  qualidade cadastral/econômica que está associada à consistência dos atributos da oferta, como área, valor e características físicas.
 
@@ -136,7 +134,7 @@ Resultado estratégico:
 
 Implementação de modelo de validação baseado em filtros independentes de qualidade (posicional e cadastral), ampliando o controle sobre os dados e permitindo análises mais precisas, transparentes e tecnicamente consistentes. Essa estrutura possibilita tratar de forma distinta a validação espacial e a integridade dos atributos, reconhecendo que uma oferta pode estar corretamente localizada, mas apresentar inconsistências em variáveis como valor, área ou duplicidade.
 
-#### 4.1.1.7. Geração da base duplamente validada
+#### Geração da base duplamente validada
 
 A aplicação integrada dos critérios de qualidade posicional e cadastral resultou na construção de uma base final duplamente validada, representando o principal produto técnico da Prova de Conceito (POC) de Florianópolis. Essa base corresponde ao subconjunto de registros que atendem simultaneamente:
 
@@ -158,7 +156,7 @@ Resultado estratégico:
 
 Disponibilização de uma base de dados duplamente validada, com elevado rigor técnico e alta precisão posicional, representando um conjunto qualificado de imóveis apto para análises fiscais diretas e aplicações em políticas de avaliação em massa, com elevado nível de confiabilidade.
 
-#### 4.1.1.8. Melhoria da cobertura analítica com vias curtas
+#### Melhoria da cobertura analítica com vias curtas
 
 No âmbito da Prova de Conceito (PoC) de Florianópolis, foi desenvolvida e aplicada uma metodologia específica de recuperação espacial para registros classificados com precisão intermediária (precisão = 3), com o objetivo de ampliar a cobertura analítica da base sem comprometer os critérios de qualidade posicional estabelecidos pelo projeto.
 
@@ -178,7 +176,7 @@ Resultado estratégico:
 
 Ampliação da cobertura analítica da base por meio de técnicas controladas de inferência espacial, possibilitando o reaproveitamento de registros inicialmente considerados frágeis, com manutenção dos critérios de qualidade e sem comprometimento da precisão posicional.
 
-#### 4.1.1.9 Identificação de limitações para lotes e terrenos
+#### Identificação de limitações para lotes e terrenos
 
 Durante a execução da Prova de Conceito (PoC) de Florianópolis, foi identificado desempenho significativamente inferior no processamento de imóveis não edificados, especialmente lotes vagos e terrenos urbanos, quando comparado aos demais tipos de imóveis analisados. Esse comportamento evidenciou uma limitação estrutural relevante tanto das bases disponíveis quanto da própria metodologia de validação posicional aplicada no projeto.
 
@@ -212,7 +210,7 @@ Resultado estratégico:
 
 Identificação de limitações estruturais no processamento de lotes e terrenos, configurando um ponto crítico metodológico que demanda tratamento específico antes da expansão em nível nacional, orientando o aprimoramento da abordagem para assegurar maior abrangência, consistência e qualidade das análises.
 
-#### 4.1.1.10. Validação comparativa com Google Maps
+#### Validação comparativa com Google Maps
 
 Foi realizada uma análise de acurácia posicional utilizando o Google Maps como referência externa de validação (ground truth), com o objetivo de avaliar o desempenho relativo das coordenadas provenientes do mercado (ArcGIS) e da base oficial (CNEFE). A análise foi conduzida com uma amostra de aproximadamente 3.200 registros, geocodificados manualmente, permitindo maior no processo de comparação e avaliação da qualidade espacial.
 
@@ -234,11 +232,11 @@ Resultado estratégico:
 
 Validação externa da qualidade do modelo, confirmando a robustez da abordagem híbrida baseada na integração entre dados de mercado (ArcGIS) e base oficial (CNEFE), bem como a construção de uma base empírica para calibração das regras de decisão, permitindo definir, de forma criteriosa, qual coordenada deve prevalecer em diferentes contextos operacionais.
 
-### 4.1.2.  Etapa 2: Bases Cartográficas Territoriais.
+### Etapa 2: Bases Cartográficas Territoriais
 
 No âmbito da Etapa 2 – Bases Cartográficas Territoriais, foram identificados e sistematizados dez resultados estratégicos principais, que refletem os avanços alcançados na estruturação, organização e qualificação das bases territoriais utilizadas no projeto. Esses resultados evidenciam a evolução da arquitetura geoespacial, a consolidação dos fluxos de tratamento, padronização e validação dos dados cartográficos, bem como o nível de maturidade atingido na produção e gestão das informações territoriais. Tais avanços constituem a base fundamental para a geração de variáveis geográficas e para o desenvolvimento das etapas subsequentes, em especial a modelagem de avaliação em massa e a elaboração das Plantas de Valores Genéricos (PVG).
 
-#### 4.1.2.1. Transformação da Etapa 2 em frente produtiva real
+#### Transformação da Etapa 2 em frente produtiva real
 
 A Etapa 2 deixou de se restringir ao planejamento metodológico e passou a operar como uma frente efetiva de produção territorial. No primeiro trimestre de 2026, foram consolidados fluxos operacionais, definidos critérios de organização, armazenamento, nomenclatura, governança, acompanhamento por sprints e integração com as demais frentes do projeto.
 
@@ -248,7 +246,7 @@ Resultado estratégico:
 
 Consolidação da Etapa 2 como frente produtiva real do projeto, com capacidade de gerar bases territoriais, organizar dados espaciais e fornecer insumos qualificados para as etapas seguintes. A cartografia passou a funcionar como uma linha de produção territorial organizada, e não apenas como atividade de apoio.
 
-#### 4.1.2.2. Implantação do fluxo Bronze–Prata–Ouro
+#### Implantação do fluxo Bronze–Prata–Ouro
 
 Foi implantado o fluxo de maturidade dos dados em três camadas: Bronze, Prata e Ouro. A camada Bronze reúne os dados brutos cartográficos e secundários; a camada Prata concentra os dados organizados, integrados, padronizados e qualificados; e a camada Ouro representa a versão final consolidada, validada e pronta para publicação e catalogação.
 
@@ -256,7 +254,7 @@ No trimestre, o fluxo avançou do desenho conceitual para a execução prática.
 
 Resultado estratégico: Implantação de uma arquitetura territorial baseada em maturidade de dados, com separação entre dados brutos, dados qualificados e produtos finais, garantindo rastreabilidade, controle de versões e qualidade progressiva. Criação de um modelo operacional replicável para produção cartográfica em escala.
 
-#### 4.1.2.3. Produção territorial em 11 municípios
+#### Produção territorial em 11 municípios
 
 A produção cartográfica alcançou escala inicial concreta, com geração de bases territoriais para 11 municípios: Florianópolis, Fortaleza, Campo Grande, Porto Velho, Belo Horizonte, Rio de Janeiro, Curitiba, Salvador, Manaus, Cuiabá e Cajuri.
 
@@ -266,7 +264,7 @@ Resultado estratégico:
 
 Demonstração da capacidade operacional da Etapa 2 para produzir bases cartográficas municipais em escala inicial, com estrutura padronizada e potencial de expansão para novos lotes.
 
-#### 4.1.2.4. Consolidação da PoC Florianópolis como entrega integrada
+#### Consolidação da PoC Florianópolis como entrega integrada
 
 A POC de Florianópolis foi consolidada como a principal entrega integrada e demonstradora da Etapa 2. Ela funcionou como ambiente de teste, validação e refinamento metodológico, integrando base cartográfica, variáveis geográficas, amostra do Observatório do Mercado Imobiliário e estrutura de banco espacial PostGIS.
 
@@ -276,7 +274,7 @@ Resultado estratégico:
 
 Validação da PoC Florianópolis como caso demonstrador da integração entre cartografia, variáveis geográficas, dados do mercado imobiliário e modelagem de avaliação em massa. A POC deixou de ser apenas teste e passou a ser produto territorial efetivo para a modelagem.
 
-#### 4.1.2.5. Estruturação do dicionário e modelagem de dados espaciais
+#### Estruturação do dicionário e modelagem de dados espaciais
 
 Foi estruturado o dicionário de dados da Etapa 2, com o registro de 37 camadas distribuídas entre Bronze e Prata. Esse dicionário organiza nomes de camadas, atributos, tipos de dados, geometrias, chaves, campos obrigatórios e informações de origem.
 
@@ -284,7 +282,7 @@ Além disso, foi desenvolvida uma modelagem preliminar do banco de dados espacia
 
 Resultado estratégico: Criação de uma base lógica e documental para padronização, interoperabilidade, rastreabilidades e governança dos dados espaciais da Etapa 2.
 
-#### 4.1.2.6. Geração de variáveis geográficas para avaliação em massa
+#### Geração de variáveis geográficas para avaliação em massa
 
 A Etapa 2 avançou na definição, classificação e geração de variáveis geográficas voltadas à avaliação em massa. Foram identificadas 76 variáveis geográficas com potencial de uso na modelagem, das quais 60 já foram efetivamente geradas.
 
@@ -294,7 +292,7 @@ Resultado estratégico:
 
 Geração de um conjunto inicial robusto de variáveis geográficas, capaz de qualificar a base territorial e subsidiar tecnicamente os modelos de avaliação em massa. A cartografia passou a produzir dados uteis para avaliação em massa, e não apenas mapas.
 
-#### 4.1.2.7. Padronização de arquivos, nomenclatura e versionamento
+#### Padronização de arquivos, nomenclatura e versionamento
 
 Foi implantada uma lógica de padronização dos arquivos GeoPackage, com identificação por geocódigo do município, nome do município, número da revisão e data de produção. Também foi definida a organização por UF, município e camada de maturidade dos dados.
 
@@ -304,7 +302,7 @@ Resultado estratégico:
 
 Implantação de um padrão de organização, nomenclatura e versionamento que fortalece a rastreabilidade, a auditabilidade e a escalabilidade da produção cartográfica.
 
-#### 4.1.2.8. Implantação de infraestrutura geoespacial com PostGIS
+#### Implantação de infraestrutura geoespacial com PostGIS
 
 Foi estruturada uma infraestrutura geoespacial baseada em PostgreSQL/PostGIS, com organização em três bancos principais: bronze, prata e ouro. Cada banco representa um estágio de maturidade dos dados, permitindo separar dados brutos, dados qualificados e dados finais para publicação.
 
@@ -314,7 +312,7 @@ Resultado estratégico:
 
 Transição de um fluxo baseaem arquivos para a implantação de uma infraestrutura geoespacial capaz de suportar armazenamento, processamento, rastreabilidade, auditoria e integração territorial em escala.
 
-#### 4.1.2.9. Qualidade espacial e consistência topológica como critério de aceite
+#### Qualidade espacial e consistência topológica como critério de aceite
 
 A qualidade espacial foi incorporada como critério permanente de aceite da Etapa 2. O relatório destaca verificações de leitura dos arquivos, compatibilidade do sistema de referência, presença de atributos mínimos, validade geométrica, aderência ao município, coerência espacial, duplicidades, lacunas, sobreposições e inconsistências topológicas.
 
@@ -324,7 +322,7 @@ Resultado estratégico:
 
 Incorporação da qualidade espacial e da consistência topológica como requisitos formais para aceitação das bases territoriais e redução do risco de propagação de erros para a modelagem.
 
-#### 4.1.2.10. Preparação da etapa para a escalabilidade
+#### Preparação da etapa para a escalabilidade
 
 A Etapa 2 encerrou o trimestre com uma base conceitual, operacional e tecnológica favorável à escalabilidade. A produção de 11 municípios na Bronze, 11 municípios na Prata, 37 camadas no dicionário, 76 variáveis identificadas e 60 variáveis geradas demonstra capacidade inicial comprovada.
 
@@ -334,13 +332,13 @@ Resultado estratégico:
 
 Preparação da Etapa 2 para expansão em escala nacional, com base em fluxo padronizado, infraestrutura geoespacial, governança dos dados e produção inicial validada.
 
-### 4.1.3.  Etapa 3: Bases Cartográficas Territoriais.
+### Etapa 3: Bases Cartográficas Territoriais
 
 No âmbito da Etapa 3 – Modelagem e Planta de Valores Genéricos (PVG), foram identificados e sistematizados os principais resultados estratégicos, que refletem os avanços alcançados na estruturação, implementação e validação dos modelos de estimação de valores imobiliários no contexto da Prova de Conceito (POC) de Florianópolis. Esses resultados evidenciam a evolução do fluxo metodológico de modelagem, a consolidação das estratégias de tratamento, classificação e integração dos dados provenientes das etapas anteriores, bem como o nível de maturidade atingido na construção de modelos econométricos e espaciais aplicados à avaliação em massa.
 
 Destacam-se, ainda, os avanços na geração de outputs territoriais, na incorporação da dimensão espacial por meio de técnicas como krigagem e interpolação, e na definição de abordagens híbridas de modelagem, combinando métodos estatísticos e de aprendizado de máquina. Tais elementos constituem a base para a elaboração das Plantas de Valores Genéricos (PVG), garantindo maior aderência ao mercado, consistência técnica e potencial de replicação em escala nacional.
 
-#### 4.1.3.1. Desempenho dos modelos econométricos
+#### Desempenho dos modelos econométricos
 
 A Etapa 3 demonstrou desempenho estatístico consistente na modelagem dos valores imobiliários da POC Florianópolis. foram elaborados dois modelos econométricos para os imóveis de Florianópolis: um modelo voltado à estimativa de valores de imóveis edificados e outro específico para a modelagem dos lotes urbanos. Essa abordagem dual permitiu tratar de forma diferenciada as dinâmicas de formação de valor associadas às edificações e ao solo urbano, garantindo maior aderência metodológica ao comportamento do mercado imobiliário.
 
@@ -364,7 +362,7 @@ Resultado estratégico:
 
 Consolidação de um arcabouço econométrico robusto e integrado, aplicável tanto a imóveis edificados quanto a lotes urbanos, incorporando componente espacial avançada e estabelecendo uma base técnica consistente para a geração da PVG e dos valores de referência. Modelos estatisticamente robustos que garantem precisão e confiabilidade para a avaliação em massa.
 
-#### 4.1.3.2. Modelo preliminar de lotes — base intermediária
+#### Modelo preliminar de lotes — base intermediária
 
 Para a modelagem dos lotes urbanos de Florianópolis, foi inicialmente elaborado um modelo preliminar utilizando um modelo linear generalizado (GLM), com família Gamma e função de ligação log. Esse modelo incorporou como variáveis explicativas a área do lote, a variável de distância (Dist), a variável VUM2 (previamente estimada a partir do modelo de imóveis edificados ), a renda per capita krigada, o coeficiente de aproveitamento máximo, a densidade de equipamentos de saúde e o tipo de uso.
 
@@ -378,7 +376,7 @@ Resultado estratégico:
 
 Construção de uma base intermediária robusta para a modelagem de lotes, permitindo a incorporação da componente espacial por meio da krigagem dos resíduos e contribuindo para a evolução metodológica do modelo final, com ganho consistente de capacidade explicativa.
 
-#### 4.1.3.3. Classificação objetiva de padrão construtivo
+#### Classificação objetiva de padrão construtivo
 
 Para a classificação dos imóveis construídos, adotou-se como variável principal o valor unitário (R$/m²), calculado a partir da razão entre o preço anunciado e a área privativa do imóvel. Essa escolha foi motivada por sua capacidade de representar o posicionamento econômico do imóvel no mercado, refletindo de forma indireta diferenças construtivas observáveis.
 
@@ -392,7 +390,7 @@ Resultado estratégico:
 
 Criação de uma classificação técnica, objetiva e baseada em dados para o padrão construtivo dos imóveis, reduzindo subjetividade e fortalecendo a homogeneização das informações utilizadas na modelagem. Tipologia objetiva, replicável e alinhada à estrutura econômica do mercado.
 
-#### 4.1.3.4. Regionalização geoespacial — submercados
+#### Regionalização geoespacial — submercados
 
 A regionalização geoespacial do mercado imobiliário foi realizada com base nas coordenadas geográficas dos registros (latitude e longitude), previamente padronizadas, considerando separadamente cada tipologia de imóvel — apartamentos, casas e lotes. Essa abordagem permitiu capturar as especificidades locacionais de cada segmento, respeitando a heterogeneidade do mercado e evitando distorções na análise.
 
@@ -404,7 +402,7 @@ Embora, no caso específico de Florianópolis, os modelos tenham apresentado bom
 
 Resultado estratégico: Estruturação de uma regionalização geoespacial baseada em dados, capaz de representar a heterogeneidade do mercado imobiliário e apoiar o desenvolvimento de modelos mais aderentes às dinâmicas territoriais.
 
-#### 4.1.3.5. Integração entre modelos
+#### Integração entre modelos
 
 A Etapa 3 estruturou um fluxo integrado no qual os modelos não operam de forma isolada. O modelo de imóveis edificados foi utilizado para estimar valores do metro quadrado construído e gerar a variável VUM2, que posteriormente foi incorporada ao modelo de lotes.  Afigura 7 ilustra este processo.
 
@@ -420,7 +418,7 @@ Resultado estratégico:
 
 Integração metodológica entre modelos de imóveis edificados, lotes e componente espacial, aumentando a coerência técnica e a capacidade explicativa da avaliação em massa. A cadeia lógica entre modelos aumentou a consistência e qualidade das estimativas.
 
-#### 4.1.3.6. Outputs territoriais gerados
+#### Outputs territoriais gerados
 
 A Etapa 3 resultou na geração de um conjunto estruturado de outputs territoriais, fundamentais para a representação espacial do mercado imobiliário e para a operacionalização da Planta de Valores Genéricos (PVG).
 
@@ -458,7 +456,7 @@ Resultado estratégico:
 
 Geração de outputs territoriais estruturados, com base em métodos e parâmetros explicitamente definidos, permitindo representar a dinâmica espacial do mercado imobiliário e viabilizar a aplicação consistente da PVG com elevado nível de precisão, transparência e escalabilidade. Ou seja, geração de produtos concreto, aplicáveis diretamente a política tributária.
 
-#### 4.1.3.7. Estratégia de modelagem escalável e controlada
+#### Estratégia de modelagem escalável e controlada
 
 A estratégia de modelagem adotada na Etapa 3 foi estruturada com base em um fluxo metodológico controlado, incremental e auditável, evitando a automatização integral sem validação técnica. O processo de construção dos modelos foi conduzido por meio de seleção iterativa de variáveis, com inclusão e exclusão sucessiva, buscando o equilíbrio entre capacidade explicativa, estabilidade dos coeficientes e coerência econômica, além de reduzir o risco de overfitting.
 
@@ -492,7 +490,7 @@ Resultado estratégico:
 
 Consolidação de uma estratégia de modelagem escalável, baseada em fluxo metodológico padronizado, integração entre modelos econométricos e componentes espaciais, e validação técnica contínua, garantindo replicabilidade com controle de qualidade e aderência às diferentes realidades municipais, em alinhamento com as exigências de aplicação institucional pela RFB. Uma metodologia preparada para a expansão nacional com governança e qualidade.
 
-## 4.2. Evolução da infraestrutura Tecnológica (LABFSG)
+## Evolução da infraestrutura Tecnológica (LABFSG)
 
 A evolução da infraestrutura tecnológica do projeto ocorreu de forma incremental, planejada e orientada às necessidades operacionais identificadas ao longo da execução da Prova de Conceito (PoC) desenvolvida no município de Florianópolis. A consolidação do ambiente computacional não se limitou à disponibilização de recursos de hardware e software, mas envolveu a definição de uma arquitetura tecnológica estruturada, baseada em princípios de segregação funcional, governança operacional, rastreabilidade, segurança e escalabilidade.
 
@@ -502,7 +500,7 @@ Além da sustentação operacional da PoC, a infraestrutura foi concebida com fo
 
 Os resultados apresentados a seguir demonstram a evolução progressiva dessa infraestrutura e os principais componentes tecnológicos, metodológicos e operacionais implementados para garantir estabilidade, segurança, desempenho analítico e maturidade institucional do ambiente do projeto.
 
-#### 4.2.1. Estruturação de uma arquitetura distribuída e especializada
+### Estruturação de uma arquitetura distribuída e especializada
 
 A infraestrutura tecnológica do projeto foi estruturada a partir de uma arquitetura distribuída composta por três servidores especializados e integrados, cada um desempenhando funções complementares dentro do fluxo operacional do projeto. O servidor sv-labfsg foi configurado como núcleo de persistência e serviços centrais, concentrando o banco PostgreSQL/PostGIS, a pilha do OpenProject e os mecanismos de armazenamento persistente. O sv-thinkcentre foi dedicado ao processamento técnico e analítico, operando rotinas intensivas em Python e R, além da rstudio-vm para apoio às atividades de modelagem e processamento geoespacial. Já o sv-acesso passou a operar como camada institucional de entrada, publicação e controle de acesso aos serviços internos.
 
@@ -512,7 +510,7 @@ Resultado estratégico:
 
 Implantação de uma arquitetura distribuída e especializada, estruturada em camadas funcionais independentes, permitindo maior controle operacional, segurança dos serviços e preparação para expansão nacional da infraestrutura do projeto.
 
-#### 4.2.2. Consolidação de um ambiente de dados centralizado e confiável
+### Consolidação de um ambiente de dados centralizado e confiável
 
 O ambiente central de dados foi consolidado no servidor sv-labfsg, equipado com PostgreSQL 16 e extensão PostGIS, configurado como núcleo analítico e geoespacial do projeto. O armazenamento foi estruturado sobre RAID1 dedicado aos dados persistentes, garantindo redundância física e maior resiliência operacional.
 
@@ -522,7 +520,7 @@ Resultado estratégico:
 
 Consolidação de um ambiente centralizado de dados geoespaciais com redundância física, separação lógica de domínios e organização analítica escalável, garantindo integridade, auditabilidade e suporte à avaliação em massa em escala nacional
 
-#### 4.2.3. Implantação de capacidade analítica operacional integrada
+### Implantação de capacidade analítica operacional integrada
 
 A capacidade analítica do projeto foi estruturada no servidor sv-thinkcentre, equipado com processador AMD Ryzen 7 5700G, 30 GiB de RAM, armazenamento NVMe para operações rápidas e SSD SATA para persistência complementar. Esse ambiente passou a sustentar as rotinas de ETL, modelagem estatística, processamento espacial e execução de scripts em Python e R utilizados na Prova de Conceito de Florianópolis.
 
@@ -532,7 +530,7 @@ Resultado estratégico:
 
 Implantação de um ambiente analítico integrado e conectado ao núcleo geoespacial do projeto, permitindo processamento contínuo, execução de pipelines complexos e suporte operacional à modelagem em massa.
 
-#### 4.2.4. Criação de uma camada institucional de acesso e publicação
+### Criação de uma camada institucional de acesso e publicação
 
 O servidor sv-acesso foi estruturado como camada institucional de mediação e publicação dos serviços internos do projeto, concentrando DNS interno, proxy HTTP e mecanismos de encaminhamento e autenticação de requisições.
 
@@ -542,7 +540,7 @@ Resultado estratégico:
 
 Criação de camada institucional segura de acesso e publicação, permitindo controle centralizado, redução de riscos operacionais e maior segurança dos ambientes críticos do projeto.
 
-#### 4.2.5. Implementação de estratégia robusta de backup multicamada
+### Implementação de estratégia robusta de backup multicamada
 
 Foi implantada uma política estruturada de backup baseada em múltiplas camadas de preservação e recuperação dos dados. O ambiente passou a operar com backup diário automatizado do OpenProject via systemd, geração de dumps lógicos do PostgreSQL, empacotamento de assets e criação de manifestos com hash para verificação de integridade. Paralelamente, foram implementadas rotinas completas de backup do servidor, incluindo PostgreSQL, artefatos operacionais e repositórios técnicos.
 
@@ -552,7 +550,7 @@ Resultado estratégico:
 
 Implementação de estratégia multicamada de backup e recuperação, assegurando redundância, integridade, rastreabilidade e continuidade operacional do ambiente tecnológico.
 
-#### 4.2.6. Estabelecimento de governança operacional sobre ambiente crítico
+### Estabelecimento de governança operacional sobre ambiente crítico
 
 O servidor sv-labfsg foi formalmente classificado como ambiente crítico da infraestrutura, por concentrar os serviços persistentes, banco geoespacial e aplicações centrais do projeto. Em função disso, foi implantado um fluxo rigoroso de governança operacional para qualquer alteração em produção.
 
@@ -562,7 +560,7 @@ Resultado estratégico:
 
 Estabelecimento de governança formal para ambientes críticos, institucionalizando o controle de mudanças e fortalecendo a segurança operacional do projeto.
 
-#### 4.2.7. Estruturação formal da organização de dados e diretórios
+### Estruturação formal da organização de dados e diretórios
 
 A organização dos dados foi estruturada segundo a especialização funcional dos servidores. No sv-labfsg foi consolidado o diretório /srv/data para armazenamento do PostgreSQL e dos dados persistentes do OpenProject. No sv-thinkcentre foram definidos /srv/dados e /srv/fast como áreas operacionais de processamento e armazenamento técnico. Já a rstudio-vm recebeu estrutura colaborativa dedicada em /srv/rstudio-shared.
 
@@ -572,7 +570,7 @@ Resultado estratégico:
 
 Padronização da estrutura operacional de dados e diretórios, aumentando organização, manutenção, rastreabilidade e capacidade de gestão do ambiente tecnológico.
 
-#### 4.2.8. Implementação de ambiente colaborativo controlado
+### Implementação de ambiente colaborativo controlado
 
 Foi estruturado um ambiente colaborativo controlado no rstudio-vm, baseado em diretório compartilhado institucional (/srv/rstudio-shared) acessado por usuários autorizados via links simbólicos em suas áreas pessoais.
 
@@ -582,7 +580,7 @@ Resultado estratégico:
 
 Implantação de ambiente colaborativo seguro e controlado, permitindo integração técnica entre equipes sem comprometer a segurança e a governança dos dados.
 
-#### 4.2.9. Integração entre infraestrutura local e armazenamento externo institucional
+### Integração entre infraestrutura local e armazenamento externo institucional
 
 A infraestrutura local do projeto foi integrada ao ambiente institucional Synology/NAS do laboratório, utilizado como camada externa de armazenamento, backup e preservação do acervo técnico-operacional.
 
@@ -592,7 +590,7 @@ Resultado estratégico:
 
 Integração entre infraestrutura local e armazenamento institucional externo, fortalecendo a segurança, redundância e continuidade dos dados do projeto.
 
-#### 4.2.10. Consolidação de ambiente preparado para escalabilidade e internalização
+### Consolidação de ambiente preparado para escalabilidade e internalização
 
 A infraestrutura consolidada integra arquitetura distribuída, banco geoespacial estruturado em camadas bronze/prata/ouro, controle de acesso individualizado, versionamento operacional via Git, mecanismos formais de rastreabilidade e governança documentada.
 
@@ -602,9 +600,9 @@ Resultado estratégico:
 
 Consolidação de ambiente tecnológico maduro, escalável, auditável e preparado para expansão nacional e internalização institucional pela Receita Federal do Brasil.
 
-## 4.3. Blocos transversais
+## Blocos transversais
 
-#### 4.3.1. Estudos realizados.
+### Estudos realizados
 
 Além das etapas centrais de modelagem e construção das Plantas de Valores Genéricos (PVGs), o projeto incorporou um conjunto de estudos metodológicos complementares, denominados Blocos Transversais, desenvolvidos com o objetivo de fortalecer a robustez técnica, a cobertura territorial e a capacidade de expansão nacional da metodologia.
 
@@ -642,7 +640,7 @@ De forma integrada, os estudos contribuíram para:
 
 A seguir, são apresentados os principais estudos desenvolvidos no âmbito dos Blocos Transversais.
 
-#### 4.3.1.1. Qualidade das Coordenadas do CNEFE por Nível de Posição
+#### Qualidade das Coordenadas do CNEFE por Nível de Posição
 
 O estudo de qualidade das coordenadas do CNEFE teve como objetivo avaliar a consistência posicional das coordenadas associadas ao Cadastro Nacional de Endereços para Fins Estatísticos (CNEFE), considerando diferentes níveis de precisão espacial e distintos contextos territoriais. A análise buscou compreender o grau de confiabilidade das informações locacionais utilizadas como referência para a estruturação dos agrupamentos territoriais e para a futura modelagem dos valores de referência.
 
@@ -650,7 +648,7 @@ A metodologia adotada baseou-se na análise comparativa da qualidade locacional 
 
 Os resultados demonstraram que o desempenho das coordenadas do CNEFE é heterogêneo e varia significativamente conforme o contexto territorial analisado. Em áreas urbanas mais estruturadas observou-se elevada precisão espacial e maior consistência locacional dos registros. Em contrapartida, regiões com baixa densidade urbana, expansão urbana recente ou menor padronização cadastral apresentaram redução da precisão e maior dispersão espacial. O estudo permitiu identificar padrões distintos de qualidade posicional e demonstrou a necessidade de adoção de mecanismos complementares de validação espacial, especialmente em áreas mais complexas. Como resultado estratégico, o estudo contribuiu para a definição de critérios de controle de qualidade espacial e para o aprimoramento das etapas posteriores de agrupamento territorial e definição dos lotes utilizados na modelagem.
 
-#### 4.3.1.2. Parâmetro de Coordenadas CNEFE × Argis
+#### Parâmetro de Coordenadas CNEFE × Argis
 
 O estudo de comparação entre as coordenadas do CNEFE e as bases geoespaciais derivadas do ArcGIS teve como finalidade avaliar o desempenho espacial das diferentes fontes de dados e definir parâmetros mais adequados para validação e integração territorial. A análise buscou identificar o grau de compatibilidade espacial entre as bases e compreender como diferentes contextos urbanos e regionais influenciam a consistência dos registros utilizados na modelagem.
 
@@ -658,7 +656,7 @@ A metodologia consistiu na realização de análises comparativas entre as coord
 
 Os resultados evidenciaram melhoria significativa no desempenho dos modelos quando utilizadas estratégias adequadas de agrupamento e integração das bases espaciais. Observou-se que a qualidade e a estabilidade das coordenadas variam conforme a classe espacial e o contexto urbano analisado, sendo mais consistentes em áreas com maior estruturação territorial. O estudo demonstrou ainda que nenhuma fonte de dados, isoladamente, apresenta desempenho satisfatório em todos os cenários territoriais, reforçando a necessidade de adoção de abordagens híbridas e mecanismos complementares de validação espacial. Como resultado metodológico, o estudo contribuiu para a definição de parâmetros de integração espacial, melhoria da consistência dos agrupamentos e fortalecimento da qualidade territorial das bases utilizadas no projeto.
 
-#### 4.3.1.3. Agrupamento do CNEFE e Uso de Variáveis OFI
+#### Agrupamento do CNEFE e Uso de Variáveis OFI
 
 O estudo de agrupamento do CNEFE associado ao uso de variáveis da base de ofertas imobiliárias (OFI) teve como objetivo ampliar a cobertura territorial das informações de mercado e melhorar a representatividade espacial da base utilizada na modelagem. A proposta buscou estruturar agrupamentos territoriais mais robustos, capazes de reduzir limitações decorrentes da baixa densidade de ofertas imobiliárias em determinados municípios e regiões do país.
 
@@ -666,7 +664,7 @@ A metodologia adotada envolveu a criação de agrupamentos territoriais em difer
 
 Os resultados demonstraram que a estratégia de agrupamento territorial contribuiu significativamente para ampliar a cobertura espacial da base de ofertas imobiliárias. Os ganhos foram mais evidentes em municípios pequenos e médios, onde os agrupamentos permitiram compensar a escassez de dados de mercado e reduzir vazios territoriais. Também foram identificados avanços importantes na cobertura de setores censitários urbanos e na integração regional das informações imobiliárias. O estudo fortaleceu a estruturação do Observatório do Mercado Imobiliário e contribuiu para ampliar a estabilidade estatística e a representatividade territorial da base nacional de ofertas.
 
-#### 4.3.1.4. Classificação Fuzzy dos Municípios
+#### Classificação Fuzzy dos Municípios
 
 O estudo de classificação fuzzy dos municípios teve como objetivo desenvolver uma metodologia de agrupamento territorial mais flexível e aderente à diversidade urbana e regional brasileira. A proposta buscou superar limitações associadas às classificações rígidas tradicionais, permitindo representar de forma mais adequada as transições e similaridades existentes entre diferentes contextos territoriais.
 
@@ -674,7 +672,7 @@ A metodologia foi baseada na aplicação de lógica fuzzy para construção de c
 
 Os resultados demonstraram que a classificação fuzzy produziu agrupamentos mais estáveis e coerentes com a realidade territorial brasileira. A metodologia permitiu melhor preservação das diferenças regionais, maior flexibilidade na definição dos agrupamentos e redução das distorções associadas às classificações fixas. O estudo evidenciou que abordagens graduais apresentam maior capacidade de representar a complexidade territorial do país, contribuindo para o aprimoramento da modelagem espacial e para a construção de agrupamentos territorialmente mais consistentes.
 
-#### 4.3.1.5. Integração CNEFE + Fuzzy para Definição dos Lotes
+#### Integração CNEFE + Fuzzy para Definição dos Lotes
 
 O estudo de integração entre as informações do CNEFE e a classificação fuzzy teve como objetivo apoiar a definição e priorização dos lotes territoriais utilizados na modelagem dos valores de referência, buscando aumentar a coerência espacial e a estabilidade dos agrupamentos territoriais adotados pelo projeto.
 
@@ -682,7 +680,7 @@ A metodologia integrou análises espaciais do CNEFE, resultados da classificaç�
 
 Os resultados demonstraram que a integração entre as informações do CNEFE e a classificação fuzzy permitiu maior robustez na definição dos lotes territoriais. A metodologia contribuiu para melhorar a combinação entre variáveis territoriais e posicionamento espacial, aumentar a coerência regional dos agrupamentos e fortalecer a capacidade de expansão da base de referência. O estudo também evidenciou ganhos na estabilidade territorial da modelagem e na adaptação dos agrupamentos às diferentes realidades urbanas brasileiras.
 
-#### 4.3.1.6. Variáveis Derivadas de Imagens de Satélite
+#### Variáveis Derivadas de Imagens de Satélite
 
 O estudo de variáveis derivadas de imagens de satélite teve como objetivo enriquecer os modelos de avaliação territorial por meio da incorporação de indicadores espaciais obtidos a partir de técnicas de sensoriamento remoto e inteligência artificial. A proposta buscou ampliar a capacidade de representação das características urbanas e ambientais do território, incorporando variáveis que não estão disponíveis em bases cadastrais tradicionais.
 
@@ -690,7 +688,7 @@ A metodologia utilizou processamento geoespacial, modelos de inteligência artif
 
 Os resultados demonstraram que as variáveis derivadas de sensoriamento remoto ampliam significativamente a capacidade de representação espacial da modelagem territorial. A utilização dos índices permitiu melhorar a caracterização das diferenças intraurbanas, identificar padrões urbanos e ambientais relevantes e enriquecer as variáveis utilizadas na modelagem. O estudo reforçou o potencial do uso integrado de inteligência artificial, imagens de satélite e análise espacial em projetos de avaliação territorial em larga escala, contribuindo para o fortalecimento metodológico da futura modelagem nacional de valores de referência.
 
-#### 4.3.1.7. Mapeamento de Imobiliárias em Municípios < 50 mil Habitantes
+#### Mapeamento de Imobiliárias em Municípios < 50 mil Habitantes
 
 O estudo de mapeamento de imobiliárias em municípios com menos de 50 mil habitantes teve como objetivo ampliar a cobertura da base nacional de ofertas imobiliárias e reduzir vazios territoriais associados à baixa disponibilidade de dados de mercado em municípios de pequeno porte. A iniciativa buscou fortalecer a representatividade territorial da base imobiliária nacional e apoiar a estruturação do Observatório do Mercado Imobiliário.
 
@@ -698,7 +696,7 @@ A metodologia envolveu a identificação dos municípios com até 50 mil habitan
 
 Os resultados demonstraram elevado potencial de ampliação da cobertura territorial da base imobiliária nacional. Foram mapeados 4.889 municípios, identificados 1.549 municípios-alvo e analisados 595 municípios em duas etapas de priorização. O levantamento resultou na identificação de 1.475 imobiliárias distribuídas em 487 municípios. Os resultados evidenciaram forte potencial de expansão da cobertura da base de ofertas, aumento da representatividade de municípios pequenos e redução de vazios de mercado. O estudo demonstrou que municípios de pequeno porte possuem capacidade relevante de contribuição para consolidação de uma base nacional de mercado imobiliário, desde que sejam adotadas estratégias específicas de integração territorial e expansão da coleta de dados.
 
-#### 4.3.1.8. Síntese Integrada dos Estudos
+#### Síntese Integrada dos Estudos
 
 Os estudos desenvolvidos no âmbito dos Blocos Transversais demonstram a construção de uma estratégia metodológica integrada, estruturada para enfrentar os principais desafios associados à modelagem territorial em escala nacional e à futura implementação de um sistema de valores de referência aplicável aos diferentes contextos urbanos brasileiros.
 
@@ -726,7 +724,7 @@ De forma integrada, os Blocos Transversais contribuíram para:
 
 Assim, os estudos não apenas apoiaram tecnicamente as etapas de modelagem e construção das PVGs, mas também estabeleceram fundamentos estratégicos essenciais para a futura internalização, expansão e sustentabilidade operacional da metodologia no âmbito da Receita Federal do Brasil.
 
-## 4.4. Plataforma para visualização dos dados
+## Plataforma para visualização dos dados
 
 A Plataforma para Visualização dos Dados consiste em um sistema de informação territorial web configurado para apoiar o acompanhamento, a análise e a visualização das informações produzidas no âmbito do projeto, permitindo a consolidação integrada de dados geoespaciais e alfanuméricos em ambiente online.
 

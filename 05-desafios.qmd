@@ -1,7 +1,5 @@
 # Desafios e riscos estruturais
 
-•	Desafios e riscos estruturais
-
 O desenvolvimento da Prova de Conceito (PoC) permitiu identificar um conjunto relevante de desafios e riscos estruturais associados às diferentes etapas do projeto, evidenciando que a construção de uma metodologia nacional de avaliação em massa depende não apenas da qualidade dos modelos estatísticos desenvolvidos, mas principalmente da maturidade dos processos de integração territorial, padronização de dados, infraestrutura tecnológica e governança operacional. Conforme identificado ao longo das análises realizadas, os desafios observados possuem caráter técnico, operacional e institucional, refletindo a elevada complexidade envolvida na consolidação de bases heterogêneas, na modelagem territorial em larga escala e na futura internalização da metodologia pela Receita Federal do Brasil.
 
 Na Etapa 1 — Observatório do Mercado Imobiliário — os principais desafios estiveram relacionados à qualidade das bases de dados utilizadas na estruturação do Data Lake e dos processos de geocodificação e integração das ofertas imobiliárias. As análises evidenciaram elevado nível de ruído em parte dos dados provenientes de APIs e fontes externas, incluindo inconsistências em CEPs, ausência de numeração predial, divergências de logradouro e preenchimentos inadequados de campos cadastrais. Esse cenário impôs a necessidade de tratamento intensivo das informações, incluindo limpeza, harmonização e padronização semântica dos registros, condição essencial para viabilizar análises territoriais consistentes.
