@@ -521,47 +521,71 @@ Tabela&nbsp;C.1: Tabela dados cartográficos de entrada da ETAPA 2
 <p>A padronização foi uma das frentes centrais do trimestre. O planejamento das atividades estabeleceu como regras de construção das camadas de dados na versão <strong>Prata</strong> o uso do SRC padrão SIRGAS 2000, nomenclatura conforme o dicionário de dados, formato GeoPackage para vetores como forma de interoperabilidade de dados internos, GeoTIFF para dados matriciais (raster), codificação UTF-8, armazenamento em banco de dados geográficos padronizado conforme a OGC e estrutura relacional no PostgreSQL/PostGIS. Também determina reprojeção, padronização de campos, correções geométricas, eliminação de duplicidades, normalização de atributos e verificação pós-padronização.</p>
 <p>As atividades do trimestre mostram que a equipe trabalhou intensamente na normalização da nomenclatura de camadas e atributos e na validação da planilha de levantamento de camadas e dicionário de dados. O que resultou no registro e controle da estrutura e modelagem de dados espaciais materializados nas tabelas apresentadas em <em>Anexo Dicionário e modelagem de dados espaciais</em>.</p>
 <p>Para controle da execução dos trabalho, a padronização da estrutura de armazenamento dos dados também foi tratada o que gerou a seguinte instrução de trabalho para produção de dados no formato Geopackage <a href="https://quarto.org/">http://150.162.76.87:8080/projects/gt-2-cvg/wiki/estrutura-de-arquivos-geopackge</a></p>
-<pre><code>
-Os arquivos no formato gpkg gerados na elaboração da base cartográfica e variáveis geográficas serão estruturados e nominados da seguinte forma:
+<pre><code>Os arquivos no formato gpkg gerados na elaboração da base cartográfica e 
+variáveis geográficas serão estruturados e nominados da seguinte forma:
 
 Etapa do processo:
 
-* BRONZE: local de armazenamento de dados brutos e originais. Armazena as fontes primárias de todo o processo, não é a área para processar e ajustar dados, apenas armazenar as fontes originárias.  
-* PRATA: local de armazenamento dos dados em processamento. Armazena os dados processados, editados e ajustados pelos membros do GT-2.  
+* BRONZE: local de armazenamento de dados brutos e originais. Armazena as fontes
+primárias de todo o processo, não é a área para processar e ajustar dados, 
+apenas armazenar as fontes originárias.  
+* PRATA: local de armazenamento dos dados em processamento. Armazena os dados 
+processados, editados e ajustados pelos membros do GT-2.  
 * OURO: local de armazenamento de dados finais entregues.
 
 Nomenclatura de arquivos:  
-BRONZE: na área bronze a nomenclatura dos arquivos gpkg seguinte a seguinte padronização  
+BRONZE: na área bronze a nomenclatura dos arquivos gpkg seguinte a seguinte 
+padronização  
 /GT-2-CARTOGRAFIA/  
  /UF/ \# identifica o unidade da federação  
-  /GEODIGO\_MUNICIPIO/ \#identifica o município pelo geocodigo do IBGE e o nome do município  
-    /Geocodigo\_municipio\_rnnnn\_yyyy-mm-dd.gpkg /\# identifica o nome do arquivo pelo geocodigo do IBGE e o nome do município, número da revisão, data (ano-mês-dia)  
-Exemplo: Arquivos gpkg identificado por geocodigo, município, revisão e data de entrega:  
+  /GEODIGO\_MUNICIPIO/ \#identifica o município pelo geocodigo do IBGE e o nome 
+  do município  
+    /Geocodigo\_municipio\_rnnnn\_yyyy-mm-dd.gpkg /\# identifica o nome do 
+    arquivo pelo geocodigo do IBGE e o nome do município, número da revisão, 
+    data (ano-mês-dia)  
+Exemplo: Arquivos gpkg identificado por geocodigo, município, revisão e data de 
+entrega:  
  4205407\_Florianopolis\_r001\_2026-02-12.gpkg  
  4205407\_Florianopolis\_r002\_2026-03-01.gpkg
 
 /GT-2-CARTOGRAFIA/  
-/\_GLOBAL/ \# identifica os arquivos que concentram dados para todas as UFs, por exemplo, os dados brutos da REGIC.
+/\_GLOBAL/ \# identifica os arquivos que concentram dados para todas as UFs, por
+exemplo, os dados brutos da REGIC.
 
-PRATA: na área prata, por ter a característica de trabalho e processamento de dados tem uma subdivisão interna, mas a nomenclatura dos arquivos segue a mesma definição da versão bronze.  
-parcial: armazena arquivos transitórios, rascunhos, em processamento ou edição. Não requer controle de versionamento e nem padronização de nomenclatura fixa e rígida. A equipe define para cada município a estrutura de trabalho e processamento. Ao final do processamento dos dados e a versão prata final será armazenada no diretório final com nomenclatura padronizada e os arquivos intermediários poderão ser removidos.  
+PRATA: na área prata, por ter a característica de trabalho e processamento de 
+dados tem uma subdivisão interna, mas a nomenclatura dos arquivos segue a mesma 
+definição da versão bronze.  
+parcial: armazena arquivos transitórios, rascunhos, em processamento ou edição. 
+Não requer controle de versionamento e nem padronização de nomenclatura fixa e 
+rígida. A equipe define para cada município a estrutura de trabalho e 
+processamento. Ao final do processamento dos dados e a versão prata final será 
+armazenada no diretório final com nomenclatura padronizada e os arquivos 
+intermediários poderão ser removidos.  
 final: armazena os arquivos finais processados e ajustados.  
 /GT-2-CARTOGRAFIA/  
   /UF/ \# identifica o unidade da federação  
-    /GEODIGO\_MUNICIPIO/ \#identifica o município pelo geocodigo do IBGE e o nome do município  
+    /GEODIGO\_MUNICIPIO/ \#identifica o município pelo geocodigo do IBGE e o 
+    nome do município  
       /parcial/ \# rascunhos, em edição (pode apagar, não é “oficial”)  
        /final/ \# revisões “congeladas” e imutáveis  
-      /Geocodigo\_municipio\_rnnnn\_yyyy-mm-dd.gpkg /\# identifica o nome do arquivo pelo geocodigo do IBGE e o nome do município, número da revisão, data (ano-mês-dia)  
-Exemplo: Arquivos gpkg identificado por geocodigo, município, revisão e data de entrega:  
+      /Geocodigo\_municipio\_rnnnn\_yyyy-mm-dd.gpkg /\# identifica o nome do 
+      arquivo pelo geocodigo do IBGE e o nome do município, número da revisão, 
+      data (ano-mês-dia)  
+Exemplo: Arquivos gpkg identificado por geocodigo, município, revisão e data de 
+entrega:  
  4205407\_Florianopolis\_r001\_2026-02-12.gpkg  
  4205407\_Florianopolis\_r002\_2026-03-01.gpkg
 
 OURO: segue o mesmo padrão definido para a versão bronze.  
 /GT-2-CARTOGRAFIA/  
   /UF/ \# identifica o unidade da federação  
-    /GEODIGO\_MUNICIPIO/ \#identifica o município pelo geocodigo do IBGE e o nome do município  
-     /Geocodigo\_municipio\_rnnnn\_yyyy-mm-dd.gpkg /\# identifica o nome do arquivo pelo geocodigo do IBGE e o nome do município, número da revisão, data (ano-mês-dia)  
-Exemplo: Arquivos gpkg identificado por geocodigo, município, revisão e data de entrega:  
+    /GEODIGO\_MUNICIPIO/ \#identifica o município pelo geocodigo do IBGE e o 
+    nome do município  
+     /Geocodigo\_municipio\_rnnnn\_yyyy-mm-dd.gpkg /\# identifica o nome do 
+     arquivo pelo geocodigo do IBGE e o nome do município, número da revisão, 
+     data (ano-mês-dia)  
+Exemplo: Arquivos gpkg identificado por geocodigo, município, revisão e data de 
+entrega:  
  4205407\_Florianopolis\_r001\_2026-02-12.gpkg  
  4205407\_Florianopolis\_r002\_2026-03-01.gpkg</code></pre>
 <p>O efeito prático da padronização foi decisivo para a produção das bases territoriais do trimestre. Foi essa disciplina de nomenclatura, organização, codificação e estruturação que permitiu consolidar 11 municípios em formato geopackage versionado na camada Bronze, estruturar os mesmos 11 municípios na camada Prata, organizar a carga em banco espacial e dar suporte à comparação entre revisões e entregas. Assim, a padronização não deve ser vista apenas como um requisito de documentação, mas como condição efetiva de interoperabilidade, controle de versões, rastreabilidade e futura escalabilidade da ETAPA 2.</p>
@@ -585,7 +609,7 @@ Exemplo: Arquivos gpkg identificado por geocodigo, município, revisão e data d
 <h3 data-number="C.3.1" class="anchored" data-anchor-id="infraestrutura-tecnológica-e-banco-de-dados"><span class="header-section-number">C.3.1</span> Infraestrutura tecnológica e banco de dados</h3>
 <p>Esta atividade compreendeu a organização da infraestrutura tecnológica de suporte à etapa. Foi estruturado o ambiente de banco espacial, inicialmente com a verificação de disponibilidade de máquina para servidor temporário e, em seguida, com a preparação do ambiente PostgreSQL/PostGIS para receber a integração entre Cartografia e Estimação.</p>
 <p>Também foram definidos os ambientes de armazenamento e circulação dos artefatos técnicos, com uso de Synology e Google Drive para organização de dados brutos, arquivos intermediários e entregas revisadas. Essa infraestrutura permitiu organizar a produção em ciclos rastreáveis, controlar versões, manter backup dos artefatos e preparar a transição do fluxo baseado apenas em arquivos para um fluxo apoiado em persistência em banco espacial.</p>
-<p>No plano técnico, essa frente incluiu ainda a definição da estrutura inicial dos bancos bronze, prata e ouro, a discussão sobre schemas por unidade da federação, o carregamento inicial de camadas cartográficas no PostGIS e a preparação da arquitetura necessária para receber a integração entre os dados territoriais e as amostras do OMI. Conforme exemplificados na figura (<a href="#fig-estrutura-de-armazenamento-fonte-labFSG" class="quarto-xref">Figura&nbsp;<span>C.1</span></a>) e (<a href="#fig-estrutura-de-armazenamento-fonte-SETIC" class="quarto-xref">Figura&nbsp;<span>C.2</span></a>)</p>
+<p>No plano técnico, essa frente incluiu ainda a definição da estrutura inicial dos bancos bronze, prata e ouro, a discussão sobre schemas por unidade da federação, o carregamento inicial de camadas cartográficas no PostGIS e a preparação da arquitetura necessária para receber a integração entre os dados territoriais e as amostras do OMI. Conforme exemplificados nas figuras <a href="#fig-estrutura-de-armazenamento-fonte-labFSG" class="quarto-xref"><span>C.1</span></a> e <a href="#fig-estrutura-de-armazenamento-fonte-SETIC" class="quarto-xref"><span>C.2</span></a>.</p>
 <div id="fig-estrutura-de-armazenamento-fonte-labFSG" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-estrutura-de-armazenamento-fonte-labFSG-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -611,14 +635,14 @@ Figura&nbsp;C.2: Estrutura de armazenamento de dados no Postgresql. Fonte SETIC:
 <h3 data-number="C.3.2" class="anchored" data-anchor-id="documentação-do-fluxo-operacional-e-modelagem-de-dados"><span class="header-section-number">C.3.2</span> Documentação do fluxo operacional e modelagem de dados</h3>
 <p>Esta atividade concentrou-se na documentação do processo operacional e na modelagem da estrutura de dados espaciais da ETAPA 2. Neste trimestre foi formalizada a necessidade de documentar integralmente o processo de preparação e organização dos dados cartográficos e de converter essa documentação em uma instrução de trabalho representativa do processo de extração. Ao longo das reuniões técnicas, a equipe passou a validar a planilha de levantamento de camadas e dicionário de dados, discutir a modelagem de dados para camadas e variáveis geográficas, revisar a normalização de nomenclaturas e amadurecer a descrição do fluxo operacional.</p>
 <p>Esse trabalho evoluiu para a consolidação de uma versão inicial do fluxo operacional, para a revisão contínua do dicionário de dados e para o aprofundamento da modelagem lógica do banco espacial com foco nas camadas <strong>Bronze</strong> e <strong>Prata</strong>. A necessidade de alinhar atributos das camadas de dados, validar a estrutura inicial proposta, gerar um DER para visualização dos relacionamentos e complementar a estrutura lógica das camadas em função das variáveis geográficas a serem produzidas foram os grandes desafios enfrentados nesta frente de atuação da equipe da ETAPA 2.</p>
-<p>Em termos de produto, essa frente subsidia diretamente a geração da documentação do fluxo operacional, a consolidação do dicionário de dados e a construção da base conceitual necessária para a persistência estruturada dos dados cartográficos e das variáveis geográficas no banco espacial. Conforme exemplificados na figura (<a href="#fig-modelo-preliminar-do-banco-de-dados" class="quarto-xref">Figura&nbsp;<span>C.3</span></a>).</p>
+<p>Em termos de produto, essa frente subsidia diretamente a geração da documentação do fluxo operacional, a consolidação do dicionário de dados e a construção da base conceitual necessária para a persistência estruturada dos dados cartográficos e das variáveis geográficas no banco espacial. Conforme exemplificados na <a href="#fig-modelo-preliminar-do-banco-de-dados" class="quarto-xref">Figura&nbsp;<span>C.3</span></a>.</p>
 <div id="fig-modelo-preliminar-do-banco-de-dados" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-modelo-preliminar-do-banco-de-dados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="img/bct/figura_7.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-modelo-preliminar-do-banco-de-dados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;C.3: Figura 3 – Modelo preliminar do banco de dados espacial da ETAPA 2
+Figura&nbsp;C.3: Modelo preliminar do banco de dados espacial da ETAPA 2
 </figcaption>
 </figure>
 </div>
@@ -641,14 +665,14 @@ Figura&nbsp;C.3: Figura 3 – Modelo preliminar do banco de dados espacial da ET
 <li>Por fim, no quinto estágio, ocorre a extração das edificações a partir da base Google Open Buildings, com recorte pela área urbana e geração de pontos representativos com atributos básicos como área estimada e nível de confiança da detecção.</li>
 </ul>
 <p>Esse pipeline foi relevante porque estabeleceu uma rotina reprodutível, escalável e tecnicamente consistente para montagem da base cartográfica bruta municipal, integrando fontes oficiais, colaborativas e derivadas de imagens, com padronização de nomenclatura, coerência espacial entre camadas e preparação objetiva dos insumos para as etapas posteriores de qualificação, modelagem e derivação de variáveis geográficas. Maiores detalhes deste pipeline podem ser verificados no <em>Anexo Pipeline de Geoprocessamento da Base Cartográfica da Camada Bronze</em>.</p>
-<p>A lista dos municípios priorizados neste trimestre para produção dos dados cartográficos foram: Florianópolis, Fortaleza, Campo Grande, Porto Velho, Belo Horizonte, Rio de Janeiro, Curitiba, Salvador, Manaus, Cuiabá e Cajuri. Conforme exemplificados na figura (<a href="#fig-arquivos-geopackage-produzidos" class="quarto-xref">Figura&nbsp;<span>C.4</span></a>), (<a href="#fig-arquivos-geopackage-organizados" class="quarto-xref">Figura&nbsp;<span>C.5</span></a>), (<a href="#fig-exemplificacao-do-conteudo-de-um-arquivo-geopackage-da-camada-bronze" class="quarto-xref">Figura&nbsp;<span>C.6</span></a>)e (<span class="quarto-unresolved-ref">?fig-exemplicacao-do-conteudo-de-um-arquivo-geopackage-da-camada-prata</span>).</p>
+<p>A lista dos municípios priorizados neste trimestre para produção dos dados cartográficos foram: Florianópolis, Fortaleza, Campo Grande, Porto Velho, Belo Horizonte, Rio de Janeiro, Curitiba, Salvador, Manaus, Cuiabá e Cajuri. Conforme exemplificados nas figuras <a href="#fig-arquivos-geopackage-produzidos" class="quarto-xref"><span>C.4</span></a>, <a href="#fig-arquivos-geopackage-organizados" class="quarto-xref"><span>C.5</span></a>, <a href="#fig-ex-conteudo-arquivo-gpkg-camada-bronze" class="quarto-xref"><span>C.6</span></a> e <a href="#fig-ex-conteudo-arquivo-gpkg-camada-prata" class="quarto-xref"><span>C.7</span></a>.</p>
 <div id="fig-arquivos-geopackage-produzidos" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-arquivos-geopackage-produzidos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="img/bct/figura_8.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-arquivos-geopackage-produzidos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;C.4: Figura 4 – Arquivos geopackage produzidos e versionados
+Figura&nbsp;C.4: Arquivos geopackage produzidos e versionados
 </figcaption>
 </figure>
 </div>
@@ -658,27 +682,27 @@ Figura&nbsp;C.4: Figura 4 – Arquivos geopackage produzidos e versionados
 <img src="img/bct/figura_9.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-arquivos-geopackage-organizados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;C.5: Figura 5 – Arquivos geopackage organizados em diretórios estruturados
+Figura&nbsp;C.5: Arquivos geopackage organizados em diretórios estruturados
 </figcaption>
 </figure>
 </div>
-<div id="fig-exemplificacao-do-conteudo-de-um-arquivo-geopackage-da-camada-bronze" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-ex-conteudo-arquivo-gpkg-camada-bronze" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-exemplificacao-do-conteudo-de-um-arquivo-geopackage-da-camada-bronze-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-ex-conteudo-arquivo-gpkg-camada-bronze-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="img/bct/figura_10.png" class="img-fluid figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-exemplificacao-do-conteudo-de-um-arquivo-geopackage-da-camada-bronze-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;C.6: Figura 6 – Exemplificação do conteúdo de um arquivo geopackage da camada Bronze
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ex-conteudo-arquivo-gpkg-camada-bronze-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;C.6: Exemplificação do conteúdo de um arquivo geopackage da camada Bronze
 </figcaption>
 </figure>
 </div>
-<div id="fig-exemplificacao-do-conteudo-de-um-arquivo-geopackage-da-camada-prata" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-ex-conteudo-arquivo-gpkg-camada-prata" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-exemplificacao-do-conteudo-de-um-arquivo-geopackage-da-camada-prata-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-ex-conteudo-arquivo-gpkg-camada-prata-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="img/bct/figura_11.png" class="img-fluid figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-exemplificacao-do-conteudo-de-um-arquivo-geopackage-da-camada-prata-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;C.7: Figura 7 – Exemplificação do conteúdo de um arquivo geopackage da camada Prata
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ex-conteudo-arquivo-gpkg-camada-prata-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;C.7: Exemplificação do conteúdo de um arquivo geopackage da camada Prata
 </figcaption>
 </figure>
 </div>
@@ -759,12 +783,12 @@ Export.image.toDrive({
 <p>A sexta frente abrangeu a produção, classificação, revisão e ampliação das variáveis geográficas. Em um primeiro momento, o trabalho concentrou-se na análise das variáveis registradas nas planilhas de controle, identificando sua correlação com a ETAPA 2, suas fontes primárias e sua representação cartográfica. Com base nisso, a equipe passou a classificar as variáveis segundo a viabilidade de obtenção de suas fontes, distinguindo itens de geração fácil, em análise e difícil. O <em>Anexo Registro e controle das variáveis geográficas</em> ilustra o resultado desta atividade de classificação e controle das variáveis geográficas.</p>
 <p>Em seguida, foi realizada uma primeira rodada de processamento das variáveis consideradas mais fáceis, acompanhada do refinamento metodológico das variáveis mais complexas e da revisão de sua camada de referência espacial. Ao longo do trimestre, o conjunto de variáveis consideradas incluiu, entre outras, distância à massa d’água, distância ao litoral, percentual de impermeabilização, quantidade de lotes, tamanho do lote médio e variáveis municipais como FPM, FUNDEB, renda per capita, IDH e categoria turística. Em abril, a equipe da ETAPA 2 definiu a separação explícita entre variáveis vinculadas à amostra do OMI, ao setor censitário e ao município, além da disponibilização de das variáveis geradas na versão da camada Prata.</p>
 <p>Esse conjunto de atividades foi essencial para demonstrar a viabilidade técnica da estrutura de variáveis geográficas da etapa, ainda que parte delas permanecesse dependente de complementação de fontes, refinamento metodológico ou liberação de insumos externos. As tabelas a seguir resumem as variáveis geográficas produzidas e agregadas por setor censitário, município e amostra do OMI.</p>
-<div id="tbl-tabela-das-variáveis-geográficas-agregadas-por-setor-censitário" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-var-geo-agregadas-por-SC" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tabela-das-variáveis-geográficas-agregadas-por-setor-censitário-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-var-geo-agregadas-por-SC-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabela&nbsp;C.2: Tabela das variáveis geográficas agregadas por setor censitário
 </figcaption>
-<div aria-describedby="tbl-tabela-das-variáveis-geográficas-agregadas-por-setor-censitário-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="tbl-var-geo-agregadas-por-SC-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 14%">
@@ -1260,12 +1284,12 @@ Tabela&nbsp;C.2: Tabela das variáveis geográficas agregadas por setor censitá
 </div>
 </figure>
 </div>
-<div id="tbl-tabela-das-variáveis-geográficas-agregadas-por-muniípio" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-var-geo-agregadas-por-municipio" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tabela-das-variáveis-geográficas-agregadas-por-muniípio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-var-geo-agregadas-por-municipio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabela&nbsp;C.3: Tabela das variáveis geográficas agregadas por município
 </figcaption>
-<div aria-describedby="tbl-tabela-das-variáveis-geográficas-agregadas-por-muniípio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="tbl-var-geo-agregadas-por-municipio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 14%">
@@ -1599,8 +1623,13 @@ Tabela&nbsp;C.3: Tabela das variáveis geográficas agregadas por município
 </div>
 </figure>
 </div>
+<div id="tbl-var-geo-agregadas-por-amostra-do-OMI" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-var-geo-agregadas-por-amostra-do-OMI-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;C.4: Tabela das variáveis geográficas agregadas por amostra do OMI
+</figcaption>
+<div aria-describedby="tbl-var-geo-agregadas-por-amostra-do-OMI-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
-<caption>Tabela das variáveis geográficas agregadas por amostra do OMI{#tbl-tabela-das-variáveis-geográficas-agregadas-por-amostra-do-OMI}</caption>
 <colgroup>
 <col style="width: 14%">
 <col style="width: 14%">
@@ -2137,6 +2166,9 @@ Tabela&nbsp;C.3: Tabela das variáveis geográficas agregadas por município
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 </section>
 <section id="poc-florianópolis" class="level3" data-number="C.3.5">
 <h3 data-number="C.3.5" class="anchored" data-anchor-id="poc-florianópolis"><span class="header-section-number">C.3.5</span> POC Florianópolis</h3>
@@ -2151,35 +2183,35 @@ Tabela&nbsp;C.3: Tabela das variáveis geográficas agregadas por município
 <p>A organização das bases foi estruturada segundo o princípio de separação por camadas, versionamento e rastreabilidade. Na Bronze, permanecem os dados brutos cartográficos e secundários; na Prata, os dados organizados, padronizados, integrados e saneados; na Ouro, a entrega final homologada.</p>
 <p>O manual do <em>Fluxo de Geração da Base Cartográfica e das Variáveis Geográficas</em>, que foi criado neste trimestre e ainda está em desenvolvimento, deixa claro que toda entrada, transformação e saída deve possuir identificação de origem, data e responsável, e que as camadas devem manter convenção de nomenclatura consistente e histórico de versões.</p>
 <p>Conforme apresentado no item Padronização, a codificação dos arquivos GeoPackage seguiu nomenclatura que permite rastreabilidade e auditabilidade. A possibilidade de armazenamento dos arquivos GeoPackage na estrutura do Synology é a garantia de auditabilidade, rastreabilidade e segurança dos arquivos dentro do LabFSG.</p>
-<p>A figura (<span class="quarto-unresolved-ref">?fig-exemplificacao-da-organizacao-de-arquivos-camada-prata-1</span>) e (<a href="#fig-exemplicacao-da-organizacao-de-arquivos-camada-prata-2" class="quarto-xref">Figura&nbsp;<span>C.9</span></a>) exemplifica a estrutura de armazenamento de arquivos geopackage na qual é possível verificar a localização do arquivo, sua data, o responsável pela criação ou modificação e outros detalhes que identificam o arquivo.</p>
-<div id="fig-exemplicacao-da-organizacao-de-arquivos-camada-prata-1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<p>As Figuras <a href="#fig-ex-org-arquivos-camada-prata-1" class="quarto-xref"><span>C.8</span></a> e <a href="#fig-ex-org-arquivos-camada-prata-2" class="quarto-xref"><span>C.9</span></a> exemplificam a estrutura de armazenamento de arquivos geopackage na qual é possível verificar a localização do arquivo, sua data, o responsável pela criação ou modificação e outros detalhes que identificam o arquivo.</p>
+<div id="fig-ex-org-arquivos-camada-prata-1" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-exemplicacao-da-organizacao-de-arquivos-camada-prata-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-ex-org-arquivos-camada-prata-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="img/bct/figura_12.png" class="img-fluid figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-exemplicacao-da-organizacao-de-arquivos-camada-prata-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;C.8: Figura 8 – Exemplificação da organização de arquivos geopackage da camada Prata
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ex-org-arquivos-camada-prata-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;C.8: Exemplificação da organização de arquivos geopackage da camada Prata
 </figcaption>
 </figure>
 </div>
-<div id="fig-exemplicacao-da-organizacao-de-arquivos-camada-prata-2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-ex-org-arquivos-camada-prata-2" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-exemplicacao-da-organizacao-de-arquivos-camada-prata-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-ex-org-arquivos-camada-prata-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="img/bct/figura_12.1.png" class="img-fluid figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-exemplicacao-da-organizacao-de-arquivos-camada-prata-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;C.9: Figura 9 – Exemplificação da organização de arquivos geopackage da camada Prata
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ex-org-arquivos-camada-prata-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;C.9: Exemplificação da organização de arquivos geopackage da camada Prata
 </figcaption>
 </figure>
 </div>
-<p>A organização das bases foi definida com ênfase em versionamento, rastreabilidade e separação entre áreas de trabalho e entregas congeladas. Para a camada Bronze, foi definido um padrão de armazenamento por UF e município, com nome de arquivo padronizado contendo geocódigo, nome do município, número de revisão e data. Para a camada Prata, foi estabelecida separação entre pasta parcial, destinada a rascunhos e edições, e pasta final, destinada a revisões congeladas e imutáveis.Conforme exemplificados nas figuras (<a href="#fig-ilustracao-da-organizacao" class="quarto-xref">Figura&nbsp;<span>C.10</span></a>), (<a href="#fig-ilustracao-da-organizacao-da-camada-bronze" class="quarto-xref">Figura&nbsp;<span>C.11</span></a>), (<a href="#fig-ilustracao-da-organizacao-da-camada-prata" class="quarto-xref">Figura&nbsp;<span>C.12</span></a>), (<a href="#fig-ilustracao-da-organizacao-da-camada-prata" class="quarto-xref">Figura&nbsp;<span>C.12</span></a>) e (<a href="#fig-ilustracao-da-organizacao-da-camada-ouro" class="quarto-xref">Figura&nbsp;<span>C.13</span></a>).</p>
+<p>A organização das bases foi definida com ênfase em versionamento, rastreabilidade e separação entre áreas de trabalho e entregas congeladas. Para a camada Bronze, foi definido um padrão de armazenamento por UF e município, com nome de arquivo padronizado contendo geocódigo, nome do município, número de revisão e data. Para a camada Prata, foi estabelecida separação entre pasta parcial, destinada a rascunhos e edições, e pasta final, destinada a revisões congeladas e imutáveis. Conforme exemplificados nas figuras <a href="#fig-ilustracao-da-organizacao" class="quarto-xref"><span>C.10</span></a>, <a href="#fig-ilustracao-da-organizacao-da-camada-bronze" class="quarto-xref"><span>C.11</span></a>, <a href="#fig-ilustracao-da-organizacao-da-camada-prata" class="quarto-xref"><span>C.12</span></a>, <a href="#fig-ilustracao-da-organizacao-da-camada-prata" class="quarto-xref"><span>C.12</span></a> e <a href="#fig-ilustracao-da-organizacao-da-camada-ouro" class="quarto-xref"><span>C.13</span></a>.</p>
 <div id="fig-ilustracao-da-organizacao" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ilustracao-da-organizacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="img/bct/figura_13.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ilustracao-da-organizacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;C.10: Figura 10 - Ilustração da organização dos dados e esquemas
+Figura&nbsp;C.10: Ilustração da organização dos dados e esquemas
 </figcaption>
 </figure>
 </div>
@@ -2189,7 +2221,7 @@ Figura&nbsp;C.10: Figura 10 - Ilustração da organização dos dados e esquemas
 <img src="img/bct/figura_13.1.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ilustracao-da-organizacao-da-camada-bronze-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;C.11: Figura 11 - Ilustração da organização dos dados e esquemas da camada bronze
+Figura&nbsp;C.11: Ilustração da organização dos dados e esquemas da camada bronze
 </figcaption>
 </figure>
 </div>
@@ -2199,7 +2231,7 @@ Figura&nbsp;C.11: Figura 11 - Ilustração da organização dos dados e esquemas
 <img src="img/bct/figura_13.2.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ilustracao-da-organizacao-da-camada-prata-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;C.12: Figura 12 - Ilustração da organização dos dados e esquemas da camada prata
+Figura&nbsp;C.12: Ilustração da organização dos dados e esquemas da camada prata
 </figcaption>
 </figure>
 </div>
@@ -2209,7 +2241,7 @@ Figura&nbsp;C.12: Figura 12 - Ilustração da organização dos dados e esquemas
 <img src="img/bct/figura_13.3.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ilustracao-da-organizacao-da-camada-ouro-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;C.13: Figura 13 - Ilustração da organização dos dados e esquemas da camada ouro
+Figura&nbsp;C.13: Ilustração da organização dos dados e esquemas da camada ouro
 </figcaption>
 </figure>
 </div>
@@ -2218,7 +2250,7 @@ Figura&nbsp;C.13: Figura 13 - Ilustração da organização dos dados e esquemas
 <p>A ingestão de dados geográficos foi definida como um procedimento automatizado de carga de arquivos GeoPackage para o banco PostgreSQL/PostGIS, aplicável à mesma lógica operacional das camadas Bronze e Prata. O processo pode ser executado via QGIS ou via scripts Python em terminal, mediante configuração prévia das credenciais de acesso, definição do schema de destino e indicação do arquivo-fonte a ser processado.</p>
 <p>Como regra de negócio, o procedimento distingue dois cenários: criação inicial, quando o esquema ainda não possui tabelas e a carga ocorre por inserção completa, e atualização/apêndice, quando as camadas já existem e novas revisões precisam ser incorporadas. Para preservar a integridade do ambiente, os scripts possuem trava de segurança para evitar sobrescrita indevida, extraem automaticamente metadados a partir do nome do arquivo — como revisão e data de produção —, padronizam nomes de camadas e colunas em minúsculo e forçam a geometria para tipos Multi. O processo também gera dois níveis de rastreabilidade: feedback em tempo real no console do QGIS ou terminal, com volumetria por camada importada, e registro histórico na tabela public.log_ingestao_dados, com status de processamento, SRID de origem, quantidade de feições e observações técnicas em caso de erro. Além disso, após a carga, cada tabela pode receber mecanismo de auditoria para registrar alterações futuras. Essa sistemática reforça a padronização, a rastreabilidade e a auditabilidade do fluxo de ingestão, tanto para a entrada dos dados brutos na Bronze quanto para a evolução dos dados tratados e revisados na Prata.</p>
 <table class="caption-top table">
-<caption>Tabela Organização da ingestão de dados no banco de dados Postgresql{#tbl-tabela-Organização-da-ingestão-de-dados-no-banco-de-dados-Postgresql}</caption>
+<caption>Tabela Organização da ingestão de dados no banco de dados Postgresql {#tblorg-ingestao-dados-no-Postgresql}</caption>
 <colgroup>
 <col style="width: 33%">
 <col style="width: 33%">
@@ -2305,7 +2337,7 @@ Figura&nbsp;C.13: Figura 13 - Ilustração da organização dos dados e esquemas
 <img src="img/bct/figura_14.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-exemplificacao-do-conteudo-da-tabela-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;C.14: Figura 14 – Exemplificação do conteúdo da tabela de controle de ingestão de dados
+Figura&nbsp;C.14: Exemplificação do conteúdo da tabela de controle de ingestão de dados
 </figcaption>
 </figure>
 </div>
@@ -2316,7 +2348,7 @@ Figura&nbsp;C.14: Figura 14 – Exemplificação do conteúdo da tabela de contr
 <img src="img/bct/figura_15.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-organizacao-da-auditoria-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;C.15: Figura 15 – Organização da auditoria de dados no banco de dados Postgresql
+Figura&nbsp;C.15: Organização da auditoria de dados no banco de dados Postgresql
 </figcaption>
 </figure>
 </div>
@@ -2326,7 +2358,7 @@ Figura&nbsp;C.15: Figura 15 – Organização da auditoria de dados no banco de 
 <img src="img/bct/figura_16.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-exemplificacao-de-registro-de-auditoria-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;C.16: Figura 16 – Exemplificação de registro de auditoria em camadas de dados estruturados
+Figura&nbsp;C.16: Exemplificação de registro de auditoria em camadas de dados estruturados
 </figcaption>
 </figure>
 </div>
@@ -2336,20 +2368,15 @@ Figura&nbsp;C.16: Figura 16 – Exemplificação de registro de auditoria em cam
 <img src="img/bct/figura_16.1.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-exemplificacao-de-registro-de-auditoria-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;C.17: Figura 17 – Exemplificação de registro de auditoria em camadas de dados estruturados
+Figura&nbsp;C.17: Exemplificação de registro de auditoria em camadas de dados estruturados
 </figcaption>
 </figure>
 </div>
 <p>O Script Python de ingestão e organização de dados é ilustrado pelo código apresentado a seguir e a versão completa para terminal Python e QGIS é apresentada no Anexo Ingestão de dados no banco de dados espacial.</p>
-<pre><code>
-import psycopg2
-
+<pre><code>import psycopg2
 import os
-
 import re
-
 import subprocess
-
 import sys
 
 \# \--- CONFIGURAÇÕES DE CONEXÃO \---
@@ -2358,7 +2385,8 @@ import sys
 
 \# Opção: BANCO LOCAL
 
-host, port, db\_name, user, password, schema\_destino \= "localhost", "5432", "bronze", "postgres", "postgres", "mg"
+host, port, db\_name, user, password, schema\_destino \= "localhost", "5432", 
+"bronze", "postgres", "postgres", "mg"
 
 \# \--- CONFIGURAÇÃO DE ARQUIVO \---
 
@@ -2376,7 +2404,8 @@ caminho\_gpkg \= os.path.join(home, "Downloads", nome\_arquivo)
 
 \# String de conexão para o OGR2OGR
 
-conn\_string\_ogr \= f"PG:host={host} port={port} dbname={db\_name} user={user} password={password}"
+conn\_string\_ogr \= f"PG:host={host} port={port} dbname={db\_name} user={user} 
+password={password}"
 
 \# \--- EXTRAÇÃO DE METADADOS \---
 
@@ -2426,7 +2455,8 @@ def validar\_infraestrutura(conn):
 
    cur \= conn.cursor()
 
-   cur.execute("SELECT EXISTS(SELECT 1 FROM information\_schema.tables WHERE table\_schema='public' AND table\_name='log\_ingestao\_dados')")
+   cur.execute("SELECT EXISTS(SELECT 1 FROM information\_schema.tables WHERE 
+   table\_schema='public' AND table\_name='log\_ingestao\_dados')")
 
    existe\_log \= cur.fetchone()\[0\]
 
@@ -2434,7 +2464,8 @@ def validar\_infraestrutura(conn):
 
    if not existe\_log:
 
-       print("❌ ERRO: A tabela 'public.log\_ingestao\_dados' não foi encontrada.")
+       print("❌ ERRO: A tabela 'public.log\_ingestao\_dados' não foi e
+       encontrada.")
 
        return False
 
@@ -2450,15 +2481,18 @@ def registrar\_log(conn, tabela, qtd\_registros, status, obs\=""):
 
            INSERT INTO public.log\_ingestao\_dados
 
-           (arquivo\_fonte, formato\_extensao, srid\_origem, schema\_destino, tabela\_destino,
+           (arquivo\_fonte, formato\_extensao, srid\_origem, schema\_destino,
+           tabela\_destino,
 
-            registros\_camada, status\_processamento, id\_revisao\_entrega, data\_producao, observacao\_tecnica)
+            registros\_camada, status\_processamento, id\_revisao\_entrega, 
+            data\_producao, observacao\_tecnica)
 
            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
 
        """
 
-       cur.execute(sql, (nome\_arquivo, 'GeoPackage', 4674, schema\_destino, tabela, qtd\_registros, status, revisao\_num, data\_prod, obs))
+       cur.execute(sql, (nome\_arquivo, 'GeoPackage', 4674, schema\_destino, 
+       tabela, qtd\_registros, status, revisao\_num, data\_prod, obs))
 
        conn.commit()
 
@@ -2479,19 +2513,24 @@ def executar\_pos\_carga(conn, v\_tabela):
 
        \# 1\. Criação das colunas de controle (sem valor default fixo no DDL)
 
-       cur.execute(f'ALTER TABLE "{schema\_destino}"."{v\_tabela}" ADD COLUMN IF NOT EXISTS data\_carga timestamp DEFAULT now();')
+       cur.execute(f'ALTER TABLE "{schema\_destino}"."{v\_tabela}" ADD COLUMN IF
+       NOT EXISTS data\_carga timestamp DEFAULT now();')
 
-       cur.execute(f'ALTER TABLE "{schema\_destino}"."{v\_tabela}" ADD COLUMN IF NOT EXISTS arquivo\_origem varchar(255);')
+       cur.execute(f'ALTER TABLE "{schema\_destino}"."{v\_tabela}" ADD COLUMN IF
+       NOT EXISTS arquivo\_origem varchar(255);')
 
-       cur.execute(f'ALTER TABLE "{schema\_destino}"."{v\_tabela}" ADD COLUMN IF NOT EXISTS responsavel\_carga varchar(100) DEFAULT current\_user;')
+       cur.execute(f'ALTER TABLE "{schema\_destino}"."{v\_tabela}" ADD COLUMN IF
+       NOT EXISTS responsavel\_carga varchar(100) DEFAULT current\_user;')
 
-       cur.execute(f'ALTER TABLE "{schema\_destino}"."{v\_tabela}" ADD COLUMN IF NOT EXISTS versao\_modelo int;')
+       cur.execute(f'ALTER TABLE "{schema\_destino}"."{v\_tabela}" ADD COLUMN IF
+       NOT EXISTS versao\_modelo int;')
 
       
 
        \# 2\. Atualização dos valores para a carga atual
 
-       \# O filtro 'WHERE arquivo\_origem IS NULL' garante que estamos marcando apenas os registros recém-importados
+       \# O filtro 'WHERE arquivo\_origem IS NULL' garante que estamos marcando 
+       apenas os registros recém-importados
 
        sql\_update \= f"""
 
@@ -2517,7 +2556,8 @@ def executar\_pos\_carga(conn, v\_tabela):
 
        \# 3\. Validação de PK (Primary Key)
 
-       \# O ogr2ogr às vezes importa sem definir a PK no banco, aqui garantimos que a coluna 'id' seja a chave
+       \# O ogr2ogr às vezes importa sem definir a PK no banco, aqui garantimos 
+       que a coluna 'id' seja a chave
 
        cur.execute(f"""
 
@@ -2537,13 +2577,15 @@ def executar\_pos\_carga(conn, v\_tabela):
 
        if cur.fetchone()\[0\] \== 0:
 
-           cur.execute(f'ALTER TABLE "{schema\_destino}"."{v\_tabela}" ADD PRIMARY KEY (id);')
+           cur.execute(f'ALTER TABLE "{schema\_destino}"."{v\_tabela}" ADD 
+           PRIMARY KEY (id);')
 
       
 
        \# 4\. Índice Espacial
 
-       \#cur.execute(f'CREATE INDEX IF NOT EXISTS idx\_{v\_tabela}\_geom ON "{schema\_destino}"."{v\_tabela}" USING GIST (geom);')
+       \#cur.execute(f'CREATE INDEX IF NOT EXISTS idx\_{v\_tabela}\_geom ON 
+       "{schema\_destino}"."{v\_tabela}" USING GIST (geom);')
 
        \# \--- 4\. ADEQUAÇÃO: Índice Espacial Inteligente \---
 
@@ -2583,13 +2625,16 @@ def executar\_pos\_carga(conn, v\_tabela):
 
            \# Só cria se não houver nenhum índice espacial na coluna
 
-           cur.execute(f'CREATE INDEX IF NOT EXISTS "idx\_{v\_tabela}\_geom" ON "{schema\_destino}"."{v\_tabela}" USING GIST (geom);')
+           cur.execute(f'CREATE INDEX IF NOT EXISTS "idx\_{v\_tabela}\_geom" ON
+           "{schema\_destino}"."{v\_tabela}" USING GIST (geom);')
 
        \# 5\. Trigger de Auditoria
 
-       cur.execute(f'DROP TRIGGER IF EXISTS trg\_audit\_bronze ON "{schema\_destino}"."{v\_tabela}";')
+       cur.execute(f'DROP TRIGGER IF EXISTS trg\_audit\_bronze ON 
+       "{schema\_destino}"."{v\_tabela}";')
 
-       cur.execute(f'CREATE TRIGGER trg\_audit\_bronze AFTER UPDATE OR DELETE ON "{schema\_destino}"."{v\_tabela}" FOR EACH ROW EXECUTE FUNCTION public.fn\_audit\_log();')
+       cur.execute(f'CREATE TRIGGER trg\_audit\_bronze AFTER UPDATE OR DELETE ON
+       "{schema\_destino}"."{v\_tabela}" FOR EACH ROW EXECUTE FUNCTION public.fn\_audit\_log();')
 
       
 
@@ -2635,7 +2680,8 @@ def iniciar\_processo():
 
    try:
 
-       db\_conn \= psycopg2.connect(dbname\=db\_name, user\=user, password\=password, host\=host, port\=port)
+       db\_conn \= psycopg2.connect(dbname\=db\_name, user\=user, 
+       password\=password, host\=host, port\=port)
 
    except Exception as e:
 
@@ -2653,7 +2699,8 @@ def iniciar\_processo():
 
        cur \= db\_conn.cursor()
 
-       cur.execute("SELECT EXISTS(SELECT 1 FROM information\_schema.tables WHERE table\_schema=%s AND table\_name=%s)", (schema\_destino, destino))
+       cur.execute("SELECT EXISTS(SELECT 1 FROM information\_schema.tables WHERE
+       table\_schema=%s AND table\_name=%s)", (schema\_destino, destino))
 
        if cur.fetchone()\[0\]:
 
@@ -2677,7 +2724,8 @@ def iniciar\_processo():
 
            '-f', 'PostgreSQL',
 
-           conn\_string\_ogr \+ f" active\_schema={schema\_destino}", \# Espaço importante aqui
+           conn\_string\_ogr \+ f" active\_schema={schema\_destino}", \# Espaço
+           importante aqui
 
            caminho\_gpkg,
 
@@ -2713,7 +2761,8 @@ def iniciar\_processo():
 
                registrar\_log(db\_conn, destino, qtd\_feicoes, 'CONCLUIDO')
 
-               print(f"✅ {destino}: ingestão realizada com sucesso ({qtd\_feicoes} registros).")
+               print(f"✅ {destino}: ingestão realizada com sucesso 
+               ({qtd\_feicoes} registros).")
 
            else:
 

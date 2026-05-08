@@ -1,8 +1,8 @@
 # Síntese do Avanço no Período
 
 A síntese a seguir apresenta uma visão consolidada do avanço das atividades no
-período, estruturada a partir de dois eixos complementares: (1.2.1) a análise do
-progresso técnico alcançado nas principais frentes do projeto e (1.2.2) a
+período, estruturada a partir de dois eixos complementares: -@sec-progresso-tecnico a análise do
+progresso técnico alcançado nas principais frentes do projeto e -@sec-fontes-trabalho a
 consolidação das atividades desenvolvidas, evidenciando a integração entre
 dados, modelagem, infraestrutura e governança. Essa abordagem permite não apenas
 compreender o estágio atual da Prova de Conceito (POC) em Florianópolis, mas
@@ -10,7 +10,7 @@ também identificar os elementos já estruturados e aqueles em processo de
 amadurecimento, com foco na construção de uma arquitetura de dados robusta, na
 consistência dos processos e na preparação para escalabilidade da solução.
 
-## Visão geral do progresso técnico
+## Visão geral do progresso técnico {#sec-progresso-tecnico}
 
 No período analisado, observou-se avanço consistente na estruturação da Prova de
 Conceito (POC) de Florianópolis, com evolução integrada nas frentes de dados,
@@ -30,7 +30,7 @@ incremental, a abordagem metodológica adotada. Esses resultados constituem uma
 base importante para o refinamento das etapas subsequentes e para a consolidação
 do processo em direção à escalabilidade.
 
-## Consolidação das principais frentes de trabalho
+## Consolidação das principais frentes de trabalho {#sec-fontes-trabalho}
 
 As principais frentes de trabalho consolidadas no trimestre refletem o avanço
 integrado das dimensões estruturantes do projeto, articulando dados, território,
