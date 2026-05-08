@@ -6,9 +6,7 @@ execute:
   enabled: false
 ---
 
-# Apêndice 4
-
-# Materiais, Métodos e Resultados da Etapa 3 - Modelagem e Planta de Valores Genéricos (PVG) {#sec-est}
+# Apêndice 4 - Materiais, Métodos e Resultados da Etapa 3 - Modelagem e Planta de Valores Genéricos (PVG) {#sec-est}
 
 ```{r, include = FALSE}
 library(ggplot2)
