@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -71,6 +91,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="cover-style.css">
@@ -206,7 +255,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+ <span class="menu-text">Referências</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -317,7 +366,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#integração-cnefe-fuzzy-para-definição-dos-lotes" id="toc-integração-cnefe-fuzzy-para-definição-dos-lotes" class="nav-link" data-scroll-target="#integração-cnefe-fuzzy-para-definição-dos-lotes"><span class="header-section-number">4.3.1.5</span> Integração CNEFE + Fuzzy para Definição dos Lotes</a></li>
   <li><a href="#variáveis-derivadas-de-imagens-de-satélite" id="toc-variáveis-derivadas-de-imagens-de-satélite" class="nav-link" data-scroll-target="#variáveis-derivadas-de-imagens-de-satélite"><span class="header-section-number">4.3.1.6</span> Variáveis Derivadas de Imagens de Satélite</a></li>
   <li><a href="#mapeamento-de-imobiliárias-em-municípios-50-mil-habitantes" id="toc-mapeamento-de-imobiliárias-em-municípios-50-mil-habitantes" class="nav-link" data-scroll-target="#mapeamento-de-imobiliárias-em-municípios-50-mil-habitantes"><span class="header-section-number">4.3.1.7</span> Mapeamento de Imobiliárias em Municípios &lt; 50 mil Habitantes</a></li>
-  <li><a href="#síntese-integrada-dos-estudos" id="toc-síntese-integrada-dos-estudos" class="nav-link" data-scroll-target="#síntese-integrada-dos-estudos"><span class="header-section-number">4.3.1.8</span> Síntese Integrada dos Estudos</a></li>
+  <li><a href="#fundamentos-da-avaliação-em-massa" id="toc-fundamentos-da-avaliação-em-massa" class="nav-link" data-scroll-target="#fundamentos-da-avaliação-em-massa"><span class="header-section-number">4.3.1.8</span> Fundamentos da Avaliação em Massa</a></li>
+  <li><a href="#síntese-integrada-dos-estudos" id="toc-síntese-integrada-dos-estudos" class="nav-link" data-scroll-target="#síntese-integrada-dos-estudos"><span class="header-section-number">4.3.1.9</span> Síntese Integrada dos Estudos</a></li>
   </ul></li>
   <li><a href="#plataforma-para-visualização-dos-dados" id="toc-plataforma-para-visualização-dos-dados" class="nav-link" data-scroll-target="#plataforma-para-visualização-dos-dados"><span class="header-section-number">4.3.2</span> Plataforma para visualização dos dados</a></li>
   </ul></li>
@@ -845,8 +895,169 @@ Figura&nbsp;4.3: Ilustração fluxo dos modelos
 <p>A metodologia envolveu a identificação dos municípios com até 50 mil habitantes, levantamento sistemático de imobiliárias locais, expansão da coleta de ofertas imobiliárias e consolidação territorial das bases de dados. O estudo foi estruturado em etapas sucessivas de priorização territorial, análise da distribuição espacial das ofertas e validação das informações coletadas, buscando identificar municípios com maior potencial de expansão da base de mercado.</p>
 <p>Os resultados demonstraram elevado potencial de ampliação da cobertura territorial da base imobiliária nacional. Foram mapeados 4.889 municípios, identificados 1.549 municípios-alvo e analisados 595 municípios em duas etapas de priorização. O levantamento resultou na identificação de 1.475 imobiliárias distribuídas em 487 municípios. Os resultados evidenciaram forte potencial de expansão da cobertura da base de ofertas, aumento da representatividade de municípios pequenos e redução de vazios de mercado. O estudo demonstrou que municípios de pequeno porte possuem capacidade relevante de contribuição para consolidação de uma base nacional de mercado imobiliário, desde que sejam adotadas estratégias específicas de integração territorial e expansão da coleta de dados.</p>
 </section>
-<section id="síntese-integrada-dos-estudos" class="level4" data-number="4.3.1.8">
-<h4 data-number="4.3.1.8" class="anchored" data-anchor-id="síntese-integrada-dos-estudos"><span class="header-section-number">4.3.1.8</span> Síntese Integrada dos Estudos</h4>
+<section id="fundamentos-da-avaliação-em-massa" class="level4" data-number="4.3.1.8">
+<h4 data-number="4.3.1.8" class="anchored" data-anchor-id="fundamentos-da-avaliação-em-massa"><span class="header-section-number">4.3.1.8</span> Fundamentos da Avaliação em Massa</h4>
+<p>Segundo <span class="citation" data-cites="Carranza2026">CARRANZA et al. (<a href="references.html#ref-Carranza2026" role="doc-biblioref">2026</a>)</span>, existem diversas abordagens viáveis para a avaliação em massa de imóveis urbanos. <span class="citation" data-cites="Carranza2026">CARRANZA et al. (<a href="references.html#ref-Carranza2026" role="doc-biblioref">2026</a>)</span> elencam três dessas diferentes abordagens - estimação via algoritmos de <em>Machine Learning</em>, Geoestatística (krigagem) e modelos lineares - e as compara no contexto da América Latina.</p>
+<p>Cada uma destas diferentes abordagens possui pontos fortes e fracos. De um lado, segundo <span class="citation" data-cites="Carranza2026">CARRANZA et al. (<a href="references.html#ref-Carranza2026" role="doc-biblioref">2026</a>)</span>, a estimação via modelos lineares tem a vantagem de explicar claramente aos contribuintes como são compostos os valores de mercado estimados, ainda que a performance destes modelos geralmente seja mais baixa na previsão destes valores. De outro lado, os algoritmos de <em>Machine Learning</em> apresentam performance superior, porém falham em explicar ao contribuinte como são formados os valores de mercado. Entre estas duas abordagens citadas situa-se a geoestatística que, segundo <span class="citation" data-cites="Carranza2026">CARRANZA et al. (<a href="references.html#ref-Carranza2026" role="doc-biblioref">2026</a>)</span>, atinge uma performance aceitável, ainda que apresente problemas em identificar barreiras urbanas.</p>
+<p>Neste trabalho procurou-se combinar as diferentes abordagens para uma melhor estimação dos valores de mercado. Como será visto ao longo deste capítulo, os algoritmos de <em>Machine Learning</em>, a geoestatística e os modelos lineares foram combinados de maneira que possibilitou a estimação de valores de mercado de maneira suficientemente precisa, sem abrir mão do poder de explicação da formação de valores.</p>
+<section id="metodologia" class="level5" data-number="4.3.1.8.1">
+<h5 data-number="4.3.1.8.1" class="anchored" data-anchor-id="metodologia"><span class="header-section-number">4.3.1.8.1</span> Metodologia</h5>
+<p>O método adotado para a estimação de valores de mercado neste trabalho é o método evolutivo, método consagrado que estima o valor de mercado de um imóvel através da soma dos seus componentes (terra e capital):</p>
+<p><span id="eq-Evolutivo"><span class="math display">\[V_{\text{Imóvel}} = (V_{\text{Terreno}} + V_{\text{Benfeitorias}})\cdot FC \tag{4.1}\]</span></span></p>
+<p>Em que:</p>
+<ul>
+<li><span class="math inline">\(V_{\text{Imóvel}}\)</span> é o valor de mercado do imóvel acabado;</li>
+<li><span class="math inline">\(V_{\text{Terreno}}\)</span> é o valor de mercado do lote sobre o qual o imóvel encontra-se edificado;</li>
+<li><span class="math inline">\(V_{\text{Benfeitorias}}\)</span> é o valor do capital aplicado em benfeitorias no imóvel e;</li>
+<li><span class="math inline">\(FC\)</span> é um “fator de comercialização” empregado para ajustar a diferença entre o valor real de mercado do imóvel e a diferença entre a soma dos seus componentes.</li>
+</ul>
+<p>Como descrito nos Capítulos <a href="92-metodo-etapa01.html" class="quarto-xref"><span>B</span></a> e <a href="93-metodo-etapa02.html" class="quarto-xref"><span>C</span></a>, para a estimação foram coletados dados de anúncios de imóveis edificados e não-edificados, que foram fortalecidos com variáveis cartográficas para adicionar poder de explicação aos valores de mercado. Procurou-se, durante o processo de estimação, extrair o máximo de informação de todo o conjunto de dados, que envolvem anúncios não apenas de lotes, mas também de casas, apartamentos e outros tipos de imóveis, tanto para a venda quanto para locação.</p>
+<p>Os valores de benfeitorias podem ser calculados através dos custos de construção divulgados pelos SINDUSCON locais. Os valores dos terrenos, por outro lado, devem ser estimados via modelos lineares, geoestatística ou algoritmos preditivos de aprendizado de máquina. Para o fator de comercialização, o ideal é que este seja inferido através de dados de mercado de imóveis edificados.</p>
+</section>
+<section id="resultados" class="level5" data-number="4.3.1.8.2">
+<h5 data-number="4.3.1.8.2" class="anchored" data-anchor-id="resultados"><span class="header-section-number">4.3.1.8.2</span> Resultados</h5>
+<section id="análise-exploratória" class="level6" data-number="4.3.1.8.2.1">
+<h6 data-number="4.3.1.8.2.1" class="anchored" data-anchor-id="análise-exploratória"><span class="header-section-number">4.3.1.8.2.1</span> Análise Exploratória</h6>
+<p>A análise explotarória de dados foi feita com auxílio do R, versão 4.5.2.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Reading layer `variavel_geografica_setor_censitario' from data source 
+  `/Users/droubi/Documents/LabFSG/POC-FLN/data/4205407_Florianopolis_r006_2026-03-23.gpkg' 
+  using driver `GPKG'
+Simple feature collection with 1004 features and 54 fields
+Geometry type: MULTIPOLYGON
+Dimension:     XY
+Bounding box:  xmin: -48.61347 ymin: -27.85377 xmax: -48.32788 ymax: -27.26797
+Geodetic CRS:  SIRGAS 2000</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-EDALotes" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-EDALotes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="04-resultados_files/figure-html/fig-EDALotes-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-EDALotes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.4: Análise Exploratória para os dados de Lotes
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Na <a href="#fig-EDALotes" class="quarto-xref">Figura&nbsp;<span>4.4</span></a> é possível perceber a presença de forte assimetria nos dados oriundos do observatório do mercado imobiliário (variáveis <code>PU</code>e <code>area</code>), causada pela presença de <em>outliers</em> na amostra.</p>
+</section>
+<section id="limpeza-dos-dados" class="level6" data-number="4.3.1.8.2.2">
+<h6 data-number="4.3.1.8.2.2" class="anchored" data-anchor-id="limpeza-dos-dados"><span class="header-section-number">4.3.1.8.2.2</span> Limpeza dos dados</h6>
+<p>Os dados foram limpos utilizando-se regressão robusta. O método de regressão robusta escolhido foi o método dos mínimos quadrados ponderados <span class="citation" data-cites="Rousseeuw_least_1984">(ver <a href="references.html#ref-Rousseeuw_least_1984" role="doc-biblioref">ROUSSEEUW, 1984</a>)</span>.</p>
+</section>
+<section id="geração-da-renda-krigada" class="level6" data-number="4.3.1.8.2.3">
+<h6 data-number="4.3.1.8.2.3" class="anchored" data-anchor-id="geração-da-renda-krigada"><span class="header-section-number">4.3.1.8.2.3</span> Geração da Renda Krigada</h6>
+<p>Os dados de renda do chefe do domicílio do IBGE foram tratados pela equipe de estimação. Inicialmente foi gerada a variável renda per capita, obtida conforme a <a href="#eq-RendaPerCapita" class="quarto-xref">Equação&nbsp;<span>4.2</span></a>:</p>
+<p><span id="eq-RendaPerCapita"><span class="math display">\[R_{\text{per capita}} = \frac{R_{\text{chefe dom.}}}{N} \tag{4.2}\]</span></span></p>
+<p>Em que:</p>
+<ul>
+<li><span class="math inline">\(R_{\text{chefe dom.}}\)</span> é a renda do chefe do domicílio divulgada pelo censo 2022 (IBGE);</li>
+<li><span class="math inline">\(N\)</span> é o número de pessoas por domicílio, também divulgada pelo IBGE.</li>
+</ul>
+<p>Na <a href="#fig-rendakrigada" class="quarto-xref">Figura&nbsp;<span>4.5</span></a> pode ser visualizado o resultado da krigagem da variável <span class="math inline">\(R_{\text{per capita}}\)</span> para o município de Florianópolis.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-rendakrigada" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rendakrigada-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="04-resultados_files/figure-html/fig-rendakrigada-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rendakrigada-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.5: Renda per capita krigada para o município de Florianópolis.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="ajuste-do-modelo-de-imóveis-edificados" class="level6" data-number="4.3.1.8.2.4">
+<h6 data-number="4.3.1.8.2.4" class="anchored" data-anchor-id="ajuste-do-modelo-de-imóveis-edificados"><span class="header-section-number">4.3.1.8.2.4</span> Ajuste do modelo de imóveis edificados</h6>
+<p>Após a limpeza dos dados, foi executado o processo de classificação dos dados segundo o padrão construtivo. Os dados foram agrupados em três padrões construtivos, a saber, padrão baixo, normal e alto, conforme descrito na <a href="94-metodo-etapa03.html#sec-classif-pc" class="quarto-xref"><span>Seção D.4.1</span></a>.</p>
+<p>Então, foi ajustado um modelo de regressão linear múltipla para descrever o comportamento do mercado imobiliário de casas e apartamentos em Florianópolis <a href="94-metodo-etapa03.html#sec-modelo-edificados" class="quarto-xref">ver&nbsp;<span>D.5.1</span></a>.</p>
+</section>
+<section id="sec-VUM2" class="level6" data-number="4.3.1.8.2.5">
+<h6 data-number="4.3.1.8.2.5" class="anchored" data-anchor-id="sec-VUM2"><span class="header-section-number">4.3.1.8.2.5</span> Geração da superfície de VU de m2 construído</h6>
+<p>Após o ajuste do modelo de mínimos quadrados ordinários, os dados da amostra utilizados para o ajuste do modelo foram homogeneizados de acordo com fatores de homogeneização estimados diretamente do modelo. Por exemplo, para a variável área, foi derivado o fator área, conforme a <a href="#eq-FatorArea" class="quarto-xref">Equação&nbsp;<span>4.3</span></a>:</p>
+<p><span id="eq-FatorArea"><span class="math display">\[F_{\text{Área}} = \left ( \frac{A_\text{imóvel}}{100} \right)^{-0,25} \tag{4.3}\]</span></span></p>
+<p>Veja <a href="#nte-fatores" class="quarto-xref">Note&nbsp;<span>4.2</span></a> para entender com é feita a derivação racional de fatores de homogeneização.</p>
+<p>Após o procedimento de homoegeneização, foi gerada uma superfície de valores de metro quadrado construído com os dados homogeneizados através do algoritmo IDW (<em>inverse distance weighting</em>).</p>
+<div id="nte-idw" class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nota&nbsp;4.1: Inverse Distance Weighting
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Segundo <span class="citation" data-cites="Embrapa2004">DRUCK et al. (<a href="references.html#ref-Embrapa2004" role="doc-biblioref">2004, p. 83</a>)</span>, “uma alternativa simples para gerar uma superfície bidimensional” consiste em ajustar uma função bidimensional sobre as amostras, prevendo valores em uma grade (<span class="math inline">\(\hat z_i\)</span>), com a seguinte formulação:</p>
+<p><span id="eq-IDW"><span class="math display">\[
+\hat z_i = \frac{\sum_{j = 1}^n w_{ij}z_j}{\sum_{j=1}^n w_{ij}}
+\tag{4.4}\]</span></span></p>
+<p>Em que:</p>
+<ul>
+<li><span class="math inline">\(z_j\)</span> é o valor da cota (VU) de uma amostra vizinha do ponto <span class="math inline">\(i\)</span> da grade;</li>
+<li><span class="math inline">\(w_{ij}\)</span> é um fator de ponderação.</li>
+</ul>
+<p>Com base neste esquema básico supra-mencionado, é possível gerar vários interpoladores (vizinho mais próximo, média simples ou média ponderada). A ponderação mais usada consiste em adotar pesos que variam com o inverso de uma potência <span class="math inline">\(k\)</span> da distância euclidiana do ponto da amostra ao ponto da grade em que se deseja prever valores (<span class="math inline">\(d_{ij}\)</span>), assim:</p>
+<p><span id="eq-IDW2"><span class="math display">\[
+w_{ij} = \frac{1}{d_{ij}^k}
+\tag{4.5}\]</span></span></p>
+<p>Em que: - <span class="math inline">\(d_{ij} = \sqrt{(x_i-x_j)^2 + (y_i - y_j)^2}\)</span></p>
+</div>
+</div>
+<div id="nte-fatores" class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nota&nbsp;4.2: Derivação Racional de Fatores
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A derivação racional de fatores de homogeneização é feita de acordo com os coeficientes estimados em um modelo de regressão linear múltipla (RLM).</p>
+<p>Os fatores serão aditivos quando o modelo RLM for ajustado na escala de preços unitários (PU), ou serão multiplicativos quando o modelo RLM for ajustado com a transformação da variável dependente para a escala logaritmica, o que é usual na Engenharia de Avaliações.</p>
+<p>Para entender, basta perceber que, para um modelo ajustado na escala logaritmica, tem-se:</p>
+<p><span id="eq-ModeloMultiplicativo"><span class="math display">\[\widehat{\log(PU)} = \hat \beta_0 + \hat \beta_1 x_1 + \ldots + \hat\beta_kx_k \tag{4.6}\]</span></span></p>
+<p>Efetuando a exponenciação em ambos os lados de <a href="#eq-ModeloMultiplicativo" class="quarto-xref">Equação&nbsp;<span>4.6</span></a>, tem-se:</p>
+<p><span id="eq-ModeloMultiplicativo2"><span class="math display">\[\widehat{PU} = \exp(\hat \beta_0 + \hat \beta_1 x_1 + \ldots + \hat\beta_kx_k) \tag{4.7}\]</span></span></p>
+<p>Como a exponencial da soma é o produto das exponenciais, a <a href="#eq-ModeloMultiplicativo2" class="quarto-xref">Equação&nbsp;<span>4.7</span></a> torna-se:</p>
+<p><span id="eq-ModeloMultiplicativo3"><span class="math display">\[\widehat{PU} = \exp(\hat \beta_0)\cdot\exp(\hat \beta_1 x_1)\cdot \ldots \cdot \exp(\hat\beta_kx_k) \tag{4.8}\]</span></span></p>
+<p>Donde entende-se o motivo dos fatores derivados com este modelo serem multiplicativos, pois, deste modelo, deduz-se:</p>
+<p><span class="math display">\[F_1 = \exp(\hat \beta_1 x_1); F_2 = \exp(\hat \beta_2 x_2); \ldots ; F_k =  \exp(\hat\beta_kx_k)\]</span></p>
+</div>
+</div>
+</section>
+</section>
+<section id="ajuste-do-modelo-de-lotes" class="level5" data-number="4.3.1.8.3">
+<h5 data-number="4.3.1.8.3" class="anchored" data-anchor-id="ajuste-do-modelo-de-lotes"><span class="header-section-number">4.3.1.8.3</span> Ajuste do modelo de lotes</h5>
+<p>Com a superfície de valores de metro quadrado construído elaborada conforme descrito na <a href="#sec-VUM2" class="quarto-xref"><span>Seção 4.3.1.8.2.5</span></a>.</p>
+</section>
+<section id="geração-da-superfície-de-valores-unitários-de-lotes" class="level5" data-number="4.3.1.8.4">
+<h5 data-number="4.3.1.8.4" class="anchored" data-anchor-id="geração-da-superfície-de-valores-unitários-de-lotes"><span class="header-section-number">4.3.1.8.4</span> Geração da superfície de valores unitários de lotes</h5>
+<p>A superfície de valores unitários de lotes urbanos foi obtida através de um procedimento geoestatístico denominado krigagem ordinária, que interpola valores de uma amostra a uma grade regular de pontos.</p>
+<p>Primeiramente, os preços unitários da amostra de lotes foram homogeneizados conforme procedimento descrito na <a href="#nte-fatores" class="quarto-xref">Note&nbsp;<span>4.2</span></a>, a partir do modelo final de lotes obtido (ver <a href="94-metodo-etapa03.html#tbl-LotesModel" class="quarto-xref">Tabela&nbsp;<span>D.3</span></a> no <a href="94-metodo-etapa03.html" class="quarto-xref"><span>Apêndice D</span></a>), criando assim o que se denomina em geoestatística como variável regionalizada. Depois, estes preços unitários homogeneizados foram</p>
+</section>
+<section id="conexão-com-normas-técnicas" class="level5" data-number="4.3.1.8.5">
+<h5 data-number="4.3.1.8.5" class="anchored" data-anchor-id="conexão-com-normas-técnicas"><span class="header-section-number">4.3.1.8.5</span> Conexão com Normas Técnicas</h5>
+<p>A avaliação em massa de imóveis urbanos ainda é matéria pendente de normatização na Associação Brasileira de Normas Técnicas (ABNT). A norma técnica brasileira existente de avaliação em massa de imóveis foi elaborada em conjunto por duas importantes entidades profissionais, a saber, o Instituto Brasileiro de Avaliações e Perícias de Engenharia (IBAPE ) e a Sociedade Brasileira de Engenharia de Avaliações (SOBREA). Este texto normativo, no entanto, ainda carece de força legal. Uma comissão da ABNT, portanto, tem discutido, com base neste texto normativo existente, a criação de um volume adicional para a NBR 14.653, que irá contemplar especificamente a matéria da avaliação em massa de imóveis urbanos para fins tributários.</p>
+</section>
+<section id="lições-aprendidas-na-poc" class="level5" data-number="4.3.1.8.6">
+<h5 data-number="4.3.1.8.6" class="anchored" data-anchor-id="lições-aprendidas-na-poc"><span class="header-section-number">4.3.1.8.6</span> Lições aprendidas na PoC</h5>
+<p>Os procedimentos metodológicos adotados na PoC tiveram que ser adaptados à realidade fática brasileira, em que o cadastro urbano de imóveis ainda pende de um grande processo de desenvolvimento. Inexiste uma solução única e eficaz que permita a definição do valor de referência dos imóveis de uma determinada região de forma inequívoca. Pelo contrário, uma solução viável deve ser buscada para cada caso, dependendo das informações geográficas e mercadológicas existentes.</p>
+<p>A PoC Florianópolis foi importante especialmente para o aprendizado de como os fluxos de atividades das diversas etapas podem ser replicados em cada localidade ao longo do projeto, ainda que inexista garantia de que este fluxo manter-se-á eficaz em todas as localidades e ao longo do tempo. No entanto, ainda que adaptações porventura mostrem-se necessárias ao longo do projeto, a definição de um fluxo inicial replicável é o principal resultado obtido com a PoC Florianópolis.</p>
+</section>
+</section>
+<section id="síntese-integrada-dos-estudos" class="level4" data-number="4.3.1.9">
+<h4 data-number="4.3.1.9" class="anchored" data-anchor-id="síntese-integrada-dos-estudos"><span class="header-section-number">4.3.1.9</span> Síntese Integrada dos Estudos</h4>
 <p>Os estudos desenvolvidos no âmbito dos Blocos Transversais demonstram a construção de uma estratégia metodológica integrada, estruturada para enfrentar os principais desafios associados à modelagem territorial em escala nacional e à futura implementação de um sistema de valores de referência aplicável aos diferentes contextos urbanos brasileiros.</p>
 <p>De maneira complementar, os estudos atuaram em múltiplas frentes técnicas, incluindo a validação espacial das bases territoriais, a qualificação das coordenadas do CNEFE, a definição de parâmetros de agrupamento regional, a integração de dados censitários e geoespaciais, a aplicação de métodos de classificação fuzzy e a incorporação de variáveis derivadas de imagens de satélite e inteligência artificial. Paralelamente, também foram desenvolvidas estratégias voltadas à expansão da base de ofertas imobiliárias, especialmente em municípios de pequeno e médio porte, onde historicamente há menor disponibilidade de dados estruturados de mercado.</p>
 <p>A integração desses estudos permitiu reduzir limitações associadas à heterogeneidade territorial brasileira, ampliando a capacidade de representação espacial da metodologia e fortalecendo a consistência dos agrupamentos territoriais utilizados na modelagem. Os resultados demonstraram que abordagens híbridas, combinando diferentes fontes de dados e múltiplas escalas territoriais, apresentam desempenho superior quando comparadas a modelos baseados em estruturas rígidas ou em fontes isoladas de informação.</p>
@@ -871,14 +1082,14 @@ Figura&nbsp;4.3: Ilustração fluxo dos modelos
 <p>Entre as funcionalidades atualmente configuradas na plataforma, destaca-se o módulo de carregamento e publicação de informações geoespaciais e alfanuméricas. Esse módulo permite a inserção de novos cadastros editáveis por meio de um fluxo automatizado simplificado, estruturado em cinco etapas, possibilitando o carregamento de arquivos no formato shapefile, bem como sua visualização geoespacial temática associada a recursos estatísticos integrados.</p>
 <p>Outro recurso relevante corresponde à geração dinâmica de mapas temáticos, permitindo a elaboração de análises espaciais qualitativas e quantitativas a partir das informações previamente carregadas no sistema. A funcionalidade contempla aplicação de filtros, classificação temática, definição do número de classes e parametrização de escalas de cores, contribuindo para a interpretação territorial dos dados e para o suporte às análises técnicas desenvolvidas no projeto.</p>
 <p>A plataforma está sendo configurada com base na solução GeoQualify, sistema com licenciamento AGPL, o que possibilita utilização gratuita por órgãos públicos, além de permitir customizações e evolução contínua da solução mediante acesso ao código-fonte. Essa característica favorece a flexibilidade tecnológica, a adaptabilidade às necessidades institucionais da Receita Federal do Brasil e a futura escalabilidade da solução para ambientes de maior abrangência operacional.</p>
-<p>As Figuras <a href="#fig-inter1" class="quarto-xref"><span>4.4</span></a> a <a href="#fig-inter7" class="quarto-xref"><span>4.10</span></a> apresentam exemplos da interface da plataforma.</p>
+<p>As Figuras <a href="#fig-inter1" class="quarto-xref"><span>4.6</span></a> a <a href="#fig-inter7" class="quarto-xref"><span>4.12</span></a> apresentam exemplos da interface da plataforma.</p>
 <div id="fig-inter1" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-inter1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="img/transversal/fig-08-plataforma-01.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-inter1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;4.4: Interface da plataforma - 1
+Figura&nbsp;4.6: Interface da plataforma - 1
 </figcaption>
 </figure>
 </div>
@@ -888,7 +1099,7 @@ Figura&nbsp;4.4: Interface da plataforma - 1
 <img src="img/transversal/fig-08-plataforma-02.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-inter2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;4.5: Interface da plataforma - 2
+Figura&nbsp;4.7: Interface da plataforma - 2
 </figcaption>
 </figure>
 </div>
@@ -898,7 +1109,7 @@ Figura&nbsp;4.5: Interface da plataforma - 2
 <img src="img/transversal/fig-08-plataforma-03.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-inter3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;4.6: Interface da plataforma - 3
+Figura&nbsp;4.8: Interface da plataforma - 3
 </figcaption>
 </figure>
 </div>
@@ -908,7 +1119,7 @@ Figura&nbsp;4.6: Interface da plataforma - 3
 <img src="img/transversal/fig-08-plataforma-04.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-inter4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;4.7: Interface da plataforma - 4
+Figura&nbsp;4.9: Interface da plataforma - 4
 </figcaption>
 </figure>
 </div>
@@ -918,7 +1129,7 @@ Figura&nbsp;4.7: Interface da plataforma - 4
 <img src="img/transversal/fig-08-plataforma-05.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-inter5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;4.8: Interface da plataforma - 5
+Figura&nbsp;4.10: Interface da plataforma - 5
 </figcaption>
 </figure>
 </div>
@@ -928,7 +1139,7 @@ Figura&nbsp;4.8: Interface da plataforma - 5
 <img src="img/transversal/fig-08-plataforma-06.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-inter6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;4.9: Interface da plataforma - 6
+Figura&nbsp;4.11: Interface da plataforma - 6
 </figcaption>
 </figure>
 </div>
@@ -938,12 +1149,23 @@ Figura&nbsp;4.9: Interface da plataforma - 6
 <img src="img/transversal/fig-08-plataforma-07.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-inter7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;4.10: Interface da plataforma - 7
+Figura&nbsp;4.12: Interface da plataforma - 7
 </figcaption>
 </figure>
 </div>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Carranza2026" class="csl-entry" role="listitem">
+CARRANZA, J. P.; BOLOGNA, E. L.; LUCCA, C. M. The missing link: <span>Comparing</span> mass appraisal techniques and their implications for urban land valuation policies in <span>Latin</span> <span>America</span>. <strong>Land Use Policy</strong>, v. 166, p. 107998, 2026. Disponível em: &lt;<a href="https://www.sciencedirect.com/science/article/pii/S0264837726000827">https://www.sciencedirect.com/science/article/pii/S0264837726000827</a>&gt;.
+</div>
+<div id="ref-Embrapa2004" class="csl-entry" role="listitem">
+DRUCK, S.; CARVALHO, M. S.; CÂMARA, G.; MONTEIRO, A. MI. V. (ORGS.). <strong>Análise Espacial de Dados Geográficos</strong>. Planaltina, DF: Embrapa Cerrados, 2004.
+</div>
+<div id="ref-Rousseeuw_least_1984" class="csl-entry" role="listitem">
+ROUSSEEUW, P. J. Least <span>Median</span> of <span>Squares</span> <span>Regression</span>. <strong>Journal of the American Statistical Association</strong>, v. 79, n. 388, p. 871–880, 1984. [American Statistical Association, Taylor &amp; Francis, Ltd.]. Disponível em: &lt;<a href="http://www.jstor.org/stable/2288718">http://www.jstor.org/stable/2288718</a>&gt;. Acesso em: 5/3/2026.
+</div>
+</div>
 </section>
 </section>
 
