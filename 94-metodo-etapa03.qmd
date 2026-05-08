@@ -1,51 +1,4 @@
----
-editor: 
-  markdown: 
-    wrap: 72
-execute:
-  enabled: false
----
-
-# Apêndice 4 - Materiais, Métodos e Resultados da Etapa 3 - Modelagem e Planta de Valores Genéricos (PVG) {#sec-est}
-
-```{r, include = FALSE}
-library(ggplot2)
-set_theme(theme_minimal())
-library(RColorBrewer)
-library(tmap)
-col = rev(brewer.pal(n=5, "Spectral"))
-# col <- brewer.pal(n = 9, "OrRd")
-
-brf <- function(x, decimal.mark = ",", big.mark = ".", digits = 2,
-                     nsmall = 2, scientific = FALSE, ...) {
-  format(x, decimal.mark = decimal.mark, big.mark = big.mark, digits = digits,
-         nsmall = nsmall, scientific = scientific, ...)
-}
-R2 <- function(model) {
-  y <- model$fitted.values + model$residuals
-  res <- model$residuals
-  w <- model$weights
-
-  if (is.null(w)) {
-    TSS <- sum((y - mean(y))^2)
-    RSS <- sum(res^2)
-  } else {
-    TSS <- sum(w*(y-weighted.mean(y,w))^2)
-    RSS <- sum(w*(res)^2)
-  }
-
-  R2 <- 1 - RSS/TSS
-  return(R2)
-}
-adjR2 <- function(model) {
-  R2 <- R2(model)
-  n <- nobs(model)
-  gl <- df.residual(model)
-
-  R2adj <- 1-(1-R2)*(n-1)/gl
-  return(R2adj)
-}
-```
+# Apêndice D - Materiais, Métodos e Resultados da Etapa 3 - Modelagem e Planta de Valores Genéricos (PVG)
 
 ## Introdução
 
@@ -60,8 +13,6 @@ Para os imóveis edificados, a modelagem buscou estimar os valores unitários do
 Além do desenvolvimento dos modelos, esta etapa teve papel fundamental na validação metodológica da PoC, permitindo avaliar o comportamento das variáveis, testar estratégias de segmentação territorial, verificar a aderência dos resultados ao mercado imobiliário real e identificar limitações associadas à qualidade dos dados e à heterogeneidade espacial do município. Os resultados obtidos constituem uma base importante para o refinamento dos modelos e para a preparação da expansão da metodologia para outros municípios e contextos territoriais.
 
 Por fim, a Etapa 3 também contribuiu para consolidar diretrizes de escalabilidade da modelagem, evidenciando a necessidade de combinar automação, controle técnico e interpretação especializada. A metodologia desenvolvida foi concebida para ser replicável, mantendo rastreabilidade, padronização e capacidade de adaptação às diferentes realidades territoriais que serão encontradas ao longo da futura expansão nacional do projeto.
-
-
 
 A etapa 3- Modelagem e Planta de Valores Genéricos (PVG) apresenta os procedimentos e resultados obtidos para a POC Florianópolis/SC. No
 apendice 1 encontra-se o fluxo de modelagem utilizado. Todos
