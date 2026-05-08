@@ -15,7 +15,7 @@ toc: true
 toc-depth: 4
   
 book:
-  title: "Relatório 1T2026"
+  title: "Relatório Trimestral"
   author: "UFSC"
   date: today
  # date-format: long
@@ -87,7 +87,7 @@ format:
         \AtBeginDocument{
           \begin{tikzpicture}[remember picture,overlay]
             \node at (current page.center) {
-              \includegraphics[width=\paperwidth,height=\paperheight]{img/Capa rel mensal - geral.png}
+              \includegraphics[width=\paperwidth,height=\paperheight]{img/Capa_rel_trimestral.png}
             };
           \end{tikzpicture}
           \clearpage
