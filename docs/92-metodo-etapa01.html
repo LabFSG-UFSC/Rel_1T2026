@@ -306,6 +306,12 @@ window.Quarto = {
  <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Materiais, Métodos e Resultados da Etapa 3 - Modelagem e Planta de Valores Genéricos (PVG)</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./95-metodo-etapa04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Apendice 5</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -433,7 +439,7 @@ window.Quarto = {
 </section>
 <section id="fluxo-de-dados-estruturado" class="level2" data-number="B.2">
 <h2 data-number="B.2" class="anchored" data-anchor-id="fluxo-de-dados-estruturado"><span class="header-section-number">B.2</span> Fluxo de dados estruturado</h2>
-<p>O Fluxo detalhado desta etapa encontra-se no apêndice 1</p>
+<p>O Fluxo detalhado desta etapa encontra-se no apêndice A</p>
 <section id="fontes-de-dados" class="level3" data-number="B.2.1">
 <h3 data-number="B.2.1" class="anchored" data-anchor-id="fontes-de-dados"><span class="header-section-number">B.2.1</span> Fontes de dados</h3>
 <p>Para a realização desta Prova de Conceito (POC) em Florianópolis, o Observatório do Mercado Imobiliário estruturou seu fluxo analítico apoiando-se em duas fontes primárias de dados. Embora distintas em sua natureza e propósito original, essas fontes atuam de forma complementar para alcançar o objetivo central: validar e enriquecer espacialmente a amostra imobiliária, garantindo o rigor exigido pela Receita Federal do Brasil (RFB).</p>
@@ -1098,7 +1104,6 @@ Tabela&nbsp;B.1: Funil de processamento e validação cruzada
 <p>Nesta seção, apresentamos análises detalhadas conduzidas pelos bolsistas do projeto, ilustrando aplicações práticas da metodologia desenvolvida e evidenciando padrões identificados durante a validação cruzada ArcGIS vs CNEFE.</p>
 <section id="metodologia-de-recuperação-vias-curtas-short-streets" class="level3" data-number="B.4.1">
 <h3 data-number="B.4.1" class="anchored" data-anchor-id="metodologia-de-recuperação-vias-curtas-short-streets"><span class="header-section-number">B.4.1</span> 1. Metodologia de Recuperação: Vias Curtas (Short Streets)</h3>
-<p><em>Análise completa disponível em <a href="relatorios.qmd#sec-rel-vias-curtas">Apêndice — Análise Exploratória (Vias Curtas)</a>.</em></p>
 <p><strong>Período:</strong> Janeiro - Março 2026 <strong>Objetivo:</strong> Demonstrar como registros de precisão intermediária (precisão = 3) podem ser recuperados através de análise espacial comparativa com malha viária de setores censitários únicos.</p>
 <p>A descrição do fluxo operacional dessa metodologia no pipeline de tratamento encontra-se na Seção <em>Triagem de Precisão e Recuperação Espacial</em>; esta seção detalha os resultados analíticos e a validação da hipótese territorial.</p>
 <section id="metodologia" class="level4" data-number="B.4.1.1">
@@ -1300,7 +1305,6 @@ Tabela&nbsp;B.1: Funil de processamento e validação cruzada
 </section>
 <section id="sec-lote-terreno" class="level3" data-number="B.4.2">
 <h3 data-number="B.4.2" class="anchored" data-anchor-id="sec-lote-terreno"><span class="header-section-number">B.4.2</span> Análise Exploratória: Desempenho em Lotes e Terrenos</h3>
-<p><em>Análise completa disponível em <a href="relatorios.qmd#sec-rel-lote-terreno">Apêndice — Análise de Lote/Terreno V3</a>.</em></p>
 <p><strong>Período:</strong> Março 2026 <strong>Objetivo:</strong> Investigar as causas raiz da menor taxa de processamento em imóveis não-edificados e propor estratégias de melhoria específicas para este segmento.</p>
 <p>O achado quantitativo deste segmento é destacado em <em>Performance por Tipo de Imóvel</em> (Seção de Resultados); esta seção aprofunda a metodologia de diagnóstico, as causas raiz e as recomendações.</p>
 <section id="metodologia-1" class="level4" data-number="B.4.2.1">
@@ -1577,7 +1581,7 @@ Tabela&nbsp;B.1: Funil de processamento e validação cruzada
 <section id="problema-crítico-lotesterrenos" class="level4" data-number="B.5.2.1">
 <h4 data-number="B.5.2.1" class="anchored" data-anchor-id="problema-crítico-lotesterrenos"><span class="header-section-number">B.5.2.1</span> Problema Crítico: Lotes/Terrenos</h4>
 <p>Uma dificuldade notável ocorre com Lotes e Terrenos, onde a taxa de processamento foi apenas <strong>55.0%</strong> (3.369 de 6.120 imóveis), 34,6 pontos percentuais abaixo da média geral. As principais causas são a ausência de numeração de porta em lotes vagos, a menor cobertura do CNEFE para imóveis não-edificados e a degradação do score no L2 (fuzzy_number) quando a diferença numérica entre lote e edificação vizinha supera ~100 unidades.</p>
-<p>A análise completa — com tabelas comparativas por bairro, distribuição por tipo de match e recomendações de ajuste de threshold — está documentada na <a href="#sec-lote-terreno">Seção 3.2</a> e no <a href="relatorios.qmd#sec-rel-lote-terreno">Apêndice — Análise de Lote/Terreno</a>.</p>
+<p>A análise completa — com tabelas comparativas por bairro, distribuição por tipo de match e recomendações de ajuste de threshold — está documentada na <a href="#sec-lote-terreno">Seção 3.2</a>.</p>
 </section>
 </section>
 <section id="padronização" class="level3" data-number="B.5.3">
@@ -1606,7 +1610,7 @@ Tabela&nbsp;B.1: Funil de processamento e validação cruzada
 <p>A metodologia adotada produziu dois eixos independentes de qualidade posicional (<code>is_problematic</code>) e econômico-cadastral (<code>is_outlier</code>), que podem ser combinados conforme o objetivo de cada análise. Essa independência é uma característica deliberada: permite que o analista da RFB aplique filtros progressivos sem descartar dados que podem ser úteis em contextos distintos.</p>
 <section id="resultado-final-base-duplamente-validada" class="level3" data-number="B.7.1">
 <h3 data-number="B.7.1" class="anchored" data-anchor-id="resultado-final-base-duplamente-validada"><span class="header-section-number">B.7.1</span> Resultado Final: Base Duplamente Validada</h3>
-<p>Aplicando simultaneamente os dois filtros de qualidade — <code>is_outlier = 0</code> (dado econômico limpo, sem duplicatas e campos válidos) <strong>e</strong> <code>is_problematic = FALSE</code> (posição confirmada pelo CNEFE) —, o resultado da PoC Florianópolis é:</p>
+<p>Aplicando simultaneamente os dois filtros de qualidade — <code>is_outlier = 0</code> (dado econômico limpo, sem duplicatas e campos válidos) <strong>e</strong> <code>is_problematic = FALSE</code> (posição confirmada pelo CNEFE) —, o resultado da POC Florianópolis é:</p>
 <div style="border-left: 4px solid #555; background-color: #f5f5f5; padding: 1.2em 1.5em; margin: 1.5em 0;">
 <p><strong>Dataset Pronto para Análise Fiscal Direta</strong></p>
 <p><strong>14.921 imóveis</strong> com posição validada e oferta íntegra — <strong>17,8% da base bruta</strong> (83.869 registros).</p>

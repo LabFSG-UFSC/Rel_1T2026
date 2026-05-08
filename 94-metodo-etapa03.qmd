@@ -2,15 +2,50 @@
 
 ## Introdução
 
-A Etapa 3 do projeto corresponde ao desenvolvimento da modelagem estatística e espacial voltada à construção da Planta de Valores Genéricos (PVG) e à estimativa dos Valores de Referência dos imóveis urbanos no contexto da Prova de Conceito (POC) de Florianópolis/SC. Esta etapa representa o núcleo analítico do projeto, pois integra as bases estruturadas nas etapas anteriores — observatório do mercado imobiliário, variáveis geoespaciais e bases cartográficas territoriais — para geração de modelos capazes de representar o comportamento do mercado imobiliário de forma consistente, auditável e escalável.
+A Etapa 3 do projeto corresponde ao desenvolvimento da modelagem estatística e
+espacial voltada à construção da Planta de Valores Genéricos (PVG) e à
+estimativa dos Valores de Referência dos imóveis urbanos no contexto da Prova de
+Conceito (POC) de Florianópolis/SC. Esta etapa representa o núcleo analítico do
+projeto, pois integra as bases estruturadas nas etapas anteriores — observatório
+do mercado imobiliário, variáveis geoespaciais e bases cartográficas
+territoriais — para geração de modelos capazes de representar o comportamento do
+mercado imobiliário de forma consistente, auditável e escalável.
 
-A modelagem foi estruturada com base em princípios de avaliação em massa, buscando equilibrar desempenho estatístico, coerência econômica e interpretabilidade dos resultados. Nesse contexto, a abordagem adotada combina métodos estatísticos clássicos, técnicas geoestatísticas e procedimentos de segmentação espacial, permitindo representar simultaneamente os fatores locacionais, construtivos e territoriais que influenciam a formação dos valores imobiliários.
+A modelagem foi estruturada com base em princípios de avaliação em massa,
+buscando equilibrar desempenho estatístico, coerência econômica e
+interpretabilidade dos resultados. Nesse contexto, a abordagem adotada combina
+métodos estatísticos clássicos, técnicas geoestatísticas e procedimentos de
+segmentação espacial, permitindo representar simultaneamente os fatores
+locacionais, construtivos e territoriais que influenciam a formação dos valores
+imobiliários.
 
-O fluxo metodológico desenvolvido foi organizado de forma incremental e controlada, iniciando pela limpeza e qualificação das bases oriundas do Observatório do Mercado Imobiliário, seguida da definição e tratamento das variáveis explicativas, classificação dos imóveis segundo padrão construtivo e segmentação espacial dos mercados. Posteriormente, foram ajustados modelos específicos para imóveis edificados e para lotes urbanos, permitindo a geração de superfícies de valor e de variáveis derivadas utilizadas na composição da PVG.
+O fluxo metodológico desenvolvido foi organizado de forma incremental e
+controlada, iniciando pela limpeza e qualificação das bases oriundas do
+Observatório do Mercado Imobiliário, seguida da definição e tratamento das
+variáveis explicativas, classificação dos imóveis segundo padrão construtivo e
+segmentação espacial dos mercados. Posteriormente, foram ajustados modelos
+específicos para imóveis edificados e para lotes urbanos, permitindo a geração
+de superfícies de valor e de variáveis derivadas utilizadas na composição da
+PVG.
 
-Para os imóveis edificados, a modelagem buscou estimar os valores unitários do metro quadrado construído (VUM2), considerando atributos físicos, econômicos e locacionais dos imóveis. Já para os lotes urbanos, foram desenvolvidos modelos específicos capazes de representar o comportamento do valor da terra urbana, incorporando variáveis territoriais, renda, acessibilidade, infraestrutura urbana e influência espacial. Essa estratégia permitiu estruturar uma abordagem aderente ao método evolutivo de avaliação, possibilitando posteriormente a composição dos valores finais dos imóveis.
+Para os imóveis edificados, a modelagem buscou estimar os valores unitários do
+metro quadrado construído (VUM2), considerando atributos físicos, econômicos e
+locacionais dos imóveis. Já para os lotes urbanos, foram desenvolvidos modelos
+específicos capazes de representar o comportamento do valor da terra urbana,
+incorporando variáveis territoriais, renda, acessibilidade, infraestrutura
+urbana e influência espacial. Essa estratégia permitiu estruturar uma abordagem
+aderente ao método evolutivo de avaliação, possibilitando posteriormente a
+composição dos valores finais dos imóveis.
 
-Além do desenvolvimento dos modelos, esta etapa teve papel fundamental na validação metodológica da POC, permitindo avaliar o comportamento das variáveis, testar estratégias de segmentação territorial, verificar a aderência dos resultados ao mercado imobiliário real e identificar limitações associadas à qualidade dos dados e à heterogeneidade espacial do município. Os resultados obtidos constituem uma base importante para o refinamento dos modelos e para a preparação da expansão da metodologia para outros municípios e contextos territoriais.
+Além do desenvolvimento dos modelos, esta etapa teve papel fundamental na
+validação metodológica da POC, permitindo avaliar o comportamento das variáveis,
+testar estratégias de segmentação territorial, verificar a aderência dos
+resultados ao mercado imobiliário real e identificar limitações associadas à
+qualidade dos dados e à heterogeneidade espacial do município. Os resultados
+obtidos constituem uma base importante para o refinamento dos modelos e para a
+preparação da expansão da metodologia para outros municípios e contextos
+territoriais.
+
 ```{r, include = FALSE}
 library(ggplot2)
 set_theme(theme_minimal())
@@ -1021,7 +1056,7 @@ ao longo do projeto. Em termos de estimação, a automatização completa é
 um tanto temerária: não se pode prescindir de efetuar um controle de
 qualidade através de uma análise crítica dos modelos, verificando a
 coerência dos resultados obtidos. A definição de um fluxograma de
-estimação, no entanto, como mostrado na @fig-fluxo-modelagem, permite a
+estimação, no entanto, como mostrado na @fig-fluxo-unificado, permite a
 divisão das tarefas entre os membros da equipe de estimação, o que
 deverá tornar o processo de estimação mais eficiente, ainda que demande
 um controle de qualidade rigoroso.
@@ -1053,55 +1088,56 @@ definição de métricas adequadas para os modelos.
 
 ## Conclusões
 
-A Etapa 3 permitiu consolidar a estrutura metodológica de modelagem estatística e espacial voltada à construção da Planta de Valores Genéricos (PVG) e à estimação dos Valores de Referência no contexto da Prova de Conceito (POC) de Florianópolis/SC. Os resultados obtidos demonstraram a viabilidade técnica da abordagem adotada, evidenciando que a integração entre dados de mercado, variáveis geoespaciais e técnicas de modelagem estatística possibilita representar de forma consistente o comportamento do mercado imobiliário urbano.
+A Etapa 3 permitiu consolidar a estrutura metodológica de modelagem estatística
+e espacial voltada à construção da Planta de Valores Genéricos (PVG) e à
+estimação dos Valores de Referência no contexto da Prova de Conceito (POC) de
+Florianópolis/SC. Os resultados obtidos demonstraram a viabilidade técnica da
+abordagem adotada, evidenciando que a integração entre dados de mercado,
+variáveis geoespaciais e técnicas de modelagem estatística possibilita
+representar de forma consistente o comportamento do mercado imobiliário urbano.
 
-A etapa permitiu estruturar um fluxo de modelagem integrado, contemplando desde a limpeza robusta das bases de dados até a geração de modelos preditivos para imóveis edificados e lotes urbanos. A utilização de técnicas de regressão robusta, classificação de padrão construtivo por agrupamento não supervisionado, segmentação espacial e modelagem geoestatística contribuiu para aumentar a consistência analítica dos resultados e reduzir os impactos de ruídos e outliers presentes nas bases de mercado.
+A etapa permitiu estruturar um fluxo de modelagem integrado, contemplando desde
+a limpeza robusta das bases de dados até a geração de modelos preditivos para
+imóveis edificados e lotes urbanos. A utilização de técnicas de regressão
+robusta, classificação de padrão construtivo por agrupamento não supervisionado,
+segmentação espacial e modelagem geoestatística contribuiu para aumentar a
+consistência analítica dos resultados e reduzir os impactos de ruídos e outliers
+presentes nas bases de mercado.
 
-Os modelos desenvolvidos apresentaram desempenho estatístico relevante, especialmente considerando a complexidade e heterogeneidade do mercado imobiliário urbano. O modelo de imóveis edificados alcançou elevado poder explicativo, permitindo a geração de superfícies de valores unitários do metro quadrado construído, enquanto o modelo de lotes urbanos demonstrou capacidade consistente de representar os valores da terra urbana mesmo diante da ausência de diversas variáveis físicas tradicionalmente utilizadas em avaliações imobiliárias.
+Os modelos desenvolvidos apresentaram desempenho estatístico relevante,
+especialmente considerando a complexidade e heterogeneidade do mercado
+imobiliário urbano. O modelo de imóveis edificados alcançou elevado poder
+explicativo, permitindo a geração de superfícies de valores unitários do metro
+quadrado construído, enquanto o modelo de lotes urbanos demonstrou capacidade
+consistente de representar os valores da terra urbana mesmo diante da ausência
+de diversas variáveis físicas tradicionalmente utilizadas em avaliações
+imobiliárias.
 
-Outro resultado importante desta etapa foi a consolidação de uma estratégia de modelagem interpretável e auditável, alinhada às necessidades institucionais da Receita Federal do Brasil. Diferentemente de abordagens exclusivamente baseadas em modelos de “caixa preta”, a metodologia adotada buscou preservar a capacidade de interpretação econômica das variáveis, a rastreabilidade das decisões metodológicas e a transparência do processo de formação dos valores estimados. Essa característica é fundamental para garantir legitimidade técnica, auditabilidade e futura internalização institucional da solução.
+Outro resultado importante desta etapa foi a consolidação de uma estratégia de
+modelagem interpretável e auditável, alinhada às necessidades institucionais da
+Receita Federal do Brasil. Diferentemente de abordagens exclusivamente baseadas
+em modelos de “caixa preta”, a metodologia adotada buscou preservar a capacidade
+de interpretação econômica das variáveis, a rastreabilidade das decisões
+metodológicas e a transparência do processo de formação dos valores estimados.
+Essa característica é fundamental para garantir legitimidade técnica,
+auditabilidade e futura internalização institucional da solução.
 
-A etapa também permitiu identificar limitações metodológicas relevantes, especialmente relacionadas à qualidade das variáveis disponíveis, à heterogeneidade espacial dos mercados e às dificuldades associadas à modelagem de lotes vagos e áreas de expansão urbana. Esses achados possuem caráter estratégico, pois orientam os próximos refinamentos metodológicos e evidenciam os pontos críticos que deverão ser tratados antes da expansão da metodologia em escala nacional.
+A etapa também permitiu identificar limitações metodológicas relevantes,
+especialmente relacionadas à qualidade das variáveis disponíveis, à
+heterogeneidade espacial dos mercados e às dificuldades associadas à modelagem
+de lotes vagos e áreas de expansão urbana. Esses achados possuem caráter
+estratégico, pois orientam os próximos refinamentos metodológicos e evidenciam
+os pontos críticos que deverão ser tratados antes da expansão da metodologia em
+escala nacional.
 
-Por fim, os resultados alcançados demonstram que a modelagem desenvolvida na POC constitui uma base sólida para evolução do projeto, tanto na ampliação territorial quanto na preparação para integração com os ambientes operacionais da RFB. A combinação entre modelagem estatística, inteligência geoespacial e controle metodológico estabelecida nesta etapa representa um avanço significativo na construção de uma arquitetura nacional de avaliação em massa capaz de produzir valores de referência de forma padronizada, escalável e tecnicamente consistente.
+Por fim, os resultados alcançados demonstram que a modelagem desenvolvida na POC
+constitui uma base sólida para evolução do projeto, tanto na ampliação
+territorial quanto na preparação para integração com os ambientes operacionais
+da RFB. A combinação entre modelagem estatística, inteligência geoespacial e
+controle metodológico estabelecida nesta etapa representa um avanço
+significativo na construção de uma arquitetura nacional de avaliação em massa
+capaz de produzir valores de referência de forma padronizada, escalável e
+tecnicamente consistente.
 
 
-
-#### x. Referências
-
-CHANGO-SAILEMA, W. G.; VELAZTEGUÍ-IZURIETA, H.; PAZUÑA-NARANJO, W. P.
-*et al.* XGBoost vs. LightGBM: An XAI Approach to National Vehicle Fleet
-Analysis\_. Computation\_, v. 14, n. 4, 81, 2026.
-
-HJORT, A.; PENSAR, J.; SCHEEL, I.; SOMMERVOLL, D. House price prediction
-with gradient boosted trees under different loss functions. *Journal of
-Property Research*, v. 39, n. 4, p. 338-364, 2022.
-
-HO, W. K. O.; TANG, B.; WONG, S. W.. Predicting property prices with
-machine learning algorithms. *Journal of Property Research*, v. 38, n.
-1, p. 48-70, 2021.
-
-INDAH, Y. M.; ARISTAWIDYA, R.; FITRIANTO, A.; ERFIANI, E.; JUMANSYAH, L.
-M. R. D.. Comparison of Random Forest, XGBoost and LightGBM Methods on
-the Human Development Index Classification. *Jambura Journal of
-Mathematics*, v. 7, n. 1, p. 14-18, 2025.
-
-LIU, Xiang; CHEN, Xiaohong; ORFORD, Scott; TIAN, Mingshu; ZOU, Guojian.
-Does better accessibility always mean higher house prices? *Environment
-and Planning B: Urban Analytics and City Science*, v. 51, n. 9, p.
-2179-2195, 2024.
-
-LIU, X.; KOUNADI, O.; ZURITA-MILLA, R.. Incorporating spatial
-autocorrelation in machine learning models using spatial lag and
-eigenvector spatial filtering features. *ISPRS International Journal of
-Geo-Information*, v. 11, n. 4, 2022.
-
-MIAO, Y.; LI, H.; XUE, L.; SHEN, C.; WANG, F. Application of a
-semi-variogram-based KNN algorithm in the spatial prediction of soil
-heavy metals. *Environmental Pollution*, v. 390, p. 127436, 2026.
-
-RAZA, A.; TALIB, M.; NOOR-UL-AMIN, M.; GUNAIME, N.; BOUKHRIS, I.; NABI,
-M. Enhancing performance in the presence of outliers with redescending
-M-estimators. *Scientific Reports*, v. 14, 13529, 2024. Disponível em:
-<https://doi.org/10.1038/s41598-024-64239-6>. Acesso em: 16 abr 2026.
 
