@@ -41,29 +41,69 @@ adjR2 <- function(model) {
 
 ## Introdução
 
-A Etapa 3 do projeto corresponde ao desenvolvimento da modelagem estatística e espacial voltada à construção da Planta de Valores Genéricos (PVG) e à estimativa dos Valores de Referência dos imóveis urbanos no contexto da Prova de Conceito (PoC) de Florianópolis/SC. Esta etapa representa o núcleo analítico do projeto, pois integra as bases estruturadas nas etapas anteriores — observatório do mercado imobiliário, variáveis geoespaciais e bases cartográficas territoriais — para geração de modelos capazes de representar o comportamento do mercado imobiliário de forma consistente, auditável e escalável.
+A Etapa 3 do projeto corresponde ao desenvolvimento da modelagem estatística e
+espacial voltada à construção da Planta de Valores Genéricos (PVG) e à
+estimativa dos Valores de Referência dos imóveis urbanos no contexto da Prova de
+Conceito (PoC) de Florianópolis/SC. Esta etapa representa o núcleo analítico do
+projeto, pois integra as bases estruturadas nas etapas anteriores — observatório
+do mercado imobiliário, variáveis geoespaciais e bases cartográficas
+territoriais — para geração de modelos capazes de representar o comportamento do
+mercado imobiliário de forma consistente, auditável e escalável.
 
-A modelagem foi estruturada com base em princípios de avaliação em massa, buscando equilibrar desempenho estatístico, coerência econômica e interpretabilidade dos resultados. Nesse contexto, a abordagem adotada combina métodos estatísticos clássicos, técnicas geoestatísticas e procedimentos de segmentação espacial, permitindo representar simultaneamente os fatores locacionais, construtivos e territoriais que influenciam a formação dos valores imobiliários.
+A modelagem foi estruturada com base em princípios de avaliação em massa,
+buscando equilibrar desempenho estatístico, coerência econômica e
+interpretabilidade dos resultados. Nesse contexto, a abordagem adotada combina
+métodos estatísticos clássicos, técnicas geoestatísticas e procedimentos de
+segmentação espacial, permitindo representar simultaneamente os fatores
+locacionais, construtivos e territoriais que influenciam a formação dos valores
+imobiliários.
 
-O fluxo metodológico desenvolvido foi organizado de forma incremental e controlada, iniciando pela limpeza e qualificação das bases oriundas do Observatório do Mercado Imobiliário, seguida da definição e tratamento das variáveis explicativas, classificação dos imóveis segundo padrão construtivo e segmentação espacial dos mercados. Posteriormente, foram ajustados modelos específicos para imóveis edificados e para lotes urbanos, permitindo a geração de superfícies de valor e de variáveis derivadas utilizadas na composição da PVG.
+O fluxo metodológico desenvolvido foi organizado de forma incremental e
+controlada, iniciando pela limpeza e qualificação das bases oriundas do
+Observatório do Mercado Imobiliário, seguida da definição e tratamento das
+variáveis explicativas, classificação dos imóveis segundo padrão construtivo e
+segmentação espacial dos mercados. Posteriormente, foram ajustados modelos
+específicos para imóveis edificados e para lotes urbanos, permitindo a geração
+de superfícies de valor e de variáveis derivadas utilizadas na composição da
+PVG.
 
-Para os imóveis edificados, a modelagem buscou estimar os valores unitários do metro quadrado construído (VUM2), considerando atributos físicos, econômicos e locacionais dos imóveis. Já para os lotes urbanos, foram desenvolvidos modelos específicos capazes de representar o comportamento do valor da terra urbana, incorporando variáveis territoriais, renda, acessibilidade, infraestrutura urbana e influência espacial. Essa estratégia permitiu estruturar uma abordagem aderente ao método evolutivo de avaliação, possibilitando posteriormente a composição dos valores finais dos imóveis.
+Para os imóveis edificados, a modelagem buscou estimar os valores unitários do
+metro quadrado construído (VUM2), considerando atributos físicos, econômicos e
+locacionais dos imóveis. Já para os lotes urbanos, foram desenvolvidos modelos
+específicos capazes de representar o comportamento do valor da terra urbana,
+incorporando variáveis territoriais, renda, acessibilidade, infraestrutura
+urbana e influência espacial. Essa estratégia permitiu estruturar uma abordagem
+aderente ao método evolutivo de avaliação, possibilitando posteriormente a
+composição dos valores finais dos imóveis.
 
-Além do desenvolvimento dos modelos, esta etapa teve papel fundamental na validação metodológica da PoC, permitindo avaliar o comportamento das variáveis, testar estratégias de segmentação territorial, verificar a aderência dos resultados ao mercado imobiliário real e identificar limitações associadas à qualidade dos dados e à heterogeneidade espacial do município. Os resultados obtidos constituem uma base importante para o refinamento dos modelos e para a preparação da expansão da metodologia para outros municípios e contextos territoriais.
+Além do desenvolvimento dos modelos, esta etapa teve papel fundamental na
+validação metodológica da PoC, permitindo avaliar o comportamento das variáveis,
+testar estratégias de segmentação territorial, verificar a aderência dos
+resultados ao mercado imobiliário real e identificar limitações associadas à
+qualidade dos dados e à heterogeneidade espacial do município. Os resultados
+obtidos constituem uma base importante para o refinamento dos modelos e para a
+preparação da expansão da metodologia para outros municípios e contextos
+territoriais.
 
-Por fim, a Etapa 3 também contribuiu para consolidar diretrizes de escalabilidade da modelagem, evidenciando a necessidade de combinar automação, controle técnico e interpretação especializada. A metodologia desenvolvida foi concebida para ser replicável, mantendo rastreabilidade, padronização e capacidade de adaptação às diferentes realidades territoriais que serão encontradas ao longo da futura expansão nacional do projeto.
+Por fim, a Etapa 3 também contribuiu para consolidar diretrizes de
+escalabilidade da modelagem, evidenciando a necessidade de combinar automação,
+controle técnico e interpretação especializada. A metodologia desenvolvida foi
+concebida para ser replicável, mantendo rastreabilidade, padronização e
+capacidade de adaptação às diferentes realidades territoriais que serão
+encontradas ao longo da futura expansão nacional do projeto.
 
-A etapa 3- Modelagem e Planta de Valores Genéricos (PVG) apresenta os procedimentos e resultados obtidos para a POC Florianópolis/SC. No
-apendice 1 encontra-se o fluxo de modelagem utilizado. Todos
-os passos constantes do fluxo de modelagem são descritos na sequência.
-Os resultados podem ser vistos na @sec-resultados-modelagem. Nas seções
-[-@sec-desafios-modelagem] e [-@sec-escalabilidade] são descritos os
-principais desafios encontrados e considerações sobre a escalabilidade
-da solução adotada para o restante do projeto.
+A etapa 3- Modelagem e Planta de Valores Genéricos (PVG) apresenta os
+procedimentos e resultados obtidos para a POC Florianópolis/SC. No apendice 1
+encontra-se o fluxo de modelagem utilizado. Todos os passos constantes do fluxo
+de modelagem são descritos na sequência. Os resultados podem ser vistos na
+@sec-resultados-modelagem. Nas seções [-@sec-desafios-modelagem] e
+[-@sec-escalabilidade] são descritos os principais desafios encontrados e
+considerações sobre a escalabilidade da solução adotada para o restante do
+projeto.
 
 ## Fluxo de Modelagem {#sec-fluxo-modelagem}
 
-O fluxo de modelagem pode ser visto no apêndice 1. 
+O fluxo de modelagem pode ser visto no @sec-fluxo-metodologico. 
 Basicamente, o fluxo mostra que parte do conjunto de dados (dados de
 imóveis edificados) foi utilizada para prever valores de metro quadrado
 construído (VUM2), gerando uma variável para a localização que
@@ -85,43 +125,6 @@ identificação de submercados imobiliários[^1].
     mercados foi adotada. Optou-se por manter aqui o estudo da divisão
     geoespacial do mercado para fins de eventual necessidade em outros
     municípios.
-
-```{mermaid}
-%%| fig-width: 4
-%%| label: fig-fluxo-modelagem
-%%| fig-cap: "Fluxograma da estimação do Valor de Referência."
-%%| eval: false
-flowchart TB
-    A("RECEBIMENTO DOS DADOS DAS ETAPAS 1 E 2") --> B("LIMPEZA DOS DADOS COM REGRESSÃO ROBUSTA")
-    B --> C(["CLASSIFICAÇÃO DE IMÓVEIS CONSTRUÍDOS (PADRÃO CONSTRUTIVO)"])
-    B --> D(["CLASSIFICAÇÃO ESPACIAL"])
-    C --> E("CONJUNTO DE DADOS DE IMÓVEIS EDIFICADOS PARA ANÁLISES")
-    E --> F("MODELOS DE INTELIGÊNCIA ARTIFICIAL")
-    F --VUM2 --> G("CONJUNTO DE DADOS DE LOTES PARA ANÁLISES")
-    D --> G
-    G --> H("MODELOS LINEARES GENERALIZADOS")
-    H --Resíduos --> I("KRIGAGEM")
-    I --> J("MODELO FINAL DE LOTES")
-    K["CIB"] --Dados Cadastrais --> L["CÁLCULO DO CUSTO DE REEDIÇÃO"]
-    J --Valores de Terrenos --> M
-    L --Custo de Benfeitorias --> M["ESTIMAÇÃO DO FATOR DE AJUSTE DE MERCADO"]
-    M --> N["ATRIBUIÇÃO DE VALORES DE REFERÊNCIA"]
-    F --VUM2--> M
-  
-    style A stroke:#2962FF, fill:#2962FF,color:#FFFFFF
-    style B stroke:#2962FF, fill:#FFD600,color:#FFFFFF
-    style F stroke:#2962FF, fill:#FFD600,color:#FFFFFF
-    style E stroke:#2962FF, fill:#2962FF,color:#FFFFFF
-    style G stroke:#2962FF, fill:#2962FF,color:#FFFFFF
-    style H stroke:#2962FF, fill:#FFD600,color:#FFFFFF
-    style J stroke:#2962FF, fill:#FFD600,color:#FFFFFF
-    style M stroke:#2962FF, fill:#FFD600,color:#FFFFFF
-```
-
-```{r}
-#| eval: true
-knitr::include_graphics("img/fluxo/fluxo-modelagem.png")
-```
 
 ## Limpeza dos dados
 
@@ -259,10 +262,6 @@ objetiva de padrão construtivo, sem impor limiares arbitrários de preço.
 
 ![Fluxo da classificação de padrão construtivo](img/pvg/figura_1.png){#fig-pvg1}
 
-![Fluxo metodológico da classificação de padrão
-construtivo.](img/pvg/fluxo-padrao-construtivo.svg){#fig-padrao-construtivo
-width="85%"}
-
 Os histogramas a seguir apresentam a distribuição do valor unitário
 (R\$/m²) por classe de padrão construtivo gerada pelo K-Means,
 separadamente para apartamentos e casas. As distribuições confirmam a
@@ -279,11 +278,8 @@ apresenta distribuição mais dispersa, com valores a partir de R\$
 20.000/m² e cauda longa até R\$ 70.000/m², refletindo a heterogeneidade
 do segmento de alto padrão em Florianópolis.
 
-![Histogramas dos imóveis classificados por padrão construtivo](img/pvg/figura_2.png){#fig-pvg2}
-
 ![Distribuição do valor unitário por padrão de imóvel —
-Apartamentos.](img/pvg/histograma-padrao-apartamentos.png){#fig-hist-padrao-aptos
-width="90%"}
+Apartamentos.](img/pvg/figura_2.png){#fig-hist-padrao-aptos}
 
 Para as **casas** (@fig-hist-padrao-casas), o padrão baixo concentra-se
 até R\$ 10.000/m², o padrão normal entre R\$ 8.000 e R\$ 15.000/m², e o
@@ -292,11 +288,8 @@ as casas apresentam faixas de valor unitário mais comprimidas e menor
 dispersão no padrão alto, o que evidencia diferenças estruturais entre
 as duas tipologias.
 
-![](img/pvg/figura_3.png){#fig-pvg3}
-
 ![Distribuição do valor unitário por padrão de imóvel —
-Casas.](img/pvg/histograma-padrao-casas.png){#fig-hist-padrao-casas
-width="90%"}
+Casas.](img/pvg/figura_3.png){#fig-hist-padrao-casas}
 
 ### Classificação espacial {#sec-classif-geo}
 
@@ -320,17 +313,12 @@ formal, essa estratégia melhora a representação da heterogeneidade
 espacial em cada tipologia e cria estratos técnicos úteis para os
 modelos de valor.
 
-![Fluxo da classificação espacial por tipologia](img/pvg/figura_4.png){#fig-pvg4}
-
 ![Fluxo metodológico do agrupamento espacial por
-tipologia.](img/pvg/fluxo-agrupamento.svg){#fig-agrupamento width="85%"}
-
-![](img/pvg/figura_5.png){#fig-pvg5}
+tipologia.](img/pvg/figura_4.png){#fig-pvg4}
 
 ![Clusterização espacial por tipologia com comparação entre
 class_3_cluster e class_5_cluster (apartamentos, casas e
-lotes).](img/pvg/clusterizacao-tipologias-k3-k5.png){#fig-clusterizacao-tipologias
-width="95%"}
+lotes).](img/pvg/figura_5.png){#fig-pvg5}
 
 ## Construção dos modelos
 

@@ -1576,7 +1576,7 @@ construção das PVGs, mas também estabeleceram fundamentos estratégicos
 essenciais para a futura internalização, expansão e sustentabilidade operacional
 da metodologia no âmbito da Receita Federal do Brasil.
 
-## Plataforma para visualização dos dados
+### Plataforma para visualização dos dados
 
 A Plataforma para Visualização dos Dados consiste em um sistema de informação
 territorial web configurado para apoiar o acompanhamento, a análise e a

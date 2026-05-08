@@ -89,9 +89,6 @@ div.csl-indent {
     "search-label": "Procurar"
   }
 }</script>
-<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
@@ -392,34 +389,9 @@ window.Quarto = {
 </section>
 <section id="sec-fluxo-modelagem" class="level2" data-number="D.2">
 <h2 data-number="D.2" class="anchored" data-anchor-id="sec-fluxo-modelagem"><span class="header-section-number">D.2</span> Fluxo de Modelagem</h2>
-<p>O fluxo de modelagem pode ser visto no apêndice 1. Basicamente, o fluxo mostra que parte do conjunto de dados (dados de imóveis edificados) foi utilizada para prever valores de metro quadrado construído (VUM2), gerando uma variável para a localização que posteriomente foi utilizada na modelagem de valores unitários de lotes, assim como na definição do fator de ajuste de mercado.</p>
+<p>O fluxo de modelagem pode ser visto no <a href="91-fluxo.html" class="quarto-xref"><span>Apêndice A</span></a>. Basicamente, o fluxo mostra que parte do conjunto de dados (dados de imóveis edificados) foi utilizada para prever valores de metro quadrado construído (VUM2), gerando uma variável para a localização que posteriomente foi utilizada na modelagem de valores unitários de lotes, assim como na definição do fator de ajuste de mercado.</p>
 <p>Para a estimação de valores de metro quadrado construído, foi necessária a classificação dos imóveis edificados (casas e apartamentos) segundo seu padrão construtivo. Este procedimento encontra-se detalhado na <a href="#sec-classif-pc" class="quarto-xref"><span>Seção D.4.1</span></a>.</p>
 <p>Além disso, os dados foram classificados segundo a sua localização geoespacial, conforme pode ser visto na <a href="#sec-classif-geo" class="quarto-xref"><span>Seção D.4.2</span></a>, visando a identificação de submercados imobiliários<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
-<div class="cell" data-fig-width="4" data-eval="false" data-layout-align="default">
-<div class="cell-output-display">
-<div id="fig-fluxo-modelagem" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-fluxo-modelagem-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div>
-
-</div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fluxo-modelagem-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;D.1: Fluxograma da estimação do Valor de Referência.
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="img/fluxo/fluxo-modelagem.png" class="img-fluid figure-img" width="2978"></p>
-</figure>
-</div>
-</div>
-</div>
 </section>
 <section id="limpeza-dos-dados" class="level2" data-number="D.3">
 <h2 data-number="D.3" class="anchored" data-anchor-id="limpeza-dos-dados"><span class="header-section-number">D.3</span> Limpeza dos dados</h2>
@@ -481,60 +453,30 @@ k|t| - \frac{1}{2} k^2&amp; |t| &gt;k
 <img src="img/pvg/figura_1.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pvg1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;D.2: Fluxo da classificação de padrão construtivo
-</figcaption>
-</figure>
-</div>
-<div id="fig-padrao-construtivo" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-padrao-construtivo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="img/pvg/fluxo-padrao-construtivo.svg" class="img-fluid figure-img" style="width:85.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-padrao-construtivo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;D.3: Fluxo metodológico da classificação de padrão construtivo.
+Figura&nbsp;D.1: Fluxo da classificação de padrão construtivo
 </figcaption>
 </figure>
 </div>
 <p>Os histogramas a seguir apresentam a distribuição do valor unitário (R$/m²) por classe de padrão construtivo gerada pelo K-Means, separadamente para apartamentos e casas. As distribuições confirmam a separação entre os grupos: em ambas as tipologias, as curvas dos padrões baixo, normal e alto apresentam picos em faixas distintas de valor, com sobreposição controlada nas fronteiras. Essa separação valida que o algoritmo capturou com consistência a segmentação econômica dos imóveis sem necessidade de limiares definidos manualmente.</p>
-<p>Para os <strong>apartamentos</strong> (<a href="#fig-hist-padrao-aptos" class="quarto-xref">Figura&nbsp;<span>D.5</span></a>), o padrão baixo concentra-se predominantemente na faixa de R$ 5.000 a R$ 15.000/m², o padrão normal entre R$ 10.000 e R$ 20.000/m², e o padrão alto apresenta distribuição mais dispersa, com valores a partir de R$ 20.000/m² e cauda longa até R$ 70.000/m², refletindo a heterogeneidade do segmento de alto padrão em Florianópolis.</p>
-<div id="fig-pvg2" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-pvg2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="img/pvg/figura_2.png" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pvg2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;D.4: Histogramas dos imóveis classificados por padrão construtivo
-</figcaption>
-</figure>
-</div>
+<p>Para os <strong>apartamentos</strong> (<a href="#fig-hist-padrao-aptos" class="quarto-xref">Figura&nbsp;<span>D.2</span></a>), o padrão baixo concentra-se predominantemente na faixa de R$ 5.000 a R$ 15.000/m², o padrão normal entre R$ 10.000 e R$ 20.000/m², e o padrão alto apresenta distribuição mais dispersa, com valores a partir de R$ 20.000/m² e cauda longa até R$ 70.000/m², refletindo a heterogeneidade do segmento de alto padrão em Florianópolis.</p>
 <div id="fig-hist-padrao-aptos" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-hist-padrao-aptos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="img/pvg/histograma-padrao-apartamentos.png" class="img-fluid figure-img" style="width:90.0%">
+<img src="img/pvg/figura_2.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hist-padrao-aptos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;D.5: Distribuição do valor unitário por padrão de imóvel — Apartamentos.
+Figura&nbsp;D.2: Distribuição do valor unitário por padrão de imóvel — Apartamentos.
 </figcaption>
 </figure>
 </div>
-<p>Para as <strong>casas</strong> (<a href="#fig-hist-padrao-casas" class="quarto-xref">Figura&nbsp;<span>D.7</span></a>), o padrão baixo concentra-se até R$ 10.000/m², o padrão normal entre R$ 8.000 e R$ 15.000/m², e o padrão alto acima de R$ 15.000/m². Em comparação com os apartamentos, as casas apresentam faixas de valor unitário mais comprimidas e menor dispersão no padrão alto, o que evidencia diferenças estruturais entre as duas tipologias.</p>
-<div id="fig-pvg3" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-pvg3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="img/pvg/figura_3.png" id="fig-pvg3" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-pvg3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;D.6
-</figcaption>
-</figure>
-</div>
+<p>Para as <strong>casas</strong> (<a href="#fig-hist-padrao-casas" class="quarto-xref">Figura&nbsp;<span>D.3</span></a>), o padrão baixo concentra-se até R$ 10.000/m², o padrão normal entre R$ 8.000 e R$ 15.000/m², e o padrão alto acima de R$ 15.000/m². Em comparação com os apartamentos, as casas apresentam faixas de valor unitário mais comprimidas e menor dispersão no padrão alto, o que evidencia diferenças estruturais entre as duas tipologias.</p>
 <div id="fig-hist-padrao-casas" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-hist-padrao-casas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="img/pvg/histograma-padrao-casas.png" class="img-fluid figure-img" style="width:90.0%">
+<img src="img/pvg/figura_3.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hist-padrao-casas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;D.7: Distribuição do valor unitário por padrão de imóvel — Casas.
+Figura&nbsp;D.3: Distribuição do valor unitário por padrão de imóvel — Casas.
 </figcaption>
 </figure>
 </div>
@@ -550,37 +492,17 @@ Figura&nbsp;D.7: Distribuição do valor unitário por padrão de imóvel — Ca
 <img src="img/pvg/figura_4.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pvg4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;D.8: Fluxo da classificação espacial por tipologia
-</figcaption>
-</figure>
-</div>
-<div id="fig-agrupamento" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-agrupamento-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="img/pvg/fluxo-agrupamento.svg" class="img-fluid figure-img" style="width:85.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-agrupamento-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;D.9: Fluxo metodológico do agrupamento espacial por tipologia.
+Figura&nbsp;D.4: Fluxo metodológico do agrupamento espacial por tipologia.
 </figcaption>
 </figure>
 </div>
 <div id="fig-pvg5" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-pvg5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="img/pvg/figura_5.png" id="fig-pvg5" class="img-fluid figure-img">
+<img src="img/pvg/figura_5.png" class="img-fluid figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-pvg5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;D.10
-</figcaption>
-</figure>
-</div>
-<div id="fig-clusterizacao-tipologias" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-clusterizacao-tipologias-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="img/pvg/clusterizacao-tipologias-k3-k5.png" class="img-fluid figure-img" style="width:95.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-clusterizacao-tipologias-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;D.11: Clusterização espacial por tipologia com comparação entre class_3_cluster e class_5_cluster (apartamentos, casas e lotes).
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pvg5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;D.5: Clusterização espacial por tipologia com comparação entre class_3_cluster e class_5_cluster (apartamentos, casas e lotes).
 </figcaption>
 </figure>
 </div>
@@ -1131,7 +1053,7 @@ Tabela&nbsp;D.3: Modelo de lotes urbanos.
 <img src="94-metodo-etapa03_files/figure-html/fig-ResiduosFinais-1.png" class="img-fluid figure-img" width="672">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ResiduosFinais-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;D.12: Resíduos do modelo final de lotes.
+Figura&nbsp;D.6: Resíduos do modelo final de lotes.
 </figcaption>
 </figure>
 </div>
@@ -1279,7 +1201,7 @@ Tabela&nbsp;D.4: Modelo de lotes urbanos. Erros robustos.
 <img src="94-metodo-etapa03_files/figure-html/fig-superficieVU-1.png" class="img-fluid figure-img" width="672">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-superficieVU-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;D.13: Mapa de Valores de metro quadrado construído (R$/m2).
+Figura&nbsp;D.7: Mapa de Valores de metro quadrado construído (R$/m2).
 </figcaption>
 </figure>
 </div>
@@ -1289,12 +1211,12 @@ Figura&nbsp;D.13: Mapa de Valores de metro quadrado construído (R$/m2).
 <section id="planta-de-valores-genéricos" class="level4" data-number="D.7.2.2">
 <h4 data-number="D.7.2.2" class="anchored" data-anchor-id="planta-de-valores-genéricos"><span class="header-section-number">D.7.2.2</span> Planta de Valores Genéricos</h4>
 <p>Com o modelo da <a href="#tbl-LotesModel" class="quarto-xref">Tabela&nbsp;<span>D.3</span></a> é possível elaborar uma planta de valores genéricos (PVG) para a cidade de Florianópolis. Esta PVG deve ter uma escala condizente com a magnitude do projeto. Se por um lado não é viável tecnicamente a elaboração de PVG’s por face de quadras no contexto deste projeto, por outro lado a escala de trabalho não pode ser pequena a ponto de não permitir a aplicação uma tributação com um mínimo de equidade.</p>
-<p>Uma vez definida a escala, a PVG deverá ser gerada a partir da superfície de valores unitários de lotes mostrada na <a href="#fig-SuperficieVULotes" class="quarto-xref">Figura&nbsp;<span>D.14</span></a>.</p>
+<p>Uma vez definida a escala, a PVG deverá ser gerada a partir da superfície de valores unitários de lotes mostrada na <a href="#fig-SuperficieVULotes" class="quarto-xref">Figura&nbsp;<span>D.8</span></a>.</p>
 </section>
 </section>
 <section id="outros-modelos" class="level3" data-number="D.7.3">
 <h3 data-number="D.7.3" class="anchored" data-anchor-id="outros-modelos"><span class="header-section-number">D.7.3</span> Outros modelos</h3>
-<p>Nesta seção são apresentados os resultados de outros modelos estatísticos elaborados para a PoC Florianópolis. São estudos de modelos de aprendizado de máquina. Tais modelos não foram utilizados para os resultados finais da PoC, por dois motivos: primeiro, os modelos foram ajustados em paralelo ao andamento previsto para a PoC; segundo, existe a dificuldade de interpretabilidade dos modelos de aprendizado de máquina. Como ilustrado na <a href="#fig-fluxo-modelagem" class="quarto-xref">Figura&nbsp;<span>D.1</span></a>, os modelos de aprendizado de máquina devem ser utilizados ao longo do projeto, porém os seus resultados deverão ser utilizados como um caminho para a estimação linear dos valores finais, mantendo assim a interpretabilidade.</p>
+<p>Nesta seção são apresentados os resultados de outros modelos estatísticos elaborados para a PoC Florianópolis. São estudos de modelos de aprendizado de máquina. Tais modelos não foram utilizados para os resultados finais da PoC, por dois motivos: primeiro, os modelos foram ajustados em paralelo ao andamento previsto para a PoC; segundo, existe a dificuldade de interpretabilidade dos modelos de aprendizado de máquina. Como ilustrado na <span class="quarto-unresolved-ref">?fig-fluxo-modelagem</span>, os modelos de aprendizado de máquina devem ser utilizados ao longo do projeto, porém os seus resultados deverão ser utilizados como um caminho para a estimação linear dos valores finais, mantendo assim a interpretabilidade.</p>
 <section id="estimação-de-valores-unitários-vu-de-lotes-em-florianópolis-sc" class="level4" data-number="D.7.3.1">
 <h4 data-number="D.7.3.1" class="anchored" data-anchor-id="estimação-de-valores-unitários-vu-de-lotes-em-florianópolis-sc"><span class="header-section-number">D.7.3.1</span> Estimação de valores unitários (VU) de lotes em Florianópolis (SC)</h4>
 </section>
@@ -1594,7 +1516,7 @@ Tabela&nbsp;D.5: Correlações
 <img src="94-metodo-etapa03_files/figure-html/fig-SuperficieVULotes-1.png" class="img-fluid figure-img" width="672">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-SuperficieVULotes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;D.14: Superfície de valores unitários para um lote padrão residencial de 450m2.
+Figura&nbsp;D.8: Superfície de valores unitários para um lote padrão residencial de 450m2.
 </figcaption>
 </figure>
 </div>
@@ -1604,7 +1526,7 @@ Figura&nbsp;D.14: Superfície de valores unitários para um lote padrão residen
 </section>
 <section id="sec-escalabilidade" class="level2" data-number="D.9">
 <h2 data-number="D.9" class="anchored" data-anchor-id="sec-escalabilidade"><span class="header-section-number">D.9</span> Escalabilidade</h2>
-<p>A escalabilidade do processo de modelagem deve se dar de forma natural ao longo do projeto. Em termos de estimação, a automatização completa é um tanto temerária: não se pode prescindir de efetuar um controle de qualidade através de uma análise crítica dos modelos, verificando a coerência dos resultados obtidos. A definição de um fluxograma de estimação, no entanto, como mostrado na <a href="#fig-fluxo-modelagem" class="quarto-xref">Figura&nbsp;<span>D.1</span></a>, permite a divisão das tarefas entre os membros da equipe de estimação, o que deverá tornar o processo de estimação mais eficiente, ainda que demande um controle de qualidade rigoroso.</p>
+<p>A escalabilidade do processo de modelagem deve se dar de forma natural ao longo do projeto. Em termos de estimação, a automatização completa é um tanto temerária: não se pode prescindir de efetuar um controle de qualidade através de uma análise crítica dos modelos, verificando a coerência dos resultados obtidos. A definição de um fluxograma de estimação, no entanto, como mostrado na <span class="quarto-unresolved-ref">?fig-fluxo-modelagem</span>, permite a divisão das tarefas entre os membros da equipe de estimação, o que deverá tornar o processo de estimação mais eficiente, ainda que demande um controle de qualidade rigoroso.</p>
 <p>Considera-se importante para a escalabilidade a utilização dos modelos paramétricos, melhorados, com o auxílio da krigagem, da variável de localização baseada nos resíduos de um modelo preliminar, pois isto permitirá, em tempo futuro, uma metanálise dos resultados obtidos em cada capital. Isto pode vir a permitir, após a confecção dos modelos em um número suficiente de capitais, extrapolar o conhecimento obtido para outras capitais de maneira científica, evitando-se a eventual necessidade de adoção de procedimentos duvidosos, como a adoção de fatores de homogeneização determinísticos.</p>
 <section id="replicação-em-outros-municípios" class="level3" data-number="D.9.1">
 <h3 data-number="D.9.1" class="anchored" data-anchor-id="replicação-em-outros-municípios"><span class="header-section-number">D.9.1</span> Replicação em outros municípios</h3>
