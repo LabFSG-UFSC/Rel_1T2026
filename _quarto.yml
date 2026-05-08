@@ -78,6 +78,9 @@ format:
         \usepackage{booktabs}
         \usepackage{array}
         \usepackage{multirow}
+        \usepackage{pdflscape}
+        \newcommand{\blandscape}{\begin{landscape}}
+        \newcommand{\elandscape}{\end{landscape}}
         % Capa:
         \usepackage{tikz}
         \usepackage{everypage}
@@ -100,7 +103,7 @@ format:
         % Rodapé:
         \input{footer.tex}
     link-citations: true
-    fontsize: 14pt
+    fontsize: 11pt
 
 
 editor: source
