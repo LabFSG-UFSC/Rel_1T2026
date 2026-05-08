@@ -1,5 +1,7 @@
 # Introdução
 
+•	INTRODUÇÃO
+
 O presente relatório técnico tem por finalidade apresentar, de forma estruturada e detalhada, o avanço das atividades desenvolvidas no âmbito do Projeto TED firmado entre a Receita Federal do Brasil (RFB) e a Universidade Federal de Santa Catarina (UFSC), voltado à construção, validação e institucionalização de uma metodologia nacional para determinação de Valores de Referência de imóveis urbanos, em consonância com as diretrizes estabelecidas pela Lei Complementar nº 214/2025 e com as demandas do novo sistema tributário brasileiro.
 
 O projeto teve início em 26 de dezembro de 2025, sendo que seus primeiros meses foram dedicados às atividades de mobilização inicial, estruturação da equipe técnica, organização dos ambientes de trabalho e alinhamento estratégico entre as instituições envolvidas. Esse período foi fundamental para a definição das diretrizes operacionais, estabelecimento dos fluxos de governança e preparação das bases necessárias para o início das atividades técnicas. Nesse contexto, destaca-se a elaboração, apresentação e validação do Plano de Gerenciamento do Projeto, que foi apresentado em 03/02/2026 e formalmente entregue em 05/02/2026, constituindo um marco estruturante para a condução das atividades.
