@@ -1,1 +1,3 @@
 # Fluxo Metodológico
+
+![Fluxo da obtenção do valor de referência](img/fluxo/Fluxo_da_Obtencao_do_Valor_de_Referencia.png)
