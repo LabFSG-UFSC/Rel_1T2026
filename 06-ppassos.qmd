@@ -1,30 +1,98 @@
 # Proximos passos
 
-A definição dos próximos passos do projeto está diretamente associada ao nível de maturidade alcançado durante a execução da Prova de Conceito (PoC), aos resultados obtidos nas etapas de estruturação do Observatório do Mercado Imobiliário, consolidação cartográfica territorial e modelagem da Planta de Valores Genéricos (PVG), bem como à necessidade de preparar a transição para uma fase de ampliação operacional e futura internalização institucional na Receita Federal do Brasil (RFB).
+A definição dos próximos passos do projeto está diretamente associada ao nível
+de maturidade alcançado durante a execução da Prova de Conceito (PoC), aos
+resultados obtidos nas etapas de estruturação do Observatório do Mercado
+Imobiliário, consolidação cartográfica territorial e modelagem da Planta de
+Valores Genéricos (PVG), bem como à necessidade de preparar a transição para uma
+fase de ampliação operacional e futura internalização institucional na Receita
+Federal do Brasil (RFB).
 
-Os resultados alcançados demonstraram viabilidade técnica da metodologia proposta, permitindo validar parte significativa da arquitetura de dados, dos processos de geocodificação, das estratégias de integração territorial e dos modelos preliminares de avaliação em massa. Entretanto, as análises realizadas também evidenciaram desafios estruturais relacionados à qualidade dos dados, escalabilidade operacional, padronização territorial, automação dos fluxos e estabilidade metodológica em diferentes contextos urbanos, tornando necessária a continuidade do processo de amadurecimento técnico da solução.
+Os resultados alcançados demonstraram viabilidade técnica da metodologia
+proposta, permitindo validar parte significativa da arquitetura de dados, dos
+processos de geocodificação, das estratégias de integração territorial e dos
+modelos preliminares de avaliação em massa. Entretanto, as análises realizadas
+também evidenciaram desafios estruturais relacionados à qualidade dos dados,
+escalabilidade operacional, padronização territorial, automação dos fluxos e
+estabilidade metodológica em diferentes contextos urbanos, tornando necessária a
+continuidade do processo de amadurecimento técnico da solução.
 
-Nesse contexto, os próximos passos estão organizados em dois grandes eixos complementares: (i) ações prioritárias de curto e médio prazo, voltadas à consolidação técnica e operacional da solução desenvolvida, e (ii) marcos estruturantes, responsáveis por orientar a evolução do projeto em direção à escalabilidade nacional, integração institucional e operacionalização futura no ambiente da RFB.
+Nesse contexto, os próximos passos estão organizados em dois grandes eixos
+complementares: (i) ações prioritárias de curto e médio prazo, voltadas à
+consolidação técnica e operacional da solução desenvolvida, e (ii) marcos
+estruturantes, responsáveis por orientar a evolução do projeto em direção à
+escalabilidade nacional, integração institucional e operacionalização futura no
+ambiente da RFB.
 
 ## Ações Prioritárias
 
-As ações prioritárias concentram-se no aprimoramento das frentes já desenvolvidas ao longo da PoC, com foco na qualificação dos dados, ampliação territorial, fortalecimento da infraestrutura tecnológica, evolução metodológica da modelagem e consolidação dos mecanismos de automação e governança.
+As ações prioritárias concentram-se no aprimoramento das frentes já
+desenvolvidas ao longo da PoC, com foco na qualificação dos dados, ampliação
+territorial, fortalecimento da infraestrutura tecnológica, evolução metodológica
+da modelagem e consolidação dos mecanismos de automação e governança.
 
-No âmbito do Observatório do Mercado Imobiliário, será dada continuidade à ampliação e qualificação das bases integradas ao Data Lake, incluindo incorporação de novas fontes de informação, refinamento dos processos de ingestão e fortalecimento das rotinas de limpeza, harmonização e padronização semântica dos dados. As análises realizadas durante a PoC evidenciaram que a qualidade dos registros constitui um dos principais fatores críticos para estabilidade dos modelos e confiabilidade das análises territoriais, especialmente em situações envolvendo endereçamentos incompletos, divergências semânticas e inconsistências cadastrais.
+No âmbito do Observatório do Mercado Imobiliário, será dada continuidade à
+ampliação e qualificação das bases integradas ao Data Lake, incluindo
+incorporação de novas fontes de informação, refinamento dos processos de
+ingestão e fortalecimento das rotinas de limpeza, harmonização e padronização
+semântica dos dados. As análises realizadas durante a PoC evidenciaram que a
+qualidade dos registros constitui um dos principais fatores críticos para
+estabilidade dos modelos e confiabilidade das análises territoriais,
+especialmente em situações envolvendo endereçamentos incompletos, divergências
+semânticas e inconsistências cadastrais.
 
-Também serão priorizadas ações específicas voltadas ao aprimoramento dos processos de geocodificação e validação posicional, especialmente em relação a lotes vagos, terrenos urbanos e áreas de expansão territorial, considerados atualmente um dos principais pontos de limitação da metodologia. Nessa frente, serão avaliadas estratégias complementares de tratamento territorial, utilização de referências espaciais auxiliares, refinamento de thresholds e evolução das rotinas de fuzzy matching aplicadas à consolidação dos endereços.
+Também serão priorizadas ações específicas voltadas ao aprimoramento dos
+processos de geocodificação e validação posicional, especialmente em relação a
+lotes vagos, terrenos urbanos e áreas de expansão territorial, considerados
+atualmente um dos principais pontos de limitação da metodologia. Nessa frente,
+serão avaliadas estratégias complementares de tratamento territorial, utilização
+de referências espaciais auxiliares, refinamento de thresholds e evolução das
+rotinas de fuzzy matching aplicadas à consolidação dos endereços.
 
-Na Etapa de Cartografia Territorial, os esforços estarão direcionados à ampliação da cobertura espacial das bases cartográficas, à consolidação das validações topológicas e ao fortalecimento dos mecanismos de integração entre informações territoriais e dados de mercado. As atividades envolverão refinamento geométrico, padronização de estruturas territoriais, evolução dos dicionários de dados e amadurecimento das variáveis geográficas utilizadas na modelagem. Busca-se, com isso, garantir maior consistência espacial, estabilidade metodológica e capacidade de replicação da solução em diferentes municípios e contextos urbanos.
+Na Etapa de Cartografia Territorial, os esforços estarão direcionados à
+ampliação da cobertura espacial das bases cartográficas, à consolidação das
+validações topológicas e ao fortalecimento dos mecanismos de integração entre
+informações territoriais e dados de mercado. As atividades envolverão
+refinamento geométrico, padronização de estruturas territoriais, evolução dos
+dicionários de dados e amadurecimento das variáveis geográficas utilizadas na
+modelagem. Busca-se, com isso, garantir maior consistência espacial,
+estabilidade metodológica e capacidade de replicação da solução em diferentes
+municípios e contextos urbanos.
 
-Na frente de modelagem e PVG, os próximos passos incluem o refinamento dos modelos de avaliação em massa, com ajustes nas variáveis explicativas, testes de novas abordagens metodológicas e ampliação dos mecanismos de validação estatística e territorial. Os trabalhos buscarão aumentar a robustez, a interpretabilidade e a capacidade de generalização dos modelos, reduzindo dependências excessivas de variáveis proxy e ampliando a aderência dos resultados às dinâmicas reais do mercado imobiliário.
+Na frente de modelagem e PVG, os próximos passos incluem o refinamento dos
+modelos de avaliação em massa, com ajustes nas variáveis explicativas, testes de
+novas abordagens metodológicas e ampliação dos mecanismos de validação
+estatística e territorial. Os trabalhos buscarão aumentar a robustez, a
+interpretabilidade e a capacidade de generalização dos modelos, reduzindo
+dependências excessivas de variáveis proxy e ampliando a aderência dos
+resultados às dinâmicas reais do mercado imobiliário.
 
-Paralelamente, será intensificado o processo de automação dos fluxos operacionais, incluindo evolução dos scripts, consolidação dos pipelines de processamento, melhoria dos mecanismos de versionamento e fortalecimento das rotinas de rastreabilidade e auditoria. A consolidação desses fluxos é considerada fundamental para garantir reprodutibilidade, estabilidade operacional e futura escalabilidade nacional da solução.
+Paralelamente, será intensificado o processo de automação dos fluxos
+operacionais, incluindo evolução dos scripts, consolidação dos pipelines de
+processamento, melhoria dos mecanismos de versionamento e fortalecimento das
+rotinas de rastreabilidade e auditoria. A consolidação desses fluxos é
+considerada fundamental para garantir reprodutibilidade, estabilidade
+operacional e futura escalabilidade nacional da solução.
 
-No campo da infraestrutura tecnológica, os próximos passos incluem o fortalecimento do ambiente computacional utilizado no projeto, abrangendo armazenamento, processamento, backup, segurança da informação e mecanismos de monitoramento operacional. As análises realizadas demonstraram que a expansão territorial da metodologia exigirá infraestrutura robusta e altamente estável, especialmente diante do volume de dados manipulados e da complexidade dos fluxos de integração espacial.
+No campo da infraestrutura tecnológica, os próximos passos incluem o
+fortalecimento do ambiente computacional utilizado no projeto, abrangendo
+armazenamento, processamento, backup, segurança da informação e mecanismos de
+monitoramento operacional. As análises realizadas demonstraram que a expansão
+territorial da metodologia exigirá infraestrutura robusta e altamente estável,
+especialmente diante do volume de dados manipulados e da complexidade dos fluxos
+de integração espacial.
 
-Também será dada continuidade à evolução das plataformas de visualização e análise dos resultados, com aprimoramento dos dashboards, mecanismos de consulta espacial e interfaces de interpretação dos modelos. Busca-se tornar os produtos gerados mais acessíveis, auditáveis e úteis para suporte técnico e institucional à tomada de decisão.
+Também será dada continuidade à evolução das plataformas de visualização e
+análise dos resultados, com aprimoramento dos dashboards, mecanismos de consulta
+espacial e interfaces de interpretação dos modelos. Busca-se tornar os produtos
+gerados mais acessíveis, auditáveis e úteis para suporte técnico e institucional
+à tomada de decisão.
 
-Por fim, serão intensificadas as atividades relacionadas à preparação da internalização da metodologia, incluindo definição preliminar de requisitos técnicos, formatos de intercâmbio de dados, mecanismos de integração institucional e estruturação inicial dos ambientes operacionais que futuramente deverão ser utilizados pela Receita Federal do Brasil.
+Por fim, serão intensificadas as atividades relacionadas à preparação da
+internalização da metodologia, incluindo definição preliminar de requisitos
+técnicos, formatos de intercâmbio de dados, mecanismos de integração
+institucional e estruturação inicial dos ambientes operacionais que futuramente
+deverão ser utilizados pela Receita Federal do Brasil.
 
 ### Principais Ações Prioritárias
 
@@ -46,15 +114,30 @@ Por fim, serão intensificadas as atividades relacionadas à preparação da int
 
 ## Marcos Estruturantes Previstos
 
-Os marcos previstos representam etapas estratégicas de consolidação e evolução do projeto, indicando a transição gradual de uma solução experimental validada em PoC para um ambiente operacional escalável e institucionalmente integrado.
+Os marcos previstos representam etapas estratégicas de consolidação e evolução
+do projeto, indicando a transição gradual de uma solução experimental validada
+em PoC para um ambiente operacional escalável e institucionalmente integrado.
 
-Entre os principais marcos previstos destaca-se à consolidação da base territorial validada, incluindo evolução das rotinas de consistência topológica, amadurecimento das variáveis geográficas e ampliação da cobertura espacial das bases utilizadas na modelagem. Essa etapa será fundamental para garantir estabilidade metodológica e replicabilidade em diferentes realidades territoriais.
+Entre os principais marcos previstos destaca-se à consolidação da base
+territorial validada, incluindo evolução das rotinas de consistência topológica,
+amadurecimento das variáveis geográficas e ampliação da cobertura espacial das
+bases utilizadas na modelagem. Essa etapa será fundamental para garantir
+estabilidade metodológica e replicabilidade em diferentes realidades
+territoriais.
 
-Também está prevista a entrega de versões evolutivas do Data Lake e da arquitetura de integração territorial, com maior volume de informações integradas, melhoria da qualidade dos dados, fortalecimento dos mecanismos de rastreabilidade e ampliação da capacidade de processamento operacional.
+Também está prevista a entrega de versões evolutivas do Data Lake e da
+arquitetura de integração territorial, com maior volume de informações
+integradas, melhoria da qualidade dos dados, fortalecimento dos mecanismos de
+rastreabilidade e ampliação da capacidade de processamento operacional.
 
-No âmbito da expansão territorial, projeta-se o avanço dos Lotes 1 e 2 do projeto, permitindo testar a metodologia em novos contextos urbanos, avaliar comportamento dos modelos em diferentes regiões e consolidar critérios de escalabilidade nacional.
+No âmbito da expansão territorial, projeta-se o avanço dos Lotes 1 e 2 do
+projeto, permitindo testar a metodologia em novos contextos urbanos, avaliar
+comportamento dos modelos em diferentes regiões e consolidar critérios de
+escalabilidade nacional.
 
-Por fim, prevê-se o início progressivo da Etapa 4 - Internalização e Operação,  consolidando a transição gradual entre o ambiente experimental atualmente desenvolvido e o futuro ambiente institucional de operação da metodologia.
+Por fim, prevê-se o início progressivo da Etapa 4 - Internalização e Operação,
+consolidando a transição gradual entre o ambiente experimental atualmente
+desenvolvido e o futuro ambiente institucional de operação da metodologia.
 
 ### Síntese dos Próximos Marcos
 
