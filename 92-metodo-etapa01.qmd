@@ -1,3 +1,25 @@
+---
+title: "ETAPA 1: Observatório do Mercado Imobiliário"
+subtitle: "Prova de Conceito - Florianópolis/SC"
+author: "Equipe Observatório - Receita Federal do Brasil"
+date: "2026-03-31"
+format:
+  html:
+    embed-resources: true
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    theme: cosmo
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+editor: 
+  markdown: 
+    wrap: 72
+---
+
 # Apêndice 2
 
 # Materiais, Métodos e Resultados da Etapa 1: Observatório do Mercado Imobiliário {#sec-obs}
@@ -232,7 +254,7 @@ estritamente as diretrizes do Dicionário de Dados do projeto.
     que será auditado a seguir.
 
 O código-fonte completo do pipeline está disponível em [Apêndice — ETL
-PySpark (scripts.qmd#sec-script-etl).
+PySpark](scripts.qmd#sec-script-etl).
 
 #### Saneamento de Registros (Detecção de Outliers)
 
@@ -295,7 +317,7 @@ relatorio_poc_floripa/script_deteccao_outliers_completo_v2.sql.sql (750+ linhas)
 ```
 
 O script completo está disponível em [Apêndice — Script de Detecção de
-Outliers (scripts.qmd#sec-script-outliers).
+Outliers](scripts.qmd#sec-script-outliers).
 
 Adiciona as seguintes colunas na tabela: - `duplicado` — Marcação de
 duplicata - `outlier_tipos` — Array de tipos de problemas -
@@ -314,7 +336,7 @@ que todos os níveis anteriores não resolveram**. O processamento para
 assim que um match é encontrado — garantindo que o critério mais
 rigoroso sempre tenha prioridade sobre os mais permissivos. O
 código-fonte completo do motor está disponível em [Apêndice — Geocoder
-V3 (scripts.qmd#sec-script-geocoder).
+V3](scripts.qmd#sec-script-geocoder).
 
 ##### Pré-processamento de Entrada
 
@@ -652,7 +674,7 @@ oportunidade de ajuste de thresholds numéricos (±50 dígitos máximo).
 ### Dicionário de dados (V3)
 
 Toda a modelagem foi devidamente mapeada no Dicionário de Dados oficial
-(`DICIONARIO_DADOS.md` (evidencias.qmd#sec-dic-dados) v3). Ele detalha
+([`DICIONARIO_DADOS.md`](evidencias.qmd#sec-dic-dados) v3). Ele detalha
 minuciosamente a natureza das colunas expandidas, incluindo:
 
 -   **Campos de Rastreabilidade Novos:** `origem_coordenada`,
@@ -675,7 +697,7 @@ CNEFE.
 ### 1. Metodologia de Recuperação: Vias Curtas (Short Streets)
 
 *Análise completa disponível em [Apêndice — Análise Exploratória (Vias
-Curtas) (relatorios.qmd#sec-rel-vias-curtas).*
+Curtas)](relatorios.qmd#sec-rel-vias-curtas).*
 
 **Período:** Janeiro - Março 2026 **Objetivo:** Demonstrar como
 registros de precisão intermediária (precisão = 3) podem ser recuperados
@@ -767,7 +789,7 @@ influenciam diretamente a taxa de recuperação.
 ### Análise Exploratória: Desempenho em Lotes e Terrenos {#sec-lote-terreno}
 
 *Análise completa disponível em [Apêndice — Análise de Lote/Terreno
-V3 (relatorios.qmd#sec-rel-lote-terreno).*
+V3](relatorios.qmd#sec-rel-lote-terreno).*
 
 **Período:** Março 2026 **Objetivo:** Investigar as causas raiz da menor
 taxa de processamento em imóveis não-edificados e propor estratégias de
@@ -840,9 +862,9 @@ análise exploratória através de:
 
 ### Validação de Acurácia (Benchmarking com Google Maps)
 
-*Análise completa disponível em Apêndice — Análise Estatística
-V3 (relatorios.qmd#sec-rel-estatistica) e Avaliação CNEFE
-V3 (relatorios.qmd#sec-rel-cnefe).*
+*Análise completa disponível em [Apêndice — Análise Estatística
+V3](relatorios.qmd#sec-rel-estatistica) e [Avaliação CNEFE
+V3](relatorios.qmd#sec-rel-cnefe).*
 
 **Autor:** Ville Rodrigues **Período:** Abril 2026 **Objetivo:** Avaliar
 a qualidade das coordenadas do CNEFE e do ArcGIS tomando o Google Maps
@@ -962,7 +984,7 @@ unidades.
 A análise completa — com tabelas comparativas por bairro, distribuição
 por tipo de match e recomendações de ajuste de threshold — está
 documentada na [Seção 3.2](#sec-lote-terreno) e no [Apêndice — Análise
-de Lote/Terreno (relatorios.qmd#sec-rel-lote-terreno).
+de Lote/Terreno](relatorios.qmd#sec-rel-lote-terreno).
 
 ### Padronização
 

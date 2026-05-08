@@ -1,8 +1,16 @@
+---
+editor: 
+  markdown: 
+    wrap: 72
+execute:
+  enabled: false
+---
+
 # Apêndice 4
 
 # Materiais, Métodos e Resultados da Etapa 3 - Modelagem e Planta de Valores Genéricos (PVG) {#sec-est}
 
-```{r, eval=FALSE, include = FALSE}
+```{r, include = FALSE}
 library(ggplot2)
 set_theme(theme_minimal())
 library(RColorBrewer)
@@ -123,7 +131,8 @@ flowchart TB
 ```
 
 ```{r}
-knitr::include_graphics("img/fluxo/Fluxo_da_Obtencao_do_Valor_de_Referencia.png")
+#| eval: true
+knitr::include_graphics("img/fluxo/fluxo-modelagem.png")
 ```
 
 ## Limpeza dos dados
@@ -263,7 +272,7 @@ objetiva de padrão construtivo, sem impor limiares arbitrários de preço.
 ![](img/pvg/figura_1.png)
 
 ![Fluxo metodológico da classificação de padrão
-construtivo.](img/pvg/figura_1.png){#fig-padrao-construtivo
+construtivo.](img/pvg/fluxo-padrao-construtivo.svg){#fig-padrao-construtivo
 width="85%"}
 
 Os histogramas a seguir apresentam a distribuição do valor unitário
@@ -285,7 +294,7 @@ do segmento de alto padrão em Florianópolis.
 ![](img/pvg/figura_2.png)
 
 ![Distribuição do valor unitário por padrão de imóvel —
-Apartamentos.](img/pvg/figura_2.png){#fig-hist-padrao-aptos
+Apartamentos.](img/pvg/histograma-padrao-apartamentos.png){#fig-hist-padrao-aptos
 width="90%"}
 
 Para as **casas** (@fig-hist-padrao-casas), o padrão baixo concentra-se
@@ -298,7 +307,7 @@ as duas tipologias.
 ![](img/pvg/figura_3.png)
 
 ![Distribuição do valor unitário por padrão de imóvel —
-Casas.](img/pvg/figura_3.png){#fig-hist-padrao-casas
+Casas.](img/pvg/histograma-padrao-casas.png){#fig-hist-padrao-casas
 width="90%"}
 
 ### Classificação espacial {#sec-classif-geo}
@@ -326,13 +335,13 @@ modelos de valor.
 ![](img/pvg/figura_4.png)
 
 ![Fluxo metodológico do agrupamento espacial por
-tipologia.](img/pvg/figura_4.png){#fig-agrupamento width="85%"}
+tipologia.](img/pvg/fluxo-agrupamento.svg){#fig-agrupamento width="85%"}
 
 ![](img/pvg/figura_5.png)
 
 ![Clusterização espacial por tipologia com comparação entre
 class_3_cluster e class_5_cluster (apartamentos, casas e
-lotes).](img/pvg/figura_5.png){#fig-clusterizacao-tipologias
+lotes).](img/pvg/clusterizacao-tipologias-k3-k5.png){#fig-clusterizacao-tipologias
 width="95%"}
 
 ## Construção dos modelos
@@ -352,7 +361,7 @@ edificados foram homogeneizados, para fins de criação de uma superfície
 de valores de metro quadrado construído. As estatísticas do modelo de
 regressão de imóveis edificados podem ser vistas na @tbl-EdifModel.
 
-```{r, eval=FALSE}
+```{r}
 #| label: tbl-EdifModel
 #| tbl-cap: "Modelo de imóveis edificados. Coeficientes exponenciados."
 #| echo: false
@@ -396,7 +405,7 @@ ajustado um modelo linear generalizado, com família gamma e função de
 ligação `log`. As estatísticas desse modelo podem ser vistas na
 @tbl-LotesGLM.
 
-```{r, eval=FALSE}
+```{r}
 #| label: tbl-LotesGLM
 #| tbl-cap: "Modelo linear generalizado de lotes urbanos. Coeficientes exponenciados."
 #| echo: false
@@ -482,7 +491,7 @@ Com os resíduos krigados obtidos do modelo preliminar de lotes
 (`layer`) para o ajuste do modelo final (modelo de regressão linear
 ordinária) de lotes, da @tbl-LotesModel:
 
-```{r, eval=FALSE}
+```{r}
 #| label: tbl-LotesModel
 #| tbl-cap: "Modelo de lotes urbanos."
 
@@ -511,7 +520,7 @@ que pode ser considerado notável, se consideramos a falta de diversas
 variáveis acerca das características físicas dos lotes (frente, forma,
 pedologia e outras).
 
-Os gráficos da figura de residuos finais mostram que não há presença de
+Os gráficos da @fig-ResidualsFinais mostram que não há presença de
 *outliers* ou pontos influenciantes no modelo. A normalidade dos
 resíduos, no entanto, hipótese da inferência clássica, não foi
 verificada, como fica claro quando se analisa o gráfico Q-Q.
@@ -531,14 +540,14 @@ robustos (matriz HC3). Nota-se que não houve grandes modificações nos
 resultados dos testes e dos intervalos de confiança dos coeficientes em
 relação ao apresentados na @tbl-LotesModel.
 
-```{r, eval=FALSE}
+```{r}
 #| label: fig-ResiduosFinais
 #| fig-cap: "Resíduos do modelo final de lotes."
 par(mfrow = c(2,2))
 plot(FinalFit)
 ```
 
-```{r, eval=FALSE}
+```{r}
 #| label: tbl-LotesModel2
 #| tbl-cap: "Modelo de lotes urbanos. Erros robustos."
 
@@ -568,7 +577,7 @@ tab |>
 
 #### Superfície de valores de metro quadrado construído
 
-```{r, eval=FALSE}
+```{r}
 #| label: fig-superficieVU
 #| fig-cap: "Mapa de Valores de metro quadrado construído (R$/m2)."
 library(terra)
@@ -606,7 +615,7 @@ de equidade.
 
 Uma vez definida a escala, a PVG deverá ser gerada a partir da
 superfície de valores unitários de lotes mostrada na
-superficie de valores unitarios de lotes.
+@fig-SuperficieVULotes.
 
 ### Outros modelos
 
@@ -997,7 +1006,7 @@ mais importante para explicar os valores unitários dos lotes foi a
 variável `area`, seguida da variável de localização (`layer`) e da
 variável `VUM2`.
 
-```{r, eval=FALSE}
+```{r}
 #| label: tbl-correlacoes
 #| tbl-cap: "Correlações"
 olsrr::ols_correlations(FinalFit) |>
@@ -1011,7 +1020,7 @@ subjetivamente através da análise da superfície krigada de valores
 unitários homogeneizados para um lote residencial padrão com 450 $m^2$
 de área.
 
-```{r, eval=FALSE}
+```{r}
 #| label: fig-SuperficieVULotes
 #| fig-cap: "Superfície de valores unitários para um lote padrão residencial de 450m2."
 # knitr::include_graphics("../POC-FLN/KO/4205407_Florianopolis_Lotes_v001.tif")
