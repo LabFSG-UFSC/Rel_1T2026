@@ -496,7 +496,7 @@ que pode ser considerado notável, se consideramos a falta de diversas
 variáveis acerca das características físicas dos lotes (frente, forma,
 pedologia e outras).
 
-Os gráficos da @fig-ResidualsFinais mostram que não há presença de
+Os gráficos da @fig-ResiduosFinais mostram que não há presença de
 *outliers* ou pontos influenciantes no modelo. A normalidade dos
 resíduos, no entanto, hipótese da inferência clássica, não foi
 verificada, como fica claro quando se analisa o gráfico Q-Q.
