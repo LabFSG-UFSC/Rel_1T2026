@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Apêndice E - Apendice 5 – Relatório 1T2026</title>
+<title>Apêndice E - Estruturação da base territorial – Relatório 1T2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./91-fluxo.html">Apêndices</a></li><li class="breadcrumb-item"><a href="./95-metodo-etapa04.html"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Apendice 5</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./91-fluxo.html">Apêndices</a></li><li class="breadcrumb-item"><a href="./95-metodo-etapa04.html"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Estruturação da base territorial</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
@@ -244,7 +244,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./95-metodo-etapa04.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Apendice 5</span></span></a>
+ <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Estruturação da base territorial</span></span></a>
   </div>
 </li>
       </ul>
@@ -254,15 +254,43 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#fluxo-detalhado-da-etapa-2" id="toc-fluxo-detalhado-da-etapa-2" class="nav-link active" data-scroll-target="#fluxo-detalhado-da-etapa-2"><span class="header-section-number">E.1</span> Fluxo detalhado da Etapa 2</a></li>
+  <li><a href="#dicionário-e-modelagem-de-dados" id="toc-dicionário-e-modelagem-de-dados" class="nav-link" data-scroll-target="#dicionário-e-modelagem-de-dados"><span class="header-section-number">E.2</span> Dicionário e modelagem de dados</a>
+  <ul>
+  <li><a href="#uf-camada-de-identificação-das-unidades-da-federação" id="toc-uf-camada-de-identificação-das-unidades-da-federação" class="nav-link" data-scroll-target="#uf-camada-de-identificação-das-unidades-da-federação"><span class="header-section-number">E.2.1</span> uf: Camada de identificação das unidades da federação</a></li>
+  <li><a href="#municipio-camada-de-identificação-dos-municípios" id="toc-municipio-camada-de-identificação-dos-municípios" class="nav-link" data-scroll-target="#municipio-camada-de-identificação-dos-municípios"><span class="header-section-number">E.2.2</span> municipio: Camada de identificação dos municípios</a></li>
+  <li><a href="#setor_censitario-camada-de-identificação-dos-setores-censitários" id="toc-setor_censitario-camada-de-identificação-dos-setores-censitários" class="nav-link" data-scroll-target="#setor_censitario-camada-de-identificação-dos-setores-censitários"><span class="header-section-number">E.2.3</span> setor_censitario: Camada de identificação dos setores censitários</a></li>
+  <li><a href="#setor_censitario_urbano-camada-de-identificação-dos-setores-censitários-urbanos" id="toc-setor_censitario_urbano-camada-de-identificação-dos-setores-censitários-urbanos" class="nav-link" data-scroll-target="#setor_censitario_urbano-camada-de-identificação-dos-setores-censitários-urbanos"><span class="header-section-number">E.2.4</span> setor_censitario_urbano: Camada de identificação dos setores censitários urbanos</a></li>
+  <li><a href="#limite_perimetro_urbano-camada-de-identificação-dos-perímetros-urbanos" id="toc-limite_perimetro_urbano-camada-de-identificação-dos-perímetros-urbanos" class="nav-link" data-scroll-target="#limite_perimetro_urbano-camada-de-identificação-dos-perímetros-urbanos"><span class="header-section-number">E.2.5</span> limite_perimetro_urbano: Camada de identificação dos perímetros urbanos</a></li>
+  <li><a href="#logradouro-camada-de-identificação-dos-logradouros" id="toc-logradouro-camada-de-identificação-dos-logradouros" class="nav-link" data-scroll-target="#logradouro-camada-de-identificação-dos-logradouros"><span class="header-section-number">E.2.6</span> logradouro: Camada de identificação dos logradouros</a></li>
+  <li><a href="#face_logradouro-camada-de-identificação-das-faces-dos-logradouros" id="toc-face_logradouro-camada-de-identificação-das-faces-dos-logradouros" class="nav-link" data-scroll-target="#face_logradouro-camada-de-identificação-das-faces-dos-logradouros"><span class="header-section-number">E.2.7</span> face_logradouro: Camada de identificação das faces dos logradouros</a></li>
+  <li><a href="#edificacao-camada-de-identificação-das-edificações" id="toc-edificacao-camada-de-identificação-das-edificações" class="nav-link" data-scroll-target="#edificacao-camada-de-identificação-das-edificações"><span class="header-section-number">E.2.8</span> edificacao: Camada de identificação das edificações</a></li>
+  <li><a href="#regiao_geografica_imediata-camada-de-identificação-das-regiões-geográficas-imediatas" id="toc-regiao_geografica_imediata-camada-de-identificação-das-regiões-geográficas-imediatas" class="nav-link" data-scroll-target="#regiao_geografica_imediata-camada-de-identificação-das-regiões-geográficas-imediatas"><span class="header-section-number">E.2.9</span> regiao_geografica_imediata: Camada de identificação das regiões geográficas imediatas</a></li>
+  <li><a href="#regiao_geografica_intermediaria-camada-de-identificação-das-regiões-geográficas-intermediárias" id="toc-regiao_geografica_intermediaria-camada-de-identificação-das-regiões-geográficas-intermediárias" class="nav-link" data-scroll-target="#regiao_geografica_intermediaria-camada-de-identificação-das-regiões-geográficas-intermediárias"><span class="header-section-number">E.2.10</span> regiao_geografica_intermediaria: Camada de identificação das regiões geográficas intermediárias</a></li>
+  <li><a href="#subsetor_urbano-camada-de-identificação-dos-subsetores-urbanos" id="toc-subsetor_urbano-camada-de-identificação-dos-subsetores-urbanos" class="nav-link" data-scroll-target="#subsetor_urbano-camada-de-identificação-dos-subsetores-urbanos"><span class="header-section-number">E.2.11</span> subsetor_urbano: Camada de identificação dos subsetores urbanos</a></li>
+  <li><a href="#area_risco-camada-de-identificação-das-áreas-de-risco" id="toc-area_risco-camada-de-identificação-das-áreas-de-risco" class="nav-link" data-scroll-target="#area_risco-camada-de-identificação-das-áreas-de-risco"><span class="header-section-number">E.2.12</span> area_risco: Camada de identificação das áreas de risco</a></li>
+  <li><a href="#area_inundacao-camada-de-identificação-das-áreas-de-inundação" id="toc-area_inundacao-camada-de-identificação-das-áreas-de-inundação" class="nav-link" data-scroll-target="#area_inundacao-camada-de-identificação-das-áreas-de-inundação"><span class="header-section-number">E.2.13</span> area_inundacao: Camada de identificação das áreas de inundação</a></li>
+  <li><a href="#linha_costa-camada-de-identificação-da-linha-de-costa" id="toc-linha_costa-camada-de-identificação-da-linha-de-costa" class="nav-link" data-scroll-target="#linha_costa-camada-de-identificação-da-linha-de-costa"><span class="header-section-number">E.2.14</span> linha_costa: Camada de identificação da linha de costa</a></li>
+  <li><a href="#massa_agua-camada-de-identificação-das-massas-dáguas" id="toc-massa_agua-camada-de-identificação-das-massas-dáguas" class="nav-link" data-scroll-target="#massa_agua-camada-de-identificação-das-massas-dáguas"><span class="header-section-number">E.2.15</span> massa_agua: Camada de identificação das massas d’águas</a></li>
+  <li><a href="#declividade-camada-de-identificação-das-declividades" id="toc-declividade-camada-de-identificação-das-declividades" class="nav-link" data-scroll-target="#declividade-camada-de-identificação-das-declividades"><span class="header-section-number">E.2.16</span> declividade: Camada de identificação das declividades</a></li>
+  </ul></li>
+  <li><a href="#registro-e-controle-de-variáveis" id="toc-registro-e-controle-de-variáveis" class="nav-link" data-scroll-target="#registro-e-controle-de-variáveis"><span class="header-section-number">E.3</span> Registro e controle de variáveis</a></li>
+  <li><a href="#pipeline-de-geoprocessamento-da-base-cartográfica" id="toc-pipeline-de-geoprocessamento-da-base-cartográfica" class="nav-link" data-scroll-target="#pipeline-de-geoprocessamento-da-base-cartográfica"><span class="header-section-number">E.4</span> Pipeline de geoprocessamento da base cartográfica</a></li>
+  <li><a href="#modelo-de-relacionamento-da-camada-ouro" id="toc-modelo-de-relacionamento-da-camada-ouro" class="nav-link" data-scroll-target="#modelo-de-relacionamento-da-camada-ouro"><span class="header-section-number">E.5</span> Modelo de relacionamento da camada ouro</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/LabFSG-UFSC/Rel_1T2026/edit/main/95-metodo-etapa04.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./91-fluxo.html">Apêndices</a></li><li class="breadcrumb-item"><a href="./95-metodo-etapa04.html"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Apendice 5</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./91-fluxo.html">Apêndices</a></li><li class="breadcrumb-item"><a href="./95-metodo-etapa04.html"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Estruturação da base territorial</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Apêndice E - Apendice 5</h1>
+<h1 class="title"><span id="sec-estr-base" class="quarto-section-identifier">Apêndice E - Estruturação da base territorial</span></h1>
 </div>
 
 
@@ -279,8 +307,3695 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="fluxo-detalhado-da-etapa-2" class="level2" data-number="E.1">
+<h2 data-number="E.1" class="anchored" data-anchor-id="fluxo-detalhado-da-etapa-2"><span class="header-section-number">E.1</span> Fluxo detalhado da Etapa 2</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./img/fluxo-operacional-detalhado.jpeg" height="700" class="figure-img"></p>
+<figcaption>Fluxo detalhado da Etapa 2</figcaption>
+</figure>
+</div>
+</section>
+<section id="dicionário-e-modelagem-de-dados" class="level2" data-number="E.2">
+<h2 data-number="E.2" class="anchored" data-anchor-id="dicionário-e-modelagem-de-dados"><span class="header-section-number">E.2</span> Dicionário e modelagem de dados</h2>
+<section id="uf-camada-de-identificação-das-unidades-da-federação" class="level3" data-number="E.2.1">
+<h3 data-number="E.2.1" class="anchored" data-anchor-id="uf-camada-de-identificação-das-unidades-da-federação"><span class="header-section-number">E.2.1</span> uf: Camada de identificação das unidades da federação</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>NM_CAMPO_BD</th>
+<th>DESC_CAMPO</th>
+<th>TIPO_BD</th>
+<th>PK</th>
+<th>UNIQUE</th>
+<th>NOT_NULL</th>
+<th>ORIGINAL?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>cd_uf</td>
+<td>Código da Unidade da Federação conforme definição do IBGE</td>
+<td>varchar(2)</td>
+<td>TRUE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>cd_regiao</td>
+<td>Código das Grandes Regiões (Regiões Geográficas)</td>
+<td>varchar(1)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>geometria</td>
+<td>Geometria primitiva da camada</td>
+<td>public.geometry(MultiPolygon, 4674)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>nm_regiao</td>
+<td>Nome da Grande Região Geográfica do IBGE</td>
+<td>varchar(15)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>nm_uf</td>
+<td>Nome da Unidade da Federação</td>
+<td>varchar(20)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>sigla_regiao</td>
+<td>Sigla da Grande Região Geográfica</td>
+<td>varchar(2)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>sigla_uf</td>
+<td>Sigla da Unidade da Federação</td>
+<td>varchar(2)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>uf_area_km2</td>
+<td>Área em quilômetros quadrados</td>
+<td>numeric</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="municipio-camada-de-identificação-dos-municípios" class="level3" data-number="E.2.2">
+<h3 data-number="E.2.2" class="anchored" data-anchor-id="municipio-camada-de-identificação-dos-municípios"><span class="header-section-number">E.2.2</span> municipio: Camada de identificação dos municípios</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>NM_CAMPO_BD</th>
+<th>DESC_CAMPO</th>
+<th>TIPO_BD</th>
+<th>PK</th>
+<th>UNIQUE</th>
+<th>NOT_NULL</th>
+<th>ORIGINAL?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>cd_mun</td>
+<td>Código do Município</td>
+<td>varchar(7)</td>
+<td>TRUE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>mun_area_km2</td>
+<td>Área em quilômetros quadrados</td>
+<td>numeric</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>cd_concurb</td>
+<td>Código da Concentração Urbana</td>
+<td>varchar(7)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>cd_regiao</td>
+<td>Código das Grandes Regiões (Regiões Geográficas)</td>
+<td>varchar(1)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>cd_rgi</td>
+<td>Código da Região Geográfica Imediata</td>
+<td>varchar(6)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>cd_rgint</td>
+<td>Código da Região Geográfica Intermediária</td>
+<td>varchar(4)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>cd_uf</td>
+<td>Código da Unidade da Federação conforme definição do IBGE</td>
+<td>varchar(2)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>geometria</td>
+<td>Geometria primitiva da camada</td>
+<td>public.geometry(MultiPolygon, 4674)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>nm_concurb</td>
+<td>Nome da Concentração Urbana</td>
+<td>varchar(254)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>nm_mun</td>
+<td>Nome do Município</td>
+<td>varchar(350)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>nm_regiao</td>
+<td>Nome da Grande Região Geográfica do IBGE</td>
+<td>varchar(15)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>nm_rgi</td>
+<td>Nome da Região Geográfica Imediata</td>
+<td>varchar(254)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>nm_rgint</td>
+<td>Nome da Região Geográfica Intermediária</td>
+<td>varchar(254)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>nm_uf</td>
+<td>Nome da Unidade da Federação</td>
+<td>varchar(20)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>sigla_regiao</td>
+<td>Sigla da Grande Região Geográfica</td>
+<td>varchar(2)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>sigla_uf</td>
+<td>Sigla da Unidade da Federação</td>
+<td>varchar(2)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>aud_data_criacao</td>
+<td>Data/hora da inserção original</td>
+<td>timestamp</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>aud_data_revisao</td>
+<td>Data/hora da última alteração</td>
+<td>timestamp</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>aud_nome_criador</td>
+<td>Nome do operador que realizou a carga</td>
+<td>varchar(150)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>aud_nome_revisor</td>
+<td>Nome do técnico que editou/validou o dado</td>
+<td>varchar(150)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>aud_numero_revisao</td>
+<td>Contador de edições e revisões do registro (incrementado sempre que houver alteração do dado).</td>
+<td>int</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="setor_censitario-camada-de-identificação-dos-setores-censitários" class="level3" data-number="E.2.3">
+<h3 data-number="E.2.3" class="anchored" data-anchor-id="setor_censitario-camada-de-identificação-dos-setores-censitários"><span class="header-section-number">E.2.3</span> setor_censitario: Camada de identificação dos setores censitários</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>NM_CAMPO_BD</th>
+<th>DESC_CAMPO</th>
+<th>TIPO_BD</th>
+<th>PK</th>
+<th>UNIQUE</th>
+<th>NOT_NULL</th>
+<th>ORIGINAL?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>cd_setor</td>
+<td>Geocódigo de Setor Censitário</td>
+<td>varchar(15)</td>
+<td>TRUE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>cd_aglom</td>
+<td>Código do Aglomerado</td>
+<td>varchar(12)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>cd_bairro</td>
+<td>Código do Bairro</td>
+<td>varchar(10)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>cd_concurb</td>
+<td>Código da Concentração Urbana</td>
+<td>varchar(7)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>cd_dist</td>
+<td>Código do Distrito</td>
+<td>varchar(9)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>cd_fcu</td>
+<td>Código da Favela ou Comunidade Urbana</td>
+<td>varchar(11)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>cd_mun</td>
+<td>Código do Município</td>
+<td>varchar(7)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>cd_nu</td>
+<td>Código do Núcleo Urbano</td>
+<td>varchar(10)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>cd_regiao</td>
+<td>Código das Grandes Regiões (Regiões Geográficas)</td>
+<td>varchar(1)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>cd_rgi</td>
+<td>Código da Região Geográfica Imediata</td>
+<td>varchar(6)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>cd_rgint</td>
+<td>Código da Região Geográfica Intermediária</td>
+<td>varchar(4)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>cd_sit</td>
+<td>Código da Situação do Setor Censitário</td>
+<td>varchar(1)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>cd_subdist</td>
+<td>Código do Subdistrito</td>
+<td>varchar(11)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>cd_tipo</td>
+<td>Código do Tipo do Setor Censitário</td>
+<td>varchar(1)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>cd_uf</td>
+<td>Código da Unidade da Federação conforme definição do IBGE</td>
+<td>varchar(2)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>geometria</td>
+<td>Geometria primitiva da camada</td>
+<td>public.geometry(Polygon, 4674)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>nm_aglom</td>
+<td>Nome do Aglomerado</td>
+<td>varchar(254)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>nm_bairro</td>
+<td>Nome do Bairro</td>
+<td>varchar(254)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>nm_concurb</td>
+<td>Nome da Concentração Urbana</td>
+<td>varchar(254)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>nm_dist</td>
+<td>Nome do Distrito</td>
+<td>varchar(50)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>nm_fcu</td>
+<td>Nome da Favela ou Comunidade Urbana</td>
+<td>varchar(254)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>nm_mun</td>
+<td>Nome do Município</td>
+<td>varchar(50)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>nm_nu</td>
+<td>Nome do Núcleo Urbano</td>
+<td>varchar(254)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>nm_regiao</td>
+<td>Nome da Grande Região Geográfica do IBGE</td>
+<td>varchar(15)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>nm_rgi</td>
+<td>Nome da Região Geográfica Imediata</td>
+<td>varchar(254)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>nm_rgint</td>
+<td>Nome da Região Geográfica Intermediária</td>
+<td>varchar(254)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>nm_subdist</td>
+<td>Nome do Subdistrito</td>
+<td>varchar(50)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>nm_uf</td>
+<td>Nome da Unidade da Federação</td>
+<td>varchar(20)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>setor_area_km2</td>
+<td>Área em quilômetros quadrados</td>
+<td>numeric</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>situacao</td>
+<td>Situação do Setor Censitário</td>
+<td>varchar(6)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>aud_data_criacao</td>
+<td>Data/hora da inserção original</td>
+<td>timestamp</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>aud_data_revisao</td>
+<td>Data/hora da última alteração</td>
+<td>timestamp</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>aud_nome_criador</td>
+<td>Nome do operador que realizou a carga</td>
+<td>varchar(150)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>aud_nome_revisor</td>
+<td>Nome do técnico que editou/validou o dado</td>
+<td>varchar(150)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>aud_numero_revisao</td>
+<td>Contador de edições e revisões do registro (incrementado sempre que houver alteração do dado).</td>
+<td>int</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="setor_censitario_urbano-camada-de-identificação-dos-setores-censitários-urbanos" class="level3" data-number="E.2.4">
+<h3 data-number="E.2.4" class="anchored" data-anchor-id="setor_censitario_urbano-camada-de-identificação-dos-setores-censitários-urbanos"><span class="header-section-number">E.2.4</span> setor_censitario_urbano: Camada de identificação dos setores censitários urbanos</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>NM_CAMPO_BD</th>
+<th>DESC_CAMPO</th>
+<th>TIPO_BD</th>
+<th>PK</th>
+<th>UNIQUE</th>
+<th>NOT_NULL</th>
+<th>ORIGINAL?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>cd_setor</td>
+<td>Geocódigo de Setor Censitário</td>
+<td>varchar(15)</td>
+<td>TRUE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>cd_aglom</td>
+<td>Código do Aglomerado</td>
+<td>varchar(12)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>cd_bairro</td>
+<td>Código do Bairro</td>
+<td>varchar(10)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>cd_concurb</td>
+<td>Código da Concentração Urbana</td>
+<td>varchar(7)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>cd_dist</td>
+<td>Código do Distrito</td>
+<td>varchar(9)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>cd_fcu</td>
+<td>Código da Favela ou Comunidade Urbana</td>
+<td>varchar(11)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>cd_mun</td>
+<td>Código do Município</td>
+<td>varchar(7)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>cd_nu</td>
+<td>Código do Núcleo Urbano</td>
+<td>varchar(10)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>cd_regiao</td>
+<td>Código das Grandes Regiões (Regiões Geográficas)</td>
+<td>varchar(1)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>cd_rgi</td>
+<td>Código da Região Geográfica Imediata</td>
+<td>varchar(6)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>cd_rgint</td>
+<td>Código da Região Geográfica Intermediária</td>
+<td>varchar(4)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>cd_sit</td>
+<td>Código da Situação do Setor Censitário</td>
+<td>varchar(1)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>cd_subdist</td>
+<td>Código do Subdistrito</td>
+<td>varchar(11)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>cd_tipo</td>
+<td>Código do Tipo do Setor Censitário</td>
+<td>varchar(1)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>cd_uf</td>
+<td>Código da Unidade da Federação conforme definição do IBGE</td>
+<td>varchar(2)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>geometria</td>
+<td>Geometria primitiva da camada</td>
+<td>public.geometry(Polygon, 4674)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>nm_aglom</td>
+<td>Nome do Aglomerado</td>
+<td>varchar(254)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>nm_bairro</td>
+<td>Nome do Bairro</td>
+<td>varchar(254)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>nm_concurb</td>
+<td>Nome da Concentração Urbana</td>
+<td>varchar(254)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>nm_dist</td>
+<td>Nome do Distrito</td>
+<td>varchar(50)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>nm_fcu</td>
+<td>Nome da Favela ou Comunidade Urbana</td>
+<td>varchar(254)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>nm_mun</td>
+<td>Nome do Município</td>
+<td>varchar(50)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>nm_nu</td>
+<td>Nome do Núcleo Urbano</td>
+<td>varchar(254)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>nm_regiao</td>
+<td>Nome da Grande Região Geográfica do IBGE</td>
+<td>varchar(15)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>nm_rgi</td>
+<td>Nome da Região Geográfica Imediata</td>
+<td>varchar(254)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>nm_rgint</td>
+<td>Nome da Região Geográfica Intermediária</td>
+<td>varchar(254)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>nm_subdist</td>
+<td>Nome do Subdistrito</td>
+<td>varchar(50)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>nm_uf</td>
+<td>Nome da Unidade da Federação</td>
+<td>varchar(20)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>setor_area_km2</td>
+<td>Área em quilômetros quadrados</td>
+<td>numeric</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>situacao</td>
+<td>Situação do Setor Censitário</td>
+<td>varchar(6)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>aud_data_criacao</td>
+<td>Data/hora da inserção original</td>
+<td>timestamp</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>aud_data_revisao</td>
+<td>Data/hora da última alteração</td>
+<td>timestamp</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>aud_nome_criador</td>
+<td>Nome do operador que realizou a carga</td>
+<td>varchar(150)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>aud_nome_revisor</td>
+<td>Nome do técnico que editou/validou o dado</td>
+<td>varchar(150)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>aud_numero_revisao</td>
+<td>Contador de edições e revisões do registro (incrementado sempre que houver alteração do dado).</td>
+<td>int</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="limite_perimetro_urbano-camada-de-identificação-dos-perímetros-urbanos" class="level3" data-number="E.2.5">
+<h3 data-number="E.2.5" class="anchored" data-anchor-id="limite_perimetro_urbano-camada-de-identificação-dos-perímetros-urbanos"><span class="header-section-number">E.2.5</span> limite_perimetro_urbano: Camada de identificação dos perímetros urbanos</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>NM_CAMPO_BD</th>
+<th>DESC_CAMPO</th>
+<th>TIPO_BD</th>
+<th>PK</th>
+<th>UNIQUE</th>
+<th>NOT_NULL</th>
+<th>ORIGINAL?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>cd_concurb</td>
+<td>Código da Concentração Urbana</td>
+<td>varchar(7)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>cd_mun</td>
+<td>Código do Município</td>
+<td>varchar(7)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>cd_regiao</td>
+<td>Código das Grandes Regiões (Regiões Geográficas)</td>
+<td>varchar(1)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>cd_rgi</td>
+<td>Código da Região Geográfica Imediata</td>
+<td>varchar(6)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>cd_rgint</td>
+<td>Código da Região Geográfica Intermediária</td>
+<td>varchar(4)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>cd_uf</td>
+<td>Código da Unidade da Federação conforme definição do IBGE</td>
+<td>varchar(2)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>geometria</td>
+<td>Geometria primitiva da camada</td>
+<td>geometry(Polygon, 4674)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>nm_concurb</td>
+<td>Nome da Concentração Urbana</td>
+<td>varchar(254)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>nm_mun</td>
+<td>Nome do Município</td>
+<td>varchar(254)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>nm_regiao</td>
+<td>Nome da Grande Região Geográfica do IBGE</td>
+<td>varchar(15)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>nm_rgi</td>
+<td>Nome da Região Geográfica Imediata</td>
+<td>varchar(254)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>nm_rgint</td>
+<td>Nome da Região Geográfica Intermediária</td>
+<td>varchar(254)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>nm_uf</td>
+<td>Nome da Unidade da Federação</td>
+<td>varchar(20)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>area_km2</td>
+<td>Área em quilômetros quadrados</td>
+<td>numeric</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="logradouro-camada-de-identificação-dos-logradouros" class="level3" data-number="E.2.6">
+<h3 data-number="E.2.6" class="anchored" data-anchor-id="logradouro-camada-de-identificação-dos-logradouros"><span class="header-section-number">E.2.6</span> logradouro: Camada de identificação dos logradouros</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>NM_CAMPO_BD</th>
+<th>DESC_CAMPO</th>
+<th>TIPO_BD</th>
+<th>PK</th>
+<th>UNIQUE</th>
+<th>NOT_NULL</th>
+<th>ORIGINAL?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>faixas_via</td>
+<td>Quantidade de faixas de rolamento</td>
+<td>smallint</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>geometria</td>
+<td>Geometria primitiva da camada</td>
+<td>geometry(MultiLinestring, 4674)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>id</td>
+<td>Identificador primário</td>
+<td>bigint</td>
+<td>TRUE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>id_osm</td>
+<td>Identificador primário oriundo do OSM</td>
+<td>bigint</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>mao_unica</td>
+<td>Via de mão única</td>
+<td>boolean</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>nm_log</td>
+<td>Nome do logradouro</td>
+<td>text</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>sup_via</td>
+<td>Tipo de material construtivo da superfície viária</td>
+<td>varchar</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>tip_log</td>
+<td>Tipo do logradouro</td>
+<td>varchar</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>veloc_max</td>
+<td>Velocidade máxima da via</td>
+<td>smallint</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>log_comp_m</td>
+<td>Comprimento calculado em metros</td>
+<td>numeric</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="face_logradouro-camada-de-identificação-das-faces-dos-logradouros" class="level3" data-number="E.2.7">
+<h3 data-number="E.2.7" class="anchored" data-anchor-id="face_logradouro-camada-de-identificação-das-faces-dos-logradouros"><span class="header-section-number">E.2.7</span> face_logradouro: Camada de identificação das faces dos logradouros</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>NM_CAMPO_BD</th>
+<th>DESC_CAMPO</th>
+<th>TIPO_BD</th>
+<th>PK</th>
+<th>UNIQUE</th>
+<th>NOT_NULL</th>
+<th>ORIGINAL?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>id</td>
+<td>Identificador primário</td>
+<td>bigint</td>
+<td>TRUE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>geometria</td>
+<td>Geometria primitiva da camada</td>
+<td>geometry(LineString, 4674)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>tot_geral</td>
+<td>Quantidade de imóveis da face de logradouro</td>
+<td>integer</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>tot_res</td>
+<td>Quantidade de imóveis residenciais da face de logradouro</td>
+<td>integer</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>cd_face</td>
+<td>Código da face de logradouro</td>
+<td>varchar</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>cd_quadra</td>
+<td>Código da quadra</td>
+<td>varchar</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>nm_log</td>
+<td>Nome do Logradouro</td>
+<td>varchar</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>nm_tip_log</td>
+<td>Nome do tipo de logradouro</td>
+<td>varchar</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>nm_tit_log</td>
+<td>Nome do título de logradouro</td>
+<td>varchar</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>cd_setor</td>
+<td>Geocódigo de Setor Censitário</td>
+<td>varchar(15)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="edificacao-camada-de-identificação-das-edificações" class="level3" data-number="E.2.8">
+<h3 data-number="E.2.8" class="anchored" data-anchor-id="edificacao-camada-de-identificação-das-edificações"><span class="header-section-number">E.2.8</span> edificacao: Camada de identificação das edificações</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>NM_CAMPO_BD</th>
+<th>DESC_CAMPO</th>
+<th>TIPO_BD</th>
+<th>PK</th>
+<th>UNIQUE</th>
+<th>NOT_NULL</th>
+<th>ORIGINAL?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>confidence</td>
+<td>Grau de acurácia da identificação da edificação</td>
+<td>numeric(5,4)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>edif_area_m2</td>
+<td>Área em metros quadrados da edificação</td>
+<td>numeric</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>edif_lat</td>
+<td>Latitude da coordenada de localização da edificação</td>
+<td>numeric</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>edif_long</td>
+<td>Longitude da coordenada de localização da edificação</td>
+<td>numeric</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>geometria</td>
+<td>Geometria primitiva da camada</td>
+<td>geometry(Point, 4674)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>id</td>
+<td>Identificador primário</td>
+<td>bigint</td>
+<td>TRUE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>cd_mun</td>
+<td>Código do Município</td>
+<td>varchar(7)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="regiao_geografica_imediata-camada-de-identificação-das-regiões-geográficas-imediatas" class="level3" data-number="E.2.9">
+<h3 data-number="E.2.9" class="anchored" data-anchor-id="regiao_geografica_imediata-camada-de-identificação-das-regiões-geográficas-imediatas"><span class="header-section-number">E.2.9</span> regiao_geografica_imediata: Camada de identificação das regiões geográficas imediatas</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>NM_CAMPO_BD</th>
+<th>DESC_CAMPO</th>
+<th>TIPO_BD</th>
+<th>PK</th>
+<th>UNIQUE</th>
+<th>NOT_NULL</th>
+<th>ORIGINAL?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>rgi_area_km2</td>
+<td>Área em quilômetros quadrados</td>
+<td>numeric</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>cd_regiao</td>
+<td>Código das Grandes Regiões (Regiões Geográficas)</td>
+<td>varchar(1)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>cd_rgi</td>
+<td>Código da Região Geográfica Imediata</td>
+<td>varchar(6)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>cd_rgint</td>
+<td>Código da Região Geográfica Intermediária</td>
+<td>varchar(4)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>cd_uf</td>
+<td>Código da Unidade da Federação conforme definição do IBGE</td>
+<td>varchar(2)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>id</td>
+<td>Identificador primário</td>
+<td>bigint</td>
+<td>TRUE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>geometria</td>
+<td>Geometria primitiva da camada</td>
+<td>geometry(MultiPolygon, 4674)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>nm_regiao</td>
+<td>Nome da Grande Região Geográfica do IBGE</td>
+<td>varchar(15)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>nm_rgi</td>
+<td>Nome da Região Geográfica Imediata</td>
+<td>varchar(254)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>nm_rgint</td>
+<td>Nome da Região Geográfica Intermediária</td>
+<td>varchar(254)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>nm_uf</td>
+<td>Nome da Unidade da Federação</td>
+<td>varchar(20)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>sigla_regiao</td>
+<td>Sigla da Grande Região Geográfica</td>
+<td>varchar(2)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>sigla_uf</td>
+<td>Sigla da Unidade da Federação</td>
+<td>varchar(2)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="regiao_geografica_intermediaria-camada-de-identificação-das-regiões-geográficas-intermediárias" class="level3" data-number="E.2.10">
+<h3 data-number="E.2.10" class="anchored" data-anchor-id="regiao_geografica_intermediaria-camada-de-identificação-das-regiões-geográficas-intermediárias"><span class="header-section-number">E.2.10</span> regiao_geografica_intermediaria: Camada de identificação das regiões geográficas intermediárias</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>NM_CAMPO_BD</th>
+<th>DESC_CAMPO</th>
+<th>TIPO_BD</th>
+<th>PK</th>
+<th>UNIQUE</th>
+<th>NOT_NULL</th>
+<th>ORIGINAL?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>regint_area_km2</td>
+<td>Área em quilômetros quadrados</td>
+<td>numeric</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>cd_regiao</td>
+<td>Código das Grandes Regiões (Regiões Geográficas)</td>
+<td>varchar(1)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>cd_rgint</td>
+<td>Código da Região Geográfica Intermediária</td>
+<td>varchar(4)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>cd_uf</td>
+<td>Código da Unidade da Federação conforme definição do IBGE</td>
+<td>varchar(2)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>id</td>
+<td>Identificador primário</td>
+<td>bigint</td>
+<td>TRUE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>geometria</td>
+<td>Geometria primitiva da camada</td>
+<td>geometry(MultiPolygon, 4674)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>nm_regiao</td>
+<td>Nome da Grande Região Geográfica do IBGE</td>
+<td>varchar(15)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>nm_rgint</td>
+<td>Nome da Região Geográfica Intermediária</td>
+<td>varchar(254)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>nm_uf</td>
+<td>Nome da Unidade da Federação</td>
+<td>varchar(20)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>sigla_regiao</td>
+<td>Sigla da Grande Região Geográfica</td>
+<td>varchar(2)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>sigla_uf</td>
+<td>Sigla da Unidade da Federação</td>
+<td>varchar(2)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="subsetor_urbano-camada-de-identificação-dos-subsetores-urbanos" class="level3" data-number="E.2.11">
+<h3 data-number="E.2.11" class="anchored" data-anchor-id="subsetor_urbano-camada-de-identificação-dos-subsetores-urbanos"><span class="header-section-number">E.2.11</span> subsetor_urbano: Camada de identificação dos subsetores urbanos</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>NM_CAMPO_BD</th>
+<th>DESC_CAMPO</th>
+<th>TIPO_BD</th>
+<th>PK</th>
+<th>UNIQUE</th>
+<th>NOT_NULL</th>
+<th>ORIGINAL?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>id</td>
+<td></td>
+<td>bigint</td>
+<td>TRUE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>geocodigo</td>
+<td>Código derivado a partir do município</td>
+<td>varchar(18)</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>id_setor_censitario</td>
+<td>Identificação do setor censitário</td>
+<td>bigint</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>geometry</td>
+<td>Geometria primitiva da camada sendo múltiplos polígonos</td>
+<td>geometry(MultiPolygon, 4674)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>FALSE</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="area_risco-camada-de-identificação-das-áreas-de-risco" class="level3" data-number="E.2.12">
+<h3 data-number="E.2.12" class="anchored" data-anchor-id="area_risco-camada-de-identificação-das-áreas-de-risco"><span class="header-section-number">E.2.12</span> area_risco: Camada de identificação das áreas de risco</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>NM_CAMPO_BD</th>
+<th>DESC_CAMPO</th>
+<th>TIPO_BD</th>
+<th>PK</th>
+<th>UNIQUE</th>
+<th>NOT_NULL</th>
+<th>ORIGINAL?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>id</td>
+<td></td>
+<td>int</td>
+<td>TRUE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>geometry</td>
+<td>Geometria primitiva da camada sendo polígonos</td>
+<td>geometry(MultiPolygon, 4674)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="area_inundacao-camada-de-identificação-das-áreas-de-inundação" class="level3" data-number="E.2.13">
+<h3 data-number="E.2.13" class="anchored" data-anchor-id="area_inundacao-camada-de-identificação-das-áreas-de-inundação"><span class="header-section-number">E.2.13</span> area_inundacao: Camada de identificação das áreas de inundação</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>NM_CAMPO_BD</th>
+<th>DESC_CAMPO</th>
+<th>TIPO_BD</th>
+<th>PK</th>
+<th>UNIQUE</th>
+<th>NOT_NULL</th>
+<th>ORIGINAL?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>id</td>
+<td></td>
+<td>int</td>
+<td>TRUE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>geometry</td>
+<td>Geometria primitiva da camada sendo polígonos</td>
+<td>geometry(MultiPolygon, 4674)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="linha_costa-camada-de-identificação-da-linha-de-costa" class="level3" data-number="E.2.14">
+<h3 data-number="E.2.14" class="anchored" data-anchor-id="linha_costa-camada-de-identificação-da-linha-de-costa"><span class="header-section-number">E.2.14</span> linha_costa: Camada de identificação da linha de costa</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>NM_CAMPO_BD</th>
+<th>DESC_CAMPO</th>
+<th>TIPO_BD</th>
+<th>PK</th>
+<th>UNIQUE</th>
+<th>NOT_NULL</th>
+<th>ORIGINAL?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>id</td>
+<td></td>
+<td>int</td>
+<td>TRUE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>geometry</td>
+<td>Geometria primitiva da camada sendo linha</td>
+<td>geometry(MultiLineString, 4674)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="massa_agua-camada-de-identificação-das-massas-dáguas" class="level3" data-number="E.2.15">
+<h3 data-number="E.2.15" class="anchored" data-anchor-id="massa_agua-camada-de-identificação-das-massas-dáguas"><span class="header-section-number">E.2.15</span> massa_agua: Camada de identificação das massas d’águas</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>NM_CAMPO_BD</th>
+<th>DESC_CAMPO</th>
+<th>TIPO_BD</th>
+<th>PK</th>
+<th>UNIQUE</th>
+<th>NOT_NULL</th>
+<th>ORIGINAL?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>fid</td>
+<td>Identificador único sequencial</td>
+<td>inteiro</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>gid</td>
+<td>Identificador geográfico</td>
+<td>real</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>esp_cd</td>
+<td>Código da espécie de massa d’água</td>
+<td>real</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>cod_snisb</td>
+<td>Código SNISB</td>
+<td>real</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>cod_sar</td>
+<td>Código SAR</td>
+<td>real</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>nmoriginal</td>
+<td>Nome original da massa d’água</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>mnalternat</td>
+<td>Nome alternativo</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>nmgenerico</td>
+<td>Nome genérico (ex: Açude, Lagoa)</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>nmligacao</td>
+<td>Nome de ligação</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>nmnespecifi</td>
+<td>Nome não específico</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>detipomass</td>
+<td>Tipo de massa d’água (Artificial, Natural)</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>dedominial</td>
+<td>Domínio (Estadual, Federal)</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>dedominio</td>
+<td>Descrição do domínio</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>defiscaliz</td>
+<td>Órgão fiscalizador</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>nmemp</td>
+<td>Nome do empreendimento</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>fonmemp</td>
+<td>Fonte do nome do empreendimento</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>dtreserv</td>
+<td>Data da reservação</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>fodtreserv</td>
+<td>Fonte da data de reservação</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>nuvolunhm3</td>
+<td>Volume em hm³</td>
+<td>real</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>funovulume</td>
+<td>Fonte do volume</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>nuperimkm</td>
+<td>Perímetro em km</td>
+<td>real</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>nuareakm2</td>
+<td>Área em km²</td>
+<td>real</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>nuareaha</td>
+<td>Área em hectares</td>
+<td>real</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>nucompegeom</td>
+<td>Complexidade geométrica</td>
+<td>real</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>usopricn</td>
+<td>Uso principal</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>fousoprinc</td>
+<td>Fonte do uso principal</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>detipoapr</td>
+<td>Tipo de aproveitamento</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>detipomda</td>
+<td>Tipo de massa d’água (detalhe)</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>salinidade</td>
+<td>Salinidade</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>regime</td>
+<td>Regime hídrico</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>nmriocomp</td>
+<td>Nome do rio componente</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>nmufe</td>
+<td>Nome da UF</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>nmmun</td>
+<td>Nome do município</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>defonte</td>
+<td>Fonte dos dados</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>desatelite</td>
+<td>Satélite utilizado</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>deversao</td>
+<td>Versão do dado</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>deobs</td>
+<td>Observações</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>nuvzreg</td>
+<td>Número da UH da região</td>
+<td>real</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>nuvzlago</td>
+<td>Número da UH do lago</td>
+<td>real</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>nuvzdeflu</td>
+<td>Número da UH de defluência</td>
+<td>real</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>cdtipooper</td>
+<td>Código do tipo de operação</td>
+<td>inteiro</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>detipooper</td>
+<td>Descrição do tipo de operação</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>fovzlago</td>
+<td>Fonte do volume do lago</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>fovzdeflu</td>
+<td>Fonte do volume de defluência</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>fovzreg</td>
+<td>Fonte do volume regularizado</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>cobarprin</td>
+<td>Código da bacia ou pin</td>
+<td>real</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>cotrecho</td>
+<td>Código do trecho</td>
+<td>real</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>nuvzrecebe</td>
+<td>Número da UH de recebimento</td>
+<td>real</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>nuvztransf</td>
+<td>Número da UH de transferência</td>
+<td>real</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>deobsvazao</td>
+<td>Observações sobre vazão</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>cocda2013</td>
+<td>Código CODA 2013</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>cocda2017</td>
+<td>Código CODA 2017</td>
+<td>string</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>geometry</td>
+<td>Geometria primitiva da camada sendo polígonos</td>
+<td>geometry(MultiPolygon, 4674)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="declividade-camada-de-identificação-das-declividades" class="level3" data-number="E.2.16">
+<h3 data-number="E.2.16" class="anchored" data-anchor-id="declividade-camada-de-identificação-das-declividades"><span class="header-section-number">E.2.16</span> declividade: Camada de identificação das declividades</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>NM_CAMPO_BD</th>
+<th>DESC_CAMPO</th>
+<th>TIPO_BD</th>
+<th>PK</th>
+<th>UNIQUE</th>
+<th>NOT_NULL</th>
+<th>ORIGINAL?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>id</td>
+<td></td>
+<td>integer</td>
+<td>TRUE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>classe_declividade</td>
+<td>Classificação da EMBRAPA 1 a 6</td>
+<td>integer</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>categ_declividade</td>
+<td>Classe nominal da declividade: plano, suave ondulado, ondulado, forte ondulado, montanhoso e escarpado</td>
+<td>string(10)</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>FALSE</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="registro-e-controle-de-variáveis" class="level2" data-number="E.3">
+<h2 data-number="E.3" class="anchored" data-anchor-id="registro-e-controle-de-variáveis"><span class="header-section-number">E.3</span> Registro e controle de variáveis</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variável</th>
+<th>Fonte</th>
+<th>FEEDBACK DOS RESPONSÁVEIS</th>
+<th>Tipo</th>
+<th>Resolução espacial</th>
+<th>Finalidade</th>
+<th>Fonte/Origem</th>
+<th>Importância</th>
+<th>Requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Código da Favela ou Comunidade Urbana</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Identificação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="even">
+<td>Código Tipo Setores Censitários</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Similaridade, Estimação</td>
+<td>CVG</td>
+<td>Média</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="odd">
+<td>Distância Município Polo</td>
+<td>IBGE</td>
+<td>Em análise</td>
+<td>Decimal</td>
+<td>Município</td>
+<td>Similaridade</td>
+<td>CVG</td>
+<td>Média</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="even">
+<td>Id Setor Censitário</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Similaridade, Estimação, Localização</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="odd">
+<td>Nome das Grandes Regiões (Regiões Geográficas)</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Identificação</td>
+<td>CVG</td>
+<td>Média</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="even">
+<td>Área das regiões (km2)</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>Decimal</td>
+<td>Setor censitário, Município, Vizinhança, Região Geográfica imediata, Região Geográfica intermediária e Região Geográfica Ampliada</td>
+<td>Estimação, Similaridade</td>
+<td>CVG</td>
+<td>Média</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="odd">
+<td>Classe Turística (Mapa de Regiões Turísticas)</td>
+<td>Ministério do Turismo MTur - 2026</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Município</td>
+<td>Similaridade</td>
+<td>CVG</td>
+<td>Média</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="even">
+<td>Código da Região Geográfica Imediata</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Identificação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="odd">
+<td>Código da Região Geográfica Intermediária</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Identificação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="even">
+<td>Código da Unidade da Federação</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Identificação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="odd">
+<td>Código das Grandes Regiões (Regiões Geográficas)</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Identificação</td>
+<td>CVG</td>
+<td>Média</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="even">
+<td>Código do Aglomerado</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Identificação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="odd">
+<td>Código do Bairro</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Identificação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="even">
+<td>Código do Distrito</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Identificação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="odd">
+<td>Código do Município</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Identificação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="even">
+<td>Código do Núcleo Urbano</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Identificação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="odd">
+<td>Código do Subdistrito</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Identificação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="even">
+<td>Código Situação Setores Censitários</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Estimação, Similaridade</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="odd">
+<td>Densidade demográfica</td>
+<td>Censo 2022 IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário, UF, Município, Vizinhança, Região Geográfica imediata, Região Geográfica intermediária e Região Geográfica Ampliada</td>
+<td>Similaridade, Estimação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="even">
+<td>Densidade educação</td>
+<td>Censo 2022 IBGE</td>
+<td>Fácil</td>
+<td>Integer</td>
+<td>Setor censitário, Município, Vizinhança, Região Geográfica imediata, Região Geográfica intermediária e Região Geográfica Ampliada</td>
+<td>Estimação, Similaridade</td>
+<td>CVG</td>
+<td>Baixa</td>
+<td>Pode Conter Nulos</td>
+</tr>
+<tr class="odd">
+<td>Densidade saúde</td>
+<td>Censo 2022 IBGE</td>
+<td>Fácil</td>
+<td>Integer</td>
+<td>Setor censitário, Município, Vizinhança</td>
+<td>Similaridade, Estimação</td>
+<td>CVG</td>
+<td>Média</td>
+<td>Pode Conter Nulos</td>
+</tr>
+<tr class="even">
+<td>Distância do mar no municípios litorâneos</td>
+<td>Descrever critério</td>
+<td>Fácil</td>
+<td>Decimal</td>
+<td>Setor censitário e Quadra</td>
+<td>Estimação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="odd">
+<td>Declividade média</td>
+<td>Serviço Geológico do Brasil SGB - 2010</td>
+<td>Fácil</td>
+<td>Decimal</td>
+<td>Pontual, Setor censitário e Quadra</td>
+<td>Estimação</td>
+<td>CVG</td>
+<td>Média</td>
+<td>Pode Conter Nulos</td>
+</tr>
+<tr class="even">
+<td>Classe da declividade</td>
+<td>Serviço Geológico do Brasil SGB - 2010</td>
+<td>Fácil</td>
+<td>Decimal</td>
+<td>Pontual, Setor censitário e Quadra</td>
+<td>Estimação</td>
+<td>CVG</td>
+<td>Média</td>
+<td>Pode Conter Nulos</td>
+</tr>
+<tr class="odd">
+<td>Município Polo</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Município</td>
+<td>Similaridade</td>
+<td>CVG</td>
+<td>Média</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="even">
+<td>Nome da Concentração Urbana</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Identificação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="odd">
+<td>Nome da Favela ou Comunidade Urbana</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Identificação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="even">
+<td>Nome da Região Geográfica Imediata</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Identificação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="odd">
+<td>Nome da Região Geográfica Intermediária</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Identificação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="even">
+<td>Nome da Unidade da Federação</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Identificação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="odd">
+<td>Nome do Aglomerado</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Identificação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="even">
+<td>Nome do Bairro</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Identificação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="odd">
+<td>Nome do Distrito</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Identificação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="even">
+<td>Nome do Município</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Identificação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="odd">
+<td>Nome do Núcleo Urbano</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Identificação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="even">
+<td>Nome do Subdistrito</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Identificação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="odd">
+<td>PIB per capita</td>
+<td>SIDRA IBGE</td>
+<td>Fácil</td>
+<td>Decimal</td>
+<td>Municipio, Vizinhança, Região Geográfica imediata, Região Geográfica intermediária e Região Geográfica Ampliada</td>
+<td>Similaridade</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="even">
+<td>População</td>
+<td>Censo 2022 IBGE</td>
+<td>Fácil</td>
+<td>Integer</td>
+<td>Setor censitário, Municipio, Vizinhança, Região Geográfica imediata, Região Geográfica intermediária e Região Geográfica Ampliada</td>
+<td>Similaridade</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="odd">
+<td>Renda média do Chefe do Domicílio</td>
+<td>Censo 2022 IBGE</td>
+<td>Fácil</td>
+<td>Decimal</td>
+<td>Setor censitário e Quadra</td>
+<td>Estimação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Pode Conter Nulos</td>
+</tr>
+<tr class="even">
+<td>Variância da Renda Média</td>
+<td>Censo 2022 IBGE</td>
+<td>Fácil</td>
+<td>Decimal</td>
+<td>Setor censitário</td>
+<td>Estimação</td>
+<td>CVG</td>
+<td>Baixa</td>
+<td>Pode Conter Nulos</td>
+</tr>
+<tr class="odd">
+<td>Situação Setores Censitários</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Estimação, Similaridade</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="even">
+<td>% de Impermeabilização</td>
+<td>Descrever critério</td>
+<td>Fácil</td>
+<td>Decimal</td>
+<td>Quadra</td>
+<td>Similaridade</td>
+<td>CVG</td>
+<td>Média</td>
+<td>Pode Conter Nulos</td>
+</tr>
+<tr class="odd">
+<td>Código da Concentração Urbana</td>
+<td>Setor Censitário IBGE</td>
+<td>Fácil</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Identificação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="even">
+<td>Metro</td>
+<td>Prefeitura de São PauloPrefeitura do Rio de JaneiroCTBUGoverno do Distrito FederalOpenStreetMap</td>
+<td>Em análise</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>BRT</td>
+<td>BRT DATACNT DATAOSM</td>
+<td>Fácil</td>
+<td></td>
+<td></td>
+<td></td>
+<td>CVG</td>
+<td>Baixa</td>
+<td>Pode Conter Nulos</td>
+</tr>
+<tr class="even">
+<td>VLT</td>
+<td>BRT DATACNT DATAOSM</td>
+<td>Fácil</td>
+<td></td>
+<td></td>
+<td></td>
+<td>CVG</td>
+<td>Baixa</td>
+<td>Pode Conter Nulos</td>
+</tr>
+<tr class="odd">
+<td>Área de risco</td>
+<td>Serviço Geológico do Brasil SGB</td>
+<td>Em análise</td>
+<td>Integer</td>
+<td>Setor censitário</td>
+<td>Estimação</td>
+<td>CVG</td>
+<td>Média</td>
+<td>Pode Conter Nulos</td>
+</tr>
+<tr class="even">
+<td>Densidade de Serviços e comércios</td>
+<td>IBGE 2021</td>
+<td>Em análise</td>
+<td>Integer</td>
+<td>Setor censitário</td>
+<td>Similaridade, Estimação</td>
+<td>CVG</td>
+<td>Média</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="odd">
+<td>Distância ao CBD</td>
+<td></td>
+<td>Em análise</td>
+<td>Decimal</td>
+<td>Setor censitário e Quadra</td>
+<td>Estimação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="even">
+<td>Distância ao Centro</td>
+<td></td>
+<td>Em análise</td>
+<td>Decimal</td>
+<td>Amostra</td>
+<td>Estimação</td>
+<td></td>
+<td>Média</td>
+<td>Pode Conter Nulos</td>
+</tr>
+<tr class="odd">
+<td>IDH</td>
+<td>IPEA, 2010; IFDM, 2023 - IPS não disponível</td>
+<td>Em análise</td>
+<td>Decimal</td>
+<td>Municipio, Vizinhança, Região Geográfica imediata, Região Geográfica intermediária e Região Geográfica Ampliada</td>
+<td>Similaridade, Localização, Estimação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="even">
+<td>Índice de saneamento</td>
+<td>SINASA e Instituto Água e Saneamento</td>
+<td>Em análise</td>
+<td>Integer</td>
+<td>Setor censitário, Municipio, Vizinhança</td>
+<td>Estimação, Similaridade</td>
+<td>CVG</td>
+<td>Média</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="odd">
+<td>Número de domicílios por área urbana</td>
+<td>Censo 2022</td>
+<td>Em análise</td>
+<td>Integer</td>
+<td>Setor censitário, Municipio, Vizinhança, Região Geográfica imediata, Região Geográfica intermediária e Região Geográfica Ampliada</td>
+<td>Similaridade</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="even">
+<td>Número de lotes por área urbana</td>
+<td>Gerada</td>
+<td>Em análise</td>
+<td>String</td>
+<td>Municipio</td>
+<td>Estimação</td>
+<td>CVG</td>
+<td>Média</td>
+<td>Pode Conter Nulos</td>
+</tr>
+<tr class="odd">
+<td>Pavimentação</td>
+<td>Censo 2022</td>
+<td>Em análise</td>
+<td>Integer</td>
+<td>Setor censitário e Subsetor (quadra)</td>
+<td>Estimação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="even">
+<td>Renda Per Capita do Chefe do Domicílio</td>
+<td>Censo 2022</td>
+<td>Fácil</td>
+<td>Decimal</td>
+<td>Setor Censitário</td>
+<td>Estimação</td>
+<td>CVG</td>
+<td>Média</td>
+<td>Pode Conter Nulos</td>
+</tr>
+<tr class="odd">
+<td>Renda média per capita</td>
+<td>Censo 2022</td>
+<td>Em análise</td>
+<td>Decimal</td>
+<td>Setor censitário e Subsetor (quadra)</td>
+<td>Estimação</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="even">
+<td>Superfície da área urbana compacta (mapa de fragmentação)</td>
+<td>Gerada</td>
+<td>Em análise</td>
+<td>Booleano</td>
+<td>Municipio</td>
+<td>Estimação, Similaridade</td>
+<td>CVG</td>
+<td>Média</td>
+<td>Pode Conter Nulos</td>
+</tr>
+<tr class="odd">
+<td>Tamanho do lote padrão(estimado)</td>
+<td>Gerada</td>
+<td>Em análise</td>
+<td>Decimal</td>
+<td>Setor censitário e Subsetor (quadra)</td>
+<td>Estimação</td>
+<td>CVG</td>
+<td>Média</td>
+<td>Pode Conter Nulos</td>
+</tr>
+<tr class="even">
+<td>Valor do Repasse do FPM</td>
+<td>Tesouro Nacional Transparente - 2025</td>
+<td>Em análise</td>
+<td>Decimal</td>
+<td>Município</td>
+<td>Similaridade</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="odd">
+<td>Valor do Repasse do FUNDEB</td>
+<td>Tesouro Nacional Transparente - 2025</td>
+<td>Em análise</td>
+<td>Decimal</td>
+<td>Município</td>
+<td>Similaridade</td>
+<td>CVG</td>
+<td>Alta</td>
+<td>Sem Nulos</td>
+</tr>
+<tr class="even">
+<td>Categoria da Área de inundação</td>
+<td>Serviço Geológico do Brasil SGB</td>
+<td>Em análise</td>
+<td>String</td>
+<td>Setor censitário</td>
+<td>Estimação</td>
+<td>CVG</td>
+<td>Baixa</td>
+<td>Pode Conter Nulos</td>
+</tr>
+<tr class="odd">
+<td>Distância da Área de inundação</td>
+<td>Serviço Geológico do Brasil SGB</td>
+<td>Em análise</td>
+<td>Integer</td>
+<td>Setor censitário</td>
+<td>Estimação</td>
+<td>CVG</td>
+<td>Baixa</td>
+<td>Pode Conter Nulos</td>
+</tr>
+<tr class="even">
+<td>Distância da massa d’água</td>
+<td>Gerada</td>
+<td>Fácil</td>
+<td>Decimal</td>
+<td>Setor censitário</td>
+<td>Estimação</td>
+<td>CVG</td>
+<td>Média</td>
+<td>Pode Conter Nulos</td>
+</tr>
+<tr class="odd">
+<td>Renda Krigada</td>
+<td>Processamento</td>
+<td>Em análise</td>
+<td>Decimal</td>
+<td>Setor censitário</td>
+<td>Estimação</td>
+<td></td>
+<td>Média</td>
+<td>Pode Conter Nulos</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="pipeline-de-geoprocessamento-da-base-cartográfica" class="level2" data-number="E.4">
+<h2 data-number="E.4" class="anchored" data-anchor-id="pipeline-de-geoprocessamento-da-base-cartográfica"><span class="header-section-number">E.4</span> Pipeline de geoprocessamento da base cartográfica</h2>
+<pre><code># Descritivo das Camadas — Pacote Capitais
+Documento técnico descrevendo o processo de geração de cada camada do GeoPackage municipal.
+**Arquivo de saída:** `base_{nome_municipio}_{codigo_ibge}.gpkg`  
+**Sistema de referência:** SIRGAS 2000 (EPSG:4674)
+---
+## Estágio 1 — Camadas IBGE
+Todas as camadas deste estágio são extraídas de arquivos oficiais do IBGE (ZIP/GPKG) armazenados no diretório `BD_geografico/IBGE/`.
+### 1. `uf`
+- **Fonte:** `BR_UF_2024.zip`
+- **Processo:**
+  1. Lê o arquivo completo de Unidades Federativas
+  2. Filtra pela coluna `CD_UF` usando os 2 primeiros dígitos do código IBGE do município
+  3. Resultado: polígono da UF onde o município está localizado
+### 2. `regioes`
+- **Fonte:** `BR_Grandes_Regioes_2024.zip`
+- **Processo:**
+  1. Lê o arquivo de Grandes Regiões (Norte, Nordeste, Sudeste, Sul, Centro-Oeste)
+  2. Filtra pela coluna `CD_RG` usando o código da macro-região (1º dígito do código UF)
+  3. Resultado: polígono da macrorregião
+### 3. `rg_intermediarias`
+- **Fonte:** `BR_RG_Intermediarias_2024.zip`
+- **Processo:**
+  1. Lê o arquivo de Regiões Geográficas Intermediárias
+  2. Tenta filtrar pela coluna `CD_RGI` usando o código da UF
+  3. Se não encontrar resultados, faz **junção espacial** (`sjoin intersects`) com a geometria do município
+  4. Resultado: polígono(s) da(s) região(ões) intermediária(s) que intersectam o município
+### 4. `rg_imediatas`
+- **Fonte:** `BR_RG_Imediatas_2024.zip`
+- **Processo:**
+  1. Lê o arquivo de Regiões Geográficas Imediatas
+  2. Tenta filtrar pela coluna `CD_RGI` usando o código da UF
+  3. Se não encontrar resultados, faz **junção espacial** (`sjoin intersects`) com a geometria do município
+  4. Resultado: polígono(s) da(s) região(ões) imediata(s) que intersectam o município
+### 5. `municipios`
+- **Fonte:** `BR_Municipios_2024.zip`
+- **Processo:**
+  1. Lê o arquivo completo de municípios do Brasil
+  2. Filtra pela coluna `CD_MUN` usando o código IBGE completo (7 dígitos)
+  3. Resultado: polígono do limite municipal
+  4. **Efeito colateral:** este GeoDataFrame é armazenado internamente (`gdf_municipio`) e usado como referência geométrica nos estágios seguintes
+### 6. `distritos`
+- **Fonte:** `BR_Distritos_2024.zip`
+- **Processo:**
+  1. Lê o arquivo de distritos
+  2. Filtra pela coluna `CD_DIST` usando o código IBGE do município como prefixo
+  3. Resultado: polígono(s) dos distritos do município
+### 7. `subdistritos`
+- **Fonte:** `BR_SubDistritos_2024.zip`
+- **Processo:**
+  1. Lê o arquivo de subdistritos
+  2. Filtra pela coluna `CD_SUBDIST` usando o código IBGE do município como prefixo
+  3. Resultado: polígono(s) dos subdistritos (pode ser vazio para municípios sem subdivisão)
+### 8. `bairros`
+- **Fonte:** `BR_Bairros_CD2022.zip`
+- **Processo:**
+  1. Lê o arquivo de bairros do Censo 2022
+  2. Filtra pela coluna `CD_MUN` usando o código IBGE do município
+  3. Resultado: polígonos dos bairros
+### 9. `setores_censitarios`
+- **Fonte:** `BR_setores_CD2022.zip`
+- **Processo:**
+  1. Lê o arquivo de setores censitários do Censo 2022
+  2. Filtra pela coluna `CD_SETOR` usando o código IBGE do município como prefixo
+  3. Resultado: polígonos de todos os setores censitários do município
+  4. **Efeito colateral:** armazenado internamente (`gdf_setores`) para uso nos estágios 3 e 4
+### 10. `faces_logradouro`
+- **Fonte:** `BD_geografico/IBGE/BR_faces_logradouros/{UF}_faces_de_logradouros_2022_shp/{UF}/{codigo}_faces_de_logradouros_2022.shp`
+- **Processo:**
+  1. Monta o caminho do shapefile específico do município usando a sigla da UF e o código IBGE
+  2. Lê o arquivo SHP diretamente (já filtrado por município)
+  3. Resultado: linhas representando as faces de logradouro do Censo 2022
+---
+## Estágio 2 — Linhas OSM (via Overpass API)
+### 11. `linhas_gerais_osm`
+- **Fonte:** OpenStreetMap (download via Overpass API)
+- **Processo:**
+  1. Obtém o **bounding box** do polígono do município em EPSG:4326
+  2. Monta query Overpass: `way["highway"]({south},{west},{north},{east})`
+  3. Envia a query via HTTP POST para servidores Overpass (com fallback em 3 servidores)
+  4. Recebe resposta JSON contendo **nodes** (coordenadas) e **ways** (sequências de nodes)
+  5. Converte cada `way` em `LineString` a partir das coordenadas dos seus nodes
+  6. Extrai atributos: `osm_id`, `highway`, `name`, `surface`, `lanes`, `oneway`, `maxspeed`
+  7. Cria GeoDataFrame em EPSG:4326, reprojeta para EPSG:4674
+  8. Realiza **clip** pelo polígono do município (pois o bbox pode incluir vias fora do limite)
+  9. Resultado: **todas** as linhas com tag `highway` dentro do município (ruas, ciclovias, trilhas, etc.)
+### 12. `logradouros_osm`
+- **Fonte:** Mesma resposta da Overpass API (processamento adicional)
+- **Processo:**
+  1. Parte do GeoDataFrame de linhas gerais já recortadas pelo município
+  2. Filtra apenas as feições cujo atributo `highway` pertence ao conjunto de **vias veiculares**:
+     - `motorway`, `motorway_link` — Autoestradas e acessos
+     - `trunk`, `trunk_link` — Vias expressas e acessos
+     - `primary`, `primary_link` — Vias arteriais primárias
+     - `secondary`, `secondary_link` — Vias arteriais secundárias
+     - `tertiary`, `tertiary_link` — Vias coletoras
+     - `residential` — Ruas residenciais
+     - `unclassified` — Vias de conexão menor
+     - `living_street` — Ruas de tráfego calmo
+     - `service` — Vias de acesso local
+  3. Resultado: linhas de logradouros transitáveis por veículos
+  4. **Efeito colateral:** armazenado internamente (`gdf_logradouros_osm`) para uso no buffer de quadras (Estágio 4)
+---
+## Estágio 3 — Setores Urbanos
+### 13. `setores_urbanos`
+- **Fonte:** Derivada dos setores censitários (Estágio 1)
+- **Processo:**
+  1. Lê os setores censitários extraídos no Estágio 1
+  2. Identifica a coluna de situação (`SITUACAO`, `CD_SIT`, `TIPO` ou `NM_SIT`)
+  3. Aplica filtro numérico: valores **1, 2 ou 3** são classificados como urbanos
+     - 1 = Área urbanizada de cidade ou vila
+     - 2 = Área não urbanizada de cidade ou vila
+     - 3 = Área urbana isolada
+     - 4 a 8 = Áreas rurais (descartadas)
+  4. Se o filtro numérico falhar, tenta filtro textual por `"URBAN"`
+  5. Resultado: polígonos dos setores censitários classificados como urbanos
+  6. **Efeito colateral:** gera o `dissolve` da área urbana (união de todos os setores urbanos), usado nos estágios 4 e 5
+---
+## Estágio 4 — Quadras
+### 14. `quadras_setores`
+- **Fontes:** Setores urbanos (Estágio 3) + Logradouros veiculares (Estágio 2)
+- **Processo:**
+  1. Determina o fuso UTM pela longitude central do município
+  2. Reprojeta setores urbanos e logradouros para **SIRGAS 2000 UTM** (sistema métrico)
+  3. Gera **buffer de 4 metros** em torno de cada logradouro veicular
+  4. Dissolve os buffers em lotes de 5.000 feições para controle de memória (`unary_union` em batches)
+  5. Executa **overlay vetorial** (`gpd.overlay`, `how="difference"`) entre os setores e o buffer dissolvido
+  6. Explode multipolígonos resultantes em polígonos individuais
+  7. Filtra fragmentos com **área &lt; 10 m²** (resíduos geométricos)
+  8. Reprojeta de volta para EPSG:4674
+  9. Resultado: polígonos de quadras, cada um vinculado ao código do setor censitário de origem (`CD_SETOR`)
+### 15. `quadras_urbano`
+- **Fontes:** Área urbana dissolvida (Estágio 3) + Logradouros veiculares (Estágio 2)
+- **Processo:**
+  1. Dissolve todos os setores urbanos em uma única geometria (`unary_union`)
+  2. Calcula a diferença entre a área urbana dissolvida e o buffer das vias (já calculado)
+  3. Explode multipolígonos em polígonos individuais
+  4. Filtra fragmentos com **área &lt; 10 m²**
+  5. Reprojeta para EPSG:4674
+  6. Resultado: polígonos de quadras sem vínculo com setor (visão contínua da malha urbana)
+---
+## Estágio 5 — Edificações
+### 16. `edificacoes`
+- **Fonte:** Google Open Buildings (v3)
+- **Processo (método principal — pacote `open-buildings`):**
+  1. Reprojeta a área urbana para EPSG:4326
+  2. Exporta a geometria da área urbana como GeoJSON temporário
+  3. Executa `get_buildings` via subprocess com parâmetros:
+     - `--geojson_file`: geometria da área urbana
+     - `--data_type`: `points` (centróides das edificações)
+     - `--format`: `gpkg`
+  4. Lê o resultado e realiza clip pela área urbana
+  5. Reprojeta para EPSG:4674
+- **Processo (método alternativo — download direto via S2 Cells):**
+  1. Se o pacote `open-buildings` não estiver disponível, usa método alternativo
+  2. Calcula as **células S2 nível 4** que cobrem o bounding box da área urbana
+  3. Para cada célula, baixa o CSV compactado (gzip) do Google Cloud Storage:
+     `https://storage.googleapis.com/open-buildings-data/v3/points_s2_level_4_gzip/{token}_buildings.csv.gz`
+  4. Filtra os pontos pelo bounding box da área urbana
+  5. Cria GeoDataFrame com colunas: `latitude`, `longitude`, `area_in_meters`, `confidence`
+  6. Realiza clip pela geometria da área urbana
+  7. Reprojeta para EPSG:4674
+  8. Resultado: pontos representando centróides de edificações detectadas por imagens de satélite
+---
+## Resumo da Nomenclatura
+| Arquivo de saída | Exemplo |
+|---|---|
+| `base_{nome}_{codigo}.gpkg` | `base_sao_paulo_3550308.gpkg` |
+O nome é normalizado: sem acentos, minúsculas, espaços substituídos por `_`.
+## Diagrama do Pipeline</code></pre>
+<pre><code>Entrada: Código IBGE (7 dígitos)
+         │
+         ▼
+┌─────────────────────────────────┐
+│  ESTÁGIO 1 — Camadas IBGE       │
+│  Fontes: ZIP/GPKG do IBGE       │
+│  Saída: 10 camadas (1 a 10)     │
+└──────────────┬──────────────────┘
+               │ gdf_municipio
+               │ gdf_setores
+               ▼
+┌─────────────────────────────────┐
+│  ESTÁGIO 2 — Linhas OSM         │
+│  Fonte: Overpass API (internet)  │
+│  Saída: 2 camadas (11 e 12)     │
+└──────────────┬──────────────────┘
+               │ gdf_logradouros_osm
+               ▼
+┌─────────────────────────────────┐
+│  ESTÁGIO 3 — Setores Urbanos    │
+│  Fonte: Derivada (setores + sit)│
+│  Saída: 1 camada (13)           │
+└──────────────┬──────────────────┘
+               │ gdf_setores_urbanos
+               │ gdf_area_urbana
+               ▼
+┌─────────────────────────────────┐
+│  ESTÁGIO 4 — Quadras            │
+│  Fonte: Derivada (setores-vias) │
+│  Saída: 2 camadas (14 e 15)     │
+└──────────────┬──────────────────┘
+               │
+               ▼
+┌─────────────────────────────────┐
+│  ESTÁGIO 5 — Edificações        │
+│  Fonte: Google Open Buildings   │
+│  Saída: 1 camada (16)           │
+└─────────────────────────────────┘
+               │
+               ▼
+         base_{nome}_{codigo}.gpkg</code></pre>
+</section>
+<section id="modelo-de-relacionamento-da-camada-ouro" class="level2" data-number="E.5">
+<h2 data-number="E.5" class="anchored" data-anchor-id="modelo-de-relacionamento-da-camada-ouro"><span class="header-section-number">E.5</span> Modelo de relacionamento da camada ouro</h2>
+<pre><code>
+//Modelo de banco de dados espacial
+//Estrutura para cartografia básica e Variáveis Geográficas
+Project cartografia_variavies_geograficas {
+ database_type: "PostgreSQL"
+}
 
 
+//////////////////////////////////////////////////////////
+// 1. BASE TERRITORIAL
+//////////////////////////////////////////////////////////
+
+
+//camada de identificação das unidades da federação
+Table uf {
+ id bigint [pk, increment]
+ geocodigo varchar(2) [unique, not null,note: 'Código conforme definição do IBGE']
+ nome varchar [unique, not null, note: 'Nome da unidade da federação']
+ siga varchar(2) [unique, not null, note:'Sigla da unidade da federeção']
+ regiao varchar [not null, note: 'Nome da região da unidade da federação']
+ area_km2 numeric [note:'Área calcaulada em quilômetros quadrados']
+ geometry geometry(MultiPolygon, 4674) [not null, note: 'Geometria primitiva da camada sendo múltiplos polígonos']
+}
+
+
+//camada de identificação das regiões intermediárias
+Table regiao_geografica_intermediaria {
+ id bigint [pk, increment]
+ geocodigo varchar(5) [unique, not null,note: 'Código conforme definição do IBGE']
+ id_uf bigint [not null, note: 'Identificação da uf']
+ nome varchar(150) [note: 'Nome da regição']
+ area_km2 numeric [note:'Área calculada em quilômetros quadrados']
+ geometry geometry(MultiPolygon, 4674) [not null, note: 'Geometria primitiva da camada sendo múltiplos polígonos']
+}
+
+
+//camada de identificação das regiões imediatas
+Table regiao_geografica_imediata {
+ id bigint [pk,increment]
+ geocodigo varchar(7) [unique, not null,note: 'Código conforme definição do IBGE']
+ id_regiao_intermediaria bigint [not null, note:'Identificação da região intermediária']
+ id_uf bigint [not null, note: 'Identificação da uf']
+ nome varchar(150) [note: 'Nome da regição']
+ area_km2 numeric [note:'Área calculada em quilômetros quadrados']
+ geometry geometry(MultiPolygon, 4674) [not null, note: 'Geometria primitiva da camada sendo múltiplos polígonos']
+}
+
+
+//camada de identificação dos municípios
+Table municipio {
+ id bigint [pk,increment]
+ geocodigo varchar(7) [unique, not null,note: 'Código conforme definição do IBGE']
+ id_uf bigint [not null, note: 'Identificação da uf']
+ id_regiao_intermediaria bigint [not null, note:'Identificação da região intermediária']
+ id_regiao_imediata bigint [not null, note:'Identificação da região imediata']
+ nome varchar(350) [not null,note:'Nome do município']
+ area_km2 numeric [note:'Área calculada em quilômetros quadrados']
+ geometry geometry(MultiPolygon, 4674) [not null, note: 'Geometria primitiva da camada sendo múltiplos polígonos']
+}
+
+
+//camada de identificação dos setores censitários
+Table setor_censitario {
+ id bigint [pk,increment]
+ geocodigo varchar(15) [unique, not null,note: 'Código conforme definição do IBGE']
+ id_municipio integer [not null, note: 'Identificação do município']
+ descricao varchar [note:'Descrição de identificação do setor quando necessária']
+ situacao varchar [note: 'Para identificar a situação como: rural ou urbana']
+ area_km2 numeric [note: 'Área calculada em quilômetros quadrados']
+ geometry geometry(MultiPolygon, 4674) [not null, note: 'Geometria primitiva da camada sendo múltiplos polígonos']
+}
+
+//camada de identificação dos setores censitários urbanos
+table setor_censitario_urbano {
+id bigint [pk,increment]
+geocodigo varchar(15) [unique, not null, note: 'Código conforme definição do IBGE']
+id_municipio integer [not null, note: 'Identificação do município']
+descricao varchar [note:'Descrição de identificação do setor quando necessária']
+area_km2 numeric [note: 'Área calculada em quilômetros quadrados']
+geometry geometry(MultiPolygon, 4674) [note: 'Geometria primitiva da camada sendo polígonos']
+}
+
+
+//camada de identificação dos subsetores urbanos
+Table subsetor_urbano {
+ id bigint [pk,increment]
+ geocodigo varchar(18) [unique, not null, note: 'Código derivado a partir do município']
+ id_municipio bigint [not null, note: 'Identificação do município']
+ id_setor_censitario bigint [not null, note: 'Identificação do setor censitário']
+ area_km2 numeric [note:'Área calculada em quilômetros quadrados']
+ geometry geometry(MultiPolygon, 4674) [not null, note: 'Geometria primitiva da camada sendo múltiplos polígonos']
+}
+
+
+//camada de identificação das edificações
+Table edificacao {
+ id bigint [pk,increment]
+ id_municipio bigint [note: 'Identificação do município']
+ id_setor_censitario bigint [note: 'Identificação do setor censitário']
+ id_subsetor bigint [note: 'Identificação do subsetor']
+ area_m2 numeric [note: 'Área calculada em metros quadrados']
+ geometry geometry(Point, 4674) [not null, note: 'Geometria primitiva da camada sendo pontos']
+}
+
+
+
+
+//camada de identificação das amostra do observatório do mercado imobiliários
+Table amostra_omi {
+ id bigint [pk,increment]
+ id_municipio bigint [note: 'Identificação do município']
+ id_setor_censitario bigint [note: 'Identificação do setor censitário']
+ id_subsetor bigint [note: 'Identificação do subsetor']
+ geometry geometry(LineString, 4674) [not null, note: 'Geometria primitiva da camada sendo pontos']
+}
+
+
+//////////////////////////////////////////////////////////
+// 2. INFRAESTRUTURA VIÁRIA
+//////////////////////////////////////////////////////////
+
+
+//camada de identificação dos logradouros
+Table logradouro {
+ id bigint [pk,increment]
+ id_municipio bigint [note: 'Identificação do município']
+ nome varchar(200)
+ comprimento_m numeric [not null, default: 0, note:'Comprimento calculado em metros']
+ eixo_curto bool [not null, default: false, note:'Logradouro menor que 200 metros']
+ geometry geometry(MultiLineString, 4674) [not null, note: 'Geometria primitiva da camada sendo multiplas linhas']
+}
+
+
+//camada de identificação das faces de logradouros
+Table face_logradouro {
+ id bigint [pk,increment]
+ geocodigo varchar(21) [unique, note: 'Código conforme definição do IBGE']
+ id_municipio bigint [note: 'Identificação do município']
+ id_setor_censitario bigint [note: 'Identificação do setor censitário']
+ geometry geometry(MultiLineString, 4674) [not null, note: 'Geometria primitiva da camada sendo linhas']
+}
+
+
+//////////////////////////////////////////////////////////
+// 3. CLASSES DE VARIÁVEIS GEOGRÁFICAS
+//////////////////////////////////////////////////////////
+
+
+// Catálogo oficial de variáveis
+// classe para registrar as variáveis geográficas
+Table variavel_geografica {
+ id bigint [pk,increment]
+ codigo varchar(50) [unique, not null]
+ nome varchar(200) [not null, note:'Nome de identificação da variável geográfica']
+ descricao text [note:'Descrição que esclarece a variável geográfica']
+ resolucao_espacial varchar(50) [not null, note:'Identifica a relação espacial da variável, por exemplo: municipio, regiao_intermediaria, setor_censitario, quadra']
+ tipo_dado varchar(20) [not null, note:'Identifica o tipo de valor da variável sendo: numerico, texto, booleano']
+ unidade_medida varchar(50) [note:'Identifica a unidade de medida da variável: unitário, metros, quilômetro, moeda']
+ metodologia text [note:'Descreve o método de obtenção da variável geográfica']
+ fonte varchar(100) [note:'Identifica a fonte primária da variável geográfica']
+ ativa boolean [note:'Descreve se a vairável geográfica ainda está ativa ou não']
+ criada_em timestamp [note:'Apresenta a data e a hora de criação da variável geográfica']
+ altera_em timestamp [note:'Apresenta a data e a hora de alteração da variável geográfica']
+}
+
+
+// Valores das variáveis (modelo temporal)
+// classe para registrar os valores das variáveis geográficas e sua relação com as camadas espaciais
+Table valor_variavel_geografica {
+ id bigint [pk,increment]
+ id_variavel bigint [not null, note:'Identifica a variável geográfica']
+ entidade_tipo varchar(50) [not null, note: 'Identifica a qual camada espacial se referem o valor da variável geográfica, por exemplo: municipio, setor_censitario, quadra']
+ id_entidade bigint [not null, note:'Identifica o registro da camada espacial de referência']
+ valor_numerico numeric [note:'Valor da variável geográfica quando for numérico']
+ valor_texto varchar(300) [note:'Valor da variável geográfica quando for caractere']
+ valor_booleano boolean [note:'Valor da variável geográfica quando for boleano']
+ data_referencia date [not null]
+ data_inicio_vigencia date [not null]
+ data_fim_vigencia date
+ ativo boolean [note:'Identifica se o valor da variável geográfica ainda está ativo']
+ calculado boolean [note:'Identifica se o valor foi calculado ou apenas atribuído']
+ criada_em timestamp [note:'Apresenta a data e a hora de criação do valor da variável geográfica']
+ altera_em timestamp [note:'Apresenta a data e a hora de alteração do valor da variável geográfica']
+}
+
+
+//////////////////////////////////////////////////////////
+// RELACIONAMENTOS
+//////////////////////////////////////////////////////////
+
+
+Ref: regiao_geografica_intermediaria.id_uf &gt; uf.id
+Ref: regiao_geografica_imediata.id_uf &gt; uf.id
+Ref: regiao_geografica_imediata.id_regiao_intermediaria &gt; regiao_geografica_intermediaria.id
+Ref: municipio.id_uf &gt; uf.id
+Ref: municipio.id_regiao_intermediaria &gt; regiao_geografica_intermediaria.id
+Ref: municipio.id_regiao_imediata &gt; regiao_geografica_imediata.id
+Ref: setor_censitario.id_municipio &gt; municipio.id
+Ref: setor_censitario_urbano.id_municipio &gt; municipio.id
+Ref: subsetor_urbano.id_municipio &gt; municipio.id
+Ref: subsetor_urbano.id_setor_censitario &gt; setor_censitario_urbano.id
+Ref: logradouro.id_municipio &gt; municipio.id
+Ref: face_logradouro.id_municipio &gt; municipio.id
+Ref: face_logradouro.id_setor_censitario &gt; setor_censitario.id
+Ref: edificacao.id_municipio &gt; municipio.id
+Ref: edificacao.id_setor_censitario &gt; setor_censitario_urbano.id
+Ref: edificacao.id_subsetor &gt; subsetor_urbano.id
+Ref: amostra_omi.id_municipio &gt; municipio.id
+Ref: amostra_omi.id_setor_censitario &gt; setor_censitario_urbano.id
+Ref: amostra_omi.id_subsetor &gt; subsetor_urbano.id
+Ref: valor_variavel_geografica.id_variavel &gt; variavel_geografica.id</code></pre>
+
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -700,7 +4415,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
 <p><img src="img/Logo com RFB e UFSC.png" class="img-fluid" width="250"></p>
-<div class="toc-actions"><ul><li><a href="https://github.com/LabFSG-UFSC/Rel_1T2026/edit/main/95-metodo-etapa04.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/LabFSG-UFSC/Rel_1T2026/edit/main/95-metodo-etapa04.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

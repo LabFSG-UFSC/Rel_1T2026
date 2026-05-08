@@ -227,9 +227,6 @@ estritamente as diretrizes do Dicionário de Dados do projeto.
     coordenada (`lat` e `lon`). Esta coordenada "crua" do mercado é o
     que será auditado a seguir.
 
-O código-fonte completo do pipeline está disponível em [Apêndice — ETL
-PySpark](scripts.qmd#sec-script-etl).
-
 #### Saneamento de Registros (Detecção de Outliers)
 
 Antes de qualquer validação geoespacial, o pipeline executa um **sistema
@@ -290,9 +287,6 @@ O sistema foi implementado em **PostgreSQL** com o arquivo:
 relatorio_poc_floripa/script_deteccao_outliers_completo_v2.sql.sql (750+ linhas)
 ```
 
-O script completo está disponível em [Apêndice — Script de Detecção de
-Outliers](scripts.qmd#sec-script-outliers).
-
 Adiciona as seguintes colunas na tabela: - `duplicado` — Marcação de
 duplicata - `outlier_tipos` — Array de tipos de problemas -
 `verificado_outliers` — Validação manual realizada? - `updated_at`,
@@ -308,9 +302,7 @@ governamental. O **Geocoder V3** implementa uma cascata de seis níveis
 dentro do PostgreSQL: cada nível processa **exclusivamente os registros
 que todos os níveis anteriores não resolveram**. O processamento para
 assim que um match é encontrado — garantindo que o critério mais
-rigoroso sempre tenha prioridade sobre os mais permissivos. O
-código-fonte completo do motor está disponível em [Apêndice — Geocoder
-V3](scripts.qmd#sec-script-geocoder).
+rigoroso sempre tenha prioridade sobre os mais permissivos. ,
 
 ##### Pré-processamento de Entrada
 
@@ -668,7 +660,7 @@ do projeto, ilustrando aplicações práticas da metodologia desenvolvida e
 evidenciando padrões identificados durante a validação cruzada ArcGIS vs
 CNEFE.
 
-### 1. Metodologia de Recuperação: Vias Curtas (Short Streets)
+### Metodologia de Recuperação: Vias Curtas (Short Streets)
 
 **Período:** Janeiro - Março 2026 **Objetivo:** Demonstrar como
 registros de precisão intermediária (precisão = 3) podem ser recuperados
@@ -835,9 +827,8 @@ análise exploratória através de:
 V3](relatorios.qmd#sec-rel-estatistica) e [Avaliação CNEFE
 V3](relatorios.qmd#sec-rel-cnefe).*
 
-**Autor:** Ville Rodrigues **Período:** Abril 2026 **Objetivo:** Avaliar
-a qualidade das coordenadas do CNEFE e do ArcGIS tomando o Google Maps
-como referência de maior acurácia (Ground Truth).
+**Objetivo:** Avaliar a qualidade das coordenadas do CNEFE e do ArcGIS tomando o
+Google Maps como referência de maior acurácia (Ground Truth).
 
 #### Metodologia
 
@@ -852,7 +843,7 @@ manualmente no Google Maps para garantir a integridade da comparação.
 
 #### Resultados Sintéticos
 
-A tabela abaixo resume as medianas de distância (em metros) para os
+A @tbl-mediana resume as medianas de distância (em metros) para os
 quatro níveis de precisão do CNEFE:
 
 | Nível (NV_GEO_COORD) | Descrição IBGE | Mediana ArcGIS × Google (m) | Mediana CNEFE × Google (m) | Mediana CNEFE × ArcGIS (m) |
@@ -861,6 +852,7 @@ quatro níveis de precisão do CNEFE:
 | **2** | Urbana: Face de quadra | 21,99 | 26,04 | 12,59 |
 | **3** | Urbana: Centro de quadra | 20,15 | 37,80 | 31,48 |
 | **4** | Urbana: Setor/Outros | 25,56 | 45,20 | 64,88 |
+: Resumo mediana das distâncias para os quatro níveis de precisão {#tbl-mediana}
 
 #### Principais Conclusões do Estudo
 

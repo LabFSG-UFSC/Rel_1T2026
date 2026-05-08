@@ -141,8 +141,6 @@ desenvolvido e o futuro ambiente institucional de operação da metodologia.
 
 ### Síntese dos Próximos Marcos
 
--	Validação técnica dos modelos preliminares junto à RFB;
-
 -	Consolidação da base territorial validada;
 
 -	Evolução e ampliação do Data Lake e da arquitetura de dados;

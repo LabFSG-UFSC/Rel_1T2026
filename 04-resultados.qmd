@@ -23,15 +23,15 @@ auditabilidade, requisitos essenciais para a validação técnica e futura adoç
 institucional da metodologia pela Receita Federal do Brasil.
 
 O detalhamento completo do fluxo metodológico estruturado, incluindo suas
-etapas, dependências e principais processos, encontra-se apresentado no Apêndice
-1.
+etapas, dependências e principais processos, encontra-se apresentado no 
+@sec-fluxo-metodologico.
 
 A seguir, são apresentados os principais resultados estratégicos do projeto,
 organizados em três dimensões complementares, com foco na Prova de Conceito
-(POC) de Florianópolis, na evolução da infraestrutura tecnológica e nos blocos
+(PoC) de Florianópolis, na evolução da infraestrutura tecnológica e nos blocos
 transversais.
 
-No âmbito da POC, são evidenciados os avanços metodológicos e operacionais
+No âmbito da PoC, são evidenciados os avanços metodológicos e operacionais
 alcançados nas Etapas 1 a 3 do projeto. Na dimensão de infraestrutura, são
 apresentados os progressos relacionados à organização dos ambientes
 computacionais, armazenamento de dados e suporte às atividades técnicas. Por
@@ -39,10 +39,10 @@ fim, nos blocos transversais, destacam-se os estudos desenvolvidos ao longo do
 período e a plataforma de visualização dos dados, que contribuem para a análise,
 validação e comunicação dos resultados.
 
-## Validação da POC
+## Validação da PoC
 
 A seguir, são apresentados os resultados referentes à validação da Prova de
-Conceito (POC) de Florianópolis, que constitui o principal ambiente de teste e
+Conceito (PoC) de Florianópolis, que constitui o principal ambiente de teste e
 consolidação da metodologia proposta no projeto. Essa etapa tem como objetivo
 avaliar, de forma integrada, a consistência dos dados, a robustez dos processos
 e a aderência dos resultados obtidos, permitindo verificar a viabilidade técnica
@@ -61,7 +61,7 @@ e a confiabilidade dos resultados finais.
 
 No âmbito da Etapa 1 – Observatório do Mercado Imobiliário, foram identificados
 e sistematizados dez resultados estratégicos principais, que refletem os avanços
-alcançados na validação da Prova de Conceito (POC) de Florianópolis. Esses
+alcançados na validação da Prova de Conceito (PoC) de Florianópolis. Esses
 resultados evidenciam a evolução da arquitetura de dados, a consolidação dos
 processos de tratamento e validação das informações e o nível de maturidade
 alcançado na estruturação do Observatório, constituindo a base para o
@@ -214,7 +214,7 @@ das ofertas imobiliárias, com elevada precisão, alto desempenho computacional 
 capacidade de operação em larga escala, com potencial de replicação em nível
 nacional.
 
-#### Processamento expressivo da base da POC Florianópolis
+#### Processamento expressivo da base da PoC Florianópolis
 
 A Prova de Conceito demonstrou de forma consistente a capacidade operacional do
 Observatório para processamento de dados imobiliários em larga escala,
@@ -299,7 +299,7 @@ duplicidade.
 
 A aplicação integrada dos critérios de qualidade posicional e cadastral resultou
 na construção de uma base final duplamente validada, representando o principal
-produto técnico da Prova de Conceito (POC) de Florianópolis. Essa base
+produto técnico da Prova de Conceito (PoC) de Florianópolis. Essa base
 corresponde ao subconjunto de registros que atendem simultaneamente:
 
 - aos critérios de validação posicional;
@@ -568,7 +568,7 @@ potencial de expansão para novos lotes.
 
 #### Consolidação da PoC Florianópolis como entrega integrada
 
-A POC de Florianópolis foi consolidada como a principal entrega integrada e 
+A PoC de Florianópolis foi consolidada como a principal entrega integrada e 
 demonstradora da Etapa 2. Ela funcionou como ambiente de teste, validação e 
 refinamento metodológico, integrando base cartográfica, variáveis geográficas, 
 amostra do Observatório do Mercado Imobiliário e estrutura de banco espacial 
@@ -583,7 +583,7 @@ a operar como referência concreta de produto territorial para a modelagem.
 
 Validação da PoC Florianópolis como caso demonstrador da integração entre
 cartografia, variáveis geográficas, dados do mercado imobiliário e modelagem de
-avaliação em massa. A POC deixou de ser apenas teste e passou a ser produto
+avaliação em massa. A PoC deixou de ser apenas teste e passou a ser produto
 territorial efetivo para a modelagem.
 
 #### Estruturação do dicionário e modelagem de dados espaciais
@@ -703,7 +703,7 @@ No âmbito da Etapa 3 – Modelagem e Planta de Valores Genéricos (PVG), foram
 identificados e sistematizados os principais resultados estratégicos, que
 refletem os avanços alcançados na estruturação, implementação e validação dos
 modelos de estimação de valores imobiliários no contexto da Prova de Conceito
-(POC) de Florianópolis. Esses resultados evidenciam a evolução do fluxo
+(PoC) de Florianópolis. Esses resultados evidenciam a evolução do fluxo
 metodológico de modelagem, a consolidação das estratégias de tratamento,
 classificação e integração dos dados provenientes das etapas anteriores, bem
 como o nível de maturidade atingido na construção de modelos econométricos e
@@ -720,7 +720,7 @@ nacional.
 #### Desempenho dos modelos econométricos
 
 A Etapa 3 demonstrou desempenho estatístico consistente na modelagem dos valores
-imobiliários da POC Florianópolis. foram elaborados dois modelos econométricos
+imobiliários da PoC Florianópolis. foram elaborados dois modelos econométricos
 para os imóveis de Florianópolis: um modelo voltado à estimativa de valores de
 imóveis edificados e outro específico para a modelagem dos lotes urbanos. Essa
 abordagem dual permitiu tratar de forma diferenciada as dinâmicas de formação de
@@ -1886,9 +1886,9 @@ A solução está sendo estruturada com o objetivo de facilitar o monitoramento
 evolutivo das entregas técnicas realizadas pelas diferentes equipes envolvidas
 no projeto, proporcionando um ambiente centralizado para publicação, organização
 e análise das bases territoriais utilizadas no processo de construção dos
-Valores de Referência. A Figuras 08 apresentam exemplos da interface da
-plataforma e das funcionalidades atualmente configuradas para visualização e
-análise dos dados territoriais.
+Valores de Referência. As Figuras -@fig-inter1 a -@fig-inter7 apresentam 
+exemplos da interface da plataforma e das funcionalidades atualmente 
+configuradas para visualização e análise dos dados territoriais.
 
 Entre as funcionalidades atualmente configuradas na plataforma, destaca-se o
 módulo de carregamento e publicação de informações geoespaciais e alfanuméricas.

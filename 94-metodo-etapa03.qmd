@@ -596,7 +596,7 @@ elaborados para a PoC Florianópolis. São estudos de modelos de aprendizado de
 máquina. Tais modelos não foram utilizados para os resultados finais da PoC, 
 por dois motivos: primeiro, os modelos foram ajustados em paralelo ao andamento
 previsto para a PoC; segundo, existe a dificuldade de interpretabilidade dos
-modelos de aprendizado de máquina. Como ilustrado na @fig-fluxo-modelagem, os
+modelos de aprendizado de máquina. Como ilustrado no @sec-fluxo-metodologico, os
 modelos de aprendizado de máquina devem ser utilizados ao longo do projeto, 
 porém os seus resultados deverão ser utilizados como um caminho para a estimação
 linear dos valores finais, mantendo assim a interpretabilidade.

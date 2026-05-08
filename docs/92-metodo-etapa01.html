@@ -309,7 +309,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./95-metodo-etapa04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Apendice 5</span></span></a>
+ <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Estruturação da base territorial</span></span></a>
   </div>
 </li>
       </ul>
@@ -364,7 +364,7 @@ window.Quarto = {
   </ul></li>
   <li><a href="#sec-analises-aprofundadas" id="toc-sec-analises-aprofundadas" class="nav-link" data-scroll-target="#sec-analises-aprofundadas"><span class="header-section-number">B.4</span> Análises Aprofundadas e Validação</a>
   <ul>
-  <li><a href="#metodologia-de-recuperação-vias-curtas-short-streets" id="toc-metodologia-de-recuperação-vias-curtas-short-streets" class="nav-link" data-scroll-target="#metodologia-de-recuperação-vias-curtas-short-streets"><span class="header-section-number">B.4.1</span> 1. Metodologia de Recuperação: Vias Curtas (Short Streets)</a>
+  <li><a href="#metodologia-de-recuperação-vias-curtas-short-streets" id="toc-metodologia-de-recuperação-vias-curtas-short-streets" class="nav-link" data-scroll-target="#metodologia-de-recuperação-vias-curtas-short-streets"><span class="header-section-number">B.4.1</span> Metodologia de Recuperação: Vias Curtas (Short Streets)</a>
   <ul class="collapse">
   <li><a href="#metodologia" id="toc-metodologia" class="nav-link" data-scroll-target="#metodologia"><span class="header-section-number">B.4.1.1</span> Metodologia</a></li>
   <li><a href="#resultados" id="toc-resultados" class="nav-link" data-scroll-target="#resultados"><span class="header-section-number">B.4.1.2</span> Resultados</a></li>
@@ -517,7 +517,6 @@ window.Quarto = {
 <li><strong>Cálculo da Precisão Inicial:</strong> O script Spark roda uma lógica hierárquica para determinar o grau de confiança da informação inserida pelo corretor (a coluna <code>precisao</code>). Um endereço só recebe <code>precisao = 4</code> se contiver Rua, Número, Bairro e Cidade devidamente preenchidos.</li>
 <li><strong>Geocodificação via ArcGIS:</strong> Para os registros novos que ainda não possuem coordenadas em nossa base histórica (<code>tb_localizacao</code>), o pipeline do Spark efetua chamadas assíncronas (com estratégias de <em>retry</em> exponencial) à API do ArcGIS para obter a primeira coordenada (<code>lat</code> e <code>lon</code>). Esta coordenada “crua” do mercado é o que será auditado a seguir.</li>
 </ul>
-<p>O código-fonte completo do pipeline está disponível em <a href="scripts.qmd#sec-script-etl">Apêndice — ETL PySpark</a>.</p>
 </section>
 </section>
 <section id="saneamento-de-registros-detecção-de-outliers" class="level4" data-number="B.2.3.2">
@@ -616,14 +615,13 @@ window.Quarto = {
 <h5 data-number="B.2.3.2.5" class="anchored" data-anchor-id="implementação-técnica"><span class="header-section-number">B.2.3.2.5</span> Implementação Técnica</h5>
 <p>O sistema foi implementado em <strong>PostgreSQL</strong> com o arquivo:</p>
 <pre><code>relatorio_poc_floripa/script_deteccao_outliers_completo_v2.sql.sql (750+ linhas)</code></pre>
-<p>O script completo está disponível em <a href="scripts.qmd#sec-script-outliers">Apêndice — Script de Detecção de Outliers</a>.</p>
 <p>Adiciona as seguintes colunas na tabela: - <code>duplicado</code> — Marcação de duplicata - <code>outlier_tipos</code> — Array de tipos de problemas - <code>verificado_outliers</code> — Validação manual realizada? - <code>updated_at</code>, <code>updated_by</code>, <code>observacoes</code> — Rastreamento de correções</p>
 <hr>
 </section>
 </section>
 <section id="validação-cruzada-avançada-geocoder-v3---postgis" class="level4" data-number="B.2.3.3">
 <h4 data-number="B.2.3.3" class="anchored" data-anchor-id="validação-cruzada-avançada-geocoder-v3---postgis"><span class="header-section-number">B.2.3.3</span> Validação Cruzada Avançada (Geocoder V3 - PostGIS)</h4>
-<p>Com a base de mercado padronizada e as coordenadas primárias (ArcGIS) estabelecidas, o fluxo migra para a validação contra a base governamental. O <strong>Geocoder V3</strong> implementa uma cascata de seis níveis dentro do PostgreSQL: cada nível processa <strong>exclusivamente os registros que todos os níveis anteriores não resolveram</strong>. O processamento para assim que um match é encontrado — garantindo que o critério mais rigoroso sempre tenha prioridade sobre os mais permissivos. O código-fonte completo do motor está disponível em <a href="scripts.qmd#sec-script-geocoder">Apêndice — Geocoder V3</a>.</p>
+<p>Com a base de mercado padronizada e as coordenadas primárias (ArcGIS) estabelecidas, o fluxo migra para a validação contra a base governamental. O <strong>Geocoder V3</strong> implementa uma cascata de seis níveis dentro do PostgreSQL: cada nível processa <strong>exclusivamente os registros que todos os níveis anteriores não resolveram</strong>. O processamento para assim que um match é encontrado — garantindo que o critério mais rigoroso sempre tenha prioridade sobre os mais permissivos. ,</p>
 <section id="pré-processamento-de-entrada" class="level5" data-number="B.2.3.3.1">
 <h5 data-number="B.2.3.3.1" class="anchored" data-anchor-id="pré-processamento-de-entrada"><span class="header-section-number">B.2.3.3.1</span> Pré-processamento de Entrada</h5>
 <p>Antes de entrar na cascata, cada registro é normalizado inteiramente em SQL:</p>
@@ -1103,7 +1101,7 @@ Tabela&nbsp;B.1: Funil de processamento e validação cruzada
 <h2 data-number="B.4" class="anchored" data-anchor-id="sec-analises-aprofundadas"><span class="header-section-number">B.4</span> Análises Aprofundadas e Validação</h2>
 <p>Nesta seção, apresentamos análises detalhadas conduzidas pelos bolsistas do projeto, ilustrando aplicações práticas da metodologia desenvolvida e evidenciando padrões identificados durante a validação cruzada ArcGIS vs CNEFE.</p>
 <section id="metodologia-de-recuperação-vias-curtas-short-streets" class="level3" data-number="B.4.1">
-<h3 data-number="B.4.1" class="anchored" data-anchor-id="metodologia-de-recuperação-vias-curtas-short-streets"><span class="header-section-number">B.4.1</span> 1. Metodologia de Recuperação: Vias Curtas (Short Streets)</h3>
+<h3 data-number="B.4.1" class="anchored" data-anchor-id="metodologia-de-recuperação-vias-curtas-short-streets"><span class="header-section-number">B.4.1</span> Metodologia de Recuperação: Vias Curtas (Short Streets)</h3>
 <p><strong>Período:</strong> Janeiro - Março 2026 <strong>Objetivo:</strong> Demonstrar como registros de precisão intermediária (precisão = 3) podem ser recuperados através de análise espacial comparativa com malha viária de setores censitários únicos.</p>
 <p>A descrição do fluxo operacional dessa metodologia no pipeline de tratamento encontra-se na Seção <em>Triagem de Precisão e Recuperação Espacial</em>; esta seção detalha os resultados analíticos e a validação da hipótese territorial.</p>
 <section id="metodologia" class="level4" data-number="B.4.1.1">
@@ -1474,7 +1472,7 @@ Tabela&nbsp;B.1: Funil de processamento e validação cruzada
 <section id="validação-de-acurácia-benchmarking-com-google-maps" class="level3" data-number="B.4.3">
 <h3 data-number="B.4.3" class="anchored" data-anchor-id="validação-de-acurácia-benchmarking-com-google-maps"><span class="header-section-number">B.4.3</span> Validação de Acurácia (Benchmarking com Google Maps)</h3>
 <p><em>Análise completa disponível em <a href="relatorios.qmd#sec-rel-estatistica">Apêndice — Análise Estatística V3</a> e <a href="relatorios.qmd#sec-rel-cnefe">Avaliação CNEFE V3</a>.</em></p>
-<p><strong>Autor:</strong> Ville Rodrigues <strong>Período:</strong> Abril 2026 <strong>Objetivo:</strong> Avaliar a qualidade das coordenadas do CNEFE e do ArcGIS tomando o Google Maps como referência de maior acurácia (Ground Truth).</p>
+<p><strong>Objetivo:</strong> Avaliar a qualidade das coordenadas do CNEFE e do ArcGIS tomando o Google Maps como referência de maior acurácia (Ground Truth).</p>
 <section id="metodologia-2" class="level4" data-number="B.4.3.1">
 <h4 data-number="B.4.3.1" class="anchored" data-anchor-id="metodologia-2"><span class="header-section-number">B.4.3.1</span> Metodologia</h4>
 <p>A análise comparou três pares de coordenadas em quatro níveis de geocodificação do IBGE (<code>NV_GEO_COORD</code>): - <strong>ArcGIS × Google:</strong> Avalia o erro do provedor de mercado. - <strong>CNEFE × Google:</strong> Avalia o erro da base oficial. - <strong>CNEFE × ArcGIS:</strong> Avalia a convergência entre as fontes alternativas.</p>
@@ -1482,7 +1480,13 @@ Tabela&nbsp;B.1: Funil de processamento e validação cruzada
 </section>
 <section id="resultados-sintéticos" class="level4" data-number="B.4.3.2">
 <h4 data-number="B.4.3.2" class="anchored" data-anchor-id="resultados-sintéticos"><span class="header-section-number">B.4.3.2</span> Resultados Sintéticos</h4>
-<p>A tabela abaixo resume as medianas de distância (em metros) para os quatro níveis de precisão do CNEFE:</p>
+<p>A <a href="#tbl-mediana" class="quarto-xref">Tabela&nbsp;<span>B.2</span></a> resume as medianas de distância (em metros) para os quatro níveis de precisão do CNEFE:</p>
+<div id="tbl-mediana" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-mediana-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;B.2: Resumo mediana das distâncias para os quatro níveis de precisão
+</figcaption>
+<div aria-describedby="tbl-mediana-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 20%">
@@ -1531,6 +1535,9 @@ Tabela&nbsp;B.1: Funil de processamento e validação cruzada
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 </section>
 <section id="principais-conclusões-do-estudo" class="level4" data-number="B.4.3.3">
 <h4 data-number="B.4.3.3" class="anchored" data-anchor-id="principais-conclusões-do-estudo"><span class="header-section-number">B.4.3.3</span> Principais Conclusões do Estudo</h4>
